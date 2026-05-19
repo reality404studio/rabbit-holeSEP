@@ -1,0 +1,27 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# next.js
+.next
+out
+
+# production
+build
+
+# env (NEVER commit API keys)
+.env
+.env.local
+.env*.local
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# misc
+.DS_Store
+*.log
+
+# runtime state (NOT entries.json — that's committed data)
+data/rate-limit.json
