@@ -1,0 +1,186 @@
+{"slug":"peter-damian","f":"latin-medieval-thinkers","f2":["religion-theism"],"ax":["divine-nature-proof"],"g":"11세기 신학자·신의 전능","c":"h"}
+{"slug":"dance","f":"aesthetics-art","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"dante","f":"latin-medieval-thinkers","f2":["state-liberty-conflict","aesthetics-art"],"ax":[],"g":"","c":"m"}
+{"slug":"daoism","f":"east-asian","f2":[],"ax":["good-life","language-reality"],"g":"","c":"h"}
+{"slug":"darwinism","f":"biology-phil","f2":[],"ax":["causation-explanation"],"g":"","c":"h"}
+{"slug":"david","f":"greek-schools","f2":[],"ax":["transmission-translation"],"g":"6세기 신플라톤 주석가","c":"m"}
+{"slug":"davidson","f":"analytic-founders","f2":["language-meaning","mind-body-consciousness"],"ax":["mind-matter","language-reality"],"g":"","c":"h"}
+{"slug":"aristotle-de-motu","f":"plato-aristotle","f2":["biology-phil"],"ax":[],"g":"아리스토텔레스 동물운동론","c":"h"}
+{"slug":"death","f":"person-life-course","f2":[],"ax":["good-life"],"g":"","c":"h"}
+{"slug":"death-definition","f":"medicine-bioethics-disability","f2":["person-life-course"],"ax":[],"g":"","c":"h"}
+{"slug":"decision-theory","f":"probability-decision-games","f2":[],"ax":["uncertainty-judgment"],"g":"","c":"h"}
+{"slug":"decision-capacity","f":"medicine-bioethics-disability","f2":["agency-freewill-responsibility"],"ax":[],"g":"의료 의사결정 능력","c":"h"}
+{"slug":"deductivism-mathematics","f":"math-foundations","f2":[],"ax":[],"g":"수학은 공리의 연역이라는 입장","c":"m"}
+{"slug":"defaults-semantics-pragmatics","f":"language-meaning","f2":[],"ax":[],"g":"의미론·화용론의 기본값 해석","c":"m"}
+{"slug":"definitions","f":"language-meaning","f2":["logic-systems"],"ax":[],"g":"","c":"h"}
+{"slug":"disability","f":"medicine-bioethics-disability","f2":["feminism-gender-sex"],"ax":["equality-difference"],"g":"장애의 정의와 모델","c":"h"}
+{"slug":"truth-deflationary","f":"truth-paradox-argumentation","f2":[],"ax":["truth-nature"],"g":"진리 수축론","c":"h"}
+{"slug":"dehumanization","f":"africana-race-colonialism","f2":["state-liberty-conflict","emotions-attitudes"],"ax":["equality-difference"],"g":"","c":"m"}
+{"slug":"deleuze","f":"critical-theory-poststructuralism","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"delmedigo","f":"jewish","f2":["renaissance"],"ax":["transmission-translation"],"g":"15세기 유대 아베로에스주의자","c":"m"}
+{"slug":"delusion","f":"medicine-bioethics-disability","f2":["cognition-perception"],"ax":[],"g":"","c":"h"}
+{"slug":"democracy","f":"state-liberty-conflict","f2":[],"ax":["individual-collective"],"g":"","c":"h"}
+{"slug":"democritus","f":"greek-schools","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"logic-deontic","f":"logic-systems","f2":["normative-ethics"],"ax":["normativity-source"],"g":"의무논리","c":"h"}
+{"slug":"mally-deontic","f":"logic-systems","f2":[],"ax":["normativity-source"],"g":"말리의 의무논리","c":"h"}
+{"slug":"logic-dependence","f":"logic-systems","f2":[],"ax":[],"g":"의존 논리","c":"m"}
+{"slug":"dependence-ontological","f":"metaphysics-objects-modality","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"depiction","f":"aesthetics-art","f2":[],"ax":[],"g":"그림적 재현","c":"h"}
+{"slug":"derrida","f":"critical-theory-poststructuralism","f2":[],"ax":["language-reality"],"g":"","c":"h"}
+{"slug":"descartes","f":"seventeenth-century-systems","f2":[],"ax":["mind-matter","skepticism-limits"],"g":"","c":"h"}
+{"slug":"descriptions","f":"language-meaning","f2":[],"ax":[],"g":"기술구 이론","c":"h"}
+{"slug":"decision-theory-descriptive","f":"probability-decision-games","f2":[],"ax":["uncertainty-judgment"],"g":"기술적 결정이론","c":"h"}
+{"slug":"desert","f":"justice-distribution","f2":["metaethics-value"],"ax":[],"g":"응분(마땅히 받을 몫)","c":"h"}
+{"slug":"desgabets","f":"seventeenth-century-systems","f2":[],"ax":[],"g":"17세기 데카르트주의자","c":"m"}
+{"slug":"desire","f":"emotions-attitudes","f2":["agency-freewill-responsibility","mind-body-consciousness"],"ax":["reason-emotion"],"g":"","c":"m"}
+{"slug":"determinate-determinables","f":"metaphysics-objects-modality","f2":[],"ax":["universals-particulars"],"g":"한정자와 피한정자","c":"h"}
+{"slug":"determinism-causal","f":"time-space-causation","f2":["agency-freewill-responsibility","physics-phil"],"ax":["freedom-determination","causation-explanation"],"g":"","c":"h"}
+{"slug":"biology-developmental","f":"biology-phil","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"dewey","f":"american-pragmatism","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"dewey-aesthetics","f":"aesthetics-art","f2":["american-pragmatism"],"ax":[],"g":"","c":"h"}
+{"slug":"dharmakiirti","f":"indian-buddhist-tibetan","f2":[],"ax":["universals-particulars","skepticism-limits"],"g":"","c":"h"}
+{"slug":"dialectical-school","f":"greek-schools","f2":["logic-systems"],"ax":[],"g":"헬레니즘 논리학파","c":"h"}
+{"slug":"dialetheism","f":"truth-paradox-argumentation","f2":["logic-systems"],"ax":["truth-nature"],"g":"참인 모순이 있다는 입장","c":"h"}
+{"slug":"logic-dialogical","f":"logic-systems","f2":[],"ax":[],"g":"대화 논리","c":"m"}
+{"slug":"diderot","f":"empiricism-enlightenment-utilitarianism","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"dietrich-freiberg","f":"latin-medieval-thinkers","f2":[],"ax":[],"g":"13세기 도미니코 철학자","c":"m"}
+{"slug":"digital-art","f":"aesthetics-art","f2":["computing-information-tech"],"ax":[],"g":"","c":"h"}
+{"slug":"dignity","f":"person-life-course","f2":["metaethics-value"],"ax":[],"g":"","c":"h"}
+{"slug":"dilthey","f":"phenomenology-existentialism-hermeneutics","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"diodorus-cronus","f":"greek-schools","f2":["logic-systems"],"ax":["freedom-determination"],"g":"","c":"h"}
+{"slug":"dirty-hands","f":"normative-ethics","f2":["state-liberty-conflict"],"ax":["harm-permissibility"],"g":"정치의 '더러운 손' 문제","c":"h"}
+{"slug":"disagreement","f":"knowledge-justification","f2":[],"ax":["uncertainty-judgment"],"g":"","c":"h"}
+{"slug":"discourse-representation-theory","f":"language-meaning","f2":[],"ax":[],"g":"담화표상이론(DRT)","c":"h"}
+{"slug":"discrimination","f":"justice-distribution","f2":["law-phil"],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"disjunction","f":"logic-systems","f2":["language-meaning"],"ax":[],"g":"","c":"h"}
+{"slug":"dispositions","f":"metaphysics-objects-modality","f2":[],"ax":["causation-explanation"],"g":"","c":"h"}
+{"slug":"doing-allowing","f":"normative-ethics","f2":[],"ax":["harm-permissibility"],"g":"","c":"h"}
+{"slug":"domination","f":"state-liberty-conflict","f2":["justice-distribution"],"ax":[],"g":"지배(공화주의적 자유 개념)","c":"h"}
+{"slug":"gametes-donation-sale","f":"medicine-bioethics-disability","f2":["feminism-gender-sex"],"ax":[],"g":"","c":"h"}
+{"slug":"organ-donation","f":"medicine-bioethics-disability","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"double-consciousness","f":"africana-race-colonialism","f2":[],"ax":["self-substance"],"g":"","c":"h"}
+{"slug":"double-effect","f":"normative-ethics","f2":[],"ax":["harm-permissibility"],"g":"","c":"h"}
+{"slug":"frederick-douglass","f":"africana-race-colonialism","f2":[],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"doxastic-voluntarism","f":"knowledge-justification","f2":["agency-freewill-responsibility"],"ax":[],"g":"믿음을 의지로 택할 수 있나","c":"h"}
+{"slug":"doxography-ancient","f":"greek-schools","f2":[],"ax":["transmission-translation"],"g":"고대 철학 학설사 기록","c":"h"}
+{"slug":"dreams-dreaming","f":"cognition-perception","f2":["mind-body-consciousness"],"ax":[],"g":"","c":"h"}
+{"slug":"dubois","f":"africana-race-colonialism","f2":[],"ax":["self-substance"],"g":"","c":"h"}
+{"slug":"du-bos","f":"aesthetics-art","f2":["empiricism-enlightenment-utilitarianism"],"ax":["reason-emotion"],"g":"18세기 프랑스 미학자","c":"m"}
+{"slug":"dualism","f":"mind-body-consciousness","f2":[],"ax":["mind-matter"],"g":"","c":"h"}
+{"slug":"duhem","f":"science-general","f2":["physics-phil"],"ax":[],"g":"","c":"h"}
+{"slug":"duns-scotus","f":"latin-medieval-thinkers","f2":[],"ax":["universals-particulars","divine-nature-proof"],"g":"","c":"h"}
+{"slug":"dutch-book","f":"probability-decision-games","f2":[],"ax":["uncertainty-judgment"],"g":"","c":"h"}
+{"slug":"early-modern-india","f":"indian-buddhist-tibetan","f2":[],"ax":[],"g":"근대초 인도 분석철학","c":"m"}
+{"slug":"genrel-early","f":"physics-phil","f2":[],"ax":[],"g":"일반상대론 초기 철학적 해석","c":"h"}
+{"slug":"ecology","f":"biology-phil","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"biodiversity","f":"biology-phil","f2":["justice-distribution"],"ax":[],"g":"","c":"h"}
+{"slug":"economic-democracy","f":"state-liberty-conflict","f2":["justice-distribution"],"ax":["individual-collective"],"g":"경제적 민주주의","c":"m"}
+{"slug":"legal-econanalysis","f":"law-phil","f2":["social-ontology-economics"],"ax":[],"g":"","c":"h"}
+{"slug":"economic-justice","f":"justice-distribution","f2":["social-ontology-economics"],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"education-philosophy","f":"person-life-course","f2":["state-liberty-conflict"],"ax":[],"g":"","c":"h"}
+{"slug":"edwards","f":"american-pragmatism","f2":["religion-theism"],"ax":["freedom-determination"],"g":"18세기 미국 신학자","c":"m"}
+{"slug":"egalitarianism","f":"justice-distribution","f2":[],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"egoism","f":"normative-ethics","f2":["metaethics-value"],"ax":[],"g":"","c":"h"}
+{"slug":"ehrenfels","f":"phenomenology-existentialism-hermeneutics","f2":["metaethics-value"],"ax":[],"g":"브렌타노 학파·게슈탈트 개념","c":"m"}
+{"slug":"elias","f":"greek-schools","f2":[],"ax":["transmission-translation"],"g":"6세기 신플라톤 주석가","c":"m"}
+{"slug":"materialism-eliminative","f":"mind-body-consciousness","f2":[],"ax":["mind-matter"],"g":"제거적 유물론","c":"h"}
+{"slug":"elisabeth-bohemia","f":"seventeenth-century-systems","f2":["feminism-gender-sex"],"ax":["mind-matter"],"g":"","c":"h"}
+{"slug":"embodied-cognition","f":"cognition-perception","f2":[],"ax":["mind-matter"],"g":"","c":"h"}
+{"slug":"properties-emergent","f":"mind-body-consciousness","f2":["metaphysics-objects-modality"],"ax":["mind-matter"],"g":"","c":"h"}
+{"slug":"emerson","f":"american-pragmatism","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"emotion","f":"emotions-attitudes","f2":[],"ax":["reason-emotion"],"g":"","c":"h"}
+{"slug":"emotions-17th18th","f":"emotions-attitudes","f2":["seventeenth-century-systems","empiricism-enlightenment-utilitarianism"],"ax":["reason-emotion"],"g":"","c":"h"}
+{"slug":"emotions-chinese","f":"east-asian","f2":["emotions-attitudes"],"ax":["reason-emotion"],"g":"","c":"h"}
+{"slug":"empathy","f":"emotions-attitudes","f2":[],"ax":["reason-emotion"],"g":"","c":"h"}
+{"slug":"empedocles","f":"greek-schools","f2":[],"ax":["change-persistence"],"g":"","c":"h"}
+{"slug":"altruism-empirical","f":"metaethics-value","f2":["biology-phil"],"ax":[],"g":"이타주의의 경험적 연구","c":"m"}
+{"slug":"moral-character-empirical","f":"metaethics-value","f2":["normative-ethics"],"ax":[],"g":"덕·성품의 경험적 연구","c":"m"}
+{"slug":"moral-psych-emp","f":"metaethics-value","f2":[],"ax":[],"g":"도덕심리학 경험적 접근","c":"m"}
+{"slug":"enlightenment","f":"empiricism-enlightenment-utilitarianism","f2":["kant-german-idealism"],"ax":[],"g":"","c":"h"}
+{"slug":"environmental-aesthetics","f":"aesthetics-art","f2":[],"ax":[],"g":"환경 미학","c":"h"}
+{"slug":"ethics-environmental","f":"normative-ethics","f2":["biology-phil","justice-distribution"],"ax":[],"g":"환경 윤리","c":"m"}
+{"slug":"feminism-environmental","f":"feminism-gender-sex","f2":[],"ax":[],"g":"페미니즘 환경철학","c":"h"}
+{"slug":"envy","f":"emotions-attitudes","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"epictetus","f":"greek-schools","f2":[],"ax":["good-life"],"g":"","c":"h"}
+{"slug":"epicurus","f":"greek-schools","f2":[],"ax":["good-life"],"g":"","c":"h"}
+{"slug":"epiphenomenalism","f":"mind-body-consciousness","f2":[],"ax":["mind-matter"],"g":"","c":"h"}
+{"slug":"episteme-techne","f":"plato-aristotle","f2":["greek-schools","knowledge-justification"],"ax":[],"g":"고대의 지식과 기술 개념","c":"h"}
+{"slug":"logic-epistemic","f":"logic-systems","f2":["knowledge-justification"],"ax":[],"g":"인식논리","c":"h"}
+{"slug":"closure-epistemic","f":"knowledge-justification","f2":[],"ax":["skepticism-limits"],"g":"인식적 폐쇄 원리","c":"h"}
+{"slug":"epistemic-game","f":"probability-decision-games","f2":[],"ax":[],"g":"게임이론의 인식적 기초","c":"h"}
+{"slug":"epistemic-paradoxes","f":"knowledge-justification","f2":["truth-paradox-argumentation"],"ax":[],"g":"","c":"h"}
+{"slug":"epistemic-utility","f":"knowledge-justification","f2":["probability-decision-games"],"ax":["normativity-source"],"g":"","c":"h"}
+{"slug":"memory-episprob","f":"knowledge-justification","f2":["cognition-perception"],"ax":[],"g":"기억의 인식론","c":"h"}
+{"slug":"testimony-episprob","f":"knowledge-justification","f2":[],"ax":[],"g":"증언의 인식론","c":"h"}
+{"slug":"chinese-epistemology","f":"east-asian","f2":["knowledge-justification"],"ax":[],"g":"중국 인식론","c":"h"}
+{"slug":"descartes-epistemology","f":"seventeenth-century-systems","f2":["knowledge-justification"],"ax":["skepticism-limits"],"g":"데카르트 인식론","c":"h"}
+{"slug":"epistemology","f":"knowledge-justification","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"spinoza-epistemology-mind","f":"seventeenth-century-systems","f2":["mind-body-consciousness"],"ax":["mind-matter"],"g":"스피노자 인식론·심리철학","c":"h"}
+{"slug":"epistemology-geometry","f":"math-foundations","f2":["knowledge-justification"],"ax":[],"g":"기하학의 인식론","c":"h"}
+{"slug":"religion-epistemology","f":"religion-theism","f2":["knowledge-justification"],"ax":[],"g":"종교 인식론","c":"h"}
+{"slug":"formal-epistemology","f":"knowledge-justification","f2":["probability-decision-games"],"ax":["uncertainty-judgment"],"g":"","c":"h"}
+{"slug":"epsilon-calculus","f":"logic-systems","f2":["math-foundations"],"ax":[],"g":"힐베르트의 엡실론 계산","c":"h"}
+{"slug":"equality","f":"justice-distribution","f2":[],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"equivME","f":"physics-phil","f2":[],"ax":[],"g":"질량-에너지 등가","c":"h"}
+{"slug":"erasmus","f":"renaissance","f2":[],"ax":["freedom-determination"],"g":"","c":"h"}
+{"slug":"ergodic-hierarchy","f":"physics-phil","f2":[],"ax":[],"g":"통계역학의 에르고드 위계","c":"h"}
+{"slug":"scottus-eriugena","f":"latin-medieval-thinkers","f2":[],"ax":["transmission-translation"],"g":"","c":"h"}
+{"slug":"erotic-art","f":"aesthetics-art","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"arabic-islamic-essence","f":"arabic-islamic","f2":["metaphysics-objects-modality"],"ax":[],"g":"이슬람 철학의 본질·존재","c":"h"}
+{"slug":"essential-accidental","f":"metaphysics-objects-modality","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"eternity","f":"religion-theism","f2":["time-space-causation","latin-medieval-thinkers"],"ax":["divine-nature-proof","infinity"],"g":"","c":"h"}
+{"slug":"african-ethics","f":"africana-race-colonialism","f2":["normative-ethics"],"ax":["individual-collective"],"g":"아프리카 윤리","c":"h"}
+{"slug":"aristotle-ethics","f":"plato-aristotle","f2":["normative-ethics"],"ax":["good-life"],"g":"아리스토텔레스 윤리학","c":"h"}
+{"slug":"descartes-ethics","f":"seventeenth-century-systems","f2":["normative-ethics"],"ax":[],"g":"데카르트 윤리학","c":"h"}
+{"slug":"leibniz-ethics","f":"seventeenth-century-systems","f2":["normative-ethics"],"ax":[],"g":"라이프니츠 윤리학","c":"h"}
+{"slug":"plato-ethics","f":"plato-aristotle","f2":["normative-ethics"],"ax":["good-life"],"g":"플라톤 윤리학","c":"h"}
+{"slug":"reid-ethics","f":"empiricism-enlightenment-utilitarianism","f2":["metaethics-value"],"ax":[],"g":"리드 윤리학","c":"h"}
+{"slug":"plato-ethics-politics","f":"plato-aristotle","f2":["state-liberty-conflict"],"ax":["good-life"],"g":"『국가』의 윤리와 정치","c":"h"}
+{"slug":"ethics-ai","f":"computing-information-tech","f2":[],"ax":["harm-permissibility","computation-mechanism"],"g":"인공지능 윤리","c":"h"}
+{"slug":"chimeras","f":"medicine-bioethics-disability","f2":["biology-phil"],"ax":[],"g":"인간-동물 키메라 윤리","c":"h"}
+{"slug":"clinical-research","f":"medicine-bioethics-disability","f2":[],"ax":["harm-permissibility"],"g":"","c":"h"}
+{"slug":"ethics-ancient","f":"greek-schools","f2":["plato-aristotle"],"ax":["good-life"],"g":"","c":"h"}
+{"slug":"ethics-deontological","f":"normative-ethics","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"ethics-indian-buddhism","f":"indian-buddhist-tibetan","f2":["normative-ethics"],"ax":["good-life"],"g":"","c":"h"}
+{"slug":"eugenics","f":"medicine-bioethics-disability","f2":["biology-phil"],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"events","f":"metaphysics-objects-modality","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"qm-everett","f":"physics-phil","f2":[],"ax":[],"g":"양자역학 다세계 해석","c":"h"}
+{"slug":"evidence","f":"knowledge-justification","f2":["science-general"],"ax":[],"g":"","c":"h"}
+{"slug":"higher-order-evidence","f":"knowledge-justification","f2":[],"ax":["uncertainty-judgment"],"g":"증거에 관한 증거","c":"h"}
+{"slug":"evolution","f":"biology-phil","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"evolution-development","f":"biology-phil","f2":[],"ax":[],"g":"진화발생생물학","c":"h"}
+{"slug":"evolution-cultural","f":"biology-phil","f2":["social-ontology-economics"],"ax":[],"g":"","c":"h"}
+{"slug":"origin-descent","f":"biology-phil","f2":[],"ax":[],"g":"다윈 『종의 기원』→『인간의 유래』","c":"h"}
+{"slug":"epistemology-evolutionary","f":"knowledge-justification","f2":["biology-phil"],"ax":[],"g":"진화 인식론","c":"h"}
+{"slug":"existence","f":"metaphysics-objects-modality","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"existentialism","f":"phenomenology-existentialism-hermeneutics","f2":[],"ax":["good-life"],"g":"","c":"h"}
+{"slug":"aesthetics-existentialist","f":"aesthetics-art","f2":["phenomenology-existentialism-hermeneutics"],"ax":[],"g":"","c":"h"}
+{"slug":"leibniz-exoteric","f":"seventeenth-century-systems","f2":[],"ax":[],"g":"라이프니츠의 대중용 저술","c":"m"}
+{"slug":"perception-justification","f":"knowledge-justification","f2":["cognition-perception"],"ax":[],"g":"지각 경험과 정당화","c":"h"}
+{"slug":"biology-experiment","f":"biology-phil","f2":["science-general"],"ax":[],"g":"생물학의 실험","c":"h"}
+{"slug":"experimental-moral","f":"metaethics-value","f2":[],"ax":[],"g":"실험적 도덕철학","c":"h"}
+{"slug":"experimental-philosophy","f":"knowledge-justification","f2":["metaethics-value","cognition-perception"],"ax":[],"g":"","c":"m"}
+{"slug":"experimental-aesthetics","f":"aesthetics-art","f2":[],"ax":[],"g":"실험철학적 미학","c":"h"}
+{"slug":"exploitation","f":"justice-distribution","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"content-externalism","f":"cognition-perception","f2":["language-meaning"],"ax":[],"g":"심적 내용 외재주의","c":"h"}
+{"slug":"facts","f":"metaphysics-objects-modality","f2":[],"ax":["truth-nature"],"g":"","c":"h"}
+{"slug":"algorithmic-fairness","f":"computing-information-tech","f2":["justice-distribution"],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"faith","f":"religion-theism","f2":[],"ax":["uncertainty-judgment"],"g":"","c":"h"}
+{"slug":"falaquera","f":"jewish","f2":["arabic-islamic"],"ax":["transmission-translation"],"g":"13세기 유대 철학자","c":"m"}
+{"slug":"fallacies","f":"truth-paradox-argumentation","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"frantz-fanon","f":"africana-race-colonialism","f2":["critical-theory-poststructuralism"],"ax":[],"g":"","c":"h"}
+{"slug":"fatalism","f":"agency-freewill-responsibility","f2":["time-space-causation"],"ax":["freedom-determination"],"g":"","c":"h"}
+{"slug":"fechner","f":"mind-body-consciousness","f2":["cognition-perception"],"ax":["mind-matter"],"g":"정신물리학·범심론","c":"m"}
+{"slug":"federalism","f":"state-liberty-conflict","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"feigl","f":"analytic-founders","f2":["mind-body-consciousness"],"ax":["mind-matter"],"g":"","c":"h"}
+{"slug":"margaret-fell","f":"seventeenth-century-systems","f2":["feminism-gender-sex","religion-theism"],"ax":[],"g":"","c":"l"}
+{"slug":"feminist-philosophy","f":"feminism-gender-sex","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"feminism-aesthetics","f":"feminism-gender-sex","f2":["aesthetics-art"],"ax":[],"g":"","c":"h"}
+{"slug":"feminism-epistemology","f":"feminism-gender-sex","f2":["knowledge-justification","science-general"],"ax":[],"g":"","c":"h"}
+{"slug":"feminism-ethics","f":"feminism-gender-sex","f2":["normative-ethics"],"ax":[],"g":"","c":"h"}
+{"slug":"feminist-philosophy-biology","f":"feminism-gender-sex","f2":["biology-phil"],"ax":[],"g":"","c":"h"}
+{"slug":"feminist-social-epistemology","f":"feminism-gender-sex","f2":["knowledge-justification"],"ax":["individual-collective"],"g":"","c":"h"}
+{"slug":"feminism-disability","f":"feminism-gender-sex","f2":["medicine-bioethics-disability"],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"ludwig-feuerbach","f":"kant-german-idealism","f2":["critical-theory-poststructuralism","religion-theism"],"ax":["divine-nature-proof"],"g":"","c":"h"}
+{"slug":"feyerabend","f":"science-general","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"johann-fichte","f":"kant-german-idealism","f2":[],"ax":["self-substance"],"g":"","c":"h"}
