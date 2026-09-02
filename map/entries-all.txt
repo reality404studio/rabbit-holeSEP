@@ -1,0 +1,1859 @@
+atomism-modern :: 17th to 20th century
+aesthetics-19th-romantic :: 19th Century Romantic
+apriori :: a priori justification and knowledge
+abduction :: abduction
+abelard :: Abelard [Abailard], Peter
+abhidharma :: Abhidharma
+abilities :: abilities
+abner-burgos :: Abner of Burgos
+abortion :: abortion, ethics of
+skepticism-moral-responsibility :: about moral responsibility
+abrabanel :: Abrabanel, Judah
+spacetime-theories-classical :: absolute and relational space and motion, classical theories
+spacetime-theories :: absolute and relational space and motion, post-Newtonian theories
+abstract-objects :: abstract objects
+games-abstraction :: abstraction and completeness
+kant-reason :: account of reason
+action :: action
+action-perception :: action-based theories of perception
+actualism-possibilism-ethics :: actualism and possibilism in ethics
+adaptationism :: adaptationism
+addams-jane :: Addams, Jane
+adorno :: Adorno, Theodor W.
+advance-directives :: advance directives
+aesthetic-experience :: aesthetic experience
+aesthetic-judgment :: aesthetic judgment
+aesthetic-testimony :: aesthetic testimony
+aesthetic-concept :: aesthetic, concept of the
+aristotle-aesthetics :: aesthetics
+kant-aesthetics :: aesthetics and teleology
+aesthetics-of-everyday :: aesthetics of the everyday
+affirmative-action :: affirmative action
+africana :: Africana Philosophy
+afterlife :: afterlife
+agency :: agency
+shared-agency :: agency: shared
+agrippa-nettesheim :: Agrippa von Nettesheim, Heinrich Cornelius
+al-baghdadi :: al-Baghdadi, ‘Abd al-Latif
+al-farabi :: al-Farabi
+al-ghazali :: al-Ghazali
+al-kindi :: al-Kindi
+al-qudat :: al-Qudat, ʿAyn
+abu-bakr-al-razi :: al-Razi, Abu Bakr
+al-din-al-razi :: al-Razi, Fakhr al-Din
+albalag :: Albalag, Isaac
+alberic-paris :: Alberic of Paris
+albert-saxony :: Albert of Saxony
+albert-great :: Albert the Great [= Albertus Magnus]
+albo-joseph :: Albo, Joseph
+alcmaeon :: Alcmaeon
+alexander-aphrodisias :: Alexander of Aphrodisias
+alexander :: Alexander, Samuel
+algebra :: algebra
+algebra-logic-tradition :: algebra of logic tradition
+logic-algebraic-propositional :: algebraic propositional
+alienation :: alienation
+settheory-alternative :: alternative axiomatic theories
+althusser :: Althusser, Louis
+altruism :: altruism
+alyngton :: Alyngton, Robert
+ambiguity :: ambiguity
+ammonius :: Ammonius
+reasoning-analogy :: analogy and analogical reasoning
+analysis :: analysis
+knowledge-analysis :: analysis of
+femapproach-analytic :: analytic philosophy
+latin-american-analytic :: analytic philosophy in
+analytic-synthetic :: analytic/synthetic distinction
+anaphora :: anaphora
+anarchism :: anarchism
+anaxagoras :: Anaxagoras
+atomism-ancient :: ancient
+logic-ancient :: ancient
+ancient-political :: ancient
+empiricism-ancient-medieval :: ancient and medieval
+aesthetics-cogsci :: and cognitive science
+culture-cogsci :: and cognitive science
+qt-consciousness :: and consciousness
+paradoxes-contemporary-logic :: and contemporary logic
+innateness-cognition :: and contemporary theories of cognition
+diagrams :: and diagrammatical reasoning
+justice-moral-psych :: and empirical moral psychology
+game-ethics :: and ethics
+disability-care-rationing :: and health care rationing
+change :: and inconsistency
+ontology-is :: and information systems
+consciousness-intentionality :: and intentionality
+disability-justice :: and justice
+innateness-language :: and language
+law-language :: and language
+kant-leibniz :: and Leibniz
+causation-mani :: and manipulability
+qt-nvd :: and mathematical rigor
+time-travel-phys :: and modern physics
+computing-responsibility :: and moral responsibility
+it-moral-values :: and moral values
+religion-morality :: and morality in western philosophy
+logic-ontology :: and ontology
+god-necessary-being :: and other necessary beings
+god-ultimates :: and other ultimates
+it-privacy :: and privacy
+logic-probability :: and probability
+religion-science :: and science
+self-knowledge-externalism :: and self-knowledge
+pineal-gland :: and the pineal gland
+cosmology-theology :: and theology
+realism-theory-change :: and theory change in science
+disability-well-being :: and well-being
+anderson-john :: Anderson, John
+animalism :: animalism
+moral-animal :: animals, moral status of
+anomalous-monism :: anomalous monism
+anscombe :: Anscombe, Gertrude Elizabeth Margaret
+anselm :: Anselm of Canterbury [Anselm of Bec]
+antiochus-ascalon :: Antiochus of Ascalon
+aquinas :: Aquinas, Thomas
+arcesilaus :: Arcesilaus
+architecture :: architecture, philosophy of
+archytas :: Archytas
+arendt :: Arendt, Hannah
+argument :: argument and argumentation
+incompatibilism-arguments :: arguments for
+aristotle :: Aristotle
+aristotle-commentators :: Aristotle, commentators on
+arnauld :: Arnauld, Antoine
+arrows-theorem :: Arrow’s theorem
+conceptual-art :: art, conceptual
+art-definition :: art, definition of
+artifact :: artifact
+artificial-intelligence :: artificial intelligence
+folkpsych-theory :: as a theory
+justice-virtue :: as a virtue
+folkpsych-simulation :: as mental simulation
+assertion :: assertion
+associationist-thought :: associationist theories of thought
+astell :: Astell, Mary
+atheism-agnosticism :: atheism and agnosticism
+atonement :: atonement
+attention :: attention
+augustine :: Augustine of Hippo
+auriol :: Auriol [Aureol, Aureoli], Peter
+austin-john :: Austin, John
+austin-jl :: Austin, John Langshaw
+authenticity :: authenticity
+authority :: authority
+truth-axiomatic :: axiomatic theories of
+ayer :: Ayer, Alfred Jules
+causation-backwards :: backward
+francis-bacon :: Bacon, Francis
+roger-bacon :: Bacon, Roger
+basing-epistemic :: basing relation, epistemic
+baudrillard :: Baudrillard, Jean
+bauer :: Bauer, Bruno
+bayes-theorem :: Bayes’ Theorem
+epistemology-bayesian :: Bayesian
+quantum-bayesian :: Bayesian and pragmatist views
+bayle :: Bayle, Pierre
+beardsley-aesthetics :: Beardsley, Monroe C.: aesthetics
+beauty :: beauty
+beauvoir :: Beauvoir, Simone de
+behaviorism :: behaviorism
+belief :: belief
+belief-merging :: belief merging and judgment aggregation
+ethics-belief :: belief, ethics of
+formal-belief :: belief, formal representations of
+bell-theorem :: Bell’s Theorem
+principle-beneficence :: beneficence, principle of
+benjamin :: Benjamin, Walter
+bentham :: Bentham, Jeremy
+bergson :: Bergson, Henri
+berkeley :: Berkeley, George
+berlin :: Berlin, Isaiah
+bessarion :: Bessarion, Basil [Cardinal]
+implicit-bias :: bias, implicit
+binarium :: binarium famosissimum [= most famous pair]
+feminist-bioethics :: bioethics
+altruism-biological :: biological
+biology-individual :: biological individuals
+aristotle-biology :: biology
+biomedicine :: biomedicine, philosophy of
+blame :: blame
+bloch :: Bloch, Ernst
+bodily-awareness :: bodily awareness
+bodin :: Bodin, Jean
+boethius-dacia :: Boethius of Dacia
+boethius :: Boethius, Anicius Manlius Severinus
+qm-bohm :: Bohmian mechanics
+statphys-Boltzmann :: Boltzmann’s work in
+bolzano :: Bolzano, Bernard
+bonaventure :: Bonaventure
+boole :: Boole, George
+bosanquet :: Bosanquet, Bernard
+boundary :: boundary
+bounded-rationality :: bounded rationality
+boyle :: Boyle, Robert
+bradley :: Bradley, Francis Herbert
+branching-time :: branching time
+brentano :: Brentano, Franz
+aesthetics-18th-british :: British, in the 18th century
+broad :: Broad, Charlie Dunbar
+brouwer :: Brouwer, Luitzen Egbertus Jan
+bruno :: Bruno, Giordano
+buber :: Buber, Martin
+buddha :: Buddha
+buridan :: Buridan, John [Jean]
+burke :: Burke, Edmund
+burley :: Burley [Burleigh], Walter
+ethics-business :: business
+knowledge-acquaindescrip :: by acquaintance vs. description
+byzantine-philosophy :: Byzantine Philosophy
+cambridge-platonists :: Cambridge Platonists
+campanella :: Campanella, Tommaso
+camus :: Camus, Albert
+cancer :: cancer
+capability-approach :: capability approach
+cardano :: Cardano, Girolamo [Geronimo]
+carnap :: Carnap, Rudolf
+carneades :: Carneades
+cassirer :: Cassirer, Ernst
+aristotle-categories :: categories
+categories :: categories
+category-mistakes :: category mistakes
+category-theory :: category theory
+decision-causal :: causal
+causal-models :: causal models
+content-causal :: causal theories of
+aristotle-causality :: causality
+margaret-cavendish :: Cavendish, Margaret Lucas
+cell-biology :: cell biology, philosophy of
+cellular-automata :: cellular automata
+certainty :: certainty
+realism-sem-challenge :: challenges to metaphysical
+chaos :: chaos
+moral-character :: character, moral
+emilie-du-chatelet :: Châtelet, Émilie du
+walter-chatton :: Chatton, Walter
+chemistry :: chemistry, philosophy of
+childhood :: childhood, the philosophy of
+children :: children, philosophy for
+chinese-phil-medicine :: Chinese medicine
+chinese-painting-calligraphy :: Chinese Philosophy: aesthetics, painting and calligraphy
+buddhism-chan :: Chinese Philosophy: Chan Buddhism
+ethics-chinese :: Chinese Philosophy: ethics
+buddhism-huayan :: Chinese Philosophy: Huayan Buddhism
+chinese-change :: Chinese Philosophy: philosophy of change
+buddhism-tiantai :: Chinese Philosophy: Tiantai Buddhism
+chinese-room :: Chinese room argument
+chisholm :: Chisholm, Roderick
+axiom-choice :: choice, axiom of
+dynamic-choice :: choice, dynamic
+christiantheology-philosophy :: Christian theology, philosophy and
+church-turing :: Church-Turing Thesis
+church :: Church, Alonzo
+type-theory-church :: Church’s type theory
+cicero :: Cicero
+citizenship :: citizenship
+civic-education :: civic education
+humanism-civic :: civic humanism
+civil-disobedience :: civil disobedience
+civil-rights :: civil rights
+clarke :: Clarke, Samuel
+logic-classical :: classical
+clauberg :: Clauberg, Johannes
+climate-science :: climate science
+cloning :: cloning
+cockburn :: Cockburn, Catharine Trotter
+coercion :: coercion
+cognition-animal :: cognition
+cognitive-disability :: cognitive disability and moral status
+cognitive-science :: cognitive science
+moral-cognitivism :: cognitivism vs. non-cognitivism, moral
+cohen :: Cohen, Hermann
+truth-coherence :: coherence theory of
+justep-coherence :: coherentist theories of
+qm-collapse :: collapse theories
+collective-intentionality :: collective
+collective-responsibility :: collective
+collingwood :: Collingwood, Robin George
+collingwood-aesthetics :: Collingwood, Robin George: aesthetics
+collins :: Collins, Anthony
+colonialism :: colonialism
+color :: color
+logic-combinatory :: combinatory
+logic-combining :: combining
+common-good :: common good
+common-ground-pragmatics :: common ground in pragmatics
+common-knowledge :: common knowledge
+animal-communication :: communication
+communitarianism :: communitarianism
+comparative-cognition :: comparative cognition, methods in
+religion-comparative :: comparative philosophy of
+comparphil-chiwes :: comparative philosophy: Chinese and Western
+compatibilism :: compatibilism
+compositionality :: compositionality
+computability :: computability and complexity
+computational-complexity :: computational complexity theory
+computational-philosophy :: computational philosophy
+computer-science :: computer science, philosophy of
+comte :: Comte, Auguste
+evolution-before-darwin :: concept before Darwin
+concept-evil :: concept of
+concept-religion :: concept of
+concept-emotion-india :: concept of emotion
+concepts :: concepts
+kant-conceptualism :: conceptualism/nonconceptualism
+condemnation :: condemnation of 1277
+condillac :: Condillac, Étienne Bonnot de
+conditionals :: conditionals
+confirmation :: confirmation
+confucius :: Confucius
+connectionism :: connectionism
+logic-connexive :: connexive
+conscience :: conscience
+consciousness-animal :: consciousness
+consciousness :: consciousness
+consequence-medieval :: consequence, medieval theories of
+consequentialism :: consequentialism
+consequentializing :: consequentializing
+conservation-biology :: conservation biology
+conservatism :: conservatism
+qm-consistent-histories :: consistent histories approach
+constitutionalism :: constitutionalism
+mathematics-constructive :: constructive
+set-theory-constructive :: constructive and intuitionistic ZF
+constructive-empiricism :: constructive empiricism
+africana-contemporary :: contemporary
+contractarianism-contemporary :: contemporary approaches to
+contextualism-epistemology :: contextualism, epistemic
+femapproach-continental :: continental philosophy
+continuity :: continuity and infinitesimals
+contract-law :: contract law, philosophy of
+contractarianism :: contractarianism
+contractualism :: contractualism
+contradiction :: contradiction
+dedekind-foundations :: contributions to the foundations of mathematics
+frege-hilbert :: controversy with Hilbert
+convention :: convention
+spacetime-convensimul :: conventionality of simultaneity
+conway :: Conway, Lady Anne
+anna-julia-cooper :: Cooper, Anna Julia
+qm-copenhagen :: Copenhagen interpretation of
+copernicus :: Copernicus, Nicolaus
+cordemoy :: Cordemoy, Géraud de
+bohr-correspondence :: correspondence principle
+truth-correspondence :: correspondence theory of
+corruption :: corruption
+cosmological-argument :: cosmological argument
+cosmology :: cosmology, philosophy of
+cosmopolitanism :: cosmopolitanism
+counterfactuals :: counterfactual
+causation-counterfactual :: counterfactual theories of
+crathorn :: Crathorn, William
+plato-cratylus :: Cratylus
+creation-conservation :: creation and conservation
+creationism :: creationism
+creativity :: creativity
+crescas :: Crescas, Hasdai
+criminal-law :: criminal law, theories of
+disability-critical :: critical disability theory
+critical-phil-race :: critical philosophy of race
+critical-theory :: critical theory
+critical-thinking :: critical thinking
+kant-metaphysics :: critique of metaphysics
+croce-aesthetics :: Croce, Benedetto: aesthetics
+alexander-crummell :: Crummell, Alexander
+cudworth :: Cudworth, Ralph
+cugoano :: Cugoano, Ottobah
+ethics-cultural-heritage :: cultural heritage, ethics of
+culture :: culture
+curry-paradox :: Curry’s paradox
+cusanus :: Cusanus, Nicolaus [Nicolas of Cusa]
+cyrenaics :: Cyrenaics
+dai-zhen :: Dai Zhen
+peter-damian :: Damian, Peter
+dance :: dance, philosophy of
+dante :: Dante Alighieri
+daoism :: Daoism
+darwinism :: Darwinism
+david :: David
+davidson :: Davidson, Donald
+aristotle-de-motu :: De Motu Animalium
+death :: death
+death-definition :: death: definition of
+decision-theory :: decision theory
+decision-capacity :: decision-making capacity
+deductivism-mathematics :: deductivism in the philosophy of mathematics
+defaults-semantics-pragmatics :: defaults in semantics and pragmatics
+definitions :: definitions
+disability :: definitions and models
+truth-deflationary :: deflationism about
+dehumanization :: dehumanization
+deleuze :: Deleuze, Gilles
+delmedigo :: Delmedigo, Elijah
+delusion :: delusion
+democracy :: democracy
+democritus :: Democritus
+logic-deontic :: deontic
+mally-deontic :: deontic logic
+logic-dependence :: dependence
+dependence-ontological :: dependence, ontological
+depiction :: depiction
+derrida :: Derrida, Jacques
+descartes :: Descartes, René
+descriptions :: descriptions
+decision-theory-descriptive :: descriptive
+desert :: desert
+desgabets :: Desgabets, Robert
+desire :: desire
+determinate-determinables :: determinates and determinables
+determinism-causal :: determinism: causal
+biology-developmental :: developmental biology
+dewey :: Dewey, John
+dewey-aesthetics :: Dewey, John: aesthetics
+dharmakiirti :: Dharmakīrti
+dialectical-school :: Dialectical School
+dialetheism :: dialetheism
+logic-dialogical :: dialogical
+diderot :: Diderot, Denis
+dietrich-freiberg :: Dietrich of Freiberg
+digital-art :: digital art, philosophy of
+dignity :: dignity
+dilthey :: Dilthey, Wilhelm
+diodorus-cronus :: Diodorus Cronus
+dirty-hands :: dirty hands, the problem of
+disagreement :: disagreement
+discourse-representation-theory :: discourse representation theory
+discrimination :: discrimination
+disjunction :: disjunction
+dispositions :: dispositions
+doing-allowing :: doing vs. allowing harm
+domination :: domination
+gametes-donation-sale :: donation and sale of human eggs and sperm
+organ-donation :: donation of human organs
+double-consciousness :: double consciousness
+double-effect :: double effect, doctrine of
+frederick-douglass :: Douglass, Frederick
+doxastic-voluntarism :: doxastic voluntarism
+doxography-ancient :: doxography of ancient philosophy
+dreams-dreaming :: dreams and dreaming
+dubois :: Du Bois, W.E.B.
+du-bos :: Du Bos, Jean-Baptiste
+dualism :: dualism
+duhem :: Duhem, Pierre
+duns-scotus :: Duns Scotus, John
+dutch-book :: Dutch book arguments
+early-modern-india :: Early Modern India, analytic philosophy in
+genrel-early :: early philosophical interpretations of
+ecology :: ecology
+biodiversity :: ecology: biodiversity
+economic-democracy :: economic
+legal-econanalysis :: economic analysis of law
+economic-justice :: economics [normative] and economic justice
+education-philosophy :: education, philosophy of
+edwards :: Edwards, Jonathan
+egalitarianism :: egalitarianism
+egoism :: egoism
+ehrenfels :: Ehrenfels, Christian von
+elias :: Elias
+materialism-eliminative :: eliminative
+elisabeth-bohemia :: Elisabeth, Princess of Bohemia
+embodied-cognition :: embodied
+properties-emergent :: emergent properties
+emerson :: Emerson, Ralph Waldo
+emotion :: emotion
+emotions-17th18th :: emotion: 17th and 18th century theories of
+emotions-chinese :: emotions in early Chinese Philosophy
+empathy :: empathy
+empedocles :: Empedocles
+altruism-empirical :: empirical approaches
+moral-character-empirical :: empirical approaches
+moral-psych-emp :: empirical approaches
+enlightenment :: Enlightenment
+environmental-aesthetics :: environmental
+ethics-environmental :: environmental
+feminism-environmental :: environmental philosophy
+envy :: envy
+epictetus :: Epictetus
+epicurus :: Epicurus
+epiphenomenalism :: epiphenomenalism
+episteme-techne :: episteme and techne [= scientific knowledge and expertise]
+logic-epistemic :: epistemic
+closure-epistemic :: epistemic closure
+epistemic-game :: epistemic foundations of
+epistemic-paradoxes :: epistemic paradoxes
+epistemic-utility :: epistemic utility arguments for epistemic norms
+memory-episprob :: epistemological problems of
+testimony-episprob :: epistemological problems of
+chinese-epistemology :: epistemology
+descartes-epistemology :: epistemology
+epistemology :: epistemology
+spinoza-epistemology-mind :: epistemology and philosophy of mind
+epistemology-geometry :: epistemology of
+religion-epistemology :: epistemology of
+formal-epistemology :: epistemology, formal
+epsilon-calculus :: epsilon calculus
+equality :: equality
+equivME :: equivalence of mass and energy
+erasmus :: Erasmus, Desiderius
+ergodic-hierarchy :: ergodic hierarchy
+scottus-eriugena :: Eriugena, John Scottus
+erotic-art :: erotic
+arabic-islamic-essence :: essence and existence
+essential-accidental :: essential vs. accidental properties
+eternity :: eternity, in Christian thought
+african-ethics :: ethics
+aristotle-ethics :: ethics
+descartes-ethics :: ethics
+leibniz-ethics :: ethics
+plato-ethics :: ethics
+reid-ethics :: ethics
+plato-ethics-politics :: ethics and politics in The Republic
+ethics-ai :: ethics of
+chimeras :: ethics, biomedical: chimeras, human/non-human
+clinical-research :: ethics, biomedical: clinical research
+ethics-ancient :: ethics: ancient
+ethics-deontological :: ethics: deontological
+ethics-indian-buddhism :: ethics: in Indian Buddhism
+eugenics :: eugenics
+events :: events
+qm-everett :: Everettian
+evidence :: evidence
+higher-order-evidence :: evidence, higher-order
+evolution :: evolution
+evolution-development :: evolution and development
+evolution-cultural :: evolution: cultural
+origin-descent :: evolution: from the Origin of Species to the Descent of Man
+epistemology-evolutionary :: evolutionary
+existence :: existence
+existentialism :: existentialism
+aesthetics-existentialist :: existentialist
+leibniz-exoteric :: Exoteric Philosophy
+perception-justification :: experience and justification
+biology-experiment :: experiment in
+experimental-moral :: experimental moral philosophy
+experimental-philosophy :: experimental philosophy
+experimental-aesthetics :: experimental philosophy of
+exploitation :: exploitation
+content-externalism :: externalism about the mind
+facts :: facts
+algorithmic-fairness :: fairness: algorithmic
+faith :: faith
+falaquera :: Falaquera, Shem Tov Ibn
+fallacies :: fallacies
+frantz-fanon :: Fanon, Frantz
+fatalism :: fatalism
+fechner :: Fechner, Gustav Theodor
+federalism :: federalism
+feigl :: Feigl, Herbert
+margaret-fell :: Fell, Margaret
+feminist-philosophy :: feminist philosophy
+feminism-aesthetics :: feminist philosophy, interventions: aesthetics
+feminism-epistemology :: feminist philosophy, interventions: epistemology and philosophy of science
+feminism-ethics :: feminist philosophy, interventions: ethics
+feminist-philosophy-biology :: feminist philosophy, interventions: philosophy of biology
+feminist-social-epistemology :: feminist philosophy, interventions: social epistemology
+feminism-disability :: feminist philosophy, topics: perspectives on disability
+ludwig-feuerbach :: Feuerbach, Ludwig Andreas
+feyerabend :: Feyerabend, Paul
+johann-fichte :: Fichte, Johann Gottlieb
+ficino :: Ficino, Marsilio
+fiction :: fiction
+fiction-emotion-response :: fiction: emotional responses to
+fictional-entities :: fictional entities
+fictionalism :: fictionalism
+fideism :: fideism
+film :: film, philosophy of
+findlay :: Findlay, J.N.
+fine-tuning :: fine-tuning
+geometry-finitism :: finitism in
+modeltheory-fo :: first-order
+logic-firstorder-emergence :: first-order logic
+fitch-paradox :: Fitch’s paradox of knowability
+fitness :: fitness
+fitting-attitude-theories :: fitting attitude theories of value
+fitzralph :: FitzRalph, Richard
+fleck :: Fleck, Ludwik
+philippa-foot :: Foot, Philippa
+logic-power-games :: for analyzing power in normal form games
+forgiveness :: forgiveness
+form-matter :: form vs. matter
+foucault :: Foucault, Michel
+frame-problem :: frame problem
+francis-marchia :: Francis of Marchia
+logic-free :: free
+free-rider :: free rider problem
+freewill :: free will
+free-will-foreknowledge :: free will: divine foreknowledge and
+freedom-ancient :: freedom: ancient theories of
+divine-freedom :: freedom: divine
+frege :: Frege, Gottlob
+aesthetics-18th-french :: French, in the 18th century
+friendship :: friendship
+plato-friendship :: friendship and eros
+fuller-margaret :: Fuller, Margaret
+functionalism :: functionalism
+fundamentality :: fundamentality
+future-contingents :: future contingents
+logic-fuzzy :: fuzzy
+gadamer :: Gadamer, Hans-Georg
+gadamer-aesthetics :: Gadamer, Hans-Georg: aesthetics
+galen :: Galen
+galileo :: Galileo Galilei
+game-theory :: game theory
+game-evolutionary :: game theory: evolutionary
+gangesa :: Gaṅgeśa
+gassendi :: Gassendi, Pierre
+gauge-theories :: gauge theories in physics
+gelukpa :: Gelukpa [dge lugs pa]
+confucian-gender :: gender in Confucian philosophy
+gene :: gene
+generalized-quantifiers :: generalized quantifiers
+generics :: generic generalizations
+genetic-drift :: genetic drift
+genetics :: genetics
+ecological-genetics :: genetics: ecological
+genomics :: genomics and postgenomics
+genotype-phenotype :: genotype/phenotype distinction
+george-eliot :: George, Eliot
+aesthetics-18th-german :: German, in the 18th century
+gersonides :: Gersonides
+giles :: Giles of Rome
+global-democracy :: global
+globalization :: globalization
+goedel :: Gödel, Kurt
+godfrey :: Godfrey of Fontaines
+godwin :: Godwin, William
+goodman :: Goodman, Nelson
+goodman-aesthetics :: Goodman, Nelson: aesthetics
+perfect-goodness :: goodness, perfect
+gorampa :: Gorampa [go rams pa]
+typelogical-grammar :: grammar: typelogical
+gramsci :: Gramsci, Antonio
+gratitude :: gratitude
+arabic-islamic-greek :: Greek sources
+green :: Green, Thomas Hill
+gregory-rimini :: Gregory of Rimini
+grice :: Grice, Paul
+grosseteste :: Grosseteste, Robert
+grotius :: Grotius, Hugo
+grounding :: grounding, metaphysical
+habermas :: Habermas, Jürgen
+haecceitism :: haecceitism
+halevi :: Halevi, Judah
+hamann :: Hamann, Johann Georg
+han-dynasty :: Han Dynasty
+happiness :: happiness
+hare :: Hare, Richard Mervyn
+hartley :: Hartley, David
+nicolai-hartmann :: Hartmann, Nicolai
+hartshorne :: Hartshorne, Charles
+hate-speech :: hate speech
+friedrich-hayek :: Hayek, Friedrich
+health-disease :: health
+heaven-hell :: heaven and hell in Christian thought
+hedonism :: hedonism
+hegel :: Hegel, Georg Wilhelm Friedrich
+hegel-aesthetics :: Hegel, Georg Wilhelm Friedrich: aesthetics
+hegel-dialectics :: Hegel, Georg Wilhelm Friedrich: dialectics
+heidegger :: Heidegger, Martin
+heidegger-aesthetics :: Heidegger, Martin: aesthetics
+hermann-helmholtz :: Helmholtz, Hermann von
+hempel :: Hempel, Carl
+henry-ghent :: Henry of Ghent
+michel-henry :: Henry, Michel
+heraclitus :: Heraclitus
+johann-herbart :: Herbart, Johann Friedrich
+herder :: Herder, Johann Gottfried von
+heritability :: heritability
+hermeneutics :: hermeneutics
+heytesbury :: Heytesbury, William
+divine-hiddenness :: hiddenness of God
+consciousness-higher :: higher-order theories
+innateness-history :: historical controversies
+rationality-historicist :: historicist theories of
+utilitarianism-history :: history of
+feminism-femhist :: history of philosophy
+hist-westphilmusic-to-1800 :: history of western philosophy of, antiquity to 1800
+hist-westphilmusic-since-1800 :: history of western philosophy of, since 1800
+history :: history, philosophy of
+hobbes :: Hobbes, Thomas
+holbach :: Holbach, Paul-Henri Thiry (Baron) d’
+holes :: holes
+physics-holism :: holism and nonseparability
+holkot :: Holkot [Holcot], Robert
+homosexuality :: homosexuality
+sidney-hook :: Hook, Sidney
+hope :: hope
+horkheimer :: Horkheimer, Max
+enhancement :: human enhancement
+human-genome :: human genome project
+human-nature :: human nature
+alexander-humboldt :: Humboldt, Alexander von
+wilhelm-humboldt :: Humboldt, Wilhelm von
+hume :: Hume, David
+hume-aesthetics :: Hume, David: aesthetics
+humor :: humor, philosophy of
+husserl :: Husserl, Edmund
+hutcheson :: Hutcheson, Francis
+hyperintensionality :: hyperintensionality
+iamblichus :: Iamblichus
+ibn-arabi :: Ibn ‘Arabī
+ibn-bajja :: Ibn Bâjja [Avempace]
+abraham-daud :: Ibn Daud, Abraham
+ibn-ezra :: Ibn Ezra, Abraham
+ibn-gabirol :: Ibn Gabirol, Solomon
+ibn-kammuna :: Ibn Kammūna
+ibn-rushd :: Ibn Rushd
+ibn-rushd-natural :: Ibn Rushd: natural philosophy
+ibn-sina :: Ibn Sina
+ibn-sina-logic :: Ibn Sina: logic
+ibn-sina-metaphysics :: Ibn Sina: metaphysics
+ibn-sina-natural :: Ibn Sina: natural philosophy
+ibn-taymiyya :: Ibn Taymiyya
+idealism :: idealism
+identity :: identity
+qt-idind :: identity and individuality in
+identity-politics :: identity politics
+truth-identity :: identity theory of
+ideology :: ideology
+idiolects :: idiolects
+ikhwan-al-safa :: Ikhwān al-Safā’
+illumination :: illumination
+imagination :: imagination
+imaginative-resistance :: imaginative resistance
+immigration :: immigration
+immunology :: immunology, philosophy of
+immutability :: immutability
+impartiality :: impartiality
+implicature :: implicature
+impossible-worlds :: impossible worlds
+intentionality-ancient :: in ancient philosophy
+arabic-islamic-causation :: in Arabic and Islamic thought
+aesthetics-critical-theory :: in critical theory
+economics-early-modern :: in early modern philosophy
+supervenience-ethics :: in ethics
+realism-intl-relations :: in international relations
+epistemology-latin-america :: in Latin America
+bioethics-latin-america :: in Latin American
+lawphil-naturalism :: in legal philosophy
+constructivism-metaethics :: in metaethics
+nominalism-metaphysics :: in metaphysics
+platonism :: in metaphysics
+autonomy-moral :: in moral and political philosophy
+situations-semantics :: in natural language semantics
+computation-physicalsystems :: in physical systems
+causation-physics :: in physics
+constructivism-political :: in political philosophy
+measurement-science :: in science
+18thGerman-preKant :: in the 18th century, prior to Kant
+geometry-19th :: in the 19th century
+emotion-Christian-tradition :: in the Christian tradition
+histfem-condorcet :: in the history of feminism
+causation-law :: in the law
+aristotelianism-renaissance :: in the Renaissance
+natphil-ren :: in the Renaissance
+incompatibilism-theories :: incompatibilism: (nondeterministic) theories of free will
+goedel-incompleteness :: incompleteness theorems
+mathematics-inconsistent :: inconsistent
+independence-large-cardinals :: independence and large cardinals
+logic-if :: independence friendly
+indexicals :: indexicals
+epistemology-india :: Indian Philosophy (Classical): epistemology
+mathphil-indis :: indispensability arguments in the
+methodological-individualism :: individualism, methodological
+logic-infinitary :: infinitary
+infinite-regress :: infinite regress arguments
+infinity :: infinity
+arabic-islamic-judaic :: influence of Arabic and Islamic Philosophy on Judaic thought
+arabic-islamic-influence :: influence of Arabic and Islamic Philosophy on the Latin West
+leibniz-logic-influence :: influence on 19th century logic
+luther-influence :: influence on philosophy
+information :: information
+information-entropy :: information processing: and thermodynamic entropy
+ethics-it-phenomenology :: information technology: phenomenological approaches to ethics and
+information-biological :: information: biological
+informed-consent :: informed consent
+ingarden :: Ingarden, Roman
+inheritance-systems :: inheritance systems
+innate-acquired :: innate/acquired distinction
+inner-speech :: inner speech
+insolubles :: insolubles [= insolubilia]
+integrity :: integrity
+intellectual-property :: intellectual
+logic-intensional :: intensional
+intensional-trans-verbs :: intensional transitive verbs
+intention :: intention
+intentionality :: intentionality
+justice-intergenerational :: intergenerational
+justep-intext :: internalist vs. externalist conceptions of
+international-law :: international law, philosophy of
+ethics-internet-research :: internet research
+legal-reas-interpret :: interpretation and coherence in
+law-interpretivist :: interpretivist theories
+femapproach-analy-cont :: intersections between analytic and continental philosophy
+femapproach-prag-cont :: intersections between pragmatist and continental philosophy
+physics-interrelate :: intertheory relations in
+value-intrinsic-extrinsic :: intrinsic vs. extrinsic
+intrinsic-extrinsic :: intrinsic vs. extrinsic properties
+introspection :: introspection
+intuition :: intuition
+israeli :: Israeli, Isaac
+john-italos :: Italos, John
+friedrich-jacobi :: Jacobi, Friedrich Heinrich
+jaina-philosophy :: Jaina Philosophy
+james-viterbo :: James of Viterbo
+james :: James, William
+japanese-philosophy :: Japanese Philosophy
+japanese-aesthetics :: Japanese Philosophy: aesthetics
+japanese-confucian :: Japanese Philosophy: Confucian
+japanese-zen :: Japanese Philosophy: Zen Buddhism
+jaspers :: Jaspers, Karl
+jayaraasi :: Jayarāśi
+jefferson :: Jefferson, Thomas
+william-jevons :: Jevons, William Stanley
+john-salisbury :: John of Salisbury
+emily-elizabeth-constance-jones :: Jones, Emily Elizabeth Constance
+experimental-jurisprudence :: jurisprudence, experimental
+jury-theorems :: jury theorems
+justice :: justice
+justice-healthcareaccess :: justice and access to health care
+justice-inequality-health :: justice, inequality, and health
+justice-climate :: justice: climate
+justice-distributive :: justice: distributive
+justice-global :: justice: global
+international-justice :: justice: international distributive
+logic-justification :: justification
+justep-foundational :: justification, epistemic: foundationalist theories of
+kant :: Kant, Immanuel
+kant-hume-causality :: Kant, Immanuel: and Hume on causality
+kant-hume-morality :: Kant, Immanuel: and Hume on morality
+kaspi-joseph :: Kaspi, Joseph
+kepler :: Kepler, Johannes
+kierkegaard :: Kierkegaard, Søren
+kilvington :: Kilvington, Richard
+robert-kilwardby :: Kilwardby, Robert
+evil-kinds-origins :: kinds and origins
+qualia-knowledge :: knowledge argument
+knowledge-how :: knowledge how
+knowledge-value :: knowledge, value of
+kokugaku-school :: Kokugaku School [Native Japan Studies School]
+korean-philosophy :: Korean Philosophy
+korean-buddhism :: Korean Philosophy: Buddhism
+korean-confucianism :: Korean Philosophy: Confucianism
+thomas-kuhn :: Kuhn, Thomas
+kukai :: Kūkai
+kumaarila :: Kumārila
+kyoto-school :: Kyoto School
+la-forge :: La Forge, Louis de
+lacan :: Lacan, Jacques
+lakatos :: Lakatos, Imre
+lambda-calculus :: lambda calculus, the
+lambert-auxerre :: Lambert of Auxerre
+landmann-kalischer :: Landmann-Kalischer, Edith
+friedrich-lange :: Lange, Friedrich Albert
+language-india :: language and testimony
+language-thought :: language of thought hypothesis
+laozi :: Laozi
+feminism-latin-america :: Latin American feminism
+latin-american-philosophy :: Latin American Philosophy
+latinx :: Latinx Philosophy
+law-ideology :: law: and ideology
+plato-laws :: Laws
+laws-of-nature :: laws of nature
+ceteris-paribus :: laws of nature: ceteris paribus
+legrand :: Le Grand, Antoine
+learning-formal :: learning theory, formal
+perceptual-learning :: learning, perceptual
+lefevre-etaples :: Lefèvre d’Étaples, Jacques
+legal-interpretation :: legal interpretation
+legal-obligation :: legal obligation and authority
+legal-probabilism :: legal probabilism
+legal-rights :: legal rights
+chinese-legalism :: legalism in
+legitimacy :: legitimacy, political
+leibniz :: Leibniz, Gottfried Wilhelm
+leibowitz-yeshayahu :: Leibowitz, Yeshayahu
+lesniewski :: Leśniewski, Stanisław
+leucippus :: Leucippus
+levels-org-biology :: levels of organization in biology
+levinas :: Levinas, Emmanuel
+lewis-ci :: Lewis, Clarence Irving
+david-lewis :: Lewis, David
+liar-paradox :: liar paradox
+feminism-liberal :: liberal feminism
+liberalism :: liberalism
+liberalism-latin-america :: liberalism: in Latin America
+liberation :: liberation, philosophy of
+libertarianism :: libertarianism
+liberty-positive-negative :: liberty: positive and negative
+life :: life
+descartes-works :: life and works
+nietzsche-life-works :: life and works
+law-limits :: limits of law
+computational-linguistics :: linguistics: computational
+justus-lipsius :: Lipsius, Justus
+literal-nonliteral-india :: literal-nonliteral distinction
+medieval-literary :: literary forms of
+llull :: Llull, Ramon
+location-mereology :: location and mereology
+alain-locke :: Locke, Alain LeRoy
+locke :: Locke, John
+real-essence :: Locke, John: on real essence
+aristotle-logic :: logic
+bolzano-logic :: logic
+frege-logic :: logic
+logic-india :: logic
+peirce-logic :: logic
+chinese-logic-language :: logic and language in Early Chinese Philosophy
+logic-ai :: logic-based
+intuitionistic-logic-development :: logic, history of: intuitionistic logic
+logic-action :: logic: action
+logic-games :: logic: and games
+logic-information :: logic: and information
+logic-conditionals :: logic: conditionals
+dynamic-epistemic :: logic: dynamic epistemic
+logics-for-games :: logic: for analyzing games
+logic-hybrid :: logic: hybrid
+logic-inductive :: logic: inductive
+logic-informal :: logic: informal
+logic-intuitionistic :: logic: intuitionistic
+logic-linear :: logic: linear
+logical-empiricism :: logical
+logical-consequence :: logical consequence
+logical-constants :: logical constants
+logical-construction :: logical constructions
+logical-form :: logical form
+logical-pluralism :: logical pluralism
+logical-truth :: logical truth
+logicism :: logicism and neologicism
+hermann-lotze :: Lotze, Hermann
+love :: love
+loyalty :: loyalty
+justice-bad-luck :: luck: justice and bad luck
+lucretius :: Lucretius
+lukacs :: Lukács, Georg [György]
+lukasiewicz :: Łukasiewicz, Jan
+luther :: Luther, Martin
+luxemburg :: Luxemburg, Rosa
+lvov-warsaw :: Lvov-Warsaw School
+lying-definition :: lying and deception: definition of
+lyotard :: Lyotard, Jean François
+catharine-macaulay :: Macaulay, Catharine
+ernst-mach :: Mach, Ernst
+machiavelli :: Machiavelli, Niccolò
+macroevolution :: macroevolution, philosophy of
+madhyamaka :: Madhyamaka
+maimon :: Maimon, Salomon
+maimonides :: Maimonides
+malebranche :: Malebranche, Nicolas
+mally :: Mally, Ernst
+mandeville :: Mandeville, Bernard
+ethics-manipulation :: manipulation, ethics of
+logic-many-sorted :: many-sorted
+logic-manyvalued :: many-valued
+qm-manyworlds :: many-worlds interpretation of
+problem-of-many :: many, problem of
+marcel :: Marcel, Gabriel (-Honoré)
+marcus-aurelius :: Marcus Aurelius
+ruth-barcan-marcus :: Marcus, Ruth Barcan
+marcuse :: Marcuse, Herbert
+lucrezia-marinella :: Marinella, Lucrezia
+maritain :: Maritain, Jacques
+markets :: markets
+marriage :: marriage and domestic partnership
+marsilius-inghen :: Marsilius of Inghen
+marsilius-padua :: Marsilius of Padua
+marty :: Marty, Anton
+marx :: Marx, Karl
+marxism-analytical :: Marxism, analytical
+lady-masham :: Masham, Lady Damaris
+logic-massexpress :: mass expressions: logic of
+material-constitution :: material constitution
+mathematical-practice :: mathematical practice
+mathematics-explanation :: mathematical: explanation
+aristotle-mathematics :: mathematics
+descartes-mathematics :: mathematics
+philosophy-mathematics :: mathematics, philosophy of
+fictionalism-mathematics :: mathematics, philosophy of: fictionalism
+formalism-mathematics :: mathematics, philosophy of: formalism
+intuitionism :: mathematics, philosophy of: intuitionism
+mctaggart :: McTaggart, John M. E.
+mead :: Mead, George Herbert
+meaning-holism :: meaning holism
+life-meaning :: meaning of
+meaning :: meaning, theories of
+science-mechanisms :: mechanism in science
+medicine :: medicine, philosophy of
+mereology-medieval :: medieval
+semiotics-medieval :: medieval
+skepticism-medieval :: medieval
+medieval-philosophy :: medieval philosophy
+analogy-medieval :: medieval theories of
+medieval-categories :: medieval theories of
+causation-medieval :: medieval theories of
+conscience-medieval :: medieval theories of
+demonstration-medieval :: medieval theories of
+medieval-emotions :: medieval theories of
+medieval-futcont :: medieval theories of
+medieval-haecceity :: medieval theories of
+meinong :: Meinong, Alexius
+meister-eckhart :: Meister Eckhart
+memory :: memory
+mencius :: Mencius
+mendelssohn :: Mendelssohn, Moses
+mental-causation :: mental causation
+mental-disorder :: mental disorder
+mental-imagery :: mental imagery
+mental-representation :: mental representation
+representation-medieval :: mental representation: in medieval philosophy
+mereology :: mereology
+meritocracy :: meritocracy
+merleau-ponty :: Merleau-Ponty, Maurice
+mersenne :: Mersenne, Marin
+metaepistemology :: metaepistemology
+metaethics :: metaethics
+normativity-metaethics :: metaethics, normativity in
+latin-american-metaphilosophy :: metaphilosophical foundations
+metaphor :: metaphor
+metaphysical-explanation :: metaphysical explanation
+al-farabi-metaphysics :: metaphysics
+arabic-islamic-metaphysics :: metaphysics
+aristotle-metaphysics :: metaphysics
+chinese-metaphysics :: metaphysics
+feminism-metaphysics :: metaphysics
+lewis-metaphysics :: metaphysics
+metaphysics :: metaphysics
+metaphysics-massexpress :: metaphysics of
+descartes-method :: method
+plato-sophstate :: method and metaphysics in the Sophist and Statesman
+cosmology-30s :: methodological debates in the 1930s and 1940s
+holism-social :: methodological holism in the social sciences
+voting-methods :: methods
+existentialism-mexican :: Mexican
+microbiology :: microbiology, philosophy of
+harriet-mill :: Mill, Harriet Taylor
+james-mill :: Mill, James
+mill :: Mill, John Stuart
+chinese-mind :: mind (heart-mind)
+computational-mind :: mind: computational theory of
+mind-indian-buddhism :: mind: in Indian Buddhist Philosophy
+mind-identity :: mind/brain identity theory
+miracles :: miracles
+fictionalism-modal :: modal
+logic-modal :: modal
+qm-modal :: modal interpretations of
+logic-modal-origins :: modal logic
+descartes-modal :: modal metaphysics
+leibniz-modal :: modal metaphysics
+modality-epistemology :: modality: epistemology of
+modality-medieval :: modality: medieval theories of
+model-theory :: model theory
+agent-modeling-philscience :: modeling in the philosophy of science, agent-based
+models-science :: models in science
+confucianism-modern :: Modern Confucianism
+computing-history :: modern history of
+modesty-humility :: modesty and humility
+modularity-mind :: modularity of
+mohism :: Mohism
+mohist-canons :: Mohist Canons
+molecular-genetics :: molecular
+molecular-biology :: molecular biology
+molyneux-problem :: Molyneux’s problem
+money-finance :: money and finance, philosophy of
+monism :: monism
+monotheism :: monotheism
+montague-semantics :: Montague
+montaigne :: Montaigne, Michel de
+montesquieu :: Montesquieu, Charles-Louis de Secondat, Baron de
+montessori-maria :: Montessori, Maria
+moore :: Moore, George Edward
+moral-luck :: moral
+hobbes-moral :: moral and political philosophy
+mill-moral-political :: moral and political philosophy
+nietzsche-moral-political :: moral and political philosophy
+pufendorf-moral :: moral and political philosophy
+smith-moral-political :: moral and political philosophy
+moral-anti-realism :: moral anti-realism
+moral-arguments-god :: moral arguments
+moral-decision-uncertainty :: moral decision-making under uncertainty
+moral-demands-permissions :: moral demands and permissions/prerogatives
+moral-dilemmas :: moral dilemmas
+disagreement-moral :: moral disagreement
+moral-epistemology :: moral epistemology
+moral-epistemology-a-priori :: moral epistemology: a priorism in
+intuitionism-ethics :: moral intuitionism
+moral-motivation :: moral motivation
+moral-non-naturalism :: moral non-naturalism
+moral-particularism :: moral particularism
+moral-particularism-generalism :: moral particularism: and moral generalism
+bradley-moral :: moral philosophy
+butler-moral :: moral philosophy
+dewey-moral :: moral philosophy
+hume-moral :: moral philosophy
+kant-moral :: moral philosophy
+locke-moral :: moral philosophy
+moore-moral :: moral philosophy
+russell-moral :: moral philosophy
+feminism-moralpsych :: moral psychology
+moral-realism :: moral realism
+moral-relativism :: moral relativism
+moral-responsibility :: moral responsibility
+moral-responsibility-empirical :: moral responsibility: empirical approaches
+moral-sentimentalism :: moral sentimentalism
+skepticism-moral :: moral skepticism
+grounds-moral-status :: moral status, grounds of
+moral-theory :: moral theory
+aquinas-moral-political :: moral, political, and legal philosophy
+moral-conventional :: moral/conventional distinction
+morality-definition :: morality, definition of
+morality-biology :: morality: and evolutionary biology
+henry-more :: More, Henry
+thomas-more :: More, Thomas
+mulla-sadra :: Mulla Sadra
+phil-multimodallogic :: multi-modal logic, philosophical aspects of
+multiculturalism :: multiculturalism
+multiple-realizability :: multiple realizability
+murdoch :: Murdoch, Iris
+arabic-islamic-mysticism :: mysticism
+mysticism :: mysticism
+nagarjuna :: Nāgārjuna
+names :: names
+content-narrow :: narrow
+nationalism :: nationalism
+natorp :: Natorp, Paul
+natural-properties :: natural
+natural-deduction :: natural deduction systems in logic
+natural-kinds :: natural kinds
+natural-law-ethics :: natural law tradition
+aristotle-natphil :: natural philosophy
+arabic-islamic-natural :: natural philosophy and natural science
+natural-selection :: natural selection
+naturalism-india :: naturalism
+naturalism-mathematics :: naturalism
+naturalism :: naturalism
+epistemology-naturalized :: naturalism in
+naturalism-moral :: naturalism: moral
+social-construction-naturalistic :: naturalistic approaches to
+lawphil-nature :: nature of law
+legal-positivism :: nature of law: legal positivism
+natural-law-theories :: nature of law: natural law theories
+necessary-sufficient :: necessary and sufficient conditions
+needs :: needs, in moral and political philosophy
+negation :: negation
+negritude :: Négritude
+neo-daoism :: Neo-Daoism
+neo-kantianism :: neo-Kantianism
+neoliberalism :: neoliberalism
+neoplatonism :: Neoplatonism
+neurath :: Neurath, Otto
+neuroethics :: neuroethics
+consciousness-neuroscience :: neuroscience of
+neuroscience :: neuroscience, philosophy of
+neutral-monism :: neutral monism
+quine-nf :: New Foundations
+newton :: Newton, Isaac
+hume-newton :: Newtonianism and Anti-Newtonianism
+autrecourt :: Nicholas of Autrecourt [de Altricuria, Autricuria, Ultricuria, Autricort]
+nietzsche :: Nietzsche, Friedrich
+nietzsche-aesthetics :: Nietzsche, Friedrich: aesthetics
+nishida-kitaro :: Nishida Kitarō
+nominalism-mathematics :: nominalism
+mathematics-nondeductive :: non-deductive methods in
+logic-nonmonotonic :: non-monotonic
+nonwellfounded-set-theory :: non-wellfounded
+content-nonconceptual :: nonconceptual
+nonexistent-objects :: nonexistent objects
+nonidentity-problem :: nonidentity problem
+psychology-normative-cognition :: normative cognition, psychology of
+logic-normative :: normative status of
+meaning-normativity :: normativity of
+john-norris :: Norris, John
+pm-notation :: notation in
+nothingness :: nothingness
+novalis :: Novalis [Georg Friedrich Philipp von Hardenberg]
+numenius :: Numenius
+oakeshott :: Oakeshott, Michael
+object :: object
+obligationes :: obligationes, medieval theories of
+self-obligations :: obligations to oneself
+occasionalism :: occasionalism
+ockham :: Ockham [Occam], William
+freedom-association :: of association
+logic-belief-revision :: of belief revision
+rights-children :: of children
+equal-ed-opportunity :: of educational opportunity
+identity-indiscernible :: of indiscernibles
+equal-opportunity :: of opportunity
+incommensurability :: of scientific theories
+freedom-speech :: of speech
+phenomenology-mg :: of the Munich and Göttingen Circles
+akan-person :: of the person
+word-meaning :: of words
+olivi :: Olivi, Peter John
+olympiodorus :: Olympiodorus
+omnipotence :: omnipotence
+omnipresence :: omnipresence
+omniscience :: omniscience
+leibniz-causation :: on causation
+hume-freewill :: on free will
+locke-freedom :: on freedom
+plato-theaetetus :: on knowledge in the Theaetetus
+locke-on-medicine :: on medicine
+reid-memory-identity :: on memory and personal identity
+aristotle-noncontradiction :: on non-contradiction
+locke-personal-identity :: on personal identity
+hume-religion :: on religion
+leibniz-evil :: on the problem of evil
+descartes-ontological :: ontological argument
+ontological-arguments :: ontological arguments
+ontological-commitment :: ontological commitment
+art-ontology-history :: ontology of art, history of
+natural-language-ontology :: ontology, natural language
+operationalism :: operationalism
+implicature-optimality-games :: optimality theoretic and game theoretic approaches
+ordinary-objects :: ordinary objects
+nicole-oresme :: Oresme, Nicole
+origen :: Origen
+original-position :: original position
+gasset :: Ortega y Gasset, José
+other-minds :: other minds
+identity-time :: over time
+pacifism :: pacifism
+pain :: pain
+paine :: Paine, Thomas
+panentheism :: panentheism
+panpsychism :: panpsychism
+pantheism :: pantheism
+logic-paraconsistent :: paraconsistent
+paradox-of-tragedy :: paradox of tragedy
+parenthood :: parenthood and procreation
+parmenides :: Parmenides
+plato-parmenides :: Parmenides
+pascal :: Pascal, Blaise
+pascal-wager :: Pascal’s wager
+paternalism :: paternalism
+patriotism :: patriotism
+patrizi :: Patrizi, Francesco
+paul-venice :: Paul of Venice
+peirce-benjamin :: Peirce, Benjamin
+peirce :: Peirce, Charles Sanders
+penbygull :: Penbygull, William
+perception-auditory :: perception: auditory
+perception-episprob :: perception: epistemological problems of
+perception-india :: perceptual experience and concepts
+gomez-pereira :: Pereira, Gómez
+perfectionism-moral :: perfectionism, in moral and political philosophy
+personal-autonomy :: personal
+identity-personal :: personal identity
+identity-ethics :: personal identity: and ethics
+personal-relationship-goods :: personal relationship goods
+personalism :: personalism
+personhood-india :: personhood
+feminism-argumentation :: perspectives on argumentation
+feminism-autonomy :: perspectives on autonomy
+feminism-class :: perspectives on class and work
+feminism-globalization :: perspectives on globalization
+feminism-objectification :: perspectives on objectification
+feminist-power :: perspectives on power
+feminism-rape :: perspectives on rape
+feminism-family :: perspectives on reproduction and the family
+feminist-science :: perspectives on science
+feminism-gender :: perspectives on sex and gender
+feminist-sex-markets :: perspectives on sex markets
+feminist-body :: perspectives on the body
+feminism-self :: perspectives on the self
+feminism-trans :: perspectives on trans issues
+peter-spain :: Peter of Spain [= Petrus Hispanus]
+petitionary-prayer :: petitionary
+joane-petrizi :: Petrizi, Joane
+phenomenal-intentionality :: phenomenal
+self-consciousness-phenomenological :: phenomenological approaches to
+phenomenology :: phenomenology
+phenomenology-religion :: phenomenology of
+moral-phenomenology :: phenomenology: moral
+philanthropy :: philanthropy
+philip-chancellor :: Philip the Chancellor
+philo :: Philo of Alexandria
+philo-larissa :: Philo of Larissa
+philodemus :: Philodemus
+philolaus :: Philolaus
+philoponus :: Philoponus
+newton-principia :: Philosophiae Naturalis Principia Mathematica
+kant-development :: philosophical development
+newton-philosophy :: philosophy
+philosophy-chile :: philosophy in
+philosophy-mexico :: philosophy in
+biology-philosophy :: philosophy of
+economics :: philosophy of
+linguistics :: philosophy of
+music :: philosophy of
+philosophy-religion :: philosophy of
+phil-bio-latin-america :: philosophy of biology: in Latin America
+feminism-language :: philosophy of language
+arabic-islamic-language :: philosophy of language and logic
+feminism-law :: philosophy of law
+al-farabi-logic :: philosophy of logic and language
+arabic-islamic-phil-math :: philosophy of mathematics
+kant-mathematics :: philosophy of mathematics
+leibniz-mind :: philosophy of mind
+leibniz-physics :: philosophy of physics
+arabic-islamic-religion :: philosophy of religion
+feminist-religion :: philosophy of religion
+kant-religion :: philosophy of religion
+einstein-philscience :: philosophy of science
+hobbes-science :: philosophy of science
+kant-science :: philosophy of science
+locke-philosophy-science :: philosophy of science
+phil-science-latin-america :: philosophy of science: in Latin America
+al-farabi-soc-rel :: philosophy of society and religion
+statphys-statmech :: philosophy of statistical mechanics
+phylogenetic-inference :: phylogenetic inference
+spinoza-physics :: physical theory
+physicalism :: physicalism
+descartes-physics :: physics
+physics-experiment :: physics: experiment in
+pico-della-mirandola :: Pico della Mirandola, Giovanni
+gianfrancesco-pico :: Pico della Mirandola, Giovanni Francesco [Gianfrancesco]
+plato :: Plato
+plato-aesthetics :: Plato: aesthetics
+callicles-thrasymachus :: Plato: Callicles and Thrasymachus
+plato-metaphysics :: Plato: middle period metaphysics and epistemology
+plato-myths :: Plato: myths
+platonism-mathematics :: Platonism
+pleasure :: pleasure
+plotinus :: Plotinus
+plural-quant :: plural quantification
+value-pluralism :: pluralism
+truth-pluralist :: pluralist theories of
+plutarch :: Plutarch
+poincare :: Poincaré, Henri
+political-obligation :: political obligation
+dewey-political :: political philosophy
+feminism-political :: political philosophy
+locke-political :: political philosophy
+nozick-political :: political philosophy
+spinoza-political :: political philosophy
+medieval-political :: political philosophy: medieval
+aristotle-politics :: political theory
+polqar :: Polqar, Isaac
+pomponazzi :: Pomponazzi, Pietro
+popper :: Popper, Karl
+population-genetics :: population
+pornography-censorship :: pornography: and censorship
+porphyry :: Porphyry
+port-royal-logic :: Port Royal Logic
+della-porta :: Porta, Giambattista della
+possibilism-actualism :: possibilism-actualism debate
+possible-objects :: possible objects
+possible-worlds :: possible worlds
+postmodernism :: postmodernism
+francois-barre :: Poulain de la Barre, François
+practical-reason :: practical reason
+practical-reason-action :: practical reason: and the structure of actions
+practical-reason-med :: practical reason: medieval theories of
+pragmatic-belief-god :: pragmatic arguments and belief in God
+truth-pragmatic :: pragmatic theory of
+pragmatics :: pragmatics
+femapproach-pragmatism :: pragmatism
+pragmatism :: pragmatism
+legal-reas-prec :: precedent and analogy in
+prediction-accommodation :: prediction versus accommodation
+logic-preference :: preference
+preferences :: preferences
+ethics-pregnancy :: pregnancy, birth, and medicine
+presentism :: presentism
+presocratics :: Presocratic Philosophy
+presupposition :: presupposition
+price :: Price, Henry Habberley
+richard-price :: Price, Richard
+prichard :: Prichard, Harold Arthur
+qualities-prim-sec :: primary and secondary qualities in early modern philosophy
+truth-primitivist :: primitivist theories of
+principia-mathematica :: Principia Mathematica
+alternative-possibilities :: principle of alternative possibilities
+sufficient-reason :: principle of sufficient reason
+prior :: Prior, Arthur
+prioritarianism :: prioritarianism as a theory of value
+prisoner-dilemma :: prisoner’s dilemma
+privacy :: privacy
+privacy-medicine :: privacy and medicine
+private-language :: private language
+causation-probabilistic :: probabilistic
+imprecise-probabilities :: probabilities, imprecise
+probability-medieval-renaissance :: probability, in medieval and Renaissance philosophy
+probability-interpret :: probability, interpretations of
+evil :: problem of
+induction-problem :: problem of
+process-philosophy :: process philosophy
+process-theism :: process theism
+proclus :: Proclus
+hilbert-program :: program in the foundations of mathematics
+progress :: progress
+promises :: promises
+proof-theory :: proof theory
+proof-theory-development :: proof theory: development of
+proof-theoretic-semantics :: proof-theoretic
+properties :: properties
+property :: property and ownership
+prophecy :: prophecy
+logic-propositional :: propositional
+prop-attitude-reports :: propositional attitude reports
+logic-dynamic :: propositional dynamic
+propositional-function :: propositional function
+propositions :: propositions
+protagoras :: Protagoras
+logic-provability :: provability
+providence-divine :: providence, divine
+pseudo-dionysius-areopagite :: Pseudo-Dionysius the Areopagite
+psychiatry :: psychiatry, philosophy of
+feminism-psychoanalysis :: psychoanalytic philosophy
+spinoza-psychological :: psychological theory
+psychologism :: psychologism
+aristotle-psychology :: psychology
+al-farabi-psych :: psychology and epistemology
+arabic-islamic-mind :: psychology and philosophy of mind
+evolutionary-psychology :: psychology: evolutionary
+justification-public :: public
+public-goods :: public goods
+publichealth-ethics :: public health: ethics
+public-reason :: public reason
+publicity :: publicity
+legal-punishment :: punishment, legal
+japanese-pure-land :: Pure Land
+lawphil-theory :: pure theory of law
+pyrrho :: Pyrrho
+pythagoras :: Pythagoras
+pythagoreanism :: Pythagoreanism
+qing-philosophy :: Qing philosophy
+qualia :: qualia
+qualia-inverted :: qualia: inverted
+quantification :: quantifiers and quantification
+qt-quantcomp :: quantum computing
+quantum-gravity :: quantum gravity
+qt-quantlog :: quantum logic and probability theory
+qm :: quantum mechanics
+qm-action-distance :: quantum mechanics: action at a distance in
+kochen-specker :: quantum mechanics: Kochen-Specker theorem
+qm-retrocausality :: quantum mechanics: retrocausality
+qt-issues :: quantum theory: philosophical issues in
+qt-entangle :: quantum theory: quantum entanglement and information
+quantum-field-theory :: quantum theory: quantum field theory
+questions :: questions
+quine :: Quine, Willard Van Orman
+quotation :: quotation
+race :: race
+radulphus-brito :: Radulphus Brito
+ramsey :: Ramsey, Frank
+ramsey-economics :: Ramsey, Frank: and intergenerational welfare economics
+ramus :: Ramus, Petrus
+ayn-rand :: Rand, Ayn
+rationality-normative-utility :: rational choice, normative: expected utility
+rationality-normative-nonutility :: rational choice, normative: rivals to expected utility
+rationalism-empiricism :: rationalism vs. empiricism
+rationalism-early-modern :: rationalism, early modern
+rationality-instrumental :: rationality: instrumental
+rawls :: Rawls, John
+realism :: realism
+realism-about-metaphysics :: realism and anti-realism about
+reasoning-automated :: reasoning: automated
+reasoning-defeasible :: reasoning: defeasible
+reasoning-moral :: reasoning: moral
+reasons-agent :: reasons for action: agent-neutral vs. agent-relative
+reasons-internal-external :: reasons for action: internal vs. external
+reasons-just-vs-expl :: reasons for action: justification, motivation, explanation
+recognition :: recognition
+reconciliation :: reconciliation
+recursive-functions :: recursive functions
+redistribution :: redistribution
+scientific-reduction :: reduction, scientific
+reduction-biology :: reduction, scientific: in biology
+reference :: reference
+reflective-equilibrium :: reflective equilibrium
+henricus-regius :: Regius, Henricus
+bradley-regress :: Regress
+causation-regularity :: regularity and inferential theories of
+august-rehberg :: Rehberg, August Wilhelm
+reichenbach :: Reichenbach, Hans
+physics-Rpcc :: Reichenbach, Hans: common cause principle
+reid :: Reid, Thomas
+reinach :: Reinach, Adolf
+karl-reinhold :: Reinhold, Karl Leonhard
+reism :: reism
+qm-relational :: relational
+relations :: relations
+relations-medieval :: relations: medieval theories of
+identity-relative :: relative
+relativism :: relativism
+logic-relevance :: relevance
+reliabilism :: reliabilist epistemology
+religion-politics :: religion: and political theory
+religion-evolutionary :: religion: evolutionary approaches
+daoism-religion :: religious
+religious-commitment-reason :: religious commitment and reason
+religious-pluralism :: religious diversity
+religious-experience :: religious experience
+religious-language :: religious language
+black-reparations :: reparations, Black
+replication :: replication and reproduction
+political-representation :: representation, political
+consciousness-representational :: representational theories of
+scientific-reproducibility :: reproducibility, scientific
+republicanism :: republicanism
+repugnant-conclusion :: repugnant conclusion, the
+respect :: respect
+justice-retributive :: retributive
+divine-revelation :: revelation, divine
+reverse-mathematics :: reverse mathematics
+truth-revision :: revision theory of
+revolution :: revolution
+aristotle-rhetoric :: rhetoric
+plato-rhetoric :: rhetoric and poetry
+richard-sophister :: Richard the Sophister [Ricardus Sophista, Magister abstractionum]
+heinrich-rickert :: Rickert, Heinrich
+ricoeur :: Ricoeur, Paul
+rights :: rights
+rights-group :: rights: group
+rights-human :: rights: human
+rigid-designators :: rigid designators
+risk :: risk
+rorty :: Rorty, Richard
+rosenstock-huessy :: Rosenstock-Huessy, Eugen
+rosenzweig :: Rosenzweig, Franz
+antonio-rosmini :: Rosmini, Antonio
+william-david-ross :: Ross, William David
+rousseau :: Rousseau, Jean Jacques
+royce :: Royce, Josiah
+consequentialism-rule :: rule
+rule-of-law :: rule of law and procedural fairness
+rule-following :: rule-following and intentionality
+russell :: Russell, Bertrand
+logical-atomism :: Russell’s
+russell-paradox :: Russell’s paradox
+russellian-monism :: Russellian
+ryle :: Ryle, Gilbert
+saadya :: Saadya [Saadiah]
+african-sage :: sage philosophy
+sakya-pandita :: Sakya Paṇḍita [sa skya paṇ ḍi ta]
+organs-sale :: sale of human organs
+wesley-salmon :: Salmon, Wesley
+francisco-sanches :: Sanches, Francisco
+shankara :: Śaṅkara
+saantarak-sita :: Śāntarakṣita
+santayana :: Santayana, George
+shantideva :: Śāntideva
+sartre :: Sartre, Jean-Paul
+scheler :: Scheler, Max
+schelling :: Schelling, Friedrich Wilhelm Joseph von
+schema :: schema
+schiller :: Schiller, Friedrich
+schlegel-aw :: Schlegel, August Wilhelm von
+schlegel :: Schlegel, Friedrich
+schleiermacher :: Schleiermacher, Friedrich Daniel Ernst
+schlick :: Schlick, Moritz
+schmitt :: Schmitt, Carl
+scholem :: Scholem, Gershom
+scholz :: Scholz, Heinrich
+school-names :: School of Names
+school-salamanca :: School of Salamanca
+schopenhauer :: Schopenhauer, Arthur
+schopenhauer-aesthetics :: Schopenhauer, Arthur: aesthetics
+schutz :: Schutz, Alfred
+chinese-phil-science :: science
+pseudo-science :: science: and pseudo-science
+scientific-discovery :: scientific discovery
+scientific-explanation-20th :: scientific explanation: 20th century theories
+causal-explanation-science :: scientific explanation: causal approaches to
+scientific-method :: scientific method
+scientific-objectivity :: scientific objectivity
+scientific-pluralism :: scientific pluralism
+scientific-progress :: scientific progress
+scientific-realism :: scientific realism
+scientific-representation :: scientific representation
+science-big-data :: scientific research and big data
+scientific-revolutions :: scientific revolutions
+scottish-18th :: Scottish Philosophy: in the 18th Century
+scottish-19th :: Scottish Philosophy: in the 19th century
+madeleine-scudery :: Scudéry, Madeleine de
+ethics-search :: search engines and
+secession :: secession
+logic-higher-order :: second-order and higher-order
+self-consciousness :: self-consciousness
+self-deception :: self-deception
+self-defense :: self-defense
+epistemic-self-doubt :: self-doubt, epistemic
+self-knowledge :: self-knowledge
+self-locating-beliefs :: self-locating beliefs
+self-reference :: self-reference
+sellars :: Sellars, Wilfrid
+information-semantic :: semantic conceptions of
+dynamic-semantics :: semantics: dynamic
+seneca :: Seneca
+sense-data :: sense data
+connectives-logic :: sentence connectives in formal logic
+set-theory :: set theory
+continuum-hypothesis :: set theory: continuum hypothesis
+settheory-early :: set theory: early development
+large-cardinals-determinacy :: set theory: large cardinals and determinacy
+consciousness-17th :: seventeenth-century theories of
+sex-sexuality :: sex and sexuality
+sextus-empiricus :: Sextus Empiricus
+shaftesbury :: Shaftesbury, Lord [Anthony Ashley Cooper, 3rd Earl of]
+sharpe :: Sharpe, Johannes
+mary-shepherd :: Shepherd, Mary
+plato-ethics-shorter :: shorter ethical works
+sidgwick :: Sidgwick, Henry
+sign-language-semantics :: sign language semantics
+sikh-philosophy :: Sikh philosophy
+simon-faversham :: Simon of Faversham
+simplicity :: simplicity
+divine-simplicity :: simplicity: divine
+simplicius :: Simplicius
+paradox-simpson :: Simpson’s paradox
+simulations-science :: simulations in science
+sin-christian :: sin, in Christian thought
+propositions-singular :: singular
+singular-terms-medieval :: singular terms: medieval theories of
+spacetime-singularities :: singularities and black holes
+skeptical-theism :: skeptical theism
+skepticism :: skepticism
+skepticism-ancient :: skepticism: ancient
+skepticism-content-externalism :: skepticism: and content externalism
+skepticism-latin-america :: skepticism: in Latin America
+paradox-skolem :: Skolem’s
+epistemology-social :: social
+hegel-social-political :: social and political philosophy
+kant-social-political :: social and political philosophy
+chinese-social-political :: social and political thought
+social-choice :: social choice theory
+animal-social-cognition :: social cognition
+scientific-knowledge-social :: social dimensions of
+social-institutions :: social institutions
+social-minimum :: social minimum [basic income]
+ethics-social-networking :: social networking and ethics
+social-norms :: social norms
+social-ontology :: social ontology
+social-procedures :: social procedures, formal approaches
+socialism :: socialism
+sociobiology :: sociobiology
+socrates :: Socrates
+solidarity :: solidarity in social and political philosophy
+song-ming-confucianism :: Song-Ming Confucianism
+sophie-de-grouchy :: Sophie de Grouchy
+sophismata :: sophismata [= sophisms]
+sophists :: Sophists, The
+sorites-paradox :: Sorites paradox
+sortals :: sortals
+ancient-soul :: soul, ancient theories of
+sounds :: sounds
+sovereignty :: sovereignty
+spacetime-bebecome :: space and time: being and becoming in modern physics
+spacetime-iframes :: space and time: inertial frames
+spacetime-holearg :: space and time: the hole argument
+special-obligations :: special
+species :: species
+speech-acts :: speech acts
+spencer :: Spencer, Herbert
+speusippus :: Speusippus
+spinoza :: Spinoza, Baruch
+spinoza-modal :: Spinoza, Baruch: modal metaphysics
+sport :: sport, philosophy of
+square :: square of opposition
+srigupta :: Śrīgupta
+sriharsa :: Śrīharṣa
+paradox-stpetersburg :: St. Petersburg paradox
+states-of-affairs :: states of affairs
+statistics :: statistics, philosophy of
+stebbing :: Stebbing, Susan
+stein :: Stein, Edith
+stem-cells :: stem cell research
+stevenson :: Stevenson, Charles Leslie
+max-stirner :: Stirner, Max
+stoicism :: Stoicism
+strauss-leo :: Strauss, Leo
+strawson :: Strawson, Peter Frederick
+rationality-structural :: structural
+structural-realism :: structural realism
+structuralism-mathematics :: structuralism
+physics-structuralism :: structuralism in
+structure-scientific-theories :: structure of
+propositions-structured :: structured
+stumpf :: Stumpf, Carl
+johann-sturm :: Sturm, Johann
+mathematical-style :: style: in mathematics
+suarez :: Suárez, Francisco
+substance :: substance
+logic-substructural :: substructural
+suhrawardi :: Suhrawardi
+suicide :: suicide
+supererogation :: supererogation
+spacetime-supertasks :: supertasks
+supervenience :: supervenience
+susman-margarete :: Susman, Margarete
+paradox-suspense :: suspense, paradox of
+medieval-syllogism :: syllogism: medieval theories of
+sylvan-routley :: Sylvan, Richard
+symmetry-breaking :: symmetry and symmetry breaking
+syrianus :: Syrianus
+systems-synthetic-biology :: systems and synthetic biology, philosophy of
+tarski :: Tarski, Alfred
+taurellus :: Taurellus, Nicolaus
+technology :: technology, philosophy of
+content-teleological :: teleological theories of
+teleological-arguments :: teleology: teleological arguments for God’s existence
+teleology-biology :: teleology: teleological notions in biology
+telesio :: Telesio, Bernardino
+consciousness-temporal :: temporal
+logic-temporal :: temporal
+temporal-parts :: temporal parts
+tense-aspect :: tense and aspect
+medieval-terms :: terms, properties of: medieval theories of
+territorial-rights :: territorial rights and justice
+terrorism :: terrorism
+aristotle-text :: textual transmission of Aristotelian corpus
+perception-contents :: the contents of
+perception-disjunctive :: the disjunctive theory of
+qt-epr :: the Einstein-Podolsky-Rosen argument in
+moral-responsibility-epistemic :: the epistemic condition
+maimonides-islamic :: the influence of Islamic thought on
+evidence-legal :: the legal concept of
+boolalg-math :: the mathematics of
+universals-medieval :: the medieval problem of
+causation-metaphysics :: the metaphysics of
+perception-problem :: the problem of
+qm-decoherence :: the role of decoherence in
+theater :: theater, philosophy of
+theodicies :: theodicies
+theology-aristotle :: Theology of Aristotle
+natural-theology :: theology, natural and natural religion
+theophrastus :: Theophrastus
+frege-theorem :: theorem and foundations for arithmetic
+theoretical-terms-science :: theoretical terms in science
+theories-biological-development :: theories of
+theory-bioethics :: theory
+science-theory-observation :: theory and observation in
+spinoza-attributes :: theory of attributes
+descartes-ideas :: theory of ideas
+malebranche-ideas :: theory of ideas and vision in God
+brentano-judgement :: theory of judgement
+kant-judgment :: theory of judgment
+peirce-semiotics :: theory of signs
+time-thermo :: thermodynamic asymmetry in
+thick-ethical-concepts :: thick ethical concepts
+erfurt :: Thomas of Erfurt
+thoreau :: Thoreau, Henry David
+thought-experiment :: thought experiments
+tibbon :: Tibbon, Samuel Ibn
+epistemology-language-tibetan :: Tibetan epistemology and philosophy of language
+plato-timaeus :: Timaeus
+time :: time
+time-machine :: time machines
+time-travel :: time travel
+timon-phlius :: Timon of Phlius
+toleration :: toleration
+tort-theories :: torts, theories of the common law of
+torture :: torture
+touch :: touch
+trans :: trans philosophy
+kant-transcendental :: transcendental arguments
+transcendental-arguments :: transcendental arguments
+kant-transcendental-idealism :: transcendental idealism
+transcendentalism :: transcendentalism
+transcendentals-medieval :: transcendentals, medieval theories of
+transformative-experience :: transformative experience
+justice-transitional :: transitional
+chinese-translate-interpret :: translating and interpreting
+transmission-justification-warrant :: transmission of justification and warrant
+identity-transworld :: transworld
+persons-means :: treating persons as means
+trinity :: trinity
+tropes :: tropes
+trust :: trust
+truth :: truth
+tarski-truth :: truth definitions
+truth-values :: truth values
+truthlikeness :: truthlikeness
+truthmakers :: truthmakers
+tsongkhapa :: Tsongkhapa
+turing-machine :: Turing machines
+turing-test :: Turing test
+turing :: Turing, Alan
+twardowski :: Twardowski, Kazimierz
+twotruths-india :: two truths in India, theory of
+twotruths-tibet :: two truths in Tibet, theory of
+two-dimensional-semantics :: two-dimensional
+type-theory :: type theory
+type-theory-intuitionistic :: type theory: intuitionistic
+types-tokens :: types and tokens
+umar-khayyam :: Umar Khayyam
+qt-uncertainty :: Uncertainty Principle
+scientific-underdetermination :: underdetermination, of scientific theories
+understanding :: understanding
+selection-units :: units and levels of
+consciousness-unity :: unity of
+scientific-unity :: unity of
+vagueness :: vagueness
+vaihinger :: Vaihinger, Hans
+lorenzo-valla :: Valla, Lorenzo
+value-theory :: value theory
+value-incommensurable :: value: incommensurable
+modality-varieties :: varieties of
+vasubandhu :: Vasubandhu
+vegetarianism :: vegetarianism, ethics of
+chance-randomness :: versus randomness
+vico :: Vico, Giambattista
+vienna-circle :: Vienna Circle
+kant-mind :: view of mind and consciousness of self
+kant-spacetime :: views on space and time
+newton-stm :: views on space, time, and motion
+epistemology-virtue :: virtue
+ethics-virtue :: virtue
+epistemology-visual-thinking :: visual thinking in mathematics: epistemology of
+vives :: Vives, Juan Luis
+voltaire :: Voltaire
+voluntarism-theological :: voluntarism, theological
+euthanasia-voluntary :: voluntary
+voting :: voting
+wang-yangming :: Wang Yangming
+war :: war
+james-ward :: Ward, James
+watsuji-tetsuro :: Watsuji Tetsurō
+weakness-will :: weakness of will
+weber :: Weber, Max
+weighing-reasons :: weighing reasons
+simone-weil :: Weil, Simone
+well-being :: well-being
+weyl :: Weyl, Hermann
+whewell :: Whewell, William
+whitehead :: Whitehead, Alfred North
+william-auvergne :: William of Auvergne
+william-champeaux :: William of Champeaux
+william-sherwood :: William of Sherwood
+williams-bernard :: Williams, Bernard
+williams-dc :: Williams, Donald Cary
+wilson :: Wilson, John Cook
+wilhelm-windelband :: Windelband, Wilhelm
+wisdom :: wisdom
+wittgenstein :: Wittgenstein, Ludwig
+wittgenstein-aesthetics :: Wittgenstein, Ludwig: aesthetics
+wittgenstein-atomism :: Wittgenstein, Ludwig: logical atomism
+wittgenstein-mathematics :: Wittgenstein, Ludwig: philosophy of mathematics
+wodeham :: Wodeham, Adam de
+wolff-christian :: Wolff, Christian
+wollstonecraft :: Wollstonecraft, Mary
+work-labor :: work and labor
+world-government :: world government
+wright :: Wright, Chauncey
+wilhelm-wundt :: Wundt, Wilhelm Maximilian
+wyclif :: Wyclif, John
+xenocrates :: Xenocrates
+xenophanes :: Xenophanes
+xunzi :: Xunzi
+yogacara :: Yogācāra
+yorck :: Yorck von Wartenburg, Count Paul
+zabarella :: Zabarella, Giacomo
+zeno-elea :: Zeno of Elea
+paradox-zeno :: Zeno of Elea: Zeno’s paradoxes
+zermelo-set-theory :: Zermelo’s axiomatization of
+zhu-xi :: Zhu Xi
+zhuangzi :: Zhuangzi
+zombies :: zombies
