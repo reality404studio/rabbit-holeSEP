@@ -1,13 +1,5 @@
 [
   {
-    "title": "17th to 20th century",
-    "slug": "atomism-modern"
-  },
-  {
-    "title": "19th Century Romantic",
-    "slug": "aesthetics-19th-romantic"
-  },
-  {
     "title": "a priori justification and knowledge",
     "slug": "apriori"
   },
@@ -36,32 +28,12 @@
     "slug": "abortion"
   },
   {
-    "title": "about moral responsibility",
-    "slug": "skepticism-moral-responsibility"
-  },
-  {
     "title": "Abrabanel, Judah",
     "slug": "abrabanel"
   },
   {
-    "title": "absolute and relational space and motion, classical theories",
-    "slug": "spacetime-theories-classical"
-  },
-  {
-    "title": "absolute and relational space and motion, post-Newtonian theories",
-    "slug": "spacetime-theories"
-  },
-  {
     "title": "abstract objects",
     "slug": "abstract-objects"
-  },
-  {
-    "title": "abstraction and completeness",
-    "slug": "games-abstraction"
-  },
-  {
-    "title": "account of reason",
-    "slug": "kant-reason"
   },
   {
     "title": "action",
@@ -96,10 +68,6 @@
     "slug": "aesthetic-experience"
   },
   {
-    "title": "aesthetic judgment",
-    "slug": "aesthetic-judgment"
-  },
-  {
     "title": "aesthetic testimony",
     "slug": "aesthetic-testimony"
   },
@@ -108,24 +76,64 @@
     "slug": "aesthetic-concept"
   },
   {
-    "title": "aesthetics",
-    "slug": "aristotle-aesthetics"
-  },
-  {
-    "title": "aesthetics and teleology",
-    "slug": "kant-aesthetics"
-  },
-  {
     "title": "aesthetics of the everyday",
     "slug": "aesthetics-of-everyday"
+  },
+  {
+    "title": "aesthetics: 19th Century Romantic",
+    "slug": "aesthetics-19th-romantic"
+  },
+  {
+    "title": "aesthetics: aesthetic judgment",
+    "slug": "aesthetic-judgment"
+  },
+  {
+    "title": "aesthetics: and cognitive science",
+    "slug": "aesthetics-cogsci"
+  },
+  {
+    "title": "aesthetics: British, in the 18th century",
+    "slug": "aesthetics-18th-british"
+  },
+  {
+    "title": "aesthetics: environmental",
+    "slug": "environmental-aesthetics"
+  },
+  {
+    "title": "aesthetics: existentialist",
+    "slug": "aesthetics-existentialist"
+  },
+  {
+    "title": "aesthetics: French, in the 18th century",
+    "slug": "aesthetics-18th-french"
+  },
+  {
+    "title": "aesthetics: German, in the 18th century",
+    "slug": "aesthetics-18th-german"
+  },
+  {
+    "title": "aesthetics: in critical theory",
+    "slug": "aesthetics-critical-theory"
   },
   {
     "title": "affirmative action",
     "slug": "affirmative-action"
   },
   {
+    "title": "African Philosophy: ethics",
+    "slug": "african-ethics"
+  },
+  {
+    "title": "African Philosophy: sage philosophy",
+    "slug": "african-sage"
+  },
+  {
     "title": "Africana Philosophy",
     "slug": "africana"
+  },
+  {
+    "title": "Africana Philosophy: contemporary",
+    "slug": "africana-contemporary"
   },
   {
     "title": "afterlife",
@@ -144,12 +152,32 @@
     "slug": "agrippa-nettesheim"
   },
   {
+    "title": "Akan Philosophy: of the person",
+    "slug": "akan-person"
+  },
+  {
     "title": "al-Baghdadi, ‘Abd al-Latif",
     "slug": "al-baghdadi"
   },
   {
     "title": "al-Farabi",
     "slug": "al-farabi"
+  },
+  {
+    "title": "al-Farabi: metaphysics",
+    "slug": "al-farabi-metaphysics"
+  },
+  {
+    "title": "al-Farabi: philosophy of logic and language",
+    "slug": "al-farabi-logic"
+  },
+  {
+    "title": "al-Farabi: philosophy of society and religion",
+    "slug": "al-farabi-soc-rel"
+  },
+  {
+    "title": "al-Farabi: psychology and epistemology",
+    "slug": "al-farabi-psych"
   },
   {
     "title": "al-Ghazali",
@@ -212,16 +240,8 @@
     "slug": "algebra-logic-tradition"
   },
   {
-    "title": "algebraic propositional",
-    "slug": "logic-algebraic-propositional"
-  },
-  {
     "title": "alienation",
     "slug": "alienation"
-  },
-  {
-    "title": "alternative axiomatic theories",
-    "slug": "settheory-alternative"
   },
   {
     "title": "Althusser, Louis",
@@ -230,6 +250,14 @@
   {
     "title": "altruism",
     "slug": "altruism"
+  },
+  {
+    "title": "altruism: biological",
+    "slug": "altruism-biological"
+  },
+  {
+    "title": "altruism: empirical approaches",
+    "slug": "altruism-empirical"
   },
   {
     "title": "Alyngton, Robert",
@@ -248,20 +276,12 @@
     "slug": "reasoning-analogy"
   },
   {
+    "title": "analogy: medieval theories of",
+    "slug": "analogy-medieval"
+  },
+  {
     "title": "analysis",
     "slug": "analysis"
-  },
-  {
-    "title": "analysis of",
-    "slug": "knowledge-analysis"
-  },
-  {
-    "title": "analytic philosophy",
-    "slug": "femapproach-analytic"
-  },
-  {
-    "title": "analytic philosophy in",
-    "slug": "latin-american-analytic"
   },
   {
     "title": "analytic/synthetic distinction",
@@ -280,156 +300,28 @@
     "slug": "anaxagoras"
   },
   {
-    "title": "ancient",
-    "slug": "atomism-ancient"
-  },
-  {
-    "title": "ancient",
-    "slug": "logic-ancient"
-  },
-  {
-    "title": "ancient",
-    "slug": "ancient-political"
-  },
-  {
-    "title": "ancient and medieval",
-    "slug": "empiricism-ancient-medieval"
-  },
-  {
-    "title": "and cognitive science",
-    "slug": "aesthetics-cogsci"
-  },
-  {
-    "title": "and cognitive science",
-    "slug": "culture-cogsci"
-  },
-  {
-    "title": "and consciousness",
-    "slug": "qt-consciousness"
-  },
-  {
-    "title": "and contemporary logic",
-    "slug": "paradoxes-contemporary-logic"
-  },
-  {
-    "title": "and contemporary theories of cognition",
-    "slug": "innateness-cognition"
-  },
-  {
-    "title": "and diagrammatical reasoning",
-    "slug": "diagrams"
-  },
-  {
-    "title": "and empirical moral psychology",
-    "slug": "justice-moral-psych"
-  },
-  {
-    "title": "and ethics",
-    "slug": "game-ethics"
-  },
-  {
-    "title": "and health care rationing",
-    "slug": "disability-care-rationing"
-  },
-  {
-    "title": "and inconsistency",
-    "slug": "change"
-  },
-  {
-    "title": "and information systems",
-    "slug": "ontology-is"
-  },
-  {
-    "title": "and intentionality",
-    "slug": "consciousness-intentionality"
-  },
-  {
-    "title": "and justice",
-    "slug": "disability-justice"
-  },
-  {
-    "title": "and language",
-    "slug": "innateness-language"
-  },
-  {
-    "title": "and language",
-    "slug": "law-language"
-  },
-  {
-    "title": "and Leibniz",
-    "slug": "kant-leibniz"
-  },
-  {
-    "title": "and manipulability",
-    "slug": "causation-mani"
-  },
-  {
-    "title": "and mathematical rigor",
-    "slug": "qt-nvd"
-  },
-  {
-    "title": "and modern physics",
-    "slug": "time-travel-phys"
-  },
-  {
-    "title": "and moral responsibility",
-    "slug": "computing-responsibility"
-  },
-  {
-    "title": "and moral values",
-    "slug": "it-moral-values"
-  },
-  {
-    "title": "and morality in western philosophy",
-    "slug": "religion-morality"
-  },
-  {
-    "title": "and ontology",
-    "slug": "logic-ontology"
-  },
-  {
-    "title": "and other necessary beings",
-    "slug": "god-necessary-being"
-  },
-  {
-    "title": "and other ultimates",
-    "slug": "god-ultimates"
-  },
-  {
-    "title": "and privacy",
-    "slug": "it-privacy"
-  },
-  {
-    "title": "and probability",
-    "slug": "logic-probability"
-  },
-  {
-    "title": "and science",
-    "slug": "religion-science"
-  },
-  {
-    "title": "and self-knowledge",
-    "slug": "self-knowledge-externalism"
-  },
-  {
-    "title": "and the pineal gland",
-    "slug": "pineal-gland"
-  },
-  {
-    "title": "and theology",
-    "slug": "cosmology-theology"
-  },
-  {
-    "title": "and theory change in science",
-    "slug": "realism-theory-change"
-  },
-  {
-    "title": "and well-being",
-    "slug": "disability-well-being"
-  },
-  {
     "title": "Anderson, John",
     "slug": "anderson-john"
+  },
+  {
+    "title": "animal: cognition",
+    "slug": "cognition-animal"
+  },
+  {
+    "title": "animal: communication",
+    "slug": "animal-communication"
+  },
+  {
+    "title": "animal: consciousness",
+    "slug": "consciousness-animal"
+  },
+  {
+    "title": "animal: normativity",
+    "slug": "animal-normativity"
+  },
+  {
+    "title": "animal: social cognition",
+    "slug": "animal-social-cognition"
   },
   {
     "title": "animalism",
@@ -460,6 +352,54 @@
     "slug": "aquinas"
   },
   {
+    "title": "Aquinas, Thomas: moral, political, and legal philosophy",
+    "slug": "aquinas-moral-political"
+  },
+  {
+    "title": "Arabic and Islamic Philosophy, disciplines in: metaphysics",
+    "slug": "arabic-islamic-metaphysics"
+  },
+  {
+    "title": "Arabic and Islamic Philosophy, disciplines in: natural philosophy and natural science",
+    "slug": "arabic-islamic-natural"
+  },
+  {
+    "title": "Arabic and Islamic Philosophy, disciplines in: philosophy of language and logic",
+    "slug": "arabic-islamic-language"
+  },
+  {
+    "title": "Arabic and Islamic Philosophy, disciplines in: philosophy of mathematics",
+    "slug": "arabic-islamic-phil-math"
+  },
+  {
+    "title": "Arabic and Islamic Philosophy, disciplines in: philosophy of religion",
+    "slug": "arabic-islamic-religion"
+  },
+  {
+    "title": "Arabic and Islamic Philosophy, disciplines in: psychology and philosophy of mind",
+    "slug": "arabic-islamic-mind"
+  },
+  {
+    "title": "Arabic and Islamic Philosophy, historical and methodological topics in: Greek sources",
+    "slug": "arabic-islamic-greek"
+  },
+  {
+    "title": "Arabic and Islamic Philosophy, historical and methodological topics in: influence of Arabic and Islamic Philosophy on Judaic thought",
+    "slug": "arabic-islamic-judaic"
+  },
+  {
+    "title": "Arabic and Islamic Philosophy, historical and methodological topics in: influence of Arabic and Islamic Philosophy on the Latin West",
+    "slug": "arabic-islamic-influence"
+  },
+  {
+    "title": "Arabic and Islamic Philosophy, special topics in: essence and existence",
+    "slug": "arabic-islamic-essence"
+  },
+  {
+    "title": "Arabic and Islamic Philosophy, special topics in: mysticism",
+    "slug": "arabic-islamic-mysticism"
+  },
+  {
     "title": "Arcesilaus",
     "slug": "arcesilaus"
   },
@@ -480,8 +420,8 @@
     "slug": "argument"
   },
   {
-    "title": "arguments for",
-    "slug": "incompatibilism-arguments"
+    "title": "Aristotelianism: in the Renaissance",
+    "slug": "aristotelianism-renaissance"
   },
   {
     "title": "Aristotle",
@@ -492,12 +432,76 @@
     "slug": "aristotle-commentators"
   },
   {
+    "title": "Aristotle, General Topics: aesthetics",
+    "slug": "aristotle-aesthetics"
+  },
+  {
+    "title": "Aristotle, General Topics: biology",
+    "slug": "aristotle-biology"
+  },
+  {
+    "title": "Aristotle, General Topics: categories",
+    "slug": "aristotle-categories"
+  },
+  {
+    "title": "Aristotle, General Topics: ethics",
+    "slug": "aristotle-ethics"
+  },
+  {
+    "title": "Aristotle, General Topics: logic",
+    "slug": "aristotle-logic"
+  },
+  {
+    "title": "Aristotle, General Topics: metaphysics",
+    "slug": "aristotle-metaphysics"
+  },
+  {
+    "title": "Aristotle, General Topics: political theory",
+    "slug": "aristotle-politics"
+  },
+  {
+    "title": "Aristotle, General Topics: psychology",
+    "slug": "aristotle-psychology"
+  },
+  {
+    "title": "Aristotle, General Topics: rhetoric",
+    "slug": "aristotle-rhetoric"
+  },
+  {
+    "title": "Aristotle, Special Topics: causality",
+    "slug": "aristotle-causality"
+  },
+  {
+    "title": "Aristotle, Special Topics: mathematics",
+    "slug": "aristotle-mathematics"
+  },
+  {
+    "title": "Aristotle, Special Topics: natural philosophy",
+    "slug": "aristotle-natphil"
+  },
+  {
+    "title": "Aristotle, Special Topics: on non-contradiction",
+    "slug": "aristotle-noncontradiction"
+  },
+  {
+    "title": "Aristotle, Special Topics: textual transmission of Aristotelian corpus",
+    "slug": "aristotle-text"
+  },
+  {
+    "title": "Aristotle: De Motu Animalium",
+    "slug": "aristotle-de-motu"
+  },
+  {
     "title": "Arnauld, Antoine",
     "slug": "arnauld"
   },
   {
     "title": "Arrow’s theorem",
     "slug": "arrows-theorem"
+  },
+  {
+    "title": "art and aesthetics: experimental philosophy of",
+    "slug": "experimental-aesthetics"
   },
   {
     "title": "art, conceptual",
@@ -508,6 +512,10 @@
     "slug": "art-definition"
   },
   {
+    "title": "art: erotic",
+    "slug": "erotic-art"
+  },
+  {
     "title": "artifact",
     "slug": "artifact"
   },
@@ -516,16 +524,12 @@
     "slug": "artificial-intelligence"
   },
   {
-    "title": "as a theory",
-    "slug": "folkpsych-theory"
+    "title": "artificial intelligence: ethics of",
+    "slug": "ethics-ai"
   },
   {
-    "title": "as a virtue",
-    "slug": "justice-virtue"
-  },
-  {
-    "title": "as mental simulation",
-    "slug": "folkpsych-simulation"
+    "title": "artificial intelligence: logic-based",
+    "slug": "logic-ai"
   },
   {
     "title": "assertion",
@@ -542,6 +546,14 @@
   {
     "title": "atheism and agnosticism",
     "slug": "atheism-agnosticism"
+  },
+  {
+    "title": "atomism: 17th to 20th century",
+    "slug": "atomism-modern"
+  },
+  {
+    "title": "atomism: ancient",
+    "slug": "atomism-ancient"
   },
   {
     "title": "atonement",
@@ -576,16 +588,16 @@
     "slug": "authority"
   },
   {
-    "title": "axiomatic theories of",
-    "slug": "truth-axiomatic"
+    "title": "autonomy: in moral and political philosophy",
+    "slug": "autonomy-moral"
+  },
+  {
+    "title": "autonomy: personal",
+    "slug": "personal-autonomy"
   },
   {
     "title": "Ayer, Alfred Jules",
     "slug": "ayer"
-  },
-  {
-    "title": "backward",
-    "slug": "causation-backwards"
   },
   {
     "title": "Bacon, Francis",
@@ -610,14 +622,6 @@
   {
     "title": "Bayes’ Theorem",
     "slug": "bayes-theorem"
-  },
-  {
-    "title": "Bayesian",
-    "slug": "epistemology-bayesian"
-  },
-  {
-    "title": "Bayesian and pragmatist views",
-    "slug": "quantum-bayesian"
   },
   {
     "title": "Bayle, Pierre",
@@ -696,20 +700,24 @@
     "slug": "binarium"
   },
   {
-    "title": "bioethics",
-    "slug": "feminist-bioethics"
+    "title": "bioethics: in Latin American",
+    "slug": "bioethics-latin-america"
   },
   {
-    "title": "biological",
-    "slug": "altruism-biological"
+    "title": "biological development: theories of",
+    "slug": "theories-biological-development"
   },
   {
     "title": "biological individuals",
     "slug": "biology-individual"
   },
   {
-    "title": "biology",
-    "slug": "aristotle-biology"
+    "title": "biology: experiment in",
+    "slug": "biology-experiment"
+  },
+  {
+    "title": "biology: philosophy of",
+    "slug": "biology-philosophy"
   },
   {
     "title": "biomedicine, philosophy of",
@@ -740,16 +748,16 @@
     "slug": "boethius"
   },
   {
-    "title": "Bohmian mechanics",
-    "slug": "qm-bohm"
-  },
-  {
-    "title": "Boltzmann’s work in",
-    "slug": "statphys-Boltzmann"
+    "title": "Bohr, Niels: correspondence principle",
+    "slug": "bohr-correspondence"
   },
   {
     "title": "Bolzano, Bernard",
     "slug": "bolzano"
+  },
+  {
+    "title": "Bolzano, Bernard: logic",
+    "slug": "bolzano-logic"
   },
   {
     "title": "Bonaventure",
@@ -758,6 +766,10 @@
   {
     "title": "Boole, George",
     "slug": "boole"
+  },
+  {
+    "title": "Boolean algebra: the mathematics of",
+    "slug": "boolalg-math"
   },
   {
     "title": "Bosanquet, Bernard",
@@ -780,6 +792,14 @@
     "slug": "bradley"
   },
   {
+    "title": "Bradley, Francis Herbert: moral philosophy",
+    "slug": "bradley-moral"
+  },
+  {
+    "title": "Bradley, Francis Herbert: Regress",
+    "slug": "bradley-regress"
+  },
+  {
     "title": "branching time",
     "slug": "branching-time"
   },
@@ -788,8 +808,8 @@
     "slug": "brentano"
   },
   {
-    "title": "British, in the 18th century",
-    "slug": "aesthetics-18th-british"
+    "title": "Brentano, Franz: theory of judgement",
+    "slug": "brentano-judgement"
   },
   {
     "title": "Broad, Charlie Dunbar",
@@ -824,12 +844,8 @@
     "slug": "burley"
   },
   {
-    "title": "business",
-    "slug": "ethics-business"
-  },
-  {
-    "title": "by acquaintance vs. description",
-    "slug": "knowledge-acquaindescrip"
+    "title": "Butler, Joseph: moral philosophy",
+    "slug": "butler-moral"
   },
   {
     "title": "Byzantine Philosophy",
@@ -856,6 +872,10 @@
     "slug": "capability-approach"
   },
   {
+    "title": "capitalism",
+    "slug": "capitalism"
+  },
+  {
     "title": "Cardano, Girolamo [Geronimo]",
     "slug": "cardano"
   },
@@ -873,11 +893,11 @@
   },
   {
     "title": "categories",
-    "slug": "aristotle-categories"
+    "slug": "categories"
   },
   {
-    "title": "categories",
-    "slug": "categories"
+    "title": "categories: medieval theories of",
+    "slug": "medieval-categories"
   },
   {
     "title": "category mistakes",
@@ -888,20 +908,48 @@
     "slug": "category-theory"
   },
   {
-    "title": "causal",
-    "slug": "decision-causal"
-  },
-  {
     "title": "causal models",
     "slug": "causal-models"
   },
   {
-    "title": "causal theories of",
-    "slug": "content-causal"
+    "title": "causation: and manipulability",
+    "slug": "causation-mani"
   },
   {
-    "title": "causality",
-    "slug": "aristotle-causality"
+    "title": "causation: backward",
+    "slug": "causation-backwards"
+  },
+  {
+    "title": "causation: counterfactual theories of",
+    "slug": "causation-counterfactual"
+  },
+  {
+    "title": "causation: in Arabic and Islamic thought",
+    "slug": "arabic-islamic-causation"
+  },
+  {
+    "title": "causation: in physics",
+    "slug": "causation-physics"
+  },
+  {
+    "title": "causation: in the law",
+    "slug": "causation-law"
+  },
+  {
+    "title": "causation: medieval theories of",
+    "slug": "causation-medieval"
+  },
+  {
+    "title": "causation: probabilistic",
+    "slug": "causation-probabilistic"
+  },
+  {
+    "title": "causation: regularity and inferential theories of",
+    "slug": "causation-regularity"
+  },
+  {
+    "title": "causation: the metaphysics of",
+    "slug": "causation-metaphysics"
   },
   {
     "title": "Cavendish, Margaret Lucas",
@@ -920,8 +968,12 @@
     "slug": "certainty"
   },
   {
-    "title": "challenges to metaphysical",
-    "slug": "realism-sem-challenge"
+    "title": "chance: versus randomness",
+    "slug": "chance-randomness"
+  },
+  {
+    "title": "change: and inconsistency",
+    "slug": "change"
   },
   {
     "title": "chaos",
@@ -930,6 +982,10 @@
   {
     "title": "character, moral",
     "slug": "moral-character"
+  },
+  {
+    "title": "character, moral: empirical approaches",
+    "slug": "moral-character-empirical"
   },
   {
     "title": "Châtelet, Émilie du",
@@ -952,8 +1008,12 @@
     "slug": "children"
   },
   {
-    "title": "Chinese medicine",
-    "slug": "chinese-phil-medicine"
+    "title": "Chile: philosophy in",
+    "slug": "philosophy-chile"
+  },
+  {
+    "title": "Chinese Confucianism: Modern Confucianism",
+    "slug": "confucianism-modern"
   },
   {
     "title": "Chinese Philosophy: aesthetics, painting and calligraphy",
@@ -964,20 +1024,80 @@
     "slug": "buddhism-chan"
   },
   {
+    "title": "Chinese Philosophy: Chinese medicine",
+    "slug": "chinese-phil-medicine"
+  },
+  {
+    "title": "Chinese Philosophy: emotions in early Chinese Philosophy",
+    "slug": "emotions-chinese"
+  },
+  {
+    "title": "Chinese Philosophy: epistemology",
+    "slug": "chinese-epistemology"
+  },
+  {
     "title": "Chinese Philosophy: ethics",
     "slug": "ethics-chinese"
+  },
+  {
+    "title": "Chinese Philosophy: Han Dynasty",
+    "slug": "han-dynasty"
   },
   {
     "title": "Chinese Philosophy: Huayan Buddhism",
     "slug": "buddhism-huayan"
   },
   {
+    "title": "Chinese Philosophy: legalism in",
+    "slug": "chinese-legalism"
+  },
+  {
+    "title": "Chinese Philosophy: logic and language in Early Chinese Philosophy",
+    "slug": "chinese-logic-language"
+  },
+  {
+    "title": "Chinese Philosophy: metaphysics",
+    "slug": "chinese-metaphysics"
+  },
+  {
+    "title": "Chinese Philosophy: mind (heart-mind)",
+    "slug": "chinese-mind"
+  },
+  {
+    "title": "Chinese Philosophy: Mohism",
+    "slug": "mohism"
+  },
+  {
+    "title": "Chinese Philosophy: Mohist Canons",
+    "slug": "mohist-canons"
+  },
+  {
     "title": "Chinese Philosophy: philosophy of change",
     "slug": "chinese-change"
   },
   {
+    "title": "Chinese Philosophy: Qing philosophy",
+    "slug": "qing-philosophy"
+  },
+  {
+    "title": "Chinese Philosophy: science",
+    "slug": "chinese-phil-science"
+  },
+  {
+    "title": "Chinese Philosophy: social and political thought",
+    "slug": "chinese-social-political"
+  },
+  {
+    "title": "Chinese Philosophy: Song-Ming Confucianism",
+    "slug": "song-ming-confucianism"
+  },
+  {
     "title": "Chinese Philosophy: Tiantai Buddhism",
     "slug": "buddhism-tiantai"
+  },
+  {
+    "title": "Chinese Philosophy: translating and interpreting",
+    "slug": "chinese-translate-interpret"
   },
   {
     "title": "Chinese room argument",
@@ -1008,10 +1128,6 @@
     "slug": "church"
   },
   {
-    "title": "Church’s type theory",
-    "slug": "type-theory-church"
-  },
-  {
     "title": "Cicero",
     "slug": "cicero"
   },
@@ -1040,10 +1156,6 @@
     "slug": "clarke"
   },
   {
-    "title": "classical",
-    "slug": "logic-classical"
-  },
-  {
     "title": "Clauberg, Johannes",
     "slug": "clauberg"
   },
@@ -1064,8 +1176,8 @@
     "slug": "coercion"
   },
   {
-    "title": "cognition",
-    "slug": "cognition-animal"
+    "title": "cognition: embodied",
+    "slug": "embodied-cognition"
   },
   {
     "title": "cognitive disability and moral status",
@@ -1082,26 +1194,6 @@
   {
     "title": "Cohen, Hermann",
     "slug": "cohen"
-  },
-  {
-    "title": "coherence theory of",
-    "slug": "truth-coherence"
-  },
-  {
-    "title": "coherentist theories of",
-    "slug": "justep-coherence"
-  },
-  {
-    "title": "collapse theories",
-    "slug": "qm-collapse"
-  },
-  {
-    "title": "collective",
-    "slug": "collective-intentionality"
-  },
-  {
-    "title": "collective",
-    "slug": "collective-responsibility"
   },
   {
     "title": "Collingwood, Robin George",
@@ -1124,14 +1216,6 @@
     "slug": "color"
   },
   {
-    "title": "combinatory",
-    "slug": "logic-combinatory"
-  },
-  {
-    "title": "combining",
-    "slug": "logic-combining"
-  },
-  {
     "title": "common good",
     "slug": "common-good"
   },
@@ -1144,20 +1228,12 @@
     "slug": "common-knowledge"
   },
   {
-    "title": "communication",
-    "slug": "animal-communication"
-  },
-  {
     "title": "communitarianism",
     "slug": "communitarianism"
   },
   {
     "title": "comparative cognition, methods in",
     "slug": "comparative-cognition"
-  },
-  {
-    "title": "comparative philosophy of",
-    "slug": "religion-comparative"
   },
   {
     "title": "comparative philosophy: Chinese and Western",
@@ -1176,6 +1252,10 @@
     "slug": "computability"
   },
   {
+    "title": "computation: in physical systems",
+    "slug": "computation-physicalsystems"
+  },
+  {
     "title": "computational complexity theory",
     "slug": "computational-complexity"
   },
@@ -1188,32 +1268,20 @@
     "slug": "computer-science"
   },
   {
+    "title": "computing: and moral responsibility",
+    "slug": "computing-responsibility"
+  },
+  {
+    "title": "computing: modern history of",
+    "slug": "computing-history"
+  },
+  {
     "title": "Comte, Auguste",
     "slug": "comte"
   },
   {
-    "title": "concept before Darwin",
-    "slug": "evolution-before-darwin"
-  },
-  {
-    "title": "concept of",
-    "slug": "concept-evil"
-  },
-  {
-    "title": "concept of",
-    "slug": "concept-religion"
-  },
-  {
-    "title": "concept of emotion",
-    "slug": "concept-emotion-india"
-  },
-  {
     "title": "concepts",
     "slug": "concepts"
-  },
-  {
-    "title": "conceptualism/nonconceptualism",
-    "slug": "kant-conceptualism"
   },
   {
     "title": "condemnation of 1277",
@@ -1228,8 +1296,20 @@
     "slug": "conditionals"
   },
   {
+    "title": "conditionals: counterfactual",
+    "slug": "counterfactuals"
+  },
+  {
+    "title": "Condorcet, Marie-Jean-Antoine-Nicolas de Caritat, Marquis de: in the history of feminism",
+    "slug": "histfem-condorcet"
+  },
+  {
     "title": "confirmation",
     "slug": "confirmation"
+  },
+  {
+    "title": "Confucianism: gender in Confucian philosophy",
+    "slug": "confucian-gender"
   },
   {
     "title": "Confucius",
@@ -1240,20 +1320,48 @@
     "slug": "connectionism"
   },
   {
-    "title": "connexive",
-    "slug": "logic-connexive"
+    "title": "connectives: sentence connectives in formal logic",
+    "slug": "connectives-logic"
   },
   {
     "title": "conscience",
     "slug": "conscience"
   },
   {
-    "title": "consciousness",
-    "slug": "consciousness-animal"
+    "title": "conscience: medieval theories of",
+    "slug": "conscience-medieval"
   },
   {
     "title": "consciousness",
     "slug": "consciousness"
+  },
+  {
+    "title": "consciousness: and intentionality",
+    "slug": "consciousness-intentionality"
+  },
+  {
+    "title": "consciousness: higher-order theories",
+    "slug": "consciousness-higher"
+  },
+  {
+    "title": "consciousness: neuroscience of",
+    "slug": "consciousness-neuroscience"
+  },
+  {
+    "title": "consciousness: representational theories of",
+    "slug": "consciousness-representational"
+  },
+  {
+    "title": "consciousness: seventeenth-century theories of",
+    "slug": "consciousness-17th"
+  },
+  {
+    "title": "consciousness: temporal",
+    "slug": "consciousness-temporal"
+  },
+  {
+    "title": "consciousness: unity of",
+    "slug": "consciousness-unity"
   },
   {
     "title": "consequence, medieval theories of",
@@ -1262,6 +1370,10 @@
   {
     "title": "consequentialism",
     "slug": "consequentialism"
+  },
+  {
+    "title": "consequentialism: rule",
+    "slug": "consequentialism-rule"
   },
   {
     "title": "consequentializing",
@@ -1276,40 +1388,24 @@
     "slug": "conservatism"
   },
   {
-    "title": "consistent histories approach",
-    "slug": "qm-consistent-histories"
-  },
-  {
     "title": "constitutionalism",
     "slug": "constitutionalism"
-  },
-  {
-    "title": "constructive",
-    "slug": "mathematics-constructive"
-  },
-  {
-    "title": "constructive and intuitionistic ZF",
-    "slug": "set-theory-constructive"
   },
   {
     "title": "constructive empiricism",
     "slug": "constructive-empiricism"
   },
   {
-    "title": "contemporary",
-    "slug": "africana-contemporary"
+    "title": "constructivism: in metaethics",
+    "slug": "constructivism-metaethics"
   },
   {
-    "title": "contemporary approaches to",
-    "slug": "contractarianism-contemporary"
+    "title": "constructivism: in political philosophy",
+    "slug": "constructivism-political"
   },
   {
     "title": "contextualism, epistemic",
     "slug": "contextualism-epistemology"
-  },
-  {
-    "title": "continental philosophy",
-    "slug": "femapproach-continental"
   },
   {
     "title": "continuity and infinitesimals",
@@ -1332,20 +1428,8 @@
     "slug": "contradiction"
   },
   {
-    "title": "contributions to the foundations of mathematics",
-    "slug": "dedekind-foundations"
-  },
-  {
-    "title": "controversy with Hilbert",
-    "slug": "frege-hilbert"
-  },
-  {
     "title": "convention",
     "slug": "convention"
-  },
-  {
-    "title": "conventionality of simultaneity",
-    "slug": "spacetime-convensimul"
   },
   {
     "title": "Conway, Lady Anne",
@@ -1356,24 +1440,12 @@
     "slug": "anna-julia-cooper"
   },
   {
-    "title": "Copenhagen interpretation of",
-    "slug": "qm-copenhagen"
-  },
-  {
     "title": "Copernicus, Nicolaus",
     "slug": "copernicus"
   },
   {
     "title": "Cordemoy, Géraud de",
     "slug": "cordemoy"
-  },
-  {
-    "title": "correspondence principle",
-    "slug": "bohr-correspondence"
-  },
-  {
-    "title": "correspondence theory of",
-    "slug": "truth-correspondence"
   },
   {
     "title": "corruption",
@@ -1388,24 +1460,20 @@
     "slug": "cosmology"
   },
   {
+    "title": "cosmology: and theology",
+    "slug": "cosmology-theology"
+  },
+  {
+    "title": "cosmology: methodological debates in the 1930s and 1940s",
+    "slug": "cosmology-30s"
+  },
+  {
     "title": "cosmopolitanism",
     "slug": "cosmopolitanism"
   },
   {
-    "title": "counterfactual",
-    "slug": "counterfactuals"
-  },
-  {
-    "title": "counterfactual theories of",
-    "slug": "causation-counterfactual"
-  },
-  {
     "title": "Crathorn, William",
     "slug": "crathorn"
-  },
-  {
-    "title": "Cratylus",
-    "slug": "plato-cratylus"
   },
   {
     "title": "creation and conservation",
@@ -1428,10 +1496,6 @@
     "slug": "criminal-law"
   },
   {
-    "title": "critical disability theory",
-    "slug": "disability-critical"
-  },
-  {
     "title": "critical philosophy of race",
     "slug": "critical-phil-race"
   },
@@ -1442,10 +1506,6 @@
   {
     "title": "critical thinking",
     "slug": "critical-thinking"
-  },
-  {
-    "title": "critique of metaphysics",
-    "slug": "kant-metaphysics"
   },
   {
     "title": "Croce, Benedetto: aesthetics",
@@ -1470,6 +1530,10 @@
   {
     "title": "culture",
     "slug": "culture"
+  },
+  {
+    "title": "culture: and cognitive science",
+    "slug": "culture-cogsci"
   },
   {
     "title": "Curry’s paradox",
@@ -1504,6 +1568,10 @@
     "slug": "daoism"
   },
   {
+    "title": "Daoism: religious",
+    "slug": "daoism-religion"
+  },
+  {
     "title": "Darwinism",
     "slug": "darwinism"
   },
@@ -1514,10 +1582,6 @@
   {
     "title": "Davidson, Donald",
     "slug": "davidson"
-  },
-  {
-    "title": "De Motu Animalium",
-    "slug": "aristotle-de-motu"
   },
   {
     "title": "death",
@@ -1532,8 +1596,20 @@
     "slug": "decision-theory"
   },
   {
+    "title": "decision theory: causal",
+    "slug": "decision-causal"
+  },
+  {
+    "title": "decision theory: descriptive",
+    "slug": "decision-theory-descriptive"
+  },
+  {
     "title": "decision-making capacity",
     "slug": "decision-capacity"
+  },
+  {
+    "title": "Dedekind, Richard: contributions to the foundations of mathematics",
+    "slug": "dedekind-foundations"
   },
   {
     "title": "deductivism in the philosophy of mathematics",
@@ -1546,14 +1622,6 @@
   {
     "title": "definitions",
     "slug": "definitions"
-  },
-  {
-    "title": "definitions and models",
-    "slug": "disability"
-  },
-  {
-    "title": "deflationism about",
-    "slug": "truth-deflationary"
   },
   {
     "title": "dehumanization",
@@ -1576,20 +1644,20 @@
     "slug": "democracy"
   },
   {
+    "title": "democracy: economic",
+    "slug": "economic-democracy"
+  },
+  {
+    "title": "democracy: global",
+    "slug": "global-democracy"
+  },
+  {
     "title": "Democritus",
     "slug": "democritus"
   },
   {
-    "title": "deontic",
-    "slug": "logic-deontic"
-  },
-  {
-    "title": "deontic logic",
-    "slug": "mally-deontic"
-  },
-  {
-    "title": "dependence",
-    "slug": "logic-dependence"
+    "title": "demonstration: medieval theories of",
+    "slug": "demonstration-medieval"
   },
   {
     "title": "dependence, ontological",
@@ -1608,12 +1676,44 @@
     "slug": "descartes"
   },
   {
-    "title": "descriptions",
-    "slug": "descriptions"
+    "title": "Descartes, René: epistemology",
+    "slug": "descartes-epistemology"
   },
   {
-    "title": "descriptive",
-    "slug": "decision-theory-descriptive"
+    "title": "Descartes, René: ethics",
+    "slug": "descartes-ethics"
+  },
+  {
+    "title": "Descartes, René: life and works",
+    "slug": "descartes-works"
+  },
+  {
+    "title": "Descartes, René: mathematics",
+    "slug": "descartes-mathematics"
+  },
+  {
+    "title": "Descartes, René: method",
+    "slug": "descartes-method"
+  },
+  {
+    "title": "Descartes, René: modal metaphysics",
+    "slug": "descartes-modal"
+  },
+  {
+    "title": "Descartes, René: ontological argument",
+    "slug": "descartes-ontological"
+  },
+  {
+    "title": "Descartes, René: physics",
+    "slug": "descartes-physics"
+  },
+  {
+    "title": "Descartes, René: theory of ideas",
+    "slug": "descartes-ideas"
+  },
+  {
+    "title": "descriptions",
+    "slug": "descriptions"
   },
   {
     "title": "desert",
@@ -1640,6 +1740,10 @@
     "slug": "biology-developmental"
   },
   {
+    "title": "developmental biology: evolution and development",
+    "slug": "evolution-development"
+  },
+  {
     "title": "Dewey, John",
     "slug": "dewey"
   },
@@ -1648,8 +1752,20 @@
     "slug": "dewey-aesthetics"
   },
   {
+    "title": "Dewey, John: moral philosophy",
+    "slug": "dewey-moral"
+  },
+  {
+    "title": "Dewey, John: political philosophy",
+    "slug": "dewey-political"
+  },
+  {
     "title": "Dharmakīrti",
     "slug": "dharmakiirti"
+  },
+  {
+    "title": "diagrams: and diagrammatical reasoning",
+    "slug": "diagrams"
   },
   {
     "title": "Dialectical School",
@@ -1658,10 +1774,6 @@
   {
     "title": "dialetheism",
     "slug": "dialetheism"
-  },
-  {
-    "title": "dialogical",
-    "slug": "logic-dialogical"
   },
   {
     "title": "Diderot, Denis",
@@ -1692,6 +1804,26 @@
     "slug": "dirty-hands"
   },
   {
+    "title": "disability: and health care rationing",
+    "slug": "disability-care-rationing"
+  },
+  {
+    "title": "disability: and justice",
+    "slug": "disability-justice"
+  },
+  {
+    "title": "disability: and well-being",
+    "slug": "disability-well-being"
+  },
+  {
+    "title": "disability: critical disability theory",
+    "slug": "disability-critical"
+  },
+  {
+    "title": "disability: definitions and models",
+    "slug": "disability"
+  },
+  {
     "title": "disagreement",
     "slug": "disagreement"
   },
@@ -1710,6 +1842,14 @@
   {
     "title": "dispositions",
     "slug": "dispositions"
+  },
+  {
+    "title": "distributive justice — see justice: distributive: and empirical moral psychology",
+    "slug": "justice-moral-psych"
+  },
+  {
+    "title": "divine: illumination",
+    "slug": "illumination"
   },
   {
     "title": "doing vs. allowing harm",
@@ -1780,10 +1920,6 @@
     "slug": "early-modern-india"
   },
   {
-    "title": "early philosophical interpretations of",
-    "slug": "genrel-early"
-  },
-  {
     "title": "ecology",
     "slug": "ecology"
   },
@@ -1792,16 +1928,16 @@
     "slug": "biodiversity"
   },
   {
-    "title": "economic",
-    "slug": "economic-democracy"
-  },
-  {
-    "title": "economic analysis of law",
-    "slug": "legal-econanalysis"
-  },
-  {
     "title": "economics [normative] and economic justice",
     "slug": "economic-justice"
+  },
+  {
+    "title": "economics: in early modern philosophy",
+    "slug": "economics-early-modern"
+  },
+  {
+    "title": "economics: philosophy of",
+    "slug": "economics"
   },
   {
     "title": "education, philosophy of",
@@ -1824,20 +1960,16 @@
     "slug": "ehrenfels"
   },
   {
+    "title": "Einstein, Albert: philosophy of science",
+    "slug": "einstein-philscience"
+  },
+  {
     "title": "Elias",
     "slug": "elias"
   },
   {
-    "title": "eliminative",
-    "slug": "materialism-eliminative"
-  },
-  {
     "title": "Elisabeth, Princess of Bohemia",
     "slug": "elisabeth-bohemia"
-  },
-  {
-    "title": "embodied",
-    "slug": "embodied-cognition"
   },
   {
     "title": "emergent properties",
@@ -1856,8 +1988,12 @@
     "slug": "emotions-17th18th"
   },
   {
-    "title": "emotions in early Chinese Philosophy",
-    "slug": "emotions-chinese"
+    "title": "emotion: in the Christian tradition",
+    "slug": "emotion-Christian-tradition"
+  },
+  {
+    "title": "emotion: medieval theories of",
+    "slug": "medieval-emotions"
   },
   {
     "title": "empathy",
@@ -1868,32 +2004,16 @@
     "slug": "empedocles"
   },
   {
-    "title": "empirical approaches",
-    "slug": "altruism-empirical"
+    "title": "empiricism — see rationalism vs. empiricism: ancient and medieval",
+    "slug": "empiricism-ancient-medieval"
   },
   {
-    "title": "empirical approaches",
-    "slug": "moral-character-empirical"
-  },
-  {
-    "title": "empirical approaches",
-    "slug": "moral-psych-emp"
+    "title": "empiricism — see rationalism vs. empiricism: logical",
+    "slug": "logical-empiricism"
   },
   {
     "title": "Enlightenment",
     "slug": "enlightenment"
-  },
-  {
-    "title": "environmental",
-    "slug": "environmental-aesthetics"
-  },
-  {
-    "title": "environmental",
-    "slug": "ethics-environmental"
-  },
-  {
-    "title": "environmental philosophy",
-    "slug": "feminism-environmental"
   },
   {
     "title": "envy",
@@ -1916,16 +2036,8 @@
     "slug": "episteme-techne"
   },
   {
-    "title": "epistemic",
-    "slug": "logic-epistemic"
-  },
-  {
     "title": "epistemic closure",
     "slug": "closure-epistemic"
-  },
-  {
-    "title": "epistemic foundations of",
-    "slug": "epistemic-game"
   },
   {
     "title": "epistemic paradoxes",
@@ -1936,40 +2048,36 @@
     "slug": "epistemic-utility"
   },
   {
-    "title": "epistemological problems of",
-    "slug": "memory-episprob"
-  },
-  {
-    "title": "epistemological problems of",
-    "slug": "testimony-episprob"
-  },
-  {
-    "title": "epistemology",
-    "slug": "chinese-epistemology"
-  },
-  {
-    "title": "epistemology",
-    "slug": "descartes-epistemology"
-  },
-  {
     "title": "epistemology",
     "slug": "epistemology"
   },
   {
-    "title": "epistemology and philosophy of mind",
-    "slug": "spinoza-epistemology-mind"
-  },
-  {
-    "title": "epistemology of",
-    "slug": "epistemology-geometry"
-  },
-  {
-    "title": "epistemology of",
-    "slug": "religion-epistemology"
-  },
-  {
     "title": "epistemology, formal",
     "slug": "formal-epistemology"
+  },
+  {
+    "title": "epistemology: Bayesian",
+    "slug": "epistemology-bayesian"
+  },
+  {
+    "title": "epistemology: evolutionary",
+    "slug": "epistemology-evolutionary"
+  },
+  {
+    "title": "epistemology: in Latin America",
+    "slug": "epistemology-latin-america"
+  },
+  {
+    "title": "epistemology: naturalism in",
+    "slug": "epistemology-naturalized"
+  },
+  {
+    "title": "epistemology: social",
+    "slug": "epistemology-social"
+  },
+  {
+    "title": "epistemology: virtue",
+    "slug": "epistemology-virtue"
   },
   {
     "title": "epsilon calculus",
@@ -1978,6 +2086,14 @@
   {
     "title": "equality",
     "slug": "equality"
+  },
+  {
+    "title": "equality: of educational opportunity",
+    "slug": "equal-ed-opportunity"
+  },
+  {
+    "title": "equality: of opportunity",
+    "slug": "equal-opportunity"
   },
   {
     "title": "equivalence of mass and energy",
@@ -1996,52 +2112,12 @@
     "slug": "scottus-eriugena"
   },
   {
-    "title": "erotic",
-    "slug": "erotic-art"
-  },
-  {
-    "title": "essence and existence",
-    "slug": "arabic-islamic-essence"
-  },
-  {
     "title": "essential vs. accidental properties",
     "slug": "essential-accidental"
   },
   {
     "title": "eternity, in Christian thought",
     "slug": "eternity"
-  },
-  {
-    "title": "ethics",
-    "slug": "african-ethics"
-  },
-  {
-    "title": "ethics",
-    "slug": "aristotle-ethics"
-  },
-  {
-    "title": "ethics",
-    "slug": "descartes-ethics"
-  },
-  {
-    "title": "ethics",
-    "slug": "leibniz-ethics"
-  },
-  {
-    "title": "ethics",
-    "slug": "plato-ethics"
-  },
-  {
-    "title": "ethics",
-    "slug": "reid-ethics"
-  },
-  {
-    "title": "ethics and politics in The Republic",
-    "slug": "plato-ethics-politics"
-  },
-  {
-    "title": "ethics of",
-    "slug": "ethics-ai"
   },
   {
     "title": "ethics, biomedical: chimeras, human/non-human",
@@ -2052,28 +2128,72 @@
     "slug": "clinical-research"
   },
   {
+    "title": "ethics, biomedical: justice and access to health care",
+    "slug": "justice-healthcareaccess"
+  },
+  {
+    "title": "ethics, biomedical: justice, inequality, and health",
+    "slug": "justice-inequality-health"
+  },
+  {
+    "title": "ethics, biomedical: privacy and medicine",
+    "slug": "privacy-medicine"
+  },
+  {
+    "title": "ethics, biomedical: stem cell research",
+    "slug": "stem-cells"
+  },
+  {
+    "title": "ethics, biomedical: theory",
+    "slug": "theory-bioethics"
+  },
+  {
     "title": "ethics: ancient",
     "slug": "ethics-ancient"
+  },
+  {
+    "title": "ethics: business",
+    "slug": "ethics-business"
   },
   {
     "title": "ethics: deontological",
     "slug": "ethics-deontological"
   },
   {
+    "title": "ethics: environmental",
+    "slug": "ethics-environmental"
+  },
+  {
     "title": "ethics: in Indian Buddhism",
     "slug": "ethics-indian-buddhism"
+  },
+  {
+    "title": "ethics: internet research",
+    "slug": "ethics-internet-research"
+  },
+  {
+    "title": "ethics: natural law tradition",
+    "slug": "natural-law-ethics"
+  },
+  {
+    "title": "ethics: search engines and",
+    "slug": "ethics-search"
+  },
+  {
+    "title": "ethics: virtue",
+    "slug": "ethics-virtue"
   },
   {
     "title": "eugenics",
     "slug": "eugenics"
   },
   {
-    "title": "events",
-    "slug": "events"
+    "title": "euthanasia: voluntary",
+    "slug": "euthanasia-voluntary"
   },
   {
-    "title": "Everettian",
-    "slug": "qm-everett"
+    "title": "events",
+    "slug": "events"
   },
   {
     "title": "evidence",
@@ -2084,12 +2204,28 @@
     "slug": "higher-order-evidence"
   },
   {
+    "title": "evidence: the legal concept of",
+    "slug": "evidence-legal"
+  },
+  {
+    "title": "evil: concept of",
+    "slug": "concept-evil"
+  },
+  {
+    "title": "evil: kinds and origins",
+    "slug": "evil-kinds-origins"
+  },
+  {
+    "title": "evil: problem of",
+    "slug": "evil"
+  },
+  {
     "title": "evolution",
     "slug": "evolution"
   },
   {
-    "title": "evolution and development",
-    "slug": "evolution-development"
+    "title": "evolution: concept before Darwin",
+    "slug": "evolution-before-darwin"
   },
   {
     "title": "evolution: cultural",
@@ -2100,10 +2236,6 @@
     "slug": "origin-descent"
   },
   {
-    "title": "evolutionary",
-    "slug": "epistemology-evolutionary"
-  },
-  {
     "title": "existence",
     "slug": "existence"
   },
@@ -2112,20 +2244,8 @@
     "slug": "existentialism"
   },
   {
-    "title": "existentialist",
-    "slug": "aesthetics-existentialist"
-  },
-  {
-    "title": "Exoteric Philosophy",
-    "slug": "leibniz-exoteric"
-  },
-  {
-    "title": "experience and justification",
-    "slug": "perception-justification"
-  },
-  {
-    "title": "experiment in",
-    "slug": "biology-experiment"
+    "title": "existentialism: Mexican",
+    "slug": "existentialism-mexican"
   },
   {
     "title": "experimental moral philosophy",
@@ -2136,16 +2256,16 @@
     "slug": "experimental-philosophy"
   },
   {
-    "title": "experimental philosophy of",
-    "slug": "experimental-aesthetics"
-  },
-  {
     "title": "exploitation",
     "slug": "exploitation"
   },
   {
     "title": "externalism about the mind",
     "slug": "content-externalism"
+  },
+  {
+    "title": "externalism: and self-knowledge",
+    "slug": "self-knowledge-externalism"
   },
   {
     "title": "facts",
@@ -2196,8 +2316,44 @@
     "slug": "feminist-philosophy"
   },
   {
+    "title": "feminist philosophy, approaches: analytic philosophy",
+    "slug": "femapproach-analytic"
+  },
+  {
+    "title": "feminist philosophy, approaches: continental philosophy",
+    "slug": "femapproach-continental"
+  },
+  {
+    "title": "feminist philosophy, approaches: intersections between analytic and continental philosophy",
+    "slug": "femapproach-analy-cont"
+  },
+  {
+    "title": "feminist philosophy, approaches: intersections between pragmatist and continental philosophy",
+    "slug": "femapproach-prag-cont"
+  },
+  {
+    "title": "feminist philosophy, approaches: Latin American feminism",
+    "slug": "feminism-latin-america"
+  },
+  {
+    "title": "feminist philosophy, approaches: pragmatism",
+    "slug": "femapproach-pragmatism"
+  },
+  {
+    "title": "feminist philosophy, approaches: psychoanalytic philosophy",
+    "slug": "feminism-psychoanalysis"
+  },
+  {
     "title": "feminist philosophy, interventions: aesthetics",
     "slug": "feminism-aesthetics"
+  },
+  {
+    "title": "feminist philosophy, interventions: bioethics",
+    "slug": "feminist-bioethics"
+  },
+  {
+    "title": "feminist philosophy, interventions: environmental philosophy",
+    "slug": "feminism-environmental"
   },
   {
     "title": "feminist philosophy, interventions: epistemology and philosophy of science",
@@ -2208,16 +2364,104 @@
     "slug": "feminism-ethics"
   },
   {
+    "title": "feminist philosophy, interventions: history of philosophy",
+    "slug": "feminism-femhist"
+  },
+  {
+    "title": "feminist philosophy, interventions: liberal feminism",
+    "slug": "feminism-liberal"
+  },
+  {
+    "title": "feminist philosophy, interventions: metaphysics",
+    "slug": "feminism-metaphysics"
+  },
+  {
+    "title": "feminist philosophy, interventions: moral psychology",
+    "slug": "feminism-moralpsych"
+  },
+  {
     "title": "feminist philosophy, interventions: philosophy of biology",
     "slug": "feminist-philosophy-biology"
+  },
+  {
+    "title": "feminist philosophy, interventions: philosophy of language",
+    "slug": "feminism-language"
+  },
+  {
+    "title": "feminist philosophy, interventions: philosophy of law",
+    "slug": "feminism-law"
+  },
+  {
+    "title": "feminist philosophy, interventions: philosophy of religion",
+    "slug": "feminist-religion"
+  },
+  {
+    "title": "feminist philosophy, interventions: political philosophy",
+    "slug": "feminism-political"
   },
   {
     "title": "feminist philosophy, interventions: social epistemology",
     "slug": "feminist-social-epistemology"
   },
   {
+    "title": "feminist philosophy, topics: perspectives on argumentation",
+    "slug": "feminism-argumentation"
+  },
+  {
+    "title": "feminist philosophy, topics: perspectives on autonomy",
+    "slug": "feminism-autonomy"
+  },
+  {
+    "title": "feminist philosophy, topics: perspectives on class and work",
+    "slug": "feminism-class"
+  },
+  {
     "title": "feminist philosophy, topics: perspectives on disability",
     "slug": "feminism-disability"
+  },
+  {
+    "title": "feminist philosophy, topics: perspectives on globalization",
+    "slug": "feminism-globalization"
+  },
+  {
+    "title": "feminist philosophy, topics: perspectives on objectification",
+    "slug": "feminism-objectification"
+  },
+  {
+    "title": "feminist philosophy, topics: perspectives on power",
+    "slug": "feminist-power"
+  },
+  {
+    "title": "feminist philosophy, topics: perspectives on rape",
+    "slug": "feminism-rape"
+  },
+  {
+    "title": "feminist philosophy, topics: perspectives on reproduction and the family",
+    "slug": "feminism-family"
+  },
+  {
+    "title": "feminist philosophy, topics: perspectives on science",
+    "slug": "feminist-science"
+  },
+  {
+    "title": "feminist philosophy, topics: perspectives on sex and gender",
+    "slug": "feminism-gender"
+  },
+  {
+    "title": "feminist philosophy, topics: perspectives on sex markets",
+    "slug": "feminist-sex-markets"
+  },
+  {
+    "title": "feminist philosophy, topics: perspectives on the body",
+    "slug": "feminist-body"
+  },
+  {
+    "title": "feminist philosophy, topics: perspectives on the self",
+    "slug": "feminism-self"
+  },
+  {
+    "title": "feminist philosophy, topics: perspectives on trans issues",
+    "slug": "feminism-trans"
   },
   {
     "title": "Feuerbach, Ludwig Andreas",
@@ -2244,12 +2488,16 @@
     "slug": "fiction-emotion-response"
   },
   {
-    "title": "fictional entities",
+    "title": "fiction: fictional entities",
     "slug": "fictional-entities"
   },
   {
     "title": "fictionalism",
     "slug": "fictionalism"
+  },
+  {
+    "title": "fictionalism: modal",
+    "slug": "fictionalism-modal"
   },
   {
     "title": "fideism",
@@ -2266,18 +2514,6 @@
   {
     "title": "fine-tuning",
     "slug": "fine-tuning"
-  },
-  {
-    "title": "finitism in",
-    "slug": "geometry-finitism"
-  },
-  {
-    "title": "first-order",
-    "slug": "modeltheory-fo"
-  },
-  {
-    "title": "first-order logic",
-    "slug": "logic-firstorder-emergence"
   },
   {
     "title": "Fitch’s paradox of knowability",
@@ -2300,12 +2536,16 @@
     "slug": "fleck"
   },
   {
-    "title": "Foot, Philippa",
-    "slug": "philippa-foot"
+    "title": "folk psychology: as a theory",
+    "slug": "folkpsych-theory"
   },
   {
-    "title": "for analyzing power in normal form games",
-    "slug": "logic-power-games"
+    "title": "folk psychology: as mental simulation",
+    "slug": "folkpsych-simulation"
+  },
+  {
+    "title": "Foot, Philippa",
+    "slug": "philippa-foot"
   },
   {
     "title": "forgiveness",
@@ -2328,10 +2568,6 @@
     "slug": "francis-marchia"
   },
   {
-    "title": "free",
-    "slug": "logic-free"
-  },
-  {
     "title": "free rider problem",
     "slug": "free-rider"
   },
@@ -2352,20 +2588,32 @@
     "slug": "divine-freedom"
   },
   {
+    "title": "freedom: of association",
+    "slug": "freedom-association"
+  },
+  {
+    "title": "freedom: of speech",
+    "slug": "freedom-speech"
+  },
+  {
     "title": "Frege, Gottlob",
     "slug": "frege"
   },
   {
-    "title": "French, in the 18th century",
-    "slug": "aesthetics-18th-french"
+    "title": "Frege, Gottlob: controversy with Hilbert",
+    "slug": "frege-hilbert"
+  },
+  {
+    "title": "Frege, Gottlob: logic",
+    "slug": "frege-logic"
+  },
+  {
+    "title": "Frege, Gottlob: theorem and foundations for arithmetic",
+    "slug": "frege-theorem"
   },
   {
     "title": "friendship",
     "slug": "friendship"
-  },
-  {
-    "title": "friendship and eros",
-    "slug": "plato-friendship"
   },
   {
     "title": "Fuller, Margaret",
@@ -2384,8 +2632,8 @@
     "slug": "future-contingents"
   },
   {
-    "title": "fuzzy",
-    "slug": "logic-fuzzy"
+    "title": "future contingents: medieval theories of",
+    "slug": "medieval-futcont"
   },
   {
     "title": "Gadamer, Hans-Georg",
@@ -2408,8 +2656,20 @@
     "slug": "game-theory"
   },
   {
+    "title": "game theory: and ethics",
+    "slug": "game-ethics"
+  },
+  {
+    "title": "game theory: epistemic foundations of",
+    "slug": "epistemic-game"
+  },
+  {
     "title": "game theory: evolutionary",
     "slug": "game-evolutionary"
+  },
+  {
+    "title": "games: abstraction and completeness",
+    "slug": "games-abstraction"
   },
   {
     "title": "Gaṅgeśa",
@@ -2428,12 +2688,12 @@
     "slug": "gelukpa"
   },
   {
-    "title": "gender in Confucian philosophy",
-    "slug": "confucian-gender"
-  },
-  {
     "title": "gene",
     "slug": "gene"
+  },
+  {
+    "title": "general relativity: early philosophical interpretations of",
+    "slug": "genrel-early"
   },
   {
     "title": "generalized quantifiers",
@@ -2456,20 +2716,40 @@
     "slug": "ecological-genetics"
   },
   {
+    "title": "genetics: genotype/phenotype distinction",
+    "slug": "genotype-phenotype"
+  },
+  {
+    "title": "genetics: molecular",
+    "slug": "molecular-genetics"
+  },
+  {
+    "title": "genetics: population",
+    "slug": "population-genetics"
+  },
+  {
     "title": "genomics and postgenomics",
     "slug": "genomics"
   },
   {
-    "title": "genotype/phenotype distinction",
-    "slug": "genotype-phenotype"
+    "title": "geometry: epistemology of",
+    "slug": "epistemology-geometry"
+  },
+  {
+    "title": "geometry: finitism in",
+    "slug": "geometry-finitism"
+  },
+  {
+    "title": "geometry: in the 19th century",
+    "slug": "geometry-19th"
   },
   {
     "title": "George, Eliot",
     "slug": "george-eliot"
   },
   {
-    "title": "German, in the 18th century",
-    "slug": "aesthetics-18th-german"
+    "title": "German Philosophy: in the 18th century, prior to Kant",
+    "slug": "18thGerman-preKant"
   },
   {
     "title": "Gersonides",
@@ -2480,16 +2760,28 @@
     "slug": "giles"
   },
   {
-    "title": "global",
-    "slug": "global-democracy"
-  },
-  {
     "title": "globalization",
     "slug": "globalization"
   },
   {
+    "title": "God, arguments for the existence of: moral arguments",
+    "slug": "moral-arguments-god"
+  },
+  {
+    "title": "God: and other necessary beings",
+    "slug": "god-necessary-being"
+  },
+  {
+    "title": "God: and other ultimates",
+    "slug": "god-ultimates"
+  },
+  {
     "title": "Gödel, Kurt",
     "slug": "goedel"
+  },
+  {
+    "title": "Gödel, Kurt: incompleteness theorems",
+    "slug": "goedel-incompleteness"
   },
   {
     "title": "Godfrey of Fontaines",
@@ -2528,10 +2820,6 @@
     "slug": "gratitude"
   },
   {
-    "title": "Greek sources",
-    "slug": "arabic-islamic-greek"
-  },
-  {
     "title": "Green, Thomas Hill",
     "slug": "green"
   },
@@ -2564,16 +2852,16 @@
     "slug": "haecceitism"
   },
   {
+    "title": "haecceity — see substance: medieval theories of",
+    "slug": "medieval-haecceity"
+  },
+  {
     "title": "Halevi, Judah",
     "slug": "halevi"
   },
   {
     "title": "Hamann, Johann Georg",
     "slug": "hamann"
-  },
-  {
-    "title": "Han Dynasty",
-    "slug": "han-dynasty"
   },
   {
     "title": "happiness",
@@ -2628,6 +2916,10 @@
     "slug": "hegel-dialectics"
   },
   {
+    "title": "Hegel, Georg Wilhelm Friedrich: social and political philosophy",
+    "slug": "hegel-social-political"
+  },
+  {
     "title": "Heidegger, Martin",
     "slug": "heidegger"
   },
@@ -2680,32 +2972,8 @@
     "slug": "divine-hiddenness"
   },
   {
-    "title": "higher-order theories",
-    "slug": "consciousness-higher"
-  },
-  {
-    "title": "historical controversies",
-    "slug": "innateness-history"
-  },
-  {
-    "title": "historicist theories of",
-    "slug": "rationality-historicist"
-  },
-  {
-    "title": "history of",
-    "slug": "utilitarianism-history"
-  },
-  {
-    "title": "history of philosophy",
-    "slug": "feminism-femhist"
-  },
-  {
-    "title": "history of western philosophy of, antiquity to 1800",
-    "slug": "hist-westphilmusic-to-1800"
-  },
-  {
-    "title": "history of western philosophy of, since 1800",
-    "slug": "hist-westphilmusic-since-1800"
+    "title": "Hilbert, David: program in the foundations of mathematics",
+    "slug": "hilbert-program"
   },
   {
     "title": "history, philosophy of",
@@ -2716,16 +2984,20 @@
     "slug": "hobbes"
   },
   {
+    "title": "Hobbes, Thomas: moral and political philosophy",
+    "slug": "hobbes-moral"
+  },
+  {
+    "title": "Hobbes, Thomas: philosophy of science",
+    "slug": "hobbes-science"
+  },
+  {
     "title": "Holbach, Paul-Henri Thiry (Baron) d’",
     "slug": "holbach"
   },
   {
     "title": "holes",
     "slug": "holes"
-  },
-  {
-    "title": "holism and nonseparability",
-    "slug": "physics-holism"
   },
   {
     "title": "Holkot [Holcot], Robert",
@@ -2776,6 +3048,22 @@
     "slug": "hume-aesthetics"
   },
   {
+    "title": "Hume, David: moral philosophy",
+    "slug": "hume-moral"
+  },
+  {
+    "title": "Hume, David: Newtonianism and Anti-Newtonianism",
+    "slug": "hume-newton"
+  },
+  {
+    "title": "Hume, David: on free will",
+    "slug": "hume-freewill"
+  },
+  {
+    "title": "Hume, David: on religion",
+    "slug": "hume-religion"
+  },
+  {
     "title": "humor, philosophy of",
     "slug": "humor"
   },
@@ -2812,7 +3100,7 @@
     "slug": "ibn-ezra"
   },
   {
-    "title": "Ibn Gabirol, Solomon",
+    "title": "Ibn Gabirol, Solomon [Avicebron]",
     "slug": "ibn-gabirol"
   },
   {
@@ -2820,27 +3108,27 @@
     "slug": "ibn-kammuna"
   },
   {
-    "title": "Ibn Rushd",
+    "title": "Ibn Rushd [Averroes]",
     "slug": "ibn-rushd"
   },
   {
-    "title": "Ibn Rushd: natural philosophy",
+    "title": "Ibn Rushd [Averroes]: natural philosophy",
     "slug": "ibn-rushd-natural"
   },
   {
-    "title": "Ibn Sina",
+    "title": "Ibn Sina [Avicenna]",
     "slug": "ibn-sina"
   },
   {
-    "title": "Ibn Sina: logic",
+    "title": "Ibn Sina [Avicenna]: logic",
     "slug": "ibn-sina-logic"
   },
   {
-    "title": "Ibn Sina: metaphysics",
+    "title": "Ibn Sina [Avicenna]: metaphysics",
     "slug": "ibn-sina-metaphysics"
   },
   {
-    "title": "Ibn Sina: natural philosophy",
+    "title": "Ibn Sina [Avicenna]: natural philosophy",
     "slug": "ibn-sina-natural"
   },
   {
@@ -2856,16 +3144,24 @@
     "slug": "identity"
   },
   {
-    "title": "identity and individuality in",
-    "slug": "qt-idind"
-  },
-  {
     "title": "identity politics",
     "slug": "identity-politics"
   },
   {
-    "title": "identity theory of",
-    "slug": "truth-identity"
+    "title": "identity: of indiscernibles",
+    "slug": "identity-indiscernible"
+  },
+  {
+    "title": "identity: over time",
+    "slug": "identity-time"
+  },
+  {
+    "title": "identity: relative",
+    "slug": "identity-relative"
+  },
+  {
+    "title": "identity: transworld",
+    "slug": "identity-transworld"
   },
   {
     "title": "ideology",
@@ -2878,10 +3174,6 @@
   {
     "title": "Ikhwān al-Safā’",
     "slug": "ikhwan-al-safa"
-  },
-  {
-    "title": "illumination",
-    "slug": "illumination"
   },
   {
     "title": "imagination",
@@ -2912,148 +3204,68 @@
     "slug": "implicature"
   },
   {
+    "title": "implicature: optimality theoretic and game theoretic approaches",
+    "slug": "implicature-optimality-games"
+  },
+  {
     "title": "impossible worlds",
     "slug": "impossible-worlds"
   },
   {
-    "title": "in ancient philosophy",
-    "slug": "intentionality-ancient"
-  },
-  {
-    "title": "in Arabic and Islamic thought",
-    "slug": "arabic-islamic-causation"
-  },
-  {
-    "title": "in critical theory",
-    "slug": "aesthetics-critical-theory"
-  },
-  {
-    "title": "in early modern philosophy",
-    "slug": "economics-early-modern"
-  },
-  {
-    "title": "in ethics",
-    "slug": "supervenience-ethics"
-  },
-  {
-    "title": "in international relations",
-    "slug": "realism-intl-relations"
-  },
-  {
-    "title": "in Latin America",
-    "slug": "epistemology-latin-america"
-  },
-  {
-    "title": "in Latin American",
-    "slug": "bioethics-latin-america"
-  },
-  {
-    "title": "in legal philosophy",
-    "slug": "lawphil-naturalism"
-  },
-  {
-    "title": "in metaethics",
-    "slug": "constructivism-metaethics"
-  },
-  {
-    "title": "in metaphysics",
-    "slug": "nominalism-metaphysics"
-  },
-  {
-    "title": "in metaphysics",
-    "slug": "platonism"
-  },
-  {
-    "title": "in moral and political philosophy",
-    "slug": "autonomy-moral"
-  },
-  {
-    "title": "in natural language semantics",
-    "slug": "situations-semantics"
-  },
-  {
-    "title": "in physical systems",
-    "slug": "computation-physicalsystems"
-  },
-  {
-    "title": "in physics",
-    "slug": "causation-physics"
-  },
-  {
-    "title": "in political philosophy",
-    "slug": "constructivism-political"
-  },
-  {
-    "title": "in science",
-    "slug": "measurement-science"
-  },
-  {
-    "title": "in the 18th century, prior to Kant",
-    "slug": "18thGerman-preKant"
-  },
-  {
-    "title": "in the 19th century",
-    "slug": "geometry-19th"
-  },
-  {
-    "title": "in the Christian tradition",
-    "slug": "emotion-Christian-tradition"
-  },
-  {
-    "title": "in the history of feminism",
-    "slug": "histfem-condorcet"
-  },
-  {
-    "title": "in the law",
-    "slug": "causation-law"
-  },
-  {
-    "title": "in the Renaissance",
-    "slug": "aristotelianism-renaissance"
-  },
-  {
-    "title": "in the Renaissance",
-    "slug": "natphil-ren"
+    "title": "incommensurability: of scientific theories",
+    "slug": "incommensurability"
   },
   {
     "title": "incompatibilism: (nondeterministic) theories of free will",
     "slug": "incompatibilism-theories"
   },
   {
-    "title": "incompleteness theorems",
-    "slug": "goedel-incompleteness"
-  },
-  {
-    "title": "inconsistent",
-    "slug": "mathematics-inconsistent"
-  },
-  {
-    "title": "independence and large cardinals",
-    "slug": "independence-large-cardinals"
-  },
-  {
-    "title": "independence friendly",
-    "slug": "logic-if"
+    "title": "incompatibilism: arguments for",
+    "slug": "incompatibilism-arguments"
   },
   {
     "title": "indexicals",
     "slug": "indexicals"
   },
   {
+    "title": "Indian Philosophy (Classical): concept of emotion",
+    "slug": "concept-emotion-india"
+  },
+  {
     "title": "Indian Philosophy (Classical): epistemology",
     "slug": "epistemology-india"
   },
   {
-    "title": "indispensability arguments in the",
-    "slug": "mathphil-indis"
+    "title": "Indian Philosophy (Classical): language and testimony",
+    "slug": "language-india"
+  },
+  {
+    "title": "Indian Philosophy (Classical): literal-nonliteral distinction",
+    "slug": "literal-nonliteral-india"
+  },
+  {
+    "title": "Indian Philosophy (Classical): logic",
+    "slug": "logic-india"
+  },
+  {
+    "title": "Indian Philosophy (Classical): naturalism",
+    "slug": "naturalism-india"
+  },
+  {
+    "title": "Indian Philosophy (Classical): perceptual experience and concepts",
+    "slug": "perception-india"
+  },
+  {
+    "title": "Indian Philosophy (Classical): personhood",
+    "slug": "personhood-india"
   },
   {
     "title": "individualism, methodological",
     "slug": "methodological-individualism"
   },
   {
-    "title": "infinitary",
-    "slug": "logic-infinitary"
+    "title": "induction: problem of",
+    "slug": "induction-problem"
   },
   {
     "title": "infinite regress arguments",
@@ -3064,22 +3276,6 @@
     "slug": "infinity"
   },
   {
-    "title": "influence of Arabic and Islamic Philosophy on Judaic thought",
-    "slug": "arabic-islamic-judaic"
-  },
-  {
-    "title": "influence of Arabic and Islamic Philosophy on the Latin West",
-    "slug": "arabic-islamic-influence"
-  },
-  {
-    "title": "influence on 19th century logic",
-    "slug": "leibniz-logic-influence"
-  },
-  {
-    "title": "influence on philosophy",
-    "slug": "luther-influence"
-  },
-  {
     "title": "information",
     "slug": "information"
   },
@@ -3088,12 +3284,24 @@
     "slug": "information-entropy"
   },
   {
+    "title": "information technology: and moral values",
+    "slug": "it-moral-values"
+  },
+  {
+    "title": "information technology: and privacy",
+    "slug": "it-privacy"
+  },
+  {
     "title": "information technology: phenomenological approaches to ethics and",
     "slug": "ethics-it-phenomenology"
   },
   {
     "title": "information: biological",
     "slug": "information-biological"
+  },
+  {
+    "title": "information: semantic conceptions of",
+    "slug": "information-semantic"
   },
   {
     "title": "informed consent",
@@ -3112,6 +3320,18 @@
     "slug": "innate-acquired"
   },
   {
+    "title": "innateness: and contemporary theories of cognition",
+    "slug": "innateness-cognition"
+  },
+  {
+    "title": "innateness: and language",
+    "slug": "innateness-language"
+  },
+  {
+    "title": "innateness: historical controversies",
+    "slug": "innateness-history"
+  },
+  {
     "title": "inner speech",
     "slug": "inner-speech"
   },
@@ -3122,14 +3342,6 @@
   {
     "title": "integrity",
     "slug": "integrity"
-  },
-  {
-    "title": "intellectual",
-    "slug": "intellectual-property"
-  },
-  {
-    "title": "intensional",
-    "slug": "logic-intensional"
   },
   {
     "title": "intensional transitive verbs",
@@ -3144,44 +3356,20 @@
     "slug": "intentionality"
   },
   {
-    "title": "intergenerational",
-    "slug": "justice-intergenerational"
+    "title": "intentionality: collective",
+    "slug": "collective-intentionality"
   },
   {
-    "title": "internalist vs. externalist conceptions of",
-    "slug": "justep-intext"
+    "title": "intentionality: in ancient philosophy",
+    "slug": "intentionality-ancient"
+  },
+  {
+    "title": "intentionality: phenomenal",
+    "slug": "phenomenal-intentionality"
   },
   {
     "title": "international law, philosophy of",
     "slug": "international-law"
-  },
-  {
-    "title": "internet research",
-    "slug": "ethics-internet-research"
-  },
-  {
-    "title": "interpretation and coherence in",
-    "slug": "legal-reas-interpret"
-  },
-  {
-    "title": "interpretivist theories",
-    "slug": "law-interpretivist"
-  },
-  {
-    "title": "intersections between analytic and continental philosophy",
-    "slug": "femapproach-analy-cont"
-  },
-  {
-    "title": "intersections between pragmatist and continental philosophy",
-    "slug": "femapproach-prag-cont"
-  },
-  {
-    "title": "intertheory relations in",
-    "slug": "physics-interrelate"
-  },
-  {
-    "title": "intrinsic vs. extrinsic",
-    "slug": "value-intrinsic-extrinsic"
   },
   {
     "title": "intrinsic vs. extrinsic properties",
@@ -3232,6 +3420,22 @@
     "slug": "japanese-confucian"
   },
   {
+    "title": "Japanese Philosophy: Kokugaku School [Native Japan Studies School]",
+    "slug": "kokugaku-school"
+  },
+  {
+    "title": "Japanese Philosophy: Kūkai",
+    "slug": "kukai"
+  },
+  {
+    "title": "Japanese Philosophy: Kyoto School",
+    "slug": "kyoto-school"
+  },
+  {
+    "title": "Japanese Philosophy: Pure Land",
+    "slug": "japanese-pure-land"
+  },
+  {
     "title": "Japanese Philosophy: Zen Buddhism",
     "slug": "japanese-zen"
   },
@@ -3272,12 +3476,8 @@
     "slug": "justice"
   },
   {
-    "title": "justice and access to health care",
-    "slug": "justice-healthcareaccess"
-  },
-  {
-    "title": "justice, inequality, and health",
-    "slug": "justice-inequality-health"
+    "title": "justice: as a virtue",
+    "slug": "justice-virtue"
   },
   {
     "title": "justice: climate",
@@ -3292,20 +3492,48 @@
     "slug": "justice-global"
   },
   {
+    "title": "justice: intergenerational",
+    "slug": "justice-intergenerational"
+  },
+  {
     "title": "justice: international distributive",
     "slug": "international-justice"
   },
   {
-    "title": "justification",
-    "slug": "logic-justification"
+    "title": "justice: retributive",
+    "slug": "justice-retributive"
+  },
+  {
+    "title": "justice: transitional",
+    "slug": "justice-transitional"
+  },
+  {
+    "title": "justification, epistemic: coherentist theories of",
+    "slug": "justep-coherence"
   },
   {
     "title": "justification, epistemic: foundationalist theories of",
     "slug": "justep-foundational"
   },
   {
+    "title": "justification, epistemic: internalist vs. externalist conceptions of",
+    "slug": "justep-intext"
+  },
+  {
+    "title": "justification, political: public",
+    "slug": "justification-public"
+  },
+  {
     "title": "Kant, Immanuel",
     "slug": "kant"
+  },
+  {
+    "title": "Kant, Immanuel: account of reason",
+    "slug": "kant-reason"
+  },
+  {
+    "title": "Kant, Immanuel: aesthetics and teleology",
+    "slug": "kant-aesthetics"
   },
   {
     "title": "Kant, Immanuel: and Hume on causality",
@@ -3314,6 +3542,62 @@
   {
     "title": "Kant, Immanuel: and Hume on morality",
     "slug": "kant-hume-morality"
+  },
+  {
+    "title": "Kant, Immanuel: and Leibniz",
+    "slug": "kant-leibniz"
+  },
+  {
+    "title": "Kant, Immanuel: conceptualism/nonconceptualism",
+    "slug": "kant-conceptualism"
+  },
+  {
+    "title": "Kant, Immanuel: critique of metaphysics",
+    "slug": "kant-metaphysics"
+  },
+  {
+    "title": "Kant, Immanuel: moral philosophy",
+    "slug": "kant-moral"
+  },
+  {
+    "title": "Kant, Immanuel: philosophical development",
+    "slug": "kant-development"
+  },
+  {
+    "title": "Kant, Immanuel: philosophy of mathematics",
+    "slug": "kant-mathematics"
+  },
+  {
+    "title": "Kant, Immanuel: philosophy of religion",
+    "slug": "kant-religion"
+  },
+  {
+    "title": "Kant, Immanuel: philosophy of science",
+    "slug": "kant-science"
+  },
+  {
+    "title": "Kant, Immanuel: social and political philosophy",
+    "slug": "kant-social-political"
+  },
+  {
+    "title": "Kant, Immanuel: theory of judgment",
+    "slug": "kant-judgment"
+  },
+  {
+    "title": "Kant, Immanuel: transcendental arguments",
+    "slug": "kant-transcendental"
+  },
+  {
+    "title": "Kant, Immanuel: transcendental idealism",
+    "slug": "kant-transcendental-idealism"
+  },
+  {
+    "title": "Kant, Immanuel: view of mind and consciousness of self",
+    "slug": "kant-mind"
+  },
+  {
+    "title": "Kant, Immanuel: views on space and time",
+    "slug": "kant-spacetime"
   },
   {
     "title": "Kaspi, Joseph",
@@ -3336,14 +3620,6 @@
     "slug": "robert-kilwardby"
   },
   {
-    "title": "kinds and origins",
-    "slug": "evil-kinds-origins"
-  },
-  {
-    "title": "knowledge argument",
-    "slug": "qualia-knowledge"
-  },
-  {
     "title": "knowledge how",
     "slug": "knowledge-how"
   },
@@ -3352,8 +3628,12 @@
     "slug": "knowledge-value"
   },
   {
-    "title": "Kokugaku School [Native Japan Studies School]",
-    "slug": "kokugaku-school"
+    "title": "knowledge: analysis of",
+    "slug": "knowledge-analysis"
+  },
+  {
+    "title": "knowledge: by acquaintance vs. description",
+    "slug": "knowledge-acquaindescrip"
   },
   {
     "title": "Korean Philosophy",
@@ -3372,16 +3652,8 @@
     "slug": "thomas-kuhn"
   },
   {
-    "title": "Kūkai",
-    "slug": "kukai"
-  },
-  {
     "title": "Kumārila",
     "slug": "kumaarila"
-  },
-  {
-    "title": "Kyoto School",
-    "slug": "kyoto-school"
   },
   {
     "title": "La Forge, Louis de",
@@ -3412,8 +3684,8 @@
     "slug": "friedrich-lange"
   },
   {
-    "title": "language and testimony",
-    "slug": "language-india"
+    "title": "Langer, Susanne",
+    "slug": "langer"
   },
   {
     "title": "language of thought hypothesis",
@@ -3424,12 +3696,16 @@
     "slug": "laozi"
   },
   {
-    "title": "Latin American feminism",
-    "slug": "feminism-latin-america"
-  },
-  {
     "title": "Latin American Philosophy",
     "slug": "latin-american-philosophy"
+  },
+  {
+    "title": "Latin American Philosophy: analytic philosophy in",
+    "slug": "latin-american-analytic"
+  },
+  {
+    "title": "Latin American Philosophy: metaphilosophical foundations",
+    "slug": "latin-american-metaphilosophy"
   },
   {
     "title": "Latinx Philosophy",
@@ -3440,8 +3716,8 @@
     "slug": "law-ideology"
   },
   {
-    "title": "Laws",
-    "slug": "plato-laws"
+    "title": "law: and language",
+    "slug": "law-language"
   },
   {
     "title": "laws of nature",
@@ -3476,16 +3752,24 @@
     "slug": "legal-obligation"
   },
   {
+    "title": "legal philosophy: economic analysis of law",
+    "slug": "legal-econanalysis"
+  },
+  {
     "title": "legal probabilism",
     "slug": "legal-probabilism"
   },
   {
-    "title": "legal rights",
-    "slug": "legal-rights"
+    "title": "legal reasoning: interpretation and coherence in",
+    "slug": "legal-reas-interpret"
   },
   {
-    "title": "legalism in",
-    "slug": "chinese-legalism"
+    "title": "legal reasoning: precedent and analogy in",
+    "slug": "legal-reas-prec"
+  },
+  {
+    "title": "legal rights",
+    "slug": "legal-rights"
   },
   {
     "title": "legitimacy, political",
@@ -3494,6 +3778,38 @@
   {
     "title": "Leibniz, Gottfried Wilhelm",
     "slug": "leibniz"
+  },
+  {
+    "title": "Leibniz, Gottfried Wilhelm: ethics",
+    "slug": "leibniz-ethics"
+  },
+  {
+    "title": "Leibniz, Gottfried Wilhelm: Exoteric Philosophy",
+    "slug": "leibniz-exoteric"
+  },
+  {
+    "title": "Leibniz, Gottfried Wilhelm: influence on 19th century logic",
+    "slug": "leibniz-logic-influence"
+  },
+  {
+    "title": "Leibniz, Gottfried Wilhelm: modal metaphysics",
+    "slug": "leibniz-modal"
+  },
+  {
+    "title": "Leibniz, Gottfried Wilhelm: on causation",
+    "slug": "leibniz-causation"
+  },
+  {
+    "title": "Leibniz, Gottfried Wilhelm: on the problem of evil",
+    "slug": "leibniz-evil"
+  },
+  {
+    "title": "Leibniz, Gottfried Wilhelm: philosophy of mind",
+    "slug": "leibniz-mind"
+  },
+  {
+    "title": "Leibniz, Gottfried Wilhelm: philosophy of physics",
+    "slug": "leibniz-physics"
   },
   {
     "title": "Leibowitz, Yeshayahu",
@@ -3524,12 +3840,16 @@
     "slug": "david-lewis"
   },
   {
+    "title": "Lewis, David: metaphysics",
+    "slug": "lewis-metaphysics"
+  },
+  {
     "title": "liar paradox",
     "slug": "liar-paradox"
   },
   {
-    "title": "liberal feminism",
-    "slug": "feminism-liberal"
+    "title": "liar paradox: in Arabic and Islamic Philosophy",
+    "slug": "arabic-islamic-liar"
   },
   {
     "title": "liberalism",
@@ -3556,12 +3876,8 @@
     "slug": "life"
   },
   {
-    "title": "life and works",
-    "slug": "descartes-works"
-  },
-  {
-    "title": "life and works",
-    "slug": "nietzsche-life-works"
+    "title": "life: meaning of",
+    "slug": "life-meaning"
   },
   {
     "title": "limits of law",
@@ -3572,16 +3888,12 @@
     "slug": "computational-linguistics"
   },
   {
+    "title": "linguistics: philosophy of",
+    "slug": "linguistics"
+  },
+  {
     "title": "Lipsius, Justus",
     "slug": "justus-lipsius"
-  },
-  {
-    "title": "literal-nonliteral distinction",
-    "slug": "literal-nonliteral-india"
-  },
-  {
-    "title": "literary forms of",
-    "slug": "medieval-literary"
   },
   {
     "title": "Llull, Ramon",
@@ -3600,44 +3912,56 @@
     "slug": "locke"
   },
   {
+    "title": "Locke, John: moral philosophy",
+    "slug": "locke-moral"
+  },
+  {
+    "title": "Locke, John: on freedom",
+    "slug": "locke-freedom"
+  },
+  {
+    "title": "Locke, John: on medicine",
+    "slug": "locke-on-medicine"
+  },
+  {
+    "title": "Locke, John: on personal identity",
+    "slug": "locke-personal-identity"
+  },
+  {
     "title": "Locke, John: on real essence",
     "slug": "real-essence"
   },
   {
-    "title": "logic",
-    "slug": "aristotle-logic"
+    "title": "Locke, John: philosophy of science",
+    "slug": "locke-philosophy-science"
   },
   {
-    "title": "logic",
-    "slug": "bolzano-logic"
+    "title": "Locke, John: political philosophy",
+    "slug": "locke-political"
   },
   {
-    "title": "logic",
-    "slug": "frege-logic"
-  },
-  {
-    "title": "logic",
-    "slug": "logic-india"
-  },
-  {
-    "title": "logic",
-    "slug": "peirce-logic"
-  },
-  {
-    "title": "logic and language in Early Chinese Philosophy",
-    "slug": "chinese-logic-language"
-  },
-  {
-    "title": "logic-based",
-    "slug": "logic-ai"
+    "title": "logic, history of: first-order logic",
+    "slug": "logic-firstorder-emergence"
   },
   {
     "title": "logic, history of: intuitionistic logic",
     "slug": "intuitionistic-logic-development"
   },
   {
+    "title": "logic, history of: modal logic",
+    "slug": "logic-modal-origins"
+  },
+  {
     "title": "logic: action",
     "slug": "logic-action"
+  },
+  {
+    "title": "logic: algebraic propositional",
+    "slug": "logic-algebraic-propositional"
+  },
+  {
+    "title": "logic: ancient",
+    "slug": "logic-ancient"
   },
   {
     "title": "logic: and games",
@@ -3648,40 +3972,168 @@
     "slug": "logic-information"
   },
   {
+    "title": "logic: and ontology",
+    "slug": "logic-ontology"
+  },
+  {
+    "title": "logic: and probability",
+    "slug": "logic-probability"
+  },
+  {
+    "title": "logic: classical",
+    "slug": "logic-classical"
+  },
+  {
+    "title": "logic: combinatory",
+    "slug": "logic-combinatory"
+  },
+  {
+    "title": "logic: combining",
+    "slug": "logic-combining"
+  },
+  {
     "title": "logic: conditionals",
     "slug": "logic-conditionals"
+  },
+  {
+    "title": "logic: connexive",
+    "slug": "logic-connexive"
+  },
+  {
+    "title": "logic: deontic",
+    "slug": "logic-deontic"
+  },
+  {
+    "title": "logic: dependence",
+    "slug": "logic-dependence"
+  },
+  {
+    "title": "logic: dialogical",
+    "slug": "logic-dialogical"
   },
   {
     "title": "logic: dynamic epistemic",
     "slug": "dynamic-epistemic"
   },
   {
+    "title": "logic: epistemic",
+    "slug": "logic-epistemic"
+  },
+  {
     "title": "logic: for analyzing games",
     "slug": "logics-for-games"
+  },
+  {
+    "title": "logic: for analyzing power in normal form games",
+    "slug": "logic-power-games"
+  },
+  {
+    "title": "logic: free",
+    "slug": "logic-free"
+  },
+  {
+    "title": "logic: fuzzy",
+    "slug": "logic-fuzzy"
   },
   {
     "title": "logic: hybrid",
     "slug": "logic-hybrid"
   },
   {
+    "title": "logic: independence friendly",
+    "slug": "logic-if"
+  },
+  {
     "title": "logic: inductive",
     "slug": "logic-inductive"
+  },
+  {
+    "title": "logic: infinitary",
+    "slug": "logic-infinitary"
   },
   {
     "title": "logic: informal",
     "slug": "logic-informal"
   },
   {
+    "title": "logic: intensional",
+    "slug": "logic-intensional"
+  },
+  {
     "title": "logic: intuitionistic",
     "slug": "logic-intuitionistic"
+  },
+  {
+    "title": "logic: justification",
+    "slug": "logic-justification"
   },
   {
     "title": "logic: linear",
     "slug": "logic-linear"
   },
   {
-    "title": "logical",
-    "slug": "logical-empiricism"
+    "title": "logic: many-sorted",
+    "slug": "logic-many-sorted"
+  },
+  {
+    "title": "logic: many-valued",
+    "slug": "logic-manyvalued"
+  },
+  {
+    "title": "logic: modal",
+    "slug": "logic-modal"
+  },
+  {
+    "title": "logic: non-monotonic",
+    "slug": "logic-nonmonotonic"
+  },
+  {
+    "title": "logic: normative status of",
+    "slug": "logic-normative"
+  },
+  {
+    "title": "logic: of belief revision",
+    "slug": "logic-belief-revision"
+  },
+  {
+    "title": "logic: paraconsistent",
+    "slug": "logic-paraconsistent"
+  },
+  {
+    "title": "logic: preference",
+    "slug": "logic-preference"
+  },
+  {
+    "title": "logic: propositional",
+    "slug": "logic-propositional"
+  },
+  {
+    "title": "logic: propositional dynamic",
+    "slug": "logic-dynamic"
+  },
+  {
+    "title": "logic: provability",
+    "slug": "logic-provability"
+  },
+  {
+    "title": "logic: relevance",
+    "slug": "logic-relevance"
+  },
+  {
+    "title": "logic: second-order and higher-order",
+    "slug": "logic-higher-order"
+  },
+  {
+    "title": "logic: substructural",
+    "slug": "logic-substructural"
+  },
+  {
+    "title": "logic: temporal",
+    "slug": "logic-temporal"
+  },
+  {
+    "title": "logical atomism: Russell’s",
+    "slug": "logical-atomism"
   },
   {
     "title": "logical consequence",
@@ -3728,6 +4180,10 @@
     "slug": "justice-bad-luck"
   },
   {
+    "title": "luck: moral",
+    "slug": "moral-luck"
+  },
+  {
     "title": "Lucretius",
     "slug": "lucretius"
   },
@@ -3742,6 +4198,10 @@
   {
     "title": "Luther, Martin",
     "slug": "luther"
+  },
+  {
+    "title": "Luther, Martin: influence on philosophy",
+    "slug": "luther-influence"
   },
   {
     "title": "Luxemburg, Rosa",
@@ -3788,12 +4248,24 @@
     "slug": "maimonides"
   },
   {
+    "title": "Maimonides: the influence of Islamic thought on",
+    "slug": "maimonides-islamic"
+  },
+  {
     "title": "Malebranche, Nicolas",
     "slug": "malebranche"
   },
   {
+    "title": "Malebranche, Nicolas: theory of ideas and vision in God",
+    "slug": "malebranche-ideas"
+  },
+  {
     "title": "Mally, Ernst",
     "slug": "mally"
+  },
+  {
+    "title": "Mally, Ernst: deontic logic",
+    "slug": "mally-deontic"
   },
   {
     "title": "Mandeville, Bernard",
@@ -3802,18 +4274,6 @@
   {
     "title": "manipulation, ethics of",
     "slug": "ethics-manipulation"
-  },
-  {
-    "title": "many-sorted",
-    "slug": "logic-many-sorted"
-  },
-  {
-    "title": "many-valued",
-    "slug": "logic-manyvalued"
-  },
-  {
-    "title": "many-worlds interpretation of",
-    "slug": "qm-manyworlds"
   },
   {
     "title": "many, problem of",
@@ -3880,8 +4340,16 @@
     "slug": "logic-massexpress"
   },
   {
+    "title": "mass expressions: metaphysics of",
+    "slug": "metaphysics-massexpress"
+  },
+  {
     "title": "material constitution",
     "slug": "material-constitution"
+  },
+  {
+    "title": "materialism — see physicalism: eliminative",
+    "slug": "materialism-eliminative"
   },
   {
     "title": "mathematical practice",
@@ -3890,14 +4358,6 @@
   {
     "title": "mathematical: explanation",
     "slug": "mathematics-explanation"
-  },
-  {
-    "title": "mathematics",
-    "slug": "aristotle-mathematics"
-  },
-  {
-    "title": "mathematics",
-    "slug": "descartes-mathematics"
   },
   {
     "title": "mathematics, philosophy of",
@@ -3912,8 +4372,40 @@
     "slug": "formalism-mathematics"
   },
   {
+    "title": "mathematics, philosophy of: indispensability arguments in the",
+    "slug": "mathphil-indis"
+  },
+  {
     "title": "mathematics, philosophy of: intuitionism",
     "slug": "intuitionism"
+  },
+  {
+    "title": "mathematics, philosophy of: naturalism",
+    "slug": "naturalism-mathematics"
+  },
+  {
+    "title": "mathematics, philosophy of: nominalism",
+    "slug": "nominalism-mathematics"
+  },
+  {
+    "title": "mathematics, philosophy of: Platonism",
+    "slug": "platonism-mathematics"
+  },
+  {
+    "title": "mathematics, philosophy of: structuralism",
+    "slug": "structuralism-mathematics"
+  },
+  {
+    "title": "mathematics: constructive",
+    "slug": "mathematics-constructive"
+  },
+  {
+    "title": "mathematics: inconsistent",
+    "slug": "mathematics-inconsistent"
+  },
+  {
+    "title": "mathematics: non-deductive methods in",
+    "slug": "mathematics-nondeductive"
   },
   {
     "title": "McTaggart, John M. E.",
@@ -3928,12 +4420,20 @@
     "slug": "meaning-holism"
   },
   {
-    "title": "meaning of",
-    "slug": "life-meaning"
-  },
-  {
     "title": "meaning, theories of",
     "slug": "meaning"
+  },
+  {
+    "title": "meaning: normativity of",
+    "slug": "meaning-normativity"
+  },
+  {
+    "title": "meaning: of words",
+    "slug": "word-meaning"
+  },
+  {
+    "title": "measurement: in science",
+    "slug": "measurement-science"
   },
   {
     "title": "mechanism in science",
@@ -3944,52 +4444,12 @@
     "slug": "medicine"
   },
   {
-    "title": "medieval",
-    "slug": "mereology-medieval"
-  },
-  {
-    "title": "medieval",
-    "slug": "semiotics-medieval"
-  },
-  {
-    "title": "medieval",
-    "slug": "skepticism-medieval"
-  },
-  {
     "title": "medieval philosophy",
     "slug": "medieval-philosophy"
   },
   {
-    "title": "medieval theories of",
-    "slug": "analogy-medieval"
-  },
-  {
-    "title": "medieval theories of",
-    "slug": "medieval-categories"
-  },
-  {
-    "title": "medieval theories of",
-    "slug": "causation-medieval"
-  },
-  {
-    "title": "medieval theories of",
-    "slug": "conscience-medieval"
-  },
-  {
-    "title": "medieval theories of",
-    "slug": "demonstration-medieval"
-  },
-  {
-    "title": "medieval theories of",
-    "slug": "medieval-emotions"
-  },
-  {
-    "title": "medieval theories of",
-    "slug": "medieval-futcont"
-  },
-  {
-    "title": "medieval theories of",
-    "slug": "medieval-haecceity"
+    "title": "medieval philosophy: literary forms of",
+    "slug": "medieval-literary"
   },
   {
     "title": "Meinong, Alexius",
@@ -4004,6 +4464,10 @@
     "slug": "memory"
   },
   {
+    "title": "memory: epistemological problems of",
+    "slug": "memory-episprob"
+  },
+  {
     "title": "Mencius",
     "slug": "mencius"
   },
@@ -4014,6 +4478,22 @@
   {
     "title": "mental causation",
     "slug": "mental-causation"
+  },
+  {
+    "title": "mental content: causal theories of",
+    "slug": "content-causal"
+  },
+  {
+    "title": "mental content: narrow",
+    "slug": "content-narrow"
+  },
+  {
+    "title": "mental content: nonconceptual",
+    "slug": "content-nonconceptual"
+  },
+  {
+    "title": "mental content: teleological theories of",
+    "slug": "content-teleological"
   },
   {
     "title": "mental disorder",
@@ -4034,6 +4514,10 @@
   {
     "title": "mereology",
     "slug": "mereology"
+  },
+  {
+    "title": "mereology: medieval",
+    "slug": "mereology-medieval"
   },
   {
     "title": "meritocracy",
@@ -4060,10 +4544,6 @@
     "slug": "normativity-metaethics"
   },
   {
-    "title": "metaphilosophical foundations",
-    "slug": "latin-american-metaphilosophy"
-  },
-  {
     "title": "metaphor",
     "slug": "metaphor"
   },
@@ -4073,59 +4553,19 @@
   },
   {
     "title": "metaphysics",
-    "slug": "al-farabi-metaphysics"
-  },
-  {
-    "title": "metaphysics",
-    "slug": "arabic-islamic-metaphysics"
-  },
-  {
-    "title": "metaphysics",
-    "slug": "aristotle-metaphysics"
-  },
-  {
-    "title": "metaphysics",
-    "slug": "chinese-metaphysics"
-  },
-  {
-    "title": "metaphysics",
-    "slug": "feminism-metaphysics"
-  },
-  {
-    "title": "metaphysics",
-    "slug": "lewis-metaphysics"
-  },
-  {
-    "title": "metaphysics",
     "slug": "metaphysics"
   },
   {
-    "title": "metaphysics of",
-    "slug": "metaphysics-massexpress"
-  },
-  {
-    "title": "method",
-    "slug": "descartes-method"
-  },
-  {
-    "title": "method and metaphysics in the Sophist and Statesman",
-    "slug": "plato-sophstate"
-  },
-  {
-    "title": "methodological debates in the 1930s and 1940s",
-    "slug": "cosmology-30s"
+    "title": "metaphysics: realism and anti-realism about",
+    "slug": "realism-about-metaphysics"
   },
   {
     "title": "methodological holism in the social sciences",
     "slug": "holism-social"
   },
   {
-    "title": "methods",
-    "slug": "voting-methods"
-  },
-  {
-    "title": "Mexican",
-    "slug": "existentialism-mexican"
+    "title": "Mexico: philosophy in",
+    "slug": "philosophy-mexico"
   },
   {
     "title": "microbiology, philosophy of",
@@ -4144,8 +4584,8 @@
     "slug": "mill"
   },
   {
-    "title": "mind (heart-mind)",
-    "slug": "chinese-mind"
+    "title": "Mill, John Stuart: moral and political philosophy",
+    "slug": "mill-moral-political"
   },
   {
     "title": "mind: computational theory of",
@@ -4156,36 +4596,16 @@
     "slug": "mind-indian-buddhism"
   },
   {
+    "title": "mind: modularity of",
+    "slug": "modularity-mind"
+  },
+  {
     "title": "mind/brain identity theory",
     "slug": "mind-identity"
   },
   {
     "title": "miracles",
     "slug": "miracles"
-  },
-  {
-    "title": "modal",
-    "slug": "fictionalism-modal"
-  },
-  {
-    "title": "modal",
-    "slug": "logic-modal"
-  },
-  {
-    "title": "modal interpretations of",
-    "slug": "qm-modal"
-  },
-  {
-    "title": "modal logic",
-    "slug": "logic-modal-origins"
-  },
-  {
-    "title": "modal metaphysics",
-    "slug": "descartes-modal"
-  },
-  {
-    "title": "modal metaphysics",
-    "slug": "leibniz-modal"
   },
   {
     "title": "modality: epistemology of",
@@ -4196,8 +4616,20 @@
     "slug": "modality-medieval"
   },
   {
+    "title": "modality: varieties of",
+    "slug": "modality-varieties"
+  },
+  {
+    "title": "model organisms",
+    "slug": "model-organisms"
+  },
+  {
     "title": "model theory",
     "slug": "model-theory"
+  },
+  {
+    "title": "model theory: first-order",
+    "slug": "modeltheory-fo"
   },
   {
     "title": "modeling in the philosophy of science, agent-based",
@@ -4208,32 +4640,8 @@
     "slug": "models-science"
   },
   {
-    "title": "Modern Confucianism",
-    "slug": "confucianism-modern"
-  },
-  {
-    "title": "modern history of",
-    "slug": "computing-history"
-  },
-  {
     "title": "modesty and humility",
     "slug": "modesty-humility"
-  },
-  {
-    "title": "modularity of",
-    "slug": "modularity-mind"
-  },
-  {
-    "title": "Mohism",
-    "slug": "mohism"
-  },
-  {
-    "title": "Mohist Canons",
-    "slug": "mohist-canons"
-  },
-  {
-    "title": "molecular",
-    "slug": "molecular-genetics"
   },
   {
     "title": "molecular biology",
@@ -4252,12 +4660,12 @@
     "slug": "monism"
   },
   {
-    "title": "monotheism",
-    "slug": "monotheism"
+    "title": "monism: Russellian",
+    "slug": "russellian-monism"
   },
   {
-    "title": "Montague",
-    "slug": "montague-semantics"
+    "title": "monotheism",
+    "slug": "monotheism"
   },
   {
     "title": "Montaigne, Michel de",
@@ -4276,36 +4684,12 @@
     "slug": "moore"
   },
   {
-    "title": "moral",
-    "slug": "moral-luck"
-  },
-  {
-    "title": "moral and political philosophy",
-    "slug": "hobbes-moral"
-  },
-  {
-    "title": "moral and political philosophy",
-    "slug": "mill-moral-political"
-  },
-  {
-    "title": "moral and political philosophy",
-    "slug": "nietzsche-moral-political"
-  },
-  {
-    "title": "moral and political philosophy",
-    "slug": "pufendorf-moral"
-  },
-  {
-    "title": "moral and political philosophy",
-    "slug": "smith-moral-political"
+    "title": "Moore, George Edward: moral philosophy",
+    "slug": "moore-moral"
   },
   {
     "title": "moral anti-realism",
     "slug": "moral-anti-realism"
-  },
-  {
-    "title": "moral arguments",
-    "slug": "moral-arguments-god"
   },
   {
     "title": "moral decision-making under uncertainty",
@@ -4352,40 +4736,8 @@
     "slug": "moral-particularism-generalism"
   },
   {
-    "title": "moral philosophy",
-    "slug": "bradley-moral"
-  },
-  {
-    "title": "moral philosophy",
-    "slug": "butler-moral"
-  },
-  {
-    "title": "moral philosophy",
-    "slug": "dewey-moral"
-  },
-  {
-    "title": "moral philosophy",
-    "slug": "hume-moral"
-  },
-  {
-    "title": "moral philosophy",
-    "slug": "kant-moral"
-  },
-  {
-    "title": "moral philosophy",
-    "slug": "locke-moral"
-  },
-  {
-    "title": "moral philosophy",
-    "slug": "moore-moral"
-  },
-  {
-    "title": "moral philosophy",
-    "slug": "russell-moral"
-  },
-  {
-    "title": "moral psychology",
-    "slug": "feminism-moralpsych"
+    "title": "moral psychology: empirical approaches",
+    "slug": "moral-psych-emp"
   },
   {
     "title": "moral realism",
@@ -4404,6 +4756,14 @@
     "slug": "moral-responsibility-empirical"
   },
   {
+    "title": "moral responsibility: principle of alternative possibilities",
+    "slug": "alternative-possibilities"
+  },
+  {
+    "title": "moral responsibility: the epistemic condition",
+    "slug": "moral-responsibility-epistemic"
+  },
+  {
     "title": "moral sentimentalism",
     "slug": "moral-sentimentalism"
   },
@@ -4418,10 +4778,6 @@
   {
     "title": "moral theory",
     "slug": "moral-theory"
-  },
-  {
-    "title": "moral, political, and legal philosophy",
-    "slug": "aquinas-moral-political"
   },
   {
     "title": "moral/conventional distinction",
@@ -4464,8 +4820,16 @@
     "slug": "murdoch"
   },
   {
-    "title": "mysticism",
-    "slug": "arabic-islamic-mysticism"
+    "title": "music: history of western philosophy of, antiquity to 1800",
+    "slug": "hist-westphilmusic-to-1800"
+  },
+  {
+    "title": "music: history of western philosophy of, since 1800",
+    "slug": "hist-westphilmusic-since-1800"
+  },
+  {
+    "title": "music: philosophy of",
+    "slug": "music"
   },
   {
     "title": "mysticism",
@@ -4480,20 +4844,12 @@
     "slug": "names"
   },
   {
-    "title": "narrow",
-    "slug": "content-narrow"
-  },
-  {
     "title": "nationalism",
     "slug": "nationalism"
   },
   {
     "title": "Natorp, Paul",
     "slug": "natorp"
-  },
-  {
-    "title": "natural",
-    "slug": "natural-properties"
   },
   {
     "title": "natural deduction systems in logic",
@@ -4504,48 +4860,36 @@
     "slug": "natural-kinds"
   },
   {
-    "title": "natural law tradition",
-    "slug": "natural-law-ethics"
-  },
-  {
-    "title": "natural philosophy",
-    "slug": "aristotle-natphil"
-  },
-  {
-    "title": "natural philosophy and natural science",
-    "slug": "arabic-islamic-natural"
+    "title": "natural philosophy: in the Renaissance",
+    "slug": "natphil-ren"
   },
   {
     "title": "natural selection",
     "slug": "natural-selection"
   },
   {
-    "title": "naturalism",
-    "slug": "naturalism-india"
-  },
-  {
-    "title": "naturalism",
-    "slug": "naturalism-mathematics"
+    "title": "natural selection: units and levels of",
+    "slug": "selection-units"
   },
   {
     "title": "naturalism",
     "slug": "naturalism"
   },
   {
-    "title": "naturalism in",
-    "slug": "epistemology-naturalized"
+    "title": "naturalism: in legal philosophy",
+    "slug": "lawphil-naturalism"
   },
   {
     "title": "naturalism: moral",
     "slug": "naturalism-moral"
   },
   {
-    "title": "naturalistic approaches to",
-    "slug": "social-construction-naturalistic"
-  },
-  {
     "title": "nature of law",
     "slug": "lawphil-nature"
+  },
+  {
+    "title": "nature of law: interpretivist theories",
+    "slug": "law-interpretivist"
   },
   {
     "title": "nature of law: legal positivism",
@@ -4554,6 +4898,10 @@
   {
     "title": "nature of law: natural law theories",
     "slug": "natural-law-theories"
+  },
+  {
+    "title": "nature of law: pure theory of law",
+    "slug": "lawphil-theory"
   },
   {
     "title": "necessary and sufficient conditions",
@@ -4596,10 +4944,6 @@
     "slug": "neuroethics"
   },
   {
-    "title": "neuroscience of",
-    "slug": "consciousness-neuroscience"
-  },
-  {
     "title": "neuroscience, philosophy of",
     "slug": "neuroscience"
   },
@@ -4608,16 +4952,20 @@
     "slug": "neutral-monism"
   },
   {
-    "title": "New Foundations",
-    "slug": "quine-nf"
-  },
-  {
     "title": "Newton, Isaac",
     "slug": "newton"
   },
   {
-    "title": "Newtonianism and Anti-Newtonianism",
-    "slug": "hume-newton"
+    "title": "Newton, Isaac: Philosophiae Naturalis Principia Mathematica",
+    "slug": "newton-principia"
+  },
+  {
+    "title": "Newton, Isaac: philosophy",
+    "slug": "newton-philosophy"
+  },
+  {
+    "title": "Newton, Isaac: views on space, time, and motion",
+    "slug": "newton-stm"
   },
   {
     "title": "Nicholas of Autrecourt [de Altricuria, Autricuria, Ultricuria, Autricort]",
@@ -4632,28 +4980,20 @@
     "slug": "nietzsche-aesthetics"
   },
   {
+    "title": "Nietzsche, Friedrich: life and works",
+    "slug": "nietzsche-life-works"
+  },
+  {
+    "title": "Nietzsche, Friedrich: moral and political philosophy",
+    "slug": "nietzsche-moral-political"
+  },
+  {
     "title": "Nishida Kitarō",
     "slug": "nishida-kitaro"
   },
   {
-    "title": "nominalism",
-    "slug": "nominalism-mathematics"
-  },
-  {
-    "title": "non-deductive methods in",
-    "slug": "mathematics-nondeductive"
-  },
-  {
-    "title": "non-monotonic",
-    "slug": "logic-nonmonotonic"
-  },
-  {
-    "title": "non-wellfounded",
-    "slug": "nonwellfounded-set-theory"
-  },
-  {
-    "title": "nonconceptual",
-    "slug": "content-nonconceptual"
+    "title": "nominalism: in metaphysics",
+    "slug": "nominalism-metaphysics"
   },
   {
     "title": "nonexistent objects",
@@ -4668,20 +5008,8 @@
     "slug": "psychology-normative-cognition"
   },
   {
-    "title": "normative status of",
-    "slug": "logic-normative"
-  },
-  {
-    "title": "normativity of",
-    "slug": "meaning-normativity"
-  },
-  {
     "title": "Norris, John",
     "slug": "john-norris"
-  },
-  {
-    "title": "notation in",
-    "slug": "pm-notation"
   },
   {
     "title": "nothingness",
@@ -4690,6 +5018,10 @@
   {
     "title": "Novalis [Georg Friedrich Philipp von Hardenberg]",
     "slug": "novalis"
+  },
+  {
+    "title": "Nozick, Robert: political philosophy",
+    "slug": "nozick-political"
   },
   {
     "title": "Numenius",
@@ -4712,56 +5044,16 @@
     "slug": "self-obligations"
   },
   {
+    "title": "obligations: special",
+    "slug": "special-obligations"
+  },
+  {
     "title": "occasionalism",
     "slug": "occasionalism"
   },
   {
     "title": "Ockham [Occam], William",
     "slug": "ockham"
-  },
-  {
-    "title": "of association",
-    "slug": "freedom-association"
-  },
-  {
-    "title": "of belief revision",
-    "slug": "logic-belief-revision"
-  },
-  {
-    "title": "of children",
-    "slug": "rights-children"
-  },
-  {
-    "title": "of educational opportunity",
-    "slug": "equal-ed-opportunity"
-  },
-  {
-    "title": "of indiscernibles",
-    "slug": "identity-indiscernible"
-  },
-  {
-    "title": "of opportunity",
-    "slug": "equal-opportunity"
-  },
-  {
-    "title": "of scientific theories",
-    "slug": "incommensurability"
-  },
-  {
-    "title": "of speech",
-    "slug": "freedom-speech"
-  },
-  {
-    "title": "of the Munich and Göttingen Circles",
-    "slug": "phenomenology-mg"
-  },
-  {
-    "title": "of the person",
-    "slug": "akan-person"
-  },
-  {
-    "title": "of words",
-    "slug": "word-meaning"
   },
   {
     "title": "Olivi, Peter John",
@@ -4784,50 +5076,6 @@
     "slug": "omniscience"
   },
   {
-    "title": "on causation",
-    "slug": "leibniz-causation"
-  },
-  {
-    "title": "on free will",
-    "slug": "hume-freewill"
-  },
-  {
-    "title": "on freedom",
-    "slug": "locke-freedom"
-  },
-  {
-    "title": "on knowledge in the Theaetetus",
-    "slug": "plato-theaetetus"
-  },
-  {
-    "title": "on medicine",
-    "slug": "locke-on-medicine"
-  },
-  {
-    "title": "on memory and personal identity",
-    "slug": "reid-memory-identity"
-  },
-  {
-    "title": "on non-contradiction",
-    "slug": "aristotle-noncontradiction"
-  },
-  {
-    "title": "on personal identity",
-    "slug": "locke-personal-identity"
-  },
-  {
-    "title": "on religion",
-    "slug": "hume-religion"
-  },
-  {
-    "title": "on the problem of evil",
-    "slug": "leibniz-evil"
-  },
-  {
-    "title": "ontological argument",
-    "slug": "descartes-ontological"
-  },
-  {
     "title": "ontological arguments",
     "slug": "ontological-arguments"
   },
@@ -4844,12 +5092,12 @@
     "slug": "natural-language-ontology"
   },
   {
-    "title": "operationalism",
-    "slug": "operationalism"
+    "title": "ontology: and information systems",
+    "slug": "ontology-is"
   },
   {
-    "title": "optimality theoretic and game theoretic approaches",
-    "slug": "implicature-optimality-games"
+    "title": "operationalism",
+    "slug": "operationalism"
   },
   {
     "title": "ordinary objects",
@@ -4876,10 +5124,6 @@
     "slug": "other-minds"
   },
   {
-    "title": "over time",
-    "slug": "identity-time"
-  },
-  {
     "title": "pacifism",
     "slug": "pacifism"
   },
@@ -4904,12 +5148,16 @@
     "slug": "pantheism"
   },
   {
-    "title": "paraconsistent",
-    "slug": "logic-paraconsistent"
-  },
-  {
     "title": "paradox of tragedy",
     "slug": "paradox-of-tragedy"
+  },
+  {
+    "title": "paradox: and contemporary logic",
+    "slug": "paradoxes-contemporary-logic"
+  },
+  {
+    "title": "paradox: Skolem’s",
+    "slug": "paradox-skolem"
   },
   {
     "title": "parenthood and procreation",
@@ -4918,10 +5166,6 @@
   {
     "title": "Parmenides",
     "slug": "parmenides"
-  },
-  {
-    "title": "Parmenides",
-    "slug": "plato-parmenides"
   },
   {
     "title": "Pascal, Blaise",
@@ -4956,6 +5200,14 @@
     "slug": "peirce"
   },
   {
+    "title": "Peirce, Charles Sanders: logic",
+    "slug": "peirce-logic"
+  },
+  {
+    "title": "Peirce, Charles Sanders: theory of signs",
+    "slug": "peirce-semiotics"
+  },
+  {
     "title": "Penbygull, William",
     "slug": "penbygull"
   },
@@ -4968,8 +5220,20 @@
     "slug": "perception-episprob"
   },
   {
-    "title": "perceptual experience and concepts",
-    "slug": "perception-india"
+    "title": "perception: experience and justification",
+    "slug": "perception-justification"
+  },
+  {
+    "title": "perception: the contents of",
+    "slug": "perception-contents"
+  },
+  {
+    "title": "perception: the disjunctive theory of",
+    "slug": "perception-disjunctive"
+  },
+  {
+    "title": "perception: the problem of",
+    "slug": "perception-problem"
   },
   {
     "title": "Pereira, Gómez",
@@ -4978,10 +5242,6 @@
   {
     "title": "perfectionism, in moral and political philosophy",
     "slug": "perfectionism-moral"
-  },
-  {
-    "title": "personal",
-    "slug": "personal-autonomy"
   },
   {
     "title": "personal identity",
@@ -5000,96 +5260,24 @@
     "slug": "personalism"
   },
   {
-    "title": "personhood",
-    "slug": "personhood-india"
-  },
-  {
-    "title": "perspectives on argumentation",
-    "slug": "feminism-argumentation"
-  },
-  {
-    "title": "perspectives on autonomy",
-    "slug": "feminism-autonomy"
-  },
-  {
-    "title": "perspectives on class and work",
-    "slug": "feminism-class"
-  },
-  {
-    "title": "perspectives on globalization",
-    "slug": "feminism-globalization"
-  },
-  {
-    "title": "perspectives on objectification",
-    "slug": "feminism-objectification"
-  },
-  {
-    "title": "perspectives on power",
-    "slug": "feminist-power"
-  },
-  {
-    "title": "perspectives on rape",
-    "slug": "feminism-rape"
-  },
-  {
-    "title": "perspectives on reproduction and the family",
-    "slug": "feminism-family"
-  },
-  {
-    "title": "perspectives on science",
-    "slug": "feminist-science"
-  },
-  {
-    "title": "perspectives on sex and gender",
-    "slug": "feminism-gender"
-  },
-  {
-    "title": "perspectives on sex markets",
-    "slug": "feminist-sex-markets"
-  },
-  {
-    "title": "perspectives on the body",
-    "slug": "feminist-body"
-  },
-  {
-    "title": "perspectives on the self",
-    "slug": "feminism-self"
-  },
-  {
-    "title": "perspectives on trans issues",
-    "slug": "feminism-trans"
-  },
-  {
     "title": "Peter of Spain [= Petrus Hispanus]",
     "slug": "peter-spain"
-  },
-  {
-    "title": "petitionary",
-    "slug": "petitionary-prayer"
   },
   {
     "title": "Petrizi, Joane",
     "slug": "joane-petrizi"
   },
   {
-    "title": "phenomenal",
-    "slug": "phenomenal-intentionality"
-  },
-  {
-    "title": "phenomenological approaches to",
-    "slug": "self-consciousness-phenomenological"
-  },
-  {
     "title": "phenomenology",
     "slug": "phenomenology"
   },
   {
-    "title": "phenomenology of",
-    "slug": "phenomenology-religion"
-  },
-  {
     "title": "phenomenology: moral",
     "slug": "moral-phenomenology"
+  },
+  {
+    "title": "phenomenology: of the Munich and Göttingen Circles",
+    "slug": "phenomenology-mg"
   },
   {
     "title": "philanthropy",
@@ -5120,140 +5308,40 @@
     "slug": "philoponus"
   },
   {
-    "title": "Philosophiae Naturalis Principia Mathematica",
-    "slug": "newton-principia"
-  },
-  {
-    "title": "philosophical development",
-    "slug": "kant-development"
-  },
-  {
-    "title": "philosophy",
-    "slug": "newton-philosophy"
-  },
-  {
-    "title": "philosophy in",
-    "slug": "philosophy-chile"
-  },
-  {
-    "title": "philosophy in",
-    "slug": "philosophy-mexico"
-  },
-  {
-    "title": "philosophy of",
-    "slug": "biology-philosophy"
-  },
-  {
-    "title": "philosophy of",
-    "slug": "economics"
-  },
-  {
-    "title": "philosophy of",
-    "slug": "linguistics"
-  },
-  {
-    "title": "philosophy of",
-    "slug": "music"
-  },
-  {
-    "title": "philosophy of",
-    "slug": "philosophy-religion"
-  },
-  {
     "title": "philosophy of biology: in Latin America",
     "slug": "phil-bio-latin-america"
-  },
-  {
-    "title": "philosophy of language",
-    "slug": "feminism-language"
-  },
-  {
-    "title": "philosophy of language and logic",
-    "slug": "arabic-islamic-language"
-  },
-  {
-    "title": "philosophy of law",
-    "slug": "feminism-law"
-  },
-  {
-    "title": "philosophy of logic and language",
-    "slug": "al-farabi-logic"
-  },
-  {
-    "title": "philosophy of mathematics",
-    "slug": "arabic-islamic-phil-math"
-  },
-  {
-    "title": "philosophy of mathematics",
-    "slug": "kant-mathematics"
-  },
-  {
-    "title": "philosophy of mind",
-    "slug": "leibniz-mind"
-  },
-  {
-    "title": "philosophy of physics",
-    "slug": "leibniz-physics"
-  },
-  {
-    "title": "philosophy of religion",
-    "slug": "arabic-islamic-religion"
-  },
-  {
-    "title": "philosophy of religion",
-    "slug": "feminist-religion"
-  },
-  {
-    "title": "philosophy of religion",
-    "slug": "kant-religion"
-  },
-  {
-    "title": "philosophy of science",
-    "slug": "einstein-philscience"
-  },
-  {
-    "title": "philosophy of science",
-    "slug": "hobbes-science"
-  },
-  {
-    "title": "philosophy of science",
-    "slug": "kant-science"
-  },
-  {
-    "title": "philosophy of science",
-    "slug": "locke-philosophy-science"
   },
   {
     "title": "philosophy of science: in Latin America",
     "slug": "phil-science-latin-america"
   },
   {
-    "title": "philosophy of society and religion",
-    "slug": "al-farabi-soc-rel"
-  },
-  {
-    "title": "philosophy of statistical mechanics",
-    "slug": "statphys-statmech"
-  },
-  {
     "title": "phylogenetic inference",
     "slug": "phylogenetic-inference"
-  },
-  {
-    "title": "physical theory",
-    "slug": "spinoza-physics"
   },
   {
     "title": "physicalism",
     "slug": "physicalism"
   },
   {
-    "title": "physics",
-    "slug": "descartes-physics"
-  },
-  {
     "title": "physics: experiment in",
     "slug": "physics-experiment"
+  },
+  {
+    "title": "physics: holism and nonseparability",
+    "slug": "physics-holism"
+  },
+  {
+    "title": "physics: intertheory relations in",
+    "slug": "physics-interrelate"
+  },
+  {
+    "title": "physics: structuralism in",
+    "slug": "physics-structuralism"
+  },
+  {
+    "title": "physics: symmetry and symmetry breaking",
+    "slug": "symmetry-breaking"
   },
   {
     "title": "Pico della Mirandola, Giovanni",
@@ -5276,6 +5364,30 @@
     "slug": "callicles-thrasymachus"
   },
   {
+    "title": "Plato: Cratylus",
+    "slug": "plato-cratylus"
+  },
+  {
+    "title": "Plato: ethics",
+    "slug": "plato-ethics"
+  },
+  {
+    "title": "Plato: ethics and politics in The Republic",
+    "slug": "plato-ethics-politics"
+  },
+  {
+    "title": "Plato: friendship and eros",
+    "slug": "plato-friendship"
+  },
+  {
+    "title": "Plato: Laws",
+    "slug": "plato-laws"
+  },
+  {
+    "title": "Plato: method and metaphysics in the Sophist and Statesman",
+    "slug": "plato-sophstate"
+  },
+  {
     "title": "Plato: middle period metaphysics and epistemology",
     "slug": "plato-metaphysics"
   },
@@ -5284,8 +5396,28 @@
     "slug": "plato-myths"
   },
   {
-    "title": "Platonism",
-    "slug": "platonism-mathematics"
+    "title": "Plato: on knowledge in the Theaetetus",
+    "slug": "plato-theaetetus"
+  },
+  {
+    "title": "Plato: Parmenides",
+    "slug": "plato-parmenides"
+  },
+  {
+    "title": "Plato: rhetoric and poetry",
+    "slug": "plato-rhetoric"
+  },
+  {
+    "title": "Plato: shorter ethical works",
+    "slug": "plato-ethics-shorter"
+  },
+  {
+    "title": "Plato: Timaeus",
+    "slug": "plato-timaeus"
+  },
+  {
+    "title": "Platonism: in metaphysics",
+    "slug": "platonism"
   },
   {
     "title": "pleasure",
@@ -5300,14 +5432,6 @@
     "slug": "plural-quant"
   },
   {
-    "title": "pluralism",
-    "slug": "value-pluralism"
-  },
-  {
-    "title": "pluralist theories of",
-    "slug": "truth-pluralist"
-  },
-  {
     "title": "Plutarch",
     "slug": "plutarch"
   },
@@ -5320,32 +5444,16 @@
     "slug": "political-obligation"
   },
   {
-    "title": "political philosophy",
-    "slug": "dewey-political"
-  },
-  {
-    "title": "political philosophy",
-    "slug": "feminism-political"
-  },
-  {
-    "title": "political philosophy",
-    "slug": "locke-political"
-  },
-  {
-    "title": "political philosophy",
-    "slug": "nozick-political"
-  },
-  {
-    "title": "political philosophy",
-    "slug": "spinoza-political"
+    "title": "political philosophy: ancient",
+    "slug": "ancient-political"
   },
   {
     "title": "political philosophy: medieval",
     "slug": "medieval-political"
   },
   {
-    "title": "political theory",
-    "slug": "aristotle-politics"
+    "title": "political realism: in international relations",
+    "slug": "realism-intl-relations"
   },
   {
     "title": "Polqar, Isaac",
@@ -5358,10 +5466,6 @@
   {
     "title": "Popper, Karl",
     "slug": "popper"
-  },
-  {
-    "title": "population",
-    "slug": "population-genetics"
   },
   {
     "title": "pornography: and censorship",
@@ -5416,32 +5520,20 @@
     "slug": "pragmatic-belief-god"
   },
   {
-    "title": "pragmatic theory of",
-    "slug": "truth-pragmatic"
-  },
-  {
     "title": "pragmatics",
     "slug": "pragmatics"
-  },
-  {
-    "title": "pragmatism",
-    "slug": "femapproach-pragmatism"
   },
   {
     "title": "pragmatism",
     "slug": "pragmatism"
   },
   {
-    "title": "precedent and analogy in",
-    "slug": "legal-reas-prec"
+    "title": "prayer: petitionary",
+    "slug": "petitionary-prayer"
   },
   {
     "title": "prediction versus accommodation",
     "slug": "prediction-accommodation"
-  },
-  {
-    "title": "preference",
-    "slug": "logic-preference"
   },
   {
     "title": "preferences",
@@ -5480,16 +5572,12 @@
     "slug": "qualities-prim-sec"
   },
   {
-    "title": "primitivist theories of",
-    "slug": "truth-primitivist"
-  },
-  {
     "title": "Principia Mathematica",
     "slug": "principia-mathematica"
   },
   {
-    "title": "principle of alternative possibilities",
-    "slug": "alternative-possibilities"
+    "title": "Principia Mathematica: notation in",
+    "slug": "pm-notation"
   },
   {
     "title": "principle of sufficient reason",
@@ -5512,16 +5600,8 @@
     "slug": "privacy"
   },
   {
-    "title": "privacy and medicine",
-    "slug": "privacy-medicine"
-  },
-  {
     "title": "private language",
     "slug": "private-language"
-  },
-  {
-    "title": "probabilistic",
-    "slug": "causation-probabilistic"
   },
   {
     "title": "probabilities, imprecise",
@@ -5536,14 +5616,6 @@
     "slug": "probability-interpret"
   },
   {
-    "title": "problem of",
-    "slug": "evil"
-  },
-  {
-    "title": "problem of",
-    "slug": "induction-problem"
-  },
-  {
     "title": "process philosophy",
     "slug": "process-philosophy"
   },
@@ -5554,10 +5626,6 @@
   {
     "title": "Proclus",
     "slug": "proclus"
-  },
-  {
-    "title": "program in the foundations of mathematics",
-    "slug": "hilbert-program"
   },
   {
     "title": "progress",
@@ -5576,32 +5644,28 @@
     "slug": "proof-theory-development"
   },
   {
-    "title": "proof-theoretic",
-    "slug": "proof-theoretic-semantics"
-  },
-  {
     "title": "properties",
     "slug": "properties"
+  },
+  {
+    "title": "properties: natural",
+    "slug": "natural-properties"
   },
   {
     "title": "property and ownership",
     "slug": "property"
   },
   {
+    "title": "property: intellectual",
+    "slug": "intellectual-property"
+  },
+  {
     "title": "prophecy",
     "slug": "prophecy"
   },
   {
-    "title": "propositional",
-    "slug": "logic-propositional"
-  },
-  {
     "title": "propositional attitude reports",
     "slug": "prop-attitude-reports"
-  },
-  {
-    "title": "propositional dynamic",
-    "slug": "logic-dynamic"
   },
   {
     "title": "propositional function",
@@ -5612,12 +5676,16 @@
     "slug": "propositions"
   },
   {
-    "title": "Protagoras",
-    "slug": "protagoras"
+    "title": "propositions: singular",
+    "slug": "propositions-singular"
   },
   {
-    "title": "provability",
-    "slug": "logic-provability"
+    "title": "propositions: structured",
+    "slug": "propositions-structured"
+  },
+  {
+    "title": "Protagoras",
+    "slug": "protagoras"
   },
   {
     "title": "providence, divine",
@@ -5632,36 +5700,16 @@
     "slug": "psychiatry"
   },
   {
-    "title": "psychoanalytic philosophy",
-    "slug": "feminism-psychoanalysis"
-  },
-  {
-    "title": "psychological theory",
-    "slug": "spinoza-psychological"
-  },
-  {
     "title": "psychologism",
     "slug": "psychologism"
-  },
-  {
-    "title": "psychology",
-    "slug": "aristotle-psychology"
-  },
-  {
-    "title": "psychology and epistemology",
-    "slug": "al-farabi-psych"
-  },
-  {
-    "title": "psychology and philosophy of mind",
-    "slug": "arabic-islamic-mind"
   },
   {
     "title": "psychology: evolutionary",
     "slug": "evolutionary-psychology"
   },
   {
-    "title": "public",
-    "slug": "justification-public"
+    "title": "psychotherapy, philosophy of",
+    "slug": "psychotherapy"
   },
   {
     "title": "public goods",
@@ -5680,16 +5728,12 @@
     "slug": "publicity"
   },
   {
+    "title": "Pufendorf, Samuel Freiherr von",
+    "slug": "pufendorf"
+  },
+  {
     "title": "punishment, legal",
     "slug": "legal-punishment"
-  },
-  {
-    "title": "Pure Land",
-    "slug": "japanese-pure-land"
-  },
-  {
-    "title": "pure theory of law",
-    "slug": "lawphil-theory"
   },
   {
     "title": "Pyrrho",
@@ -5704,10 +5748,6 @@
     "slug": "pythagoreanism"
   },
   {
-    "title": "Qing philosophy",
-    "slug": "qing-philosophy"
-  },
-  {
     "title": "qualia",
     "slug": "qualia"
   },
@@ -5716,20 +5756,12 @@
     "slug": "qualia-inverted"
   },
   {
+    "title": "qualia: knowledge argument",
+    "slug": "qualia-knowledge"
+  },
+  {
     "title": "quantifiers and quantification",
     "slug": "quantification"
-  },
-  {
-    "title": "quantum computing",
-    "slug": "qt-quantcomp"
-  },
-  {
-    "title": "quantum gravity",
-    "slug": "quantum-gravity"
-  },
-  {
-    "title": "quantum logic and probability theory",
-    "slug": "qt-quantlog"
   },
   {
     "title": "quantum mechanics",
@@ -5740,16 +5772,72 @@
     "slug": "qm-action-distance"
   },
   {
+    "title": "quantum mechanics: Bohmian mechanics",
+    "slug": "qm-bohm"
+  },
+  {
+    "title": "quantum mechanics: collapse theories",
+    "slug": "qm-collapse"
+  },
+  {
+    "title": "quantum mechanics: consistent histories approach",
+    "slug": "qm-consistent-histories"
+  },
+  {
+    "title": "quantum mechanics: Copenhagen interpretation of",
+    "slug": "qm-copenhagen"
+  },
+  {
+    "title": "quantum mechanics: Everettian",
+    "slug": "qm-everett"
+  },
+  {
     "title": "quantum mechanics: Kochen-Specker theorem",
     "slug": "kochen-specker"
+  },
+  {
+    "title": "quantum mechanics: many-worlds interpretation of",
+    "slug": "qm-manyworlds"
+  },
+  {
+    "title": "quantum mechanics: modal interpretations of",
+    "slug": "qm-modal"
+  },
+  {
+    "title": "quantum mechanics: relational",
+    "slug": "qm-relational"
   },
   {
     "title": "quantum mechanics: retrocausality",
     "slug": "qm-retrocausality"
   },
   {
+    "title": "quantum mechanics: the role of decoherence in",
+    "slug": "qm-decoherence"
+  },
+  {
+    "title": "quantum theory: and consciousness",
+    "slug": "qt-consciousness"
+  },
+  {
+    "title": "quantum theory: and mathematical rigor",
+    "slug": "qt-nvd"
+  },
+  {
+    "title": "quantum theory: Bayesian and pragmatist views",
+    "slug": "quantum-bayesian"
+  },
+  {
+    "title": "quantum theory: identity and individuality in",
+    "slug": "qt-idind"
+  },
+  {
     "title": "quantum theory: philosophical issues in",
     "slug": "qt-issues"
+  },
+  {
+    "title": "quantum theory: quantum computing",
+    "slug": "qt-quantcomp"
   },
   {
     "title": "quantum theory: quantum entanglement and information",
@@ -5760,12 +5848,28 @@
     "slug": "quantum-field-theory"
   },
   {
+    "title": "quantum theory: quantum gravity",
+    "slug": "quantum-gravity"
+  },
+  {
+    "title": "quantum theory: quantum logic and probability theory",
+    "slug": "qt-quantlog"
+  },
+  {
+    "title": "quantum theory: the Einstein-Podolsky-Rosen argument in",
+    "slug": "qt-epr"
+  },
+  {
     "title": "questions",
     "slug": "questions"
   },
   {
     "title": "Quine, Willard Van Orman",
     "slug": "quine"
+  },
+  {
+    "title": "Quine, Willard Van Orman: New Foundations",
+    "slug": "quine-nf"
   },
   {
     "title": "quotation",
@@ -5812,8 +5916,20 @@
     "slug": "rationalism-early-modern"
   },
   {
+    "title": "rationality: historicist theories of",
+    "slug": "rationality-historicist"
+  },
+  {
     "title": "rationality: instrumental",
     "slug": "rationality-instrumental"
+  },
+  {
+    "title": "rationality: structural",
+    "slug": "rationality-structural"
+  },
+  {
+    "title": "Ratnakīrti",
+    "slug": "ratnakirti"
   },
   {
     "title": "Rawls, John",
@@ -5824,8 +5940,12 @@
     "slug": "realism"
   },
   {
-    "title": "realism and anti-realism about",
-    "slug": "realism-about-metaphysics"
+    "title": "realism: and theory change in science",
+    "slug": "realism-theory-change"
+  },
+  {
+    "title": "realism: challenges to metaphysical",
+    "slug": "realism-sem-challenge"
   },
   {
     "title": "reasoning: automated",
@@ -5888,14 +6008,6 @@
     "slug": "henricus-regius"
   },
   {
-    "title": "Regress",
-    "slug": "bradley-regress"
-  },
-  {
-    "title": "regularity and inferential theories of",
-    "slug": "causation-regularity"
-  },
-  {
     "title": "Rehberg, August Wilhelm",
     "slug": "august-rehberg"
   },
@@ -5912,6 +6024,14 @@
     "slug": "reid"
   },
   {
+    "title": "Reid, Thomas: ethics",
+    "slug": "reid-ethics"
+  },
+  {
+    "title": "Reid, Thomas: on memory and personal identity",
+    "slug": "reid-memory-identity"
+  },
+  {
     "title": "Reinach, Adolf",
     "slug": "reinach"
   },
@@ -5924,10 +6044,6 @@
     "slug": "reism"
   },
   {
-    "title": "relational",
-    "slug": "qm-relational"
-  },
-  {
     "title": "relations",
     "slug": "relations"
   },
@@ -5936,32 +6052,48 @@
     "slug": "relations-medieval"
   },
   {
-    "title": "relative",
-    "slug": "identity-relative"
-  },
-  {
     "title": "relativism",
     "slug": "relativism"
-  },
-  {
-    "title": "relevance",
-    "slug": "logic-relevance"
   },
   {
     "title": "reliabilist epistemology",
     "slug": "reliabilism"
   },
   {
+    "title": "religion: and morality in western philosophy",
+    "slug": "religion-morality"
+  },
+  {
     "title": "religion: and political theory",
     "slug": "religion-politics"
+  },
+  {
+    "title": "religion: and science",
+    "slug": "religion-science"
+  },
+  {
+    "title": "religion: comparative philosophy of",
+    "slug": "religion-comparative"
+  },
+  {
+    "title": "religion: concept of",
+    "slug": "concept-religion"
+  },
+  {
+    "title": "religion: epistemology of",
+    "slug": "religion-epistemology"
   },
   {
     "title": "religion: evolutionary approaches",
     "slug": "religion-evolutionary"
   },
   {
-    "title": "religious",
-    "slug": "daoism-religion"
+    "title": "religion: phenomenology of",
+    "slug": "phenomenology-religion"
+  },
+  {
+    "title": "religion: philosophy of",
+    "slug": "philosophy-religion"
   },
   {
     "title": "religious commitment and reason",
@@ -5992,10 +6124,6 @@
     "slug": "political-representation"
   },
   {
-    "title": "representational theories of",
-    "slug": "consciousness-representational"
-  },
-  {
     "title": "reproducibility, scientific",
     "slug": "scientific-reproducibility"
   },
@@ -6012,8 +6140,8 @@
     "slug": "respect"
   },
   {
-    "title": "retributive",
-    "slug": "justice-retributive"
+    "title": "responsibility: collective",
+    "slug": "collective-responsibility"
   },
   {
     "title": "revelation, divine",
@@ -6024,20 +6152,8 @@
     "slug": "reverse-mathematics"
   },
   {
-    "title": "revision theory of",
-    "slug": "truth-revision"
-  },
-  {
     "title": "revolution",
     "slug": "revolution"
-  },
-  {
-    "title": "rhetoric",
-    "slug": "aristotle-rhetoric"
-  },
-  {
-    "title": "rhetoric and poetry",
-    "slug": "plato-rhetoric"
   },
   {
     "title": "Richard the Sophister [Ricardus Sophista, Magister abstractionum]",
@@ -6062,6 +6178,10 @@
   {
     "title": "rights: human",
     "slug": "rights-human"
+  },
+  {
+    "title": "rights: of children",
+    "slug": "rights-children"
   },
   {
     "title": "rigid designators",
@@ -6100,10 +6220,6 @@
     "slug": "royce"
   },
   {
-    "title": "rule",
-    "slug": "consequentialism-rule"
-  },
-  {
     "title": "rule of law and procedural fairness",
     "slug": "rule-of-law"
   },
@@ -6116,16 +6232,12 @@
     "slug": "russell"
   },
   {
-    "title": "Russell’s",
-    "slug": "logical-atomism"
+    "title": "Russell, Bertrand: moral philosophy",
+    "slug": "russell-moral"
   },
   {
     "title": "Russell’s paradox",
     "slug": "russell-paradox"
-  },
-  {
-    "title": "Russellian",
-    "slug": "russellian-monism"
   },
   {
     "title": "Ryle, Gilbert",
@@ -6134,10 +6246,6 @@
   {
     "title": "Saadya [Saadiah]",
     "slug": "saadya"
-  },
-  {
-    "title": "sage philosophy",
-    "slug": "african-sage"
   },
   {
     "title": "Sakya Paṇḍita [sa skya paṇ ḍi ta]",
@@ -6240,12 +6348,16 @@
     "slug": "schutz"
   },
   {
-    "title": "science",
-    "slug": "chinese-phil-science"
-  },
-  {
     "title": "science: and pseudo-science",
     "slug": "pseudo-science"
+  },
+  {
+    "title": "science: theory and observation in",
+    "slug": "science-theory-observation"
+  },
+  {
+    "title": "science: unity of",
+    "slug": "scientific-unity"
   },
   {
     "title": "scientific discovery",
@@ -6258,6 +6370,10 @@
   {
     "title": "scientific explanation: causal approaches to",
     "slug": "causal-explanation-science"
+  },
+  {
+    "title": "scientific knowledge: social dimensions of",
+    "slug": "scientific-knowledge-social"
   },
   {
     "title": "scientific method",
@@ -6292,6 +6408,10 @@
     "slug": "scientific-revolutions"
   },
   {
+    "title": "scientific theories: structure of",
+    "slug": "structure-scientific-theories"
+  },
+  {
     "title": "Scottish Philosophy: in the 18th Century",
     "slug": "scottish-18th"
   },
@@ -6304,20 +6424,16 @@
     "slug": "madeleine-scudery"
   },
   {
-    "title": "search engines and",
-    "slug": "ethics-search"
-  },
-  {
     "title": "secession",
     "slug": "secession"
   },
   {
-    "title": "second-order and higher-order",
-    "slug": "logic-higher-order"
-  },
-  {
     "title": "self-consciousness",
     "slug": "self-consciousness"
+  },
+  {
+    "title": "self-consciousness: phenomenological approaches to",
+    "slug": "self-consciousness-phenomenological"
   },
   {
     "title": "self-deception",
@@ -6348,12 +6464,24 @@
     "slug": "sellars"
   },
   {
-    "title": "semantic conceptions of",
-    "slug": "information-semantic"
-  },
-  {
     "title": "semantics: dynamic",
     "slug": "dynamic-semantics"
+  },
+  {
+    "title": "semantics: Montague",
+    "slug": "montague-semantics"
+  },
+  {
+    "title": "semantics: proof-theoretic",
+    "slug": "proof-theoretic-semantics"
+  },
+  {
+    "title": "semantics: two-dimensional",
+    "slug": "two-dimensional-semantics"
+  },
+  {
+    "title": "semiotics: medieval",
+    "slug": "semiotics-medieval"
   },
   {
     "title": "Seneca",
@@ -6364,12 +6492,16 @@
     "slug": "sense-data"
   },
   {
-    "title": "sentence connectives in formal logic",
-    "slug": "connectives-logic"
-  },
-  {
     "title": "set theory",
     "slug": "set-theory"
+  },
+  {
+    "title": "set theory: alternative axiomatic theories",
+    "slug": "settheory-alternative"
+  },
+  {
+    "title": "set theory: constructive and intuitionistic ZF",
+    "slug": "set-theory-constructive"
   },
   {
     "title": "set theory: continuum hypothesis",
@@ -6380,12 +6512,20 @@
     "slug": "settheory-early"
   },
   {
+    "title": "set theory: independence and large cardinals",
+    "slug": "independence-large-cardinals"
+  },
+  {
     "title": "set theory: large cardinals and determinacy",
     "slug": "large-cardinals-determinacy"
   },
   {
-    "title": "seventeenth-century theories of",
-    "slug": "consciousness-17th"
+    "title": "set theory: non-wellfounded",
+    "slug": "nonwellfounded-set-theory"
+  },
+  {
+    "title": "set theory: Zermelo’s axiomatization of",
+    "slug": "zermelo-set-theory"
   },
   {
     "title": "sex and sexuality",
@@ -6406,10 +6546,6 @@
   {
     "title": "Shepherd, Mary",
     "slug": "mary-shepherd"
-  },
-  {
-    "title": "shorter ethical works",
-    "slug": "plato-ethics-shorter"
   },
   {
     "title": "Sidgwick, Henry",
@@ -6452,16 +6588,12 @@
     "slug": "sin-christian"
   },
   {
-    "title": "singular",
-    "slug": "propositions-singular"
-  },
-  {
     "title": "singular terms: medieval theories of",
     "slug": "singular-terms-medieval"
   },
   {
-    "title": "singularities and black holes",
-    "slug": "spacetime-singularities"
+    "title": "situations: in natural language semantics",
+    "slug": "situations-semantics"
   },
   {
     "title": "skeptical theism",
@@ -6470,6 +6602,10 @@
   {
     "title": "skepticism",
     "slug": "skepticism"
+  },
+  {
+    "title": "skepticism: about moral responsibility",
+    "slug": "skepticism-moral-responsibility"
   },
   {
     "title": "skepticism: ancient",
@@ -6484,36 +6620,24 @@
     "slug": "skepticism-latin-america"
   },
   {
-    "title": "Skolem’s",
-    "slug": "paradox-skolem"
+    "title": "skepticism: medieval",
+    "slug": "skepticism-medieval"
   },
   {
-    "title": "social",
-    "slug": "epistemology-social"
-  },
-  {
-    "title": "social and political philosophy",
-    "slug": "hegel-social-political"
-  },
-  {
-    "title": "social and political philosophy",
-    "slug": "kant-social-political"
-  },
-  {
-    "title": "social and political thought",
-    "slug": "chinese-social-political"
+    "title": "Smith, Adam — see Scottish Philosophy: in the 18th Century: moral and political philosophy",
+    "slug": "smith-moral-political"
   },
   {
     "title": "social choice theory",
     "slug": "social-choice"
   },
   {
-    "title": "social cognition",
-    "slug": "animal-social-cognition"
+    "title": "social construction: naturalistic approaches to",
+    "slug": "social-construction-naturalistic"
   },
   {
-    "title": "social dimensions of",
-    "slug": "scientific-knowledge-social"
+    "title": "social contract — see contractarianism: contemporary approaches to",
+    "slug": "contractarianism-contemporary"
   },
   {
     "title": "social institutions",
@@ -6556,10 +6680,6 @@
     "slug": "solidarity"
   },
   {
-    "title": "Song-Ming Confucianism",
-    "slug": "song-ming-confucianism"
-  },
-  {
     "title": "Sophie de Grouchy",
     "slug": "sophie-de-grouchy"
   },
@@ -6592,20 +6712,36 @@
     "slug": "sovereignty"
   },
   {
+    "title": "space and time: absolute and relational space and motion, classical theories",
+    "slug": "spacetime-theories-classical"
+  },
+  {
+    "title": "space and time: absolute and relational space and motion, post-Newtonian theories",
+    "slug": "spacetime-theories"
+  },
+  {
     "title": "space and time: being and becoming in modern physics",
     "slug": "spacetime-bebecome"
+  },
+  {
+    "title": "space and time: conventionality of simultaneity",
+    "slug": "spacetime-convensimul"
   },
   {
     "title": "space and time: inertial frames",
     "slug": "spacetime-iframes"
   },
   {
-    "title": "space and time: the hole argument",
-    "slug": "spacetime-holearg"
+    "title": "space and time: singularities and black holes",
+    "slug": "spacetime-singularities"
   },
   {
-    "title": "special",
-    "slug": "special-obligations"
+    "title": "space and time: supertasks",
+    "slug": "spacetime-supertasks"
+  },
+  {
+    "title": "space and time: the hole argument",
+    "slug": "spacetime-holearg"
   },
   {
     "title": "species",
@@ -6628,8 +6764,28 @@
     "slug": "spinoza"
   },
   {
+    "title": "Spinoza, Baruch: epistemology and philosophy of mind",
+    "slug": "spinoza-epistemology-mind"
+  },
+  {
     "title": "Spinoza, Baruch: modal metaphysics",
     "slug": "spinoza-modal"
+  },
+  {
+    "title": "Spinoza, Baruch: physical theory",
+    "slug": "spinoza-physics"
+  },
+  {
+    "title": "Spinoza, Baruch: political philosophy",
+    "slug": "spinoza-political"
+  },
+  {
+    "title": "Spinoza, Baruch: psychological theory",
+    "slug": "spinoza-psychological"
+  },
+  {
+    "title": "Spinoza, Baruch: theory of attributes",
+    "slug": "spinoza-attributes"
   },
   {
     "title": "sport, philosophy of",
@@ -6656,6 +6812,14 @@
     "slug": "states-of-affairs"
   },
   {
+    "title": "statistical physics: Boltzmann’s work in",
+    "slug": "statphys-Boltzmann"
+  },
+  {
+    "title": "statistical physics: philosophy of statistical mechanics",
+    "slug": "statphys-statmech"
+  },
+  {
     "title": "statistics, philosophy of",
     "slug": "statistics"
   },
@@ -6666,10 +6830,6 @@
   {
     "title": "Stein, Edith",
     "slug": "stein"
-  },
-  {
-    "title": "stem cell research",
-    "slug": "stem-cells"
   },
   {
     "title": "Stevenson, Charles Leslie",
@@ -6692,28 +6852,8 @@
     "slug": "strawson"
   },
   {
-    "title": "structural",
-    "slug": "rationality-structural"
-  },
-  {
     "title": "structural realism",
     "slug": "structural-realism"
-  },
-  {
-    "title": "structuralism",
-    "slug": "structuralism-mathematics"
-  },
-  {
-    "title": "structuralism in",
-    "slug": "physics-structuralism"
-  },
-  {
-    "title": "structure of",
-    "slug": "structure-scientific-theories"
-  },
-  {
-    "title": "structured",
-    "slug": "propositions-structured"
   },
   {
     "title": "Stumpf, Carl",
@@ -6736,10 +6876,6 @@
     "slug": "substance"
   },
   {
-    "title": "substructural",
-    "slug": "logic-substructural"
-  },
-  {
     "title": "Suhrawardi",
     "slug": "suhrawardi"
   },
@@ -6752,12 +6888,12 @@
     "slug": "supererogation"
   },
   {
-    "title": "supertasks",
-    "slug": "spacetime-supertasks"
-  },
-  {
     "title": "supervenience",
     "slug": "supervenience"
+  },
+  {
+    "title": "supervenience: in ethics",
+    "slug": "supervenience-ethics"
   },
   {
     "title": "Susman, Margarete",
@@ -6772,12 +6908,8 @@
     "slug": "medieval-syllogism"
   },
   {
-    "title": "Sylvan, Richard",
+    "title": "Sylvan [Routley], Richard",
     "slug": "sylvan-routley"
-  },
-  {
-    "title": "symmetry and symmetry breaking",
-    "slug": "symmetry-breaking"
   },
   {
     "title": "Syrianus",
@@ -6792,16 +6924,16 @@
     "slug": "tarski"
   },
   {
+    "title": "Tarski, Alfred: truth definitions",
+    "slug": "tarski-truth"
+  },
+  {
     "title": "Taurellus, Nicolaus",
     "slug": "taurellus"
   },
   {
     "title": "technology, philosophy of",
     "slug": "technology"
-  },
-  {
-    "title": "teleological theories of",
-    "slug": "content-teleological"
   },
   {
     "title": "teleology: teleological arguments for God’s existence",
@@ -6814,14 +6946,6 @@
   {
     "title": "Telesio, Bernardino",
     "slug": "telesio"
-  },
-  {
-    "title": "temporal",
-    "slug": "consciousness-temporal"
-  },
-  {
-    "title": "temporal",
-    "slug": "logic-temporal"
   },
   {
     "title": "temporal parts",
@@ -6844,52 +6968,8 @@
     "slug": "terrorism"
   },
   {
-    "title": "textual transmission of Aristotelian corpus",
-    "slug": "aristotle-text"
-  },
-  {
-    "title": "the contents of",
-    "slug": "perception-contents"
-  },
-  {
-    "title": "the disjunctive theory of",
-    "slug": "perception-disjunctive"
-  },
-  {
-    "title": "the Einstein-Podolsky-Rosen argument in",
-    "slug": "qt-epr"
-  },
-  {
-    "title": "the epistemic condition",
-    "slug": "moral-responsibility-epistemic"
-  },
-  {
-    "title": "the influence of Islamic thought on",
-    "slug": "maimonides-islamic"
-  },
-  {
-    "title": "the legal concept of",
-    "slug": "evidence-legal"
-  },
-  {
-    "title": "the mathematics of",
-    "slug": "boolalg-math"
-  },
-  {
-    "title": "the medieval problem of",
-    "slug": "universals-medieval"
-  },
-  {
-    "title": "the metaphysics of",
-    "slug": "causation-metaphysics"
-  },
-  {
-    "title": "the problem of",
-    "slug": "perception-problem"
-  },
-  {
-    "title": "the role of decoherence in",
-    "slug": "qm-decoherence"
+    "title": "testimony: epistemological problems of",
+    "slug": "testimony-episprob"
   },
   {
     "title": "theater, philosophy of",
@@ -6912,52 +6992,8 @@
     "slug": "theophrastus"
   },
   {
-    "title": "theorem and foundations for arithmetic",
-    "slug": "frege-theorem"
-  },
-  {
     "title": "theoretical terms in science",
     "slug": "theoretical-terms-science"
-  },
-  {
-    "title": "theories of",
-    "slug": "theories-biological-development"
-  },
-  {
-    "title": "theory",
-    "slug": "theory-bioethics"
-  },
-  {
-    "title": "theory and observation in",
-    "slug": "science-theory-observation"
-  },
-  {
-    "title": "theory of attributes",
-    "slug": "spinoza-attributes"
-  },
-  {
-    "title": "theory of ideas",
-    "slug": "descartes-ideas"
-  },
-  {
-    "title": "theory of ideas and vision in God",
-    "slug": "malebranche-ideas"
-  },
-  {
-    "title": "theory of judgement",
-    "slug": "brentano-judgement"
-  },
-  {
-    "title": "theory of judgment",
-    "slug": "kant-judgment"
-  },
-  {
-    "title": "theory of signs",
-    "slug": "peirce-semiotics"
-  },
-  {
-    "title": "thermodynamic asymmetry in",
-    "slug": "time-thermo"
   },
   {
     "title": "thick ethical concepts",
@@ -6984,10 +7020,6 @@
     "slug": "epistemology-language-tibetan"
   },
   {
-    "title": "Timaeus",
-    "slug": "plato-timaeus"
-  },
-  {
     "title": "time",
     "slug": "time"
   },
@@ -6998,6 +7030,14 @@
   {
     "title": "time travel",
     "slug": "time-travel"
+  },
+  {
+    "title": "time travel: and modern physics",
+    "slug": "time-travel-phys"
+  },
+  {
+    "title": "time: thermodynamic asymmetry in",
+    "slug": "time-thermo"
   },
   {
     "title": "Timon of Phlius",
@@ -7025,15 +7065,7 @@
   },
   {
     "title": "transcendental arguments",
-    "slug": "kant-transcendental"
-  },
-  {
-    "title": "transcendental arguments",
     "slug": "transcendental-arguments"
-  },
-  {
-    "title": "transcendental idealism",
-    "slug": "kant-transcendental-idealism"
   },
   {
     "title": "transcendentalism",
@@ -7048,20 +7080,8 @@
     "slug": "transformative-experience"
   },
   {
-    "title": "transitional",
-    "slug": "justice-transitional"
-  },
-  {
-    "title": "translating and interpreting",
-    "slug": "chinese-translate-interpret"
-  },
-  {
     "title": "transmission of justification and warrant",
     "slug": "transmission-justification-warrant"
-  },
-  {
-    "title": "transworld",
-    "slug": "identity-transworld"
   },
   {
     "title": "treating persons as means",
@@ -7084,12 +7104,44 @@
     "slug": "truth"
   },
   {
-    "title": "truth definitions",
-    "slug": "tarski-truth"
-  },
-  {
     "title": "truth values",
     "slug": "truth-values"
+  },
+  {
+    "title": "truth: axiomatic theories of",
+    "slug": "truth-axiomatic"
+  },
+  {
+    "title": "truth: coherence theory of",
+    "slug": "truth-coherence"
+  },
+  {
+    "title": "truth: correspondence theory of",
+    "slug": "truth-correspondence"
+  },
+  {
+    "title": "truth: deflationism about",
+    "slug": "truth-deflationary"
+  },
+  {
+    "title": "truth: identity theory of",
+    "slug": "truth-identity"
+  },
+  {
+    "title": "truth: pluralist theories of",
+    "slug": "truth-pluralist"
+  },
+  {
+    "title": "truth: pragmatic theory of",
+    "slug": "truth-pragmatic"
+  },
+  {
+    "title": "truth: primitivist theories of",
+    "slug": "truth-primitivist"
+  },
+  {
+    "title": "truth: revision theory of",
+    "slug": "truth-revision"
   },
   {
     "title": "truthlikeness",
@@ -7128,12 +7180,12 @@
     "slug": "twotruths-tibet"
   },
   {
-    "title": "two-dimensional",
-    "slug": "two-dimensional-semantics"
-  },
-  {
     "title": "type theory",
     "slug": "type-theory"
+  },
+  {
+    "title": "type theory: Church’s type theory",
+    "slug": "type-theory-church"
   },
   {
     "title": "type theory: intuitionistic",
@@ -7160,16 +7212,12 @@
     "slug": "understanding"
   },
   {
-    "title": "units and levels of",
-    "slug": "selection-units"
+    "title": "universals — see properties: the medieval problem of",
+    "slug": "universals-medieval"
   },
   {
-    "title": "unity of",
-    "slug": "consciousness-unity"
-  },
-  {
-    "title": "unity of",
-    "slug": "scientific-unity"
+    "title": "utilitarianism — see consequentialism: history of",
+    "slug": "utilitarianism-history"
   },
   {
     "title": "vagueness",
@@ -7192,8 +7240,12 @@
     "slug": "value-incommensurable"
   },
   {
-    "title": "varieties of",
-    "slug": "modality-varieties"
+    "title": "value: intrinsic vs. extrinsic",
+    "slug": "value-intrinsic-extrinsic"
+  },
+  {
+    "title": "value: pluralism",
+    "slug": "value-pluralism"
   },
   {
     "title": "Vasubandhu",
@@ -7204,36 +7256,12 @@
     "slug": "vegetarianism"
   },
   {
-    "title": "versus randomness",
-    "slug": "chance-randomness"
-  },
-  {
     "title": "Vico, Giambattista",
     "slug": "vico"
   },
   {
     "title": "Vienna Circle",
     "slug": "vienna-circle"
-  },
-  {
-    "title": "view of mind and consciousness of self",
-    "slug": "kant-mind"
-  },
-  {
-    "title": "views on space and time",
-    "slug": "kant-spacetime"
-  },
-  {
-    "title": "views on space, time, and motion",
-    "slug": "newton-stm"
-  },
-  {
-    "title": "virtue",
-    "slug": "epistemology-virtue"
-  },
-  {
-    "title": "virtue",
-    "slug": "ethics-virtue"
   },
   {
     "title": "visual thinking in mathematics: epistemology of",
@@ -7252,12 +7280,12 @@
     "slug": "voluntarism-theological"
   },
   {
-    "title": "voluntary",
-    "slug": "euthanasia-voluntary"
-  },
-  {
     "title": "voting",
     "slug": "voting"
+  },
+  {
+    "title": "voting: methods",
+    "slug": "voting-methods"
   },
   {
     "title": "Wang Yangming",
@@ -7336,8 +7364,8 @@
     "slug": "wilhelm-windelband"
   },
   {
-    "title": "wisdom",
-    "slug": "wisdom"
+    "title": "wisdom: in contemporary analytic philosophy",
+    "slug": "wisdom-analytic"
   },
   {
     "title": "Wittgenstein, Ludwig",
@@ -7418,10 +7446,6 @@
   {
     "title": "Zeno of Elea: Zeno’s paradoxes",
     "slug": "paradox-zeno"
-  },
-  {
-    "title": "Zermelo’s axiomatization of",
-    "slug": "zermelo-set-theory"
   },
   {
     "title": "Zhu Xi",
