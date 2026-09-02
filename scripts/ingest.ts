@@ -51,6 +51,15 @@ type ParsedRoute = {
 };
 type ParsedPamphlet = { note: string; body: string };
 
+/* 모델이 매 회차 남기는 자기 판정. 지면에 인쇄되지 않고 로그에만 간다.
+   발행 게이트는 관측 불가능했다 — 안 뽑히면 아무 기록도 안 남아서 무엇이
+   모자랐는지 알 길이 없었다. verdict 는 게이트를 바꾸지 않고 보이게만 한다. */
+type ParsedVerdict = {
+  issue: boolean;
+  why: string;
+  closest: string | null;
+};
+
 function arg(name: string): string | undefined {
   const i = process.argv.indexOf(`--${name}`);
   return i >= 0 ? process.argv[i + 1] : undefined;
@@ -59,7 +68,11 @@ function arg(name: string): string | undefined {
 /** 모델 출력이 markdown 코드펜스로 감싸여 오는 경우가 있다 */
 function parseModelJson(
   text: string,
-): { routes: ParsedRoute[]; pamphlet?: ParsedPamphlet } | null {
+): {
+  routes: ParsedRoute[];
+  pamphlet?: ParsedPamphlet;
+  verdict?: ParsedVerdict;
+} | null {
   const cleaned = text
     .trim()
     .replace(/^```(?:json)?\s*/, "")
@@ -102,7 +115,19 @@ function parseModelJson(
     ) {
       pamphlet = { note: obj.pamphlet.note, body: obj.pamphlet.body };
     }
-    return { routes, pamphlet };
+
+    let verdict: ParsedVerdict | undefined;
+    const v = obj.verdict;
+    if (v && typeof v === "object" && typeof v.why === "string") {
+      verdict = {
+        issue: v.issue === true,
+        why: v.why.trim(),
+        closest: typeof v.closest === "string" && v.closest.trim()
+          ? v.closest.trim()
+          : null,
+      };
+    }
+    return { routes, pamphlet, verdict };
   } catch {
     return null;
   }
@@ -207,9 +232,20 @@ function main() {
     }
   }
 
-  /* ── 로그 ── 발행 여부와 무관하게 언제나 남는다 ── */
+  /* ── 로그 ── 발행 여부와 무관하게 언제나 남는다.
+        여기가 이 프로젝트의 관측 지점이다. issues/ 는 결과만 담고,
+        무엇이 왜 안 뽑혔는지는 오직 여기 남는다 ── */
   fs.mkdirSync(LOG, { recursive: true });
   const month = issuedAt.slice(0, 7);
+
+  /* 모델이 말한 의도와 실제로 한 일이 갈리는 경우 — issue:true 인데 pamphlet 이
+     없거나 그 반대. 게이트를 어떻게 이해하고 있는지에 대한 신호라 기록한다.
+     published 가 아니라 parsed.pamphlet 과 대조하는 이유는, published 에는
+     이쪽 길이 검증이 섞여 있어 모델의 판단만 떼어 볼 수 없기 때문이다 */
+  const declared = parsed.verdict?.issue ?? null;
+  const mismatch =
+    declared !== null && declared !== Boolean(parsed.pamphlet);
+
   fs.appendFileSync(
     path.join(LOG, `${month}.jsonl`),
     JSON.stringify({
@@ -220,6 +256,8 @@ function main() {
       routes,
       omitted,
       published,
+      verdict: parsed.verdict ?? null,
+      ...(mismatch ? { verdictMismatch: true } : {}),
       ...(published ? {} : { why }),
     }) + "\n",
   );
@@ -227,10 +265,21 @@ function main() {
   const n = routes.reduce((s, r) => s + r.entries.length, 0);
   /* 동결 지도와의 대조. 저장하지 않는다 — routes 에서 언제든 다시 나오고,
      지면도 빌드 때 계산한다 (src/lib/baseline.ts) */
+  const v = parsed.verdict;
   console.log(
     `${published ? "봉인됨" : "미발행"}  ${id}\n` +
       `  route ${routes.length} · 항목 ${n} · 미출품 ${omitted.length}\n` +
       `  ${spreadLine(spreadOf(routes))}\n` +
+      (v
+        ? `  판정: ${v.why}` +
+          (v.closest ? `\n  가장 가까웠던 갈래: ${v.closest}` : "")
+        : "  판정: (모델이 verdict 를 남기지 않았다)") +
+      (mismatch
+        ? `\n  ⚠ verdict.issue=${declared} 인데 pamphlet 은 ${
+            parsed.pamphlet ? "있다" : "없다"
+          }`
+        : "") +
+      "\n" +
       (published ? `  → content/issues/${id}.json` : `  → 이유: ${why}`) +
       `\n  → content/log/${month}.jsonl`,
   );

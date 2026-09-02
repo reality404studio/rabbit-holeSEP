@@ -6,7 +6,8 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "fetch-entries": "tsx scripts/fetch-entries.ts",
-    "ingest": "tsx scripts/ingest.ts"
+    "ingest": "tsx scripts/ingest.ts",
+    "log": "tsx scripts/log.ts"
   },
   "dependencies": {
     "next": "15.5.25",
