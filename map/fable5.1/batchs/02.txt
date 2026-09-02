@@ -1,0 +1,186 @@
+{"slug":"statphys-Boltzmann","f":"physics-phil","f2":["science-general"],"ax":["causation-explanation"],"g":"볼츠만의 통계물리","c":"h"}
+{"slug":"bolzano","f":"analytic-founders","f2":["math-foundations","truth-paradox-argumentation"],"ax":["infinity"],"g":"","c":"m"}
+{"slug":"bonaventure","f":"latin-medieval-thinkers","f2":["religion-theism"],"ax":["divine-nature-proof"],"g":"","c":"h"}
+{"slug":"boole","f":"logic-systems","f2":["math-foundations","analytic-founders"],"ax":[],"g":"","c":"m"}
+{"slug":"bosanquet","f":"empiricism-enlightenment-utilitarianism","f2":["state-liberty-conflict"],"ax":["individual-collective"],"g":"영국 관념론자","c":"h"}
+{"slug":"boundary","f":"metaphysics-objects-modality","f2":[],"ax":[],"g":"경계의 형이상학","c":"h"}
+{"slug":"bounded-rationality","f":"probability-decision-games","f2":["cognition-perception"],"ax":["uncertainty-judgment"],"g":"","c":"h"}
+{"slug":"boyle","f":"seventeenth-century-systems","f2":["science-general"],"ax":[],"g":"","c":"h"}
+{"slug":"bradley","f":"empiricism-enlightenment-utilitarianism","f2":["metaphysics-objects-modality","truth-paradox-argumentation"],"ax":["truth-nature"],"g":"영국 관념론자","c":"h"}
+{"slug":"branching-time","f":"logic-systems","f2":["time-space-causation"],"ax":["freedom-determination"],"g":"분기 시간 논리","c":"h"}
+{"slug":"brentano","f":"phenomenology-existentialism-hermeneutics","f2":["cognition-perception"],"ax":["mind-matter"],"g":"","c":"h"}
+{"slug":"aesthetics-18th-british","f":"aesthetics-art","f2":["empiricism-enlightenment-utilitarianism"],"ax":[],"g":"18세기 영국 미학","c":"h"}
+{"slug":"broad","f":"analytic-founders","f2":["mind-body-consciousness","time-space-causation"],"ax":[],"g":"","c":"h"}
+{"slug":"brouwer","f":"math-foundations","f2":["logic-systems"],"ax":["infinity"],"g":"직관주의 수학","c":"h"}
+{"slug":"bruno","f":"renaissance","f2":[],"ax":["infinity"],"g":"","c":"h"}
+{"slug":"buber","f":"jewish","f2":["phenomenology-existentialism-hermeneutics"],"ax":["individual-collective"],"g":"","c":"h"}
+{"slug":"buddha","f":"indian-buddhist-tibetan","f2":[],"ax":["self-substance","good-life"],"g":"","c":"h"}
+{"slug":"buridan","f":"latin-medieval-thinkers","f2":["medieval-logic-semantics"],"ax":[],"g":"","c":"h"}
+{"slug":"burke","f":"empiricism-enlightenment-utilitarianism","f2":["state-liberty-conflict","aesthetics-art"],"ax":[],"g":"","c":"h"}
+{"slug":"burley","f":"latin-medieval-thinkers","f2":["medieval-logic-semantics"],"ax":[],"g":"","c":"h"}
+{"slug":"ethics-business","f":"social-ontology-economics","f2":["justice-distribution","normative-ethics"],"ax":[],"g":"기업윤리","c":"m"}
+{"slug":"knowledge-acquaindescrip","f":"knowledge-justification","f2":["analytic-founders"],"ax":[],"g":"직접지 vs 기술지","c":"h"}
+{"slug":"byzantine-philosophy","f":"greek-schools","f2":["latin-medieval-thinkers"],"ax":["transmission-translation"],"g":"","c":"m"}
+{"slug":"cambridge-platonists","f":"seventeenth-century-systems","f2":["religion-theism"],"ax":[],"g":"","c":"h"}
+{"slug":"campanella","f":"renaissance","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"camus","f":"phenomenology-existentialism-hermeneutics","f2":[],"ax":["good-life"],"g":"","c":"h"}
+{"slug":"cancer","f":"medicine-bioethics-disability","f2":["biology-phil"],"ax":[],"g":"암의 철학","c":"m"}
+{"slug":"capability-approach","f":"justice-distribution","f2":[],"ax":["equality-difference","good-life"],"g":"","c":"h"}
+{"slug":"cardano","f":"renaissance","f2":["probability-decision-games"],"ax":[],"g":"","c":"m"}
+{"slug":"carnap","f":"analytic-founders","f2":["science-general","language-meaning"],"ax":["language-reality"],"g":"","c":"h"}
+{"slug":"carneades","f":"greek-schools","f2":[],"ax":["skepticism-limits"],"g":"","c":"h"}
+{"slug":"cassirer","f":"kant-german-idealism","f2":["aesthetics-art"],"ax":["language-reality"],"g":"신칸트학파, 상징형식","c":"h"}
+{"slug":"aristotle-categories","f":"plato-aristotle","f2":["metaphysics-objects-modality"],"ax":["universals-particulars"],"g":"","c":"h"}
+{"slug":"categories","f":"metaphysics-objects-modality","f2":[],"ax":["universals-particulars"],"g":"","c":"h"}
+{"slug":"category-mistakes","f":"language-meaning","f2":["metaphysics-objects-modality"],"ax":[],"g":"범주 오류","c":"h"}
+{"slug":"category-theory","f":"math-foundations","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"decision-causal","f":"probability-decision-games","f2":[],"ax":["causation-explanation","uncertainty-judgment"],"g":"인과적 결정이론","c":"h"}
+{"slug":"causal-models","f":"time-space-causation","f2":["science-general","probability-decision-games"],"ax":["causation-explanation"],"g":"","c":"h"}
+{"slug":"content-causal","f":"cognition-perception","f2":["language-meaning"],"ax":["mind-matter"],"g":"심적 내용 인과이론","c":"h"}
+{"slug":"aristotle-causality","f":"plato-aristotle","f2":["time-space-causation"],"ax":["causation-explanation"],"g":"","c":"h"}
+{"slug":"margaret-cavendish","f":"seventeenth-century-systems","f2":["feminism-gender-sex"],"ax":["mind-matter"],"g":"","c":"h"}
+{"slug":"cell-biology","f":"biology-phil","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"cellular-automata","f":"computing-information-tech","f2":["physics-phil"],"ax":["computation-mechanism"],"g":"","c":"h"}
+{"slug":"certainty","f":"knowledge-justification","f2":[],"ax":["skepticism-limits"],"g":"","c":"h"}
+{"slug":"realism-sem-challenge","f":"metaphysics-objects-modality","f2":["language-meaning","truth-paradox-argumentation"],"ax":["language-reality","truth-nature"],"g":"형이상학적 실재론 비판","c":"h"}
+{"slug":"chaos","f":"physics-phil","f2":["science-general"],"ax":["causation-explanation"],"g":"","c":"h"}
+{"slug":"moral-character","f":"normative-ethics","f2":["metaethics-value"],"ax":["good-life"],"g":"","c":"h"}
+{"slug":"emilie-du-chatelet","f":"empiricism-enlightenment-utilitarianism","f2":["seventeenth-century-systems","feminism-gender-sex"],"ax":[],"g":"","c":"m"}
+{"slug":"walter-chatton","f":"latin-medieval-thinkers","f2":["medieval-logic-semantics"],"ax":[],"g":"","c":"h"}
+{"slug":"chemistry","f":"science-general","f2":["physics-phil"],"ax":[],"g":"","c":"h"}
+{"slug":"childhood","f":"person-life-course","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"children","f":"person-life-course","f2":[],"ax":[],"g":"어린이 철학교육","c":"h"}
+{"slug":"chinese-phil-medicine","f":"east-asian","f2":["medicine-bioethics-disability"],"ax":[],"g":"","c":"h"}
+{"slug":"chinese-painting-calligraphy","f":"east-asian","f2":["aesthetics-art"],"ax":[],"g":"","c":"h"}
+{"slug":"buddhism-chan","f":"east-asian","f2":["indian-buddhist-tibetan"],"ax":[],"g":"","c":"h"}
+{"slug":"ethics-chinese","f":"east-asian","f2":["normative-ethics"],"ax":[],"g":"","c":"h"}
+{"slug":"buddhism-huayan","f":"east-asian","f2":["indian-buddhist-tibetan"],"ax":[],"g":"","c":"h"}
+{"slug":"chinese-change","f":"east-asian","f2":[],"ax":["change-persistence"],"g":"역(易)의 철학","c":"h"}
+{"slug":"buddhism-tiantai","f":"east-asian","f2":["indian-buddhist-tibetan"],"ax":[],"g":"","c":"h"}
+{"slug":"chinese-room","f":"computing-information-tech","f2":["mind-body-consciousness"],"ax":["computation-mechanism","mind-matter"],"g":"","c":"h"}
+{"slug":"chisholm","f":"analytic-founders","f2":["knowledge-justification","metaphysics-objects-modality"],"ax":[],"g":"","c":"h"}
+{"slug":"axiom-choice","f":"math-foundations","f2":[],"ax":["infinity"],"g":"","c":"h"}
+{"slug":"dynamic-choice","f":"probability-decision-games","f2":[],"ax":["uncertainty-judgment"],"g":"","c":"h"}
+{"slug":"christiantheology-philosophy","f":"religion-theism","f2":["latin-medieval-thinkers"],"ax":[],"g":"","c":"h"}
+{"slug":"church-turing","f":"math-foundations","f2":["computing-information-tech"],"ax":["computation-mechanism"],"g":"","c":"h"}
+{"slug":"church","f":"math-foundations","f2":["logic-systems","analytic-founders"],"ax":["computation-mechanism"],"g":"","c":"h"}
+{"slug":"type-theory-church","f":"logic-systems","f2":["math-foundations"],"ax":[],"g":"","c":"h"}
+{"slug":"cicero","f":"greek-schools","f2":["state-liberty-conflict"],"ax":[],"g":"","c":"h"}
+{"slug":"citizenship","f":"state-liberty-conflict","f2":[],"ax":["individual-collective"],"g":"","c":"h"}
+{"slug":"civic-education","f":"state-liberty-conflict","f2":["person-life-course"],"ax":[],"g":"","c":"h"}
+{"slug":"humanism-civic","f":"renaissance","f2":["state-liberty-conflict"],"ax":[],"g":"시민적 인문주의","c":"h"}
+{"slug":"civil-disobedience","f":"state-liberty-conflict","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"civil-rights","f":"state-liberty-conflict","f2":["justice-distribution"],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"clarke","f":"seventeenth-century-systems","f2":["religion-theism","empiricism-enlightenment-utilitarianism"],"ax":["divine-nature-proof"],"g":"","c":"m"}
+{"slug":"logic-classical","f":"logic-systems","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"clauberg","f":"seventeenth-century-systems","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"climate-science","f":"science-general","f2":["justice-distribution"],"ax":[],"g":"","c":"h"}
+{"slug":"cloning","f":"medicine-bioethics-disability","f2":[],"ax":["harm-permissibility"],"g":"","c":"h"}
+{"slug":"cockburn","f":"empiricism-enlightenment-utilitarianism","f2":["feminism-gender-sex","metaethics-value"],"ax":[],"g":"","c":"m"}
+{"slug":"coercion","f":"state-liberty-conflict","f2":["agency-freewill-responsibility"],"ax":["harm-permissibility"],"g":"","c":"h"}
+{"slug":"cognition-animal","f":"cognition-perception","f2":["biology-phil"],"ax":[],"g":"","c":"h"}
+{"slug":"cognitive-disability","f":"medicine-bioethics-disability","f2":["metaethics-value"],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"cognitive-science","f":"cognition-perception","f2":["computing-information-tech"],"ax":["computation-mechanism"],"g":"","c":"h"}
+{"slug":"moral-cognitivism","f":"metaethics-value","f2":[],"ax":["truth-nature"],"g":"","c":"h"}
+{"slug":"cohen","f":"kant-german-idealism","f2":["jewish"],"ax":[],"g":"신칸트학파","c":"h"}
+{"slug":"truth-coherence","f":"truth-paradox-argumentation","f2":[],"ax":["truth-nature"],"g":"","c":"h"}
+{"slug":"justep-coherence","f":"knowledge-justification","f2":[],"ax":[],"g":"정합주의 정당화","c":"h"}
+{"slug":"qm-collapse","f":"physics-phil","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"collective-intentionality","f":"social-ontology-economics","f2":["agency-freewill-responsibility"],"ax":["individual-collective"],"g":"","c":"h"}
+{"slug":"collective-responsibility","f":"agency-freewill-responsibility","f2":["social-ontology-economics"],"ax":["individual-collective"],"g":"","c":"h"}
+{"slug":"collingwood","f":"phenomenology-existentialism-hermeneutics","f2":["empiricism-enlightenment-utilitarianism","aesthetics-art"],"ax":[],"g":"영국 역사철학자","c":"m"}
+{"slug":"collingwood-aesthetics","f":"aesthetics-art","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"collins","f":"empiricism-enlightenment-utilitarianism","f2":["religion-theism","agency-freewill-responsibility"],"ax":["freedom-determination"],"g":"","c":"m"}
+{"slug":"colonialism","f":"africana-race-colonialism","f2":["state-liberty-conflict","justice-distribution"],"ax":[],"g":"","c":"h"}
+{"slug":"color","f":"cognition-perception","f2":["metaphysics-objects-modality"],"ax":["mind-matter"],"g":"","c":"h"}
+{"slug":"logic-combinatory","f":"logic-systems","f2":["math-foundations"],"ax":[],"g":"","c":"h"}
+{"slug":"logic-combining","f":"logic-systems","f2":[],"ax":[],"g":"논리 체계 결합","c":"h"}
+{"slug":"common-good","f":"state-liberty-conflict","f2":[],"ax":["individual-collective"],"g":"","c":"h"}
+{"slug":"common-ground-pragmatics","f":"language-meaning","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"common-knowledge","f":"probability-decision-games","f2":["knowledge-justification"],"ax":[],"g":"","c":"h"}
+{"slug":"animal-communication","f":"language-meaning","f2":["cognition-perception","biology-phil"],"ax":[],"g":"","c":"h"}
+{"slug":"communitarianism","f":"state-liberty-conflict","f2":[],"ax":["individual-collective"],"g":"","c":"h"}
+{"slug":"comparative-cognition","f":"cognition-perception","f2":["biology-phil"],"ax":[],"g":"동물 인지 비교 방법론","c":"h"}
+{"slug":"religion-comparative","f":"religion-theism","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"comparphil-chiwes","f":"east-asian","f2":[],"ax":["transmission-translation"],"g":"","c":"h"}
+{"slug":"compatibilism","f":"agency-freewill-responsibility","f2":[],"ax":["freedom-determination"],"g":"","c":"h"}
+{"slug":"compositionality","f":"language-meaning","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"computability","f":"math-foundations","f2":["computing-information-tech"],"ax":["computation-mechanism"],"g":"","c":"h"}
+{"slug":"computational-complexity","f":"math-foundations","f2":["computing-information-tech"],"ax":["computation-mechanism"],"g":"","c":"h"}
+{"slug":"computational-philosophy","f":"computing-information-tech","f2":["science-general"],"ax":[],"g":"","c":"h"}
+{"slug":"computer-science","f":"computing-information-tech","f2":[],"ax":["computation-mechanism"],"g":"","c":"h"}
+{"slug":"comte","f":"empiricism-enlightenment-utilitarianism","f2":["science-general","social-ontology-economics"],"ax":[],"g":"실증주의 창시자","c":"m"}
+{"slug":"evolution-before-darwin","f":"biology-phil","f2":["science-general"],"ax":[],"g":"다윈 이전 진화 개념","c":"h"}
+{"slug":"concept-evil","f":"metaethics-value","f2":[],"ax":[],"g":"악의 개념","c":"h"}
+{"slug":"concept-religion","f":"religion-theism","f2":[],"ax":[],"g":"종교 개념","c":"h"}
+{"slug":"concept-emotion-india","f":"indian-buddhist-tibetan","f2":["emotions-attitudes"],"ax":["reason-emotion"],"g":"인도 철학의 감정 개념","c":"h"}
+{"slug":"concepts","f":"cognition-perception","f2":["language-meaning"],"ax":["universals-particulars"],"g":"","c":"h"}
+{"slug":"kant-conceptualism","f":"kant-german-idealism","f2":["cognition-perception"],"ax":[],"g":"칸트 개념주의 논쟁","c":"h"}
+{"slug":"condemnation","f":"latin-medieval-thinkers","f2":[],"ax":[],"g":"1277년 파리 단죄","c":"h"}
+{"slug":"condillac","f":"empiricism-enlightenment-utilitarianism","f2":["cognition-perception","language-meaning"],"ax":[],"g":"","c":"h"}
+{"slug":"conditionals","f":"logic-systems","f2":["language-meaning"],"ax":[],"g":"","c":"h"}
+{"slug":"confirmation","f":"science-general","f2":["probability-decision-games"],"ax":["uncertainty-judgment"],"g":"","c":"h"}
+{"slug":"confucius","f":"east-asian","f2":[],"ax":["good-life"],"g":"","c":"h"}
+{"slug":"connectionism","f":"computing-information-tech","f2":["cognition-perception"],"ax":["computation-mechanism"],"g":"","c":"h"}
+{"slug":"logic-connexive","f":"logic-systems","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"conscience","f":"metaethics-value","f2":["normative-ethics","religion-theism"],"ax":[],"g":"","c":"h"}
+{"slug":"consciousness-animal","f":"mind-body-consciousness","f2":["cognition-perception","biology-phil"],"ax":[],"g":"","c":"h"}
+{"slug":"consciousness","f":"mind-body-consciousness","f2":[],"ax":["mind-matter"],"g":"","c":"h"}
+{"slug":"consequence-medieval","f":"medieval-logic-semantics","f2":["logic-systems"],"ax":[],"g":"","c":"h"}
+{"slug":"consequentialism","f":"normative-ethics","f2":[],"ax":["normativity-source"],"g":"","c":"h"}
+{"slug":"consequentializing","f":"normative-ethics","f2":[],"ax":[],"g":"결과주의화 논쟁","c":"h"}
+{"slug":"conservation-biology","f":"biology-phil","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"conservatism","f":"state-liberty-conflict","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"qm-consistent-histories","f":"physics-phil","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"constitutionalism","f":"law-phil","f2":["state-liberty-conflict"],"ax":[],"g":"","c":"h"}
+{"slug":"mathematics-constructive","f":"math-foundations","f2":[],"ax":["infinity"],"g":"","c":"h"}
+{"slug":"set-theory-constructive","f":"math-foundations","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"constructive-empiricism","f":"science-general","f2":[],"ax":["skepticism-limits"],"g":"","c":"h"}
+{"slug":"africana-contemporary","f":"africana-race-colonialism","f2":[],"ax":[],"g":"현대 아프리카나 철학","c":"h"}
+{"slug":"contractarianism-contemporary","f":"normative-ethics","f2":["state-liberty-conflict"],"ax":["normativity-source"],"g":"현대 계약론","c":"h"}
+{"slug":"contextualism-epistemology","f":"knowledge-justification","f2":[],"ax":["skepticism-limits"],"g":"","c":"h"}
+{"slug":"femapproach-continental","f":"feminism-gender-sex","f2":["critical-theory-poststructuralism","phenomenology-existentialism-hermeneutics"],"ax":[],"g":"페미니즘과 대륙철학","c":"h"}
+{"slug":"continuity","f":"math-foundations","f2":[],"ax":["infinity"],"g":"","c":"h"}
+{"slug":"contract-law","f":"law-phil","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"contractarianism","f":"normative-ethics","f2":["state-liberty-conflict"],"ax":["normativity-source"],"g":"","c":"h"}
+{"slug":"contractualism","f":"normative-ethics","f2":[],"ax":["normativity-source"],"g":"","c":"h"}
+{"slug":"contradiction","f":"logic-systems","f2":["truth-paradox-argumentation"],"ax":[],"g":"","c":"h"}
+{"slug":"dedekind-foundations","f":"math-foundations","f2":[],"ax":["infinity"],"g":"","c":"h"}
+{"slug":"frege-hilbert","f":"analytic-founders","f2":["math-foundations"],"ax":[],"g":"프레게-힐베르트 논쟁","c":"h"}
+{"slug":"convention","f":"language-meaning","f2":["social-ontology-economics"],"ax":[],"g":"","c":"h"}
+{"slug":"spacetime-convensimul","f":"physics-phil","f2":[],"ax":[],"g":"동시성의 규약성","c":"h"}
+{"slug":"conway","f":"seventeenth-century-systems","f2":["feminism-gender-sex"],"ax":["mind-matter"],"g":"","c":"h"}
+{"slug":"anna-julia-cooper","f":"africana-race-colonialism","f2":["feminism-gender-sex"],"ax":[],"g":"","c":"h"}
+{"slug":"qm-copenhagen","f":"physics-phil","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"copernicus","f":"renaissance","f2":["science-general","physics-phil"],"ax":[],"g":"","c":"m"}
+{"slug":"cordemoy","f":"seventeenth-century-systems","f2":[],"ax":["mind-matter"],"g":"","c":"h"}
+{"slug":"bohr-correspondence","f":"physics-phil","f2":[],"ax":[],"g":"보어 대응원리","c":"h"}
+{"slug":"truth-correspondence","f":"truth-paradox-argumentation","f2":[],"ax":["truth-nature"],"g":"","c":"h"}
+{"slug":"corruption","f":"state-liberty-conflict","f2":["normative-ethics"],"ax":[],"g":"","c":"h"}
+{"slug":"cosmological-argument","f":"religion-theism","f2":[],"ax":["divine-nature-proof","causation-explanation"],"g":"","c":"h"}
+{"slug":"cosmology","f":"physics-phil","f2":[],"ax":["infinity"],"g":"","c":"h"}
+{"slug":"cosmopolitanism","f":"justice-distribution","f2":["state-liberty-conflict"],"ax":["individual-collective"],"g":"","c":"h"}
+{"slug":"counterfactuals","f":"logic-systems","f2":["language-meaning","metaphysics-objects-modality"],"ax":[],"g":"","c":"h"}
+{"slug":"causation-counterfactual","f":"time-space-causation","f2":[],"ax":["causation-explanation"],"g":"","c":"h"}
+{"slug":"crathorn","f":"latin-medieval-thinkers","f2":[],"ax":[],"g":"","c":"m"}
+{"slug":"plato-cratylus","f":"plato-aristotle","f2":["language-meaning"],"ax":["language-reality"],"g":"","c":"h"}
+{"slug":"creation-conservation","f":"religion-theism","f2":["latin-medieval-thinkers"],"ax":["divine-nature-proof"],"g":"","c":"h"}
+{"slug":"creationism","f":"religion-theism","f2":["biology-phil"],"ax":[],"g":"","c":"h"}
+{"slug":"creativity","f":"aesthetics-art","f2":["cognition-perception"],"ax":[],"g":"","c":"h"}
+{"slug":"crescas","f":"jewish","f2":[],"ax":["infinity"],"g":"","c":"h"}
+{"slug":"criminal-law","f":"law-phil","f2":[],"ax":["harm-permissibility"],"g":"","c":"h"}
+{"slug":"disability-critical","f":"medicine-bioethics-disability","f2":["critical-theory-poststructuralism"],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"critical-phil-race","f":"africana-race-colonialism","f2":[],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"critical-theory","f":"critical-theory-poststructuralism","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"critical-thinking","f":"truth-paradox-argumentation","f2":["person-life-course"],"ax":[],"g":"","c":"h"}
+{"slug":"kant-metaphysics","f":"kant-german-idealism","f2":["metaphysics-objects-modality"],"ax":["skepticism-limits"],"g":"칸트의 형이상학 비판","c":"h"}
+{"slug":"croce-aesthetics","f":"aesthetics-art","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"alexander-crummell","f":"africana-race-colonialism","f2":[],"ax":[],"g":"","c":"m"}
+{"slug":"cudworth","f":"seventeenth-century-systems","f2":["religion-theism","metaethics-value"],"ax":[],"g":"","c":"h"}
+{"slug":"cugoano","f":"africana-race-colonialism","f2":["empiricism-enlightenment-utilitarianism"],"ax":[],"g":"","c":"m"}
+{"slug":"ethics-cultural-heritage","f":"aesthetics-art","f2":["social-ontology-economics","justice-distribution"],"ax":[],"g":"","c":"m"}
+{"slug":"culture","f":"social-ontology-economics","f2":[],"ax":["individual-collective"],"g":"","c":"h"}
+{"slug":"curry-paradox","f":"truth-paradox-argumentation","f2":["logic-systems"],"ax":[],"g":"","c":"h"}
+{"slug":"cusanus","f":"renaissance","f2":["latin-medieval-thinkers","religion-theism"],"ax":["infinity"],"g":"","c":"h"}
+{"slug":"cyrenaics","f":"greek-schools","f2":[],"ax":["good-life"],"g":"","c":"h"}
+{"slug":"dai-zhen","f":"east-asian","f2":[],"ax":[],"g":"","c":"h"}
