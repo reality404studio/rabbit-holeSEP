@@ -1,0 +1,396 @@
+{
+  "fields": [
+    {
+      "id": "greek-schools",
+      "ko": "그리스 철학 — 소크라테스 이전·헬레니즘·후기 고대",
+      "scope": "플라톤·아리스토텔레스를 제외한 고대 그리스·로마의 사상가와 학파 — 자연철학자, 소피스트, 스토아·에피쿠로스·회의주의, 신플라톤주의와 주석가 전통",
+      "arrivals": ["만물의 근원이 물이라는 말이 무슨 뜻인가", "스토아 철학자들은 어떻게 마음의 평정을 얻었나", "아무것도 확실히 알 수 없다면 어떻게 살아야 하나"]
+    },
+    {
+      "id": "plato-aristotle",
+      "ko": "플라톤과 아리스토텔레스",
+      "scope": "소크라테스·플라톤·아리스토텔레스 본인과 그 직계 학파, 개별 대화편과 저작에 붙은 항목들",
+      "arrivals": ["플라톤의 이데아가 정확히 뭔가", "아리스토텔레스가 말한 좋은 삶이란", "소크라테스는 왜 독배를 마셨나"]
+    },
+    {
+      "id": "latin-medieval-thinkers",
+      "ko": "라틴 중세 사상가",
+      "scope": "아우구스티누스에서 15세기까지 라틴 유럽의 개별 신학자·철학자와 그 시대의 제도적 사건",
+      "arrivals": ["토마스 아퀴나스는 신을 어떻게 증명했나", "중세 대학에서는 무엇을 두고 싸웠나", "오컴의 면도날이 원래 무슨 말이었나"]
+    },
+    {
+      "id": "medieval-logic-semantics",
+      "ko": "중세 논리·의미론 이론",
+      "scope": "현대 분과와 맞지 않는 중세 고유의 이론 단위 — 명사의 속성, 귀결, 의무논쟁, 불가해 명제, 보편논쟁, 초월범주, 개체화 원리",
+      "arrivals": ["'이 문장은 거짓이다'를 옛날 사람들은 어떻게 풀었나", "'인간'이라는 말이 가리키는 게 실제로 있나", "중세 논리학은 지금 논리학과 뭐가 다른가"]
+    },
+    {
+      "id": "arabic-islamic",
+      "ko": "아랍·이슬람 철학",
+      "scope": "알킨디에서 물라 사드라까지 아랍어권 철학자와, 그리스 사상의 수용·라틴 서구로의 전승을 다루는 항목들",
+      "arrivals": ["이븐 시나(아비센나)는 무엇으로 유명한가", "이슬람 철학이 서양 철학에 어떤 영향을 줬나", "알가잘리는 왜 철학자들을 비판했나"]
+    },
+    {
+      "id": "jewish",
+      "ko": "유대 철학",
+      "scope": "사아디아·마이모니데스에서 부버·로젠츠바이크까지 유대 전통의 사상가와 아랍 철학의 유대 사상 수용",
+      "arrivals": ["마이모니데스는 성경과 철학을 어떻게 화해시켰나", "부버의 '나와 너'가 무슨 뜻인가", "유대 철학이라는 게 따로 있나"]
+    },
+    {
+      "id": "east-asian",
+      "ko": "중국·일본·한국 철학",
+      "scope": "유가·도가·묵가·법가·명가와 중국 불교, 송명 성리학 이후, 일본·한국의 유교·불교 전통과 교토학파",
+      "arrivals": ["공자와 노자는 뭐가 다른가", "성리학에서 이(理)와 기(氣)가 뭔가", "선불교는 왜 말로 설명을 안 하려 하나"]
+    },
+    {
+      "id": "indian-buddhist-tibetan",
+      "ko": "인도·불교·티베트 철학",
+      "scope": "붓다·나가르주나·다르마키르티 등 인도 사상가, 아비달마·중관·유식 학파, 자이나·시크, 티베트 논쟁 전통과 인도 인식론·논리학",
+      "arrivals": ["불교에서 '나는 없다'는 게 무슨 뜻인가", "공(空)이 아무것도 없다는 말인가", "인도 논리학은 서양 논리학과 어떻게 다른가"]
+    },
+    {
+      "id": "africana-race-colonialism",
+      "ko": "아프리카나 철학·인종·식민주의",
+      "scope": "아프리카 및 디아스포라 사상가, 이중의식·네그리튀드, 인종 개념의 비판적 분석, 식민주의와 배상",
+      "arrivals": ["인종이라는 게 생물학적으로 실재하나", "듀보이스의 이중의식이 뭔가", "식민 지배에 대한 배상은 정당한가"]
+    },
+    {
+      "id": "latin-american",
+      "ko": "라틴아메리카 철학",
+      "scope": "라틴아메리카와 라티넥스의 철학 전통 — 해방철학, 멕시코 실존주의, 지역별 철학사와 지역 관점의 분과 항목",
+      "arrivals": ["라틴아메리카 철학이 따로 있나", "해방철학이란 무엇인가", "멕시코 철학자들은 정체성을 어떻게 다뤘나"]
+    },
+    {
+      "id": "renaissance",
+      "ko": "르네상스 철학",
+      "scope": "15~16세기 인문주의자, 피렌체 플라톤주의, 자연마술, 살라망카 학파, 르네상스 아리스토텔레스주의와 자연철학",
+      "arrivals": ["마키아벨리는 정말 악을 권했나", "르네상스 때 마술과 과학은 어떻게 갈렸나", "몽테뉴는 왜 '나는 무엇을 아는가'라고 물었나"]
+    },
+    {
+      "id": "seventeenth-century-systems",
+      "ko": "17세기 체계철학과 과학혁명",
+      "scope": "데카르트·스피노자·라이프니츠·홉스·말브랑슈와 그 주변 인물, 여성 철학자, 기계론과 과학혁명의 과학자들",
+      "arrivals": ["'나는 생각한다 고로 존재한다'는 무엇을 증명한 건가", "스피노자는 왜 신이 곧 자연이라 했나", "뉴턴은 철학자였나"]
+    },
+    {
+      "id": "empiricism-enlightenment-utilitarianism",
+      "ko": "영·프 경험론, 계몽주의, 공리주의",
+      "scope": "로크·버클리·흄·리드와 스코틀랜드 계몽, 프랑스 계몽사상가, 벤담·밀에서 영국 관념론까지 19세기 영국 사상",
+      "arrivals": ["경험 없이 아는 게 가능한가", "흄은 왜 인과관계를 의심했나", "최대 다수의 최대 행복이 왜 문제인가"]
+    },
+    {
+      "id": "kant-german-idealism",
+      "ko": "칸트와 독일 관념론·낭만주의",
+      "scope": "칸트와 그의 저작별 항목, 피히테·셸링·헤겔, 독일 낭만주의, 신칸트학파, 쇼펜하우어와 헤겔 좌파",
+      "arrivals": ["칸트가 '물 자체는 알 수 없다'고 한 이유", "헤겔의 변증법이 정확히 뭔가", "정언명령을 쉽게 설명하면"]
+    },
+    {
+      "id": "american-pragmatism",
+      "ko": "미국 초월주의와 실용주의",
+      "scope": "에머슨·소로에서 퍼스·제임스·듀이·로티까지 미국 사상의 계보와 실용주의의 방법",
+      "arrivals": ["실용주의는 '쓸모 있으면 참'이라는 뜻인가", "듀이는 교육을 어떻게 바꾸려 했나", "제임스의 '믿으려는 의지'가 뭔가"]
+    },
+    {
+      "id": "phenomenology-existentialism-hermeneutics",
+      "ko": "현상학·실존주의·해석학",
+      "scope": "브렌타노·후설에서 하이데거·사르트르·메를로퐁티, 키르케고르·니체, 딜타이·가다머·리쾨르의 해석학과 역사철학",
+      "arrivals": ["실존이 본질에 앞선다는 말의 뜻", "니체가 '신은 죽었다'고 한 진짜 의미", "현상학은 도대체 뭘 하는 학문인가"]
+    },
+    {
+      "id": "critical-theory-poststructuralism",
+      "ko": "마르크스주의·비판이론·후기구조주의",
+      "scope": "마르크스와 그 계승자, 프랑크푸르트 학파, 푸코·데리다·들뢰즈, 이데올로기·소외·인정 개념",
+      "arrivals": ["소외란 정확히 무슨 상태인가", "푸코가 말한 권력은 왜 눈에 안 보이나", "포스트모더니즘은 진리를 부정하나"]
+    },
+    {
+      "id": "analytic-founders",
+      "ko": "분석철학의 창시자와 초기 전개",
+      "scope": "프레게·러셀·비트겐슈타인·무어, 빈학단과 논리경험주의, 폴란드 논리학파, 콰인·데이비드슨·루이스 등 20세기 분석철학 인물",
+      "arrivals": ["비트겐슈타인은 왜 자기 첫 책을 뒤집었나", "논리실증주의는 왜 망했나", "러셀은 무엇을 했던 사람인가"]
+    },
+    {
+      "id": "logic-systems",
+      "ko": "형식논리 체계",
+      "scope": "고전·양상·시제·인식·의무·직관주의·관련·초일관·부분구조 논리 등 개별 형식 체계와 증명론·모형론·양화",
+      "arrivals": ["모순이 참일 수도 있는 논리가 있나", "'해야 한다'를 논리로 계산할 수 있나", "'아마도'와 '반드시'는 어떻게 형식화하나"]
+    },
+    {
+      "id": "truth-paradox-argumentation",
+      "ko": "진리·역설·논증",
+      "scope": "진리 이론들, 거짓말쟁이·더미·제논·러셀 역설과 자기지시, 모호성, 그리고 비형식논리·오류·논증 평가",
+      "arrivals": ["'이 문장은 거짓이다'는 참인가 거짓인가", "모래 한 알씩 빼면 언제 더미가 아니게 되나", "참이라는 게 도대체 뭔가"]
+    },
+    {
+      "id": "math-foundations",
+      "ko": "수학의 기초와 수학철학",
+      "scope": "집합론·불완전성·계산가능성·범주론과 논리주의·형식주의·직관주의·구조주의, 수는 실재하는가",
+      "arrivals": ["수는 발견되나 발명되나", "괴델은 수학이 불완전하다는 걸 어떻게 증명했나", "무한에도 크기가 있나"]
+    },
+    {
+      "id": "computing-information-tech",
+      "ko": "계산·정보·기술",
+      "scope": "인공지능과 계산주의, 튜링 테스트·중국어 방, 정보 개념, 기술철학과 정보기술·알고리즘의 윤리",
+      "arrivals": ["기계가 생각할 수 있나", "AI에게 책임을 물을 수 있나", "알고리즘이 공정하다는 건 무슨 뜻인가"]
+    },
+    {
+      "id": "mind-body-consciousness",
+      "ko": "의식과 심신 문제",
+      "scope": "의식의 본성과 물리적 기반 — 감각질·좀비·범심론, 물리주의·이원론·기능주의, 심적 인과와 창발",
+      "arrivals": ["뇌가 곧 마음인가", "빨강을 볼 때의 그 느낌은 물리적으로 설명되나", "돌멩이에도 의식이 있을 수 있나"]
+    },
+    {
+      "id": "cognition-perception",
+      "ko": "지각·표상·인지",
+      "scope": "지각 경험의 내용과 문제, 심적 표상과 개념, 기억·상상·주의, 생득성, 동물 인지와 인지과학의 철학",
+      "arrivals": ["우리는 세계를 있는 그대로 보나", "태어날 때부터 아는 게 있나", "동물도 생각을 하나"]
+    },
+    {
+      "id": "emotions-attitudes",
+      "ko": "정념과 대인 태도",
+      "scope": "감정의 본성과 역사, 공감·사랑·우정·신뢰·용서·감사·질투·희망·유머 등 사람 사이의 태도",
+      "arrivals": ["감정은 일종의 판단인가", "사랑은 왜 하필 그 사람인가", "용서는 언제 해야 하고 언제 안 해도 되나"]
+    },
+    {
+      "id": "agency-freewill-responsibility",
+      "ko": "행위·자유의지·책임",
+      "scope": "행위와 의도의 구조, 실천이성, 자유의지와 결정론의 양립 여부, 도덕적 책임·비난·의지박약",
+      "arrivals": ["모든 게 정해져 있다면 내 선택은 내 것인가", "왜 알면서도 잘못을 저지르나", "책임을 진다는 게 정확히 무슨 뜻인가"]
+    },
+    {
+      "id": "metaphysics-objects-modality",
+      "ko": "존재자·속성·양상",
+      "scope": "사물·속성·사건·사실의 범주, 부분과 전체, 동일성, 본질, 가능세계와 양상, 근거지움과 근본성",
+      "arrivals": ["배의 판자를 다 갈면 같은 배인가", "숫자나 '빨강' 같은 것도 존재하나", "일어날 수 있었던 일은 어떤 의미에서 있나"]
+    },
+    {
+      "id": "time-space-causation",
+      "ko": "시간·공간·인과·법칙",
+      "scope": "시간의 실재성과 시간여행, 공간과 운동의 절대성, 인과의 본성과 이론들, 자연법칙과 우연",
+      "arrivals": ["과거로 시간여행이 가능한가", "원인과 결과란 정확히 무슨 관계인가", "현재만 존재하나 미래도 이미 있나"]
+    },
+    {
+      "id": "physics-phil",
+      "ko": "물리학의 철학",
+      "scope": "양자역학의 해석들, 얽힘·비국소성, 통계역학과 시간의 화살, 상대론과 시공간, 대칭·게이지·우주론",
+      "arrivals": ["슈뢰딩거의 고양이는 정말 살아있으면서 죽었나", "우주가 생명에 맞춰져 있다는 게 설명이 필요한가", "시간은 왜 한 방향으로만 흐르나"]
+    },
+    {
+      "id": "science-general",
+      "ko": "과학 일반의 철학",
+      "scope": "과학적 설명·확증·실재론, 이론 변화와 혁명, 모형·실험·시뮬레이션, 객관성·재현성과 과학철학자들",
+      "arrivals": ["과학은 진리에 다가가고 있나", "사이비과학과 과학은 어떻게 구별하나", "실험이 이론에 오염될 수 있나"]
+    },
+    {
+      "id": "biology-phil",
+      "ko": "생물학의 철학",
+      "scope": "진화·자연선택·적합도, 유전자와 유전, 종·생물학적 개체·생명, 발생·생태·분자생물학과 진화심리학",
+      "arrivals": ["'종'이라는 게 자연에 진짜 있나", "이타행동이 어떻게 진화할 수 있나", "유전자가 우리를 결정하나"]
+    },
+    {
+      "id": "medicine-bioethics-disability",
+      "ko": "의학·생명윤리·장애",
+      "scope": "질병과 정신장애 개념, 죽음의 정의, 안락사·낙태·복제·향상, 동의와 연구윤리, 장애의 정의와 정의(正義), 보건의료 배분",
+      "arrivals": ["안락사는 허용되어야 하나", "장애는 몸의 문제인가 사회의 문제인가", "정신질환은 진짜 병인가"]
+    },
+    {
+      "id": "knowledge-justification",
+      "ko": "앎과 정당화",
+      "scope": "지식의 분석, 정당화의 구조와 원천, 회의주의, 증언·불일치·자기지식, 사회적·자연화된 인식론",
+      "arrivals": ["안다는 것과 믿는 것은 뭐가 다른가", "내가 통 속의 뇌가 아니라는 걸 어떻게 아나", "전문가와 의견이 갈리면 어떻게 해야 하나"]
+    },
+    {
+      "id": "probability-decision-games",
+      "ko": "확률·결정·게임",
+      "scope": "확률의 해석과 베이즈주의, 합리적 선택과 결정이론, 게임이론과 죄수의 딜레마, 사회선택과 투표",
+      "arrivals": ["확률이란 결국 무엇에 대한 수인가", "합리적 선택이 왜 모두를 망치나", "다수결은 정말 공정한 방법인가"]
+    },
+    {
+      "id": "language-meaning",
+      "ko": "언어와 의미",
+      "scope": "의미와 지시의 이론, 이름·지표사·기술구, 화용론과 함축·화행, 형식의미론의 틀, 사적 언어와 규칙 따르기",
+      "arrivals": ["말은 어떻게 세계를 가리키나", "말하지 않은 것을 어떻게 알아듣나", "혼자만 쓰는 언어가 가능한가"]
+    },
+    {
+      "id": "normative-ethics",
+      "ko": "규범윤리 이론",
+      "scope": "결과주의·의무론·덕윤리·계약론과 자연법, 행위의 허용 조건(이중효과, 행함/허용), 도덕적 딜레마와 요구의 한계",
+      "arrivals": ["한 명을 희생해 다섯을 살려도 되나", "결과가 좋으면 다 좋은가", "도덕은 얼마나 많은 걸 요구할 수 있나"]
+    },
+    {
+      "id": "metaethics-value",
+      "ko": "메타윤리와 가치이론",
+      "scope": "도덕 판단의 지위(실재론·반실재론·표현주의), 도덕 인식론과 동기, 가치의 종류와 통약불가능성, 행복·복리·삶의 의미",
+      "arrivals": ["도덕은 취향 문제인가 사실 문제인가", "행복이 인생의 목적인가", "삶에 의미가 있다는 건 무슨 말인가"]
+    },
+    {
+      "id": "justice-distribution",
+      "ko": "정의와 분배",
+      "scope": "분배적·세대간·지구적·기후 정의, 평등과 기회, 재산·시장·재분배, 착취·노동·기본소득, 역량 접근",
+      "arrivals": ["운이 나쁜 사람을 사회가 보상해야 하나", "부자에게 세금을 더 걷는 게 정당한가", "아직 태어나지 않은 세대에게 의무가 있나"]
+    },
+    {
+      "id": "state-liberty-conflict",
+      "ko": "국가·자유·저항·전쟁",
+      "scope": "정당성과 정치적 의무, 민주주의와 이데올로기들, 자유·관용·표현, 시민권과 이민, 시민불복종·혁명·전쟁·테러·고문",
+      "arrivals": ["국가는 왜 나에게 명령할 권리가 있나", "혐오 표현도 표현의 자유인가", "정당한 전쟁이란 게 있나"]
+    },
+    {
+      "id": "law-phil",
+      "ko": "법철학",
+      "scope": "법의 본성(실증주의·자연법·해석주의), 법적 추론과 해석, 형벌·불법행위·계약법 이론, 증거와 법적 확률",
+      "arrivals": ["악법도 법인가", "처벌은 왜 정당한가", "판사는 법을 발견하나 만드나"]
+    },
+    {
+      "id": "feminism-gender-sex",
+      "ko": "페미니즘·젠더·성",
+      "scope": "페미니즘 철학의 접근법과 각 분과 개입, 성·젠더·트랜스, 대상화·강간·성시장, 재생산과 가족, 몸과 자율성",
+      "arrivals": ["성별은 타고나나 만들어지나", "객관성이라는 개념에 성별 편향이 있나", "결혼 제도는 왜 문제인가"]
+    },
+    {
+      "id": "social-ontology-economics",
+      "ko": "사회적 실재·제도·경제",
+      "scope": "집단·제도·규범·화폐 같은 사회적 실재의 존재 방식, 방법론적 개인주의와 전체론, 문화, 경제학의 철학",
+      "arrivals": ["돈은 왜 종이인데 가치가 있나", "사회라는 게 개인들의 합 이상인가", "관습은 어떻게 생기고 유지되나"]
+    },
+    {
+      "id": "religion-theism",
+      "ko": "종교철학과 신론",
+      "scope": "신의 속성과 존재 논증, 악의 문제와 신정론, 신앙·계시·종교경험, 종교 다원성, 사후세계와 기독교 교리의 철학",
+      "arrivals": ["신이 있다면 왜 악이 있나", "신이 다 안다면 나는 자유로운가", "증거 없이 믿는 건 잘못인가"]
+    },
+    {
+      "id": "aesthetics-art",
+      "ko": "미학과 예술",
+      "scope": "미적 경험·판단과 아름다움, 예술의 정의와 존재론, 허구와 감정, 개별 예술 장르의 철학, 미학의 역사와 개별 미학자",
+      "arrivals": ["예술이 뭔지 정의할 수 있나", "슬픈 영화를 왜 보나", "아름다움은 보는 사람 마음인가"]
+    },
+    {
+      "id": "person-life-course",
+      "ko": "인격·생애·죽음",
+      "scope": "인격 동일성과 동물주의, 자아·자기의식·진정성·존엄, 어린 시절·교육·부모됨·결혼, 죽음과 삶의 변형적 경험",
+      "arrivals": ["10년 전의 나와 지금의 나는 같은 사람인가", "죽음은 왜 나쁜가", "아이를 낳는 결정은 미리 판단할 수 있나"]
+    }
+  ],
+  "axes": [
+    {
+      "id": "universals-particulars",
+      "ko": "보편과 개별",
+      "gloss": "'빨강'이나 '인간' 같은 일반자는 개별 사물과 별개로 실재하는가",
+      "spans": ["metaphysics-objects-modality", "medieval-logic-semantics", "indian-buddhist-tibetan", "math-foundations", "plato-aristotle"]
+    },
+    {
+      "id": "freedom-determination",
+      "ko": "자유와 결정",
+      "gloss": "미리 정해진 세계(물리 법칙·신의 예지·운명) 안에서 선택과 책임이 성립하는가",
+      "spans": ["agency-freewill-responsibility", "religion-theism", "physics-phil", "latin-medieval-thinkers", "arabic-islamic", "law-phil"]
+    },
+    {
+      "id": "mind-matter",
+      "ko": "마음과 물질",
+      "gloss": "심적인 것이 물리적인 것으로 환원되는가, 아니면 별개의 실재인가",
+      "spans": ["mind-body-consciousness", "seventeenth-century-systems", "indian-buddhist-tibetan", "arabic-islamic", "biology-phil", "computing-information-tech"]
+    },
+    {
+      "id": "self-substance",
+      "ko": "자아의 실체성",
+      "gloss": "'나'는 지속하는 실체인가, 다발이나 구성물인가, 아니면 없는가",
+      "spans": ["person-life-course", "indian-buddhist-tibetan", "empiricism-enlightenment-utilitarianism", "east-asian", "africana-race-colonialism", "mind-body-consciousness"]
+    },
+    {
+      "id": "divine-nature-proof",
+      "ko": "신의 존재와 본성",
+      "gloss": "신이 있는지 논증할 수 있는가, 있다면 어떤 속성을 일관되게 가질 수 있는가",
+      "spans": ["religion-theism", "arabic-islamic", "jewish", "latin-medieval-thinkers", "seventeenth-century-systems", "kant-german-idealism"]
+    },
+    {
+      "id": "skepticism-limits",
+      "ko": "앎의 한계와 회의",
+      "gloss": "확실한 앎이 가능한가, 회의주의에 어떻게 응답하는가",
+      "spans": ["knowledge-justification", "greek-schools", "indian-buddhist-tibetan", "seventeenth-century-systems", "latin-american", "arabic-islamic", "medieval-logic-semantics"]
+    },
+    {
+      "id": "truth-nature",
+      "ko": "진리의 본성",
+      "gloss": "참이라는 것은 대응인가 정합인가 유용성인가, 층위가 여럿인가",
+      "spans": ["truth-paradox-argumentation", "indian-buddhist-tibetan", "american-pragmatism", "math-foundations", "language-meaning"]
+    },
+    {
+      "id": "infinity",
+      "ko": "무한",
+      "gloss": "무한은 실재하는가, 셀 수 있는가, 유한한 존재가 무한을 다룰 수 있는가",
+      "spans": ["math-foundations", "time-space-causation", "greek-schools", "physics-phil", "religion-theism", "medieval-logic-semantics"]
+    },
+    {
+      "id": "normativity-source",
+      "ko": "규범의 근거",
+      "gloss": "어떤 것이 왜 마땅한가 — 사실에서 당위로 넘어가는 지점",
+      "spans": ["metaethics-value", "law-phil", "language-meaning", "logic-systems", "knowledge-justification", "east-asian"]
+    },
+    {
+      "id": "individual-collective",
+      "ko": "개인과 집단",
+      "gloss": "집단은 개인들의 합 이상인가 — 집단의 의도·책임·지식은 어떻게 성립하나",
+      "spans": ["social-ontology-economics", "state-liberty-conflict", "agency-freewill-responsibility", "africana-race-colonialism", "science-general", "probability-decision-games"]
+    },
+    {
+      "id": "reason-emotion",
+      "ko": "이성과 감정",
+      "gloss": "감정은 판단의 방해물인가 판단의 일종인가, 도덕과 미적 반응의 원천인가",
+      "spans": ["emotions-attitudes", "metaethics-value", "aesthetics-art", "east-asian", "empiricism-enlightenment-utilitarianism", "latin-medieval-thinkers", "religion-theism"]
+    },
+    {
+      "id": "causation-explanation",
+      "ko": "원인과 설명",
+      "gloss": "무엇이 무엇을 일으킨다는 말의 뜻, 그리고 좋은 설명의 조건",
+      "spans": ["time-space-causation", "science-general", "biology-phil", "physics-phil", "arabic-islamic", "law-phil", "medicine-bioethics-disability"]
+    },
+    {
+      "id": "language-reality",
+      "ko": "언어와 실재",
+      "gloss": "말이 세계를 어디까지 담을 수 있는가, 말할 수 없는 것이 있는가",
+      "spans": ["language-meaning", "indian-buddhist-tibetan", "east-asian", "medieval-logic-semantics", "religion-theism", "analytic-founders"]
+    },
+    {
+      "id": "change-persistence",
+      "ko": "변화와 지속",
+      "gloss": "변하면서도 같은 것으로 남는다는 것이 어떻게 가능한가",
+      "spans": ["metaphysics-objects-modality", "time-space-causation", "greek-schools", "east-asian", "person-life-course", "biology-phil"]
+    },
+    {
+      "id": "computation-mechanism",
+      "ko": "계산과 기계",
+      "gloss": "생각·증명·생명이 기계적 절차로 환원되는가",
+      "spans": ["computing-information-tech", "math-foundations", "mind-body-consciousness", "logic-systems", "seventeenth-century-systems"]
+    },
+    {
+      "id": "equality-difference",
+      "ko": "평등과 차이",
+      "gloss": "어떤 차이가 다른 대우를 정당화하고 어떤 차이가 그렇지 않은가",
+      "spans": ["justice-distribution", "feminism-gender-sex", "africana-race-colonialism", "medicine-bioethics-disability", "state-liberty-conflict", "person-life-course"]
+    },
+    {
+      "id": "harm-permissibility",
+      "ko": "해악의 허용 조건",
+      "gloss": "언제 사람을 해치거나 죽게 두는 것이 허용되는가",
+      "spans": ["normative-ethics", "medicine-bioethics-disability", "state-liberty-conflict", "law-phil", "computing-information-tech", "biology-phil"]
+    },
+    {
+      "id": "transmission-translation",
+      "ko": "전승과 번역",
+      "gloss": "한 전통의 사상이 다른 언어·종교·시대로 옮겨질 때 무엇이 남고 무엇이 변하는가",
+      "spans": ["greek-schools", "arabic-islamic", "jewish", "latin-medieval-thinkers", "east-asian", "renaissance", "plato-aristotle"]
+    },
+    {
+      "id": "uncertainty-judgment",
+      "ko": "불확실성 아래의 판단",
+      "gloss": "확실하지 않을 때 무엇을 믿고 어떻게 행동해야 하는가",
+      "spans": ["probability-decision-games", "science-general", "physics-phil", "law-phil", "medicine-bioethics-disability", "religion-theism", "renaissance"]
+    },
+    {
+      "id": "good-life",
+      "ko": "좋은 삶",
+      "gloss": "잘 산다는 것은 무엇이고, 그것은 쾌락·덕·의미·평정 중 무엇인가",
+      "spans": ["metaethics-value", "greek-schools", "east-asian", "indian-buddhist-tibetan", "person-life-course", "medicine-bioethics-disability", "justice-distribution"]
+    }
+  ]
+}
