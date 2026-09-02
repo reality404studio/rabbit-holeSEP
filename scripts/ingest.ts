@@ -19,6 +19,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { entries, isValidSlug, sepUrl } from "../src/lib/entries";
+import { spreadLine, spreadOf } from "../src/lib/baseline";
 import {
   MODEL_ID,
   MODEL_NAME,
@@ -33,6 +34,7 @@ const NOTE_MIN = 8;
 const NOTE_MAX = 400;
 const BODY_MIN = 300;
 const BODY_MAX = 6000;
+const PATTERN_MAX = 200;
 
 /* tsx 가 CJS 로 컴파일하면 import.meta.dirname 이 undefined 다.
    `npm run ingest` 는 언제나 리포 루트에서 돌므로 cwd 를 쓴다. */
@@ -41,7 +43,12 @@ const ISSUES = path.join(ROOT, "content", "issues");
 const LOG = path.join(ROOT, "content", "log");
 
 type ParsedEntry = { slug: string; reason: string };
-type ParsedRoute = { frame: string; gloss: string; entries: ParsedEntry[] };
+type ParsedRoute = {
+  frame: string;
+  gloss: string;
+  pattern?: string;
+  entries: ParsedEntry[];
+};
 type ParsedPamphlet = { note: string; body: string };
 
 function arg(name: string): string | undefined {
@@ -75,6 +82,7 @@ function parseModelJson(
       routes.push({
         frame: r.frame,
         gloss: r.gloss,
+        pattern: typeof r.pattern === "string" ? r.pattern : undefined,
         entries: r.entries.filter(
           (e: unknown): e is ParsedEntry =>
             typeof e === "object" &&
@@ -136,6 +144,9 @@ function main() {
     const frame = r.frame.trim();
     const gloss = r.gloss.trim();
     if (!frame || !gloss) continue;
+    /* 「공유 구조」— 갈래를 토픽 묶음이 아니게 하는 한 줄. 길이만 자르고
+       있고 없고는 막지 않는다. 이전 발행분에는 없다 */
+    const pattern = r.pattern?.trim().slice(0, PATTERN_MAX) || undefined;
 
     const kept = [];
     for (const e of r.entries.slice(0, MAX_ENTRIES_PER_ROUTE)) {
@@ -152,7 +163,7 @@ function main() {
         url: sepUrl(e.slug),
       });
     }
-    if (kept.length) routes.push({ frame, gloss, entries: kept });
+    if (kept.length) routes.push({ frame, gloss, pattern, entries: kept });
   }
 
   const now = new Date();
@@ -214,9 +225,12 @@ function main() {
   );
 
   const n = routes.reduce((s, r) => s + r.entries.length, 0);
+  /* 동결 지도와의 대조. 저장하지 않는다 — routes 에서 언제든 다시 나오고,
+     지면도 빌드 때 계산한다 (src/lib/baseline.ts) */
   console.log(
     `${published ? "봉인됨" : "미발행"}  ${id}\n` +
       `  route ${routes.length} · 항목 ${n} · 미출품 ${omitted.length}\n` +
+      `  ${spreadLine(spreadOf(routes))}\n` +
       (published ? `  → content/issues/${id}.json` : `  → 이유: ${why}`) +
       `\n  → content/log/${month}.jsonl`,
   );

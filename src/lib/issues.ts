@@ -22,6 +22,8 @@ export type SerializedEntry = {
 export type SerializedRoute = {
   frame: string;
   gloss: string;
+  /** 이 route 의 항목들이 공유하는 구조. 2026-09-03 이후 발행분에만 있다 */
+  pattern?: string;
   entries: SerializedEntry[];
 };
 

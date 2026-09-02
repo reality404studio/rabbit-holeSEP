@@ -228,6 +228,17 @@ a{color:inherit;text-decoration:none}
   color:var(--ed); margin:var(--s3) 0 0; max-width:36ch;
 }
 
+/* pattern — 이 갈래의 항목들이 공유하는 구조. gloss 가 "어떻게 읽는가"라면
+   pattern 은 "왜 이것들이 한 줄에 서는가". kicker 는 번호와 같은 편집자 메타 톤 */
+.route .pattern{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--ed); margin:var(--s3) 0 0; max-width:36ch;
+}
+.route .pattern .k{
+  display:block; font-family:var(--mo); font-size:var(--t-meta);
+  letter-spacing:var(--tr-mo); color:var(--ed-2); margin-bottom:var(--s1);
+}
+
 /* 출품 목록 — 번호는 전관 통합 연속이다. 섹션마다 리셋하면 신문으로 돌아간다 */
 .works{margin:var(--s6) 0 0; padding:0; list-style:none}
 .work{position:relative; padding:var(--s5) 0; border-top:1px solid var(--hair-2)}

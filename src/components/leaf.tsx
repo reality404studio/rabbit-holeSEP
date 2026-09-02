@@ -5,6 +5,7 @@
    다른 것은 제호의 판차 표기와 크레딧의 행선지뿐이다. */
 
 import ReactMarkdown from "react-markdown";
+import { spreadLine, spreadOf } from "@/lib/baseline";
 import { Dive } from "./dive";
 import {
   Colophon,
@@ -91,6 +92,7 @@ export function IssueLeaf({ issue, home }: { issue: Issue; home: boolean }) {
           issuedAt={at}
           editionId={issue.id}
           grid={gridSignature(plan)}
+          spread={spreadLine(spreadOf(issue.routes))}
           copies="1부 봉인됨"
           archive={home}
           loss={

@@ -16,6 +16,8 @@ export type Entry = {
 export type Route = {
   frame: string;
   gloss: string;
+  /** 이 route 의 항목들이 공유하는 구조 — 갈래를 토픽 묶음이 아니게 하는 한 줄 */
+  pattern?: string;
   entries: Entry[];
 };
 
@@ -124,6 +126,12 @@ export function RouteSection({
     <section className="band route" style={bandStyle(place)}>
       <h2 className="frame">{route.frame}</h2>
       {route.gloss?.trim() ? <p className="gloss">{route.gloss}</p> : null}
+      {route.pattern?.trim() ? (
+        <p className="pattern">
+          <span className="k">공유 구조</span>
+          {route.pattern}
+        </p>
+      ) : null}
       <ul className="works">
         {route.entries.map((e, i) => (
           <li className="work" key={e.slug}>
@@ -174,15 +182,25 @@ export function Colophon({ model }: { model: string }) {
     [
       "Engine",
       <>
-        이 지면의 조판은 <span className="lat">{model}</span>이 합니다. 질문이
-        어느 문제로 갈라지는지를 짚어 각 갈래가 닿는 항목을 고릅니다.
+        이 지면의 조판은 <span className="lat">{model}</span>이 합니다. 목차
+        1,865항목 전체를 한 번에 보고, 질문과 구조를 공유하는 항목을 고릅니다.
+        미리 추린 후보는 없습니다.
       </>,
     ],
     [
       "Structure",
       <>
-        질문 → 독해의 갈래 → 항목. 단일 순위가 아니라 어느 문제틀로 읽느냐의
-        분기입니다.
+        질문 → 독해의 갈래 → 공유 구조 → 항목. 갈래는 분과나 사조의 이름이
+        아니라 질문을 비틀어 읽는 한 가지 조작이고, 공유 구조는 그 갈래의
+        항목들을 한 줄에 세우는 이유입니다.
+      </>,
+    ],
+    [
+      "Baseline",
+      <>
+        크레딧의 「가로지름」은 동결된 지도와의 대조입니다. 편집자가 프롬프트
+        없이 만든 45개 분야 중 이 회차가 몇 개에 흩어졌는가. 편집자는 이 수를
+        보지 못합니다.
       </>,
     ],
     [
@@ -227,6 +245,7 @@ export function Credit({
   issuedAt,
   editionId,
   grid,
+  spread,
   copies = "1부",
   archive = true,
   loss,
@@ -235,6 +254,8 @@ export function Credit({
   issuedAt?: string;
   editionId?: string;
   grid?: string;
+  /** 동결된 지도와의 대조 — 이 회차가 몇 개 분야를 가로질렀는가 (src/lib/baseline.ts) */
+  spread?: string;
   copies?: string;
   archive?: boolean;
   loss?: ReactNode;
@@ -264,6 +285,12 @@ export function Credit({
           <>
             <dt>판짜기</dt>
             <dd>{grid}</dd>
+          </>
+        ) : null}
+        {spread ? (
+          <>
+            <dt>가로지름</dt>
+            <dd>{spread}</dd>
           </>
         ) : null}
         <dt>출처</dt>
