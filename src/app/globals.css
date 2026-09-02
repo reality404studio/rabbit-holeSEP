@@ -1,544 +1,409 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* ═══════════════════════════════════════════════════════════════════════
+   THE RABBIT HOLE — production stylesheet
 
-/* ─── design tokens ──────────────────────────────────────── */
-:root {
-  --paper: #f5f1e8;
-  --paper-2: #ede7d8;
-  --ink: #1a1612;
-  --ink-2: #5b524a;
-  --ink-3: #8a8278;
-  --rule: #c8bfae;
-  --red: #8a2929;
+   아트 디렉션: design/v12-하강.html
+   판형 결정:   신문 → 프라이빗 전시의 리플렛, 에디션 1부
+                (design/v11-에디션.html 에서 전환, v12 에서 하강 추가)
 
-  --font-serif-ko: "Noto Serif KR", "EB Garamond", ui-serif, Georgia, serif;
-  --font-serif-latin: "EB Garamond", ui-serif, Georgia, serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-}
+   ── 판형 ────────────────────────────────────────────────────────────
+   신문이 아니다. api/match/route.ts 가 모델에게 "발행은 예외"라고 지시하는데
+   신문은 정의상 매일 나온다. 디자인이 제품의 명제를 반박하고 있었다.
+   이 지면은 관객이 한 명인 전시의 리플렛이고, 1부 발행된다.
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background: var(--paper);
-  color: var(--ink);
-}
-body {
-  font-family: var(--font-serif-ko);
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 1.55;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
+   ── 세 주체 세 잉크 ─────────────────────────────────────────────────
+     --sep   #000     SEP 원문. 남의 글. 가장 진한 잉크
+     --ed    #5c5c5c  편집자. 기계의 말. 잉크가 덜 실린다
+     --user  #0033ff  사용자. 4색 인쇄로 못 내는 색 = 화면에서만 존재한다
 
-.latin {
-  font-family: var(--font-serif-latin);
-}
-.mono {
-  font-family: var(--font-mono);
-  font-size: 0.78em;
-  letter-spacing: 0.01em;
-}
+   ── 하강 ────────────────────────────────────────────────────────────
+   .dive 가 스크롤 진행만큼 위에서 차 내려오며 mix-blend-mode:difference.
+   지나간 구역은 바탕 #ffcc00, 활자 #0033ff 로 뒤집힌다.
+   [측정] 반전 구역 대비 — SEP 4.76:1 · 편집자 6.04:1 (둘 다 AA 통과)
+   [발견] difference 는 대칭이라 SEP 원문과 사용자 질문이 서로의 색을 갖는다.
+          설계가 아니라 연산의 필연이다.
 
-/* ─── overall page layout ────────────────────────────────── */
-.sheet {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) min(720px, 100%) minmax(260px, 1fr);
-  gap: 0;
-  min-height: 100vh;
-  padding: 88px 56px 120px;
-}
-.body {
-  grid-column: 2;
-}
-.gutter-r {
-  grid-column: 3;
-  padding-left: 56px;
-}
+   ── 편집자의 자리 ───────────────────────────────────────────────────
+   큐레이터 노트만 --z-editor 로 하강 위에 떠서 반전을 통과시키지 않는다.
+   세 주체 중 교환에 참여하지 않는 하나. z-index 를 낮추면 체계가 깨진다.
+   편집자의 방백(gloss·reason)은 지면에 섞여 같이 반전된다.
 
-/* ─── masthead ───────────────────────────────────────────── */
-.masthead {
-  display: flex;
-  align-items: baseline;
-  gap: 14px;
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 14px;
-  margin-bottom: 64px;
-  flex-wrap: wrap;
-}
-.masthead .mark {
-  font-family: var(--font-serif-latin);
-  font-style: italic;
-  font-weight: 500;
-  font-size: 22px;
-  letter-spacing: -0.01em;
-}
-.masthead .mark::before {
-  content: "§ ";
-  color: var(--red);
-  font-style: normal;
-  font-weight: 600;
-}
-.masthead .sub {
-  font-size: 13px;
-  color: var(--ink-2);
-  font-family: var(--font-serif-ko);
-}
-.masthead .pull {
-  margin-left: auto;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--ink-3);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.masthead .pull a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px dotted var(--ink-3);
-  padding-bottom: 1px;
-}
-.masthead .pull a:hover {
-  color: var(--ink);
-  border-bottom-color: var(--ink);
+   ── 격자 (발명 금지, 전부 데이터에서 유도) ──────────────────────────
+     span = max(2, 6 − route 순번)   깊을수록 좁다. 굴이 좁아진다
+     c1   = 출품 번호 % 남는 자리     체크리스트 번호가 곧 좌표
+     침범 = 지면을 넘긴 만큼 잘린다   손으로 민 것이 아니다
+     겹침 = 칸이 안 겹치면 세로로 겹친다
+   유도 코드는 src/components/press.tsx 의 planLayout() 에 있다.
+
+   §10.2 — 항목 제목은 전부 영문(SEP 목차 원문)이다. 명조로 조판할 수 없다.
+   OSTT 700, 대소문자 유지, 자간 --tr-la-xs.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+
+/* ═══ 1. TOKENS ═══════════════════════════════════════════════════════ */
+
+:root{
+  --sep:#000;
+  --ed:#5c5c5c;      /* 6.69:1 on paper */
+  --ed-2:#8a8a8a;    /* 3.45:1 — 대형/비본문 전용 */
+  --user:#0033ff;    /* 7.20:1 on paper */
+  --paper:#fff;
+  --hair:rgba(0,0,0,.16);
+  --hair-2:rgba(0,0,0,.07);
+
+  /* 활자 — 순서를 바꾸지 말 것. 명조를 앞에 두면 라틴 글리프까지 명조가 그린다 */
+  --ko:"Nanum Myeongjo",serif;
+  --la:"Old Standard TT",Georgia,serif;
+  --prose:"Old Standard TT","Nanum Myeongjo",serif;
+  --mo:"JetBrains Mono",ui-monospace,monospace;
+
+  --t-frame:26px; --t-item:20px; --t-body:16px; --t-meta:12px;
+  --lh-display:1.25; --lh-r3:1.45; --lh-r4:1.55; --lh-body:1.75; --lh-meta:1.6;
+  --tr-display:-.035em; --tr-title:-.025em; --tr-body:-.015em;
+  --tr-la:.13em; --tr-la-sm:.17em; --tr-la-xs:.04em; --tr-mo:.06em;
+
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px;
+  --s5:24px; --s6:32px; --s7:48px; --s8:64px;
+
+  --cols:6; --gut:20px; --pad:40px; --leaf-max:780px;
+  /* 한 칸의 실폭 = (leaf-max − pad×2 − gut×5) / cols.
+     재단면 침범 거리의 기준이라 위 셋 중 하나를 바꾸면 같이 바꿔야 한다 */
+  --colw:100px;
+  --overlap:-56px;   /* 본문 2행. 세로 겹침의 양 */
+  --depth:0;         /* 스크롤 진행 0…1. page.tsx 가 쓴다 */
+
+  /* 하강보다 위에 있는 것은 반전되지 않는다. 이 순서가 체계다 */
+  --z-dive:9; --z-gauge:10; --z-editor:11;
+
+  --hs:40;           /* fit ladder — 질문 글자수가 정한다 */
 }
 
-/* ─── lede ───────────────────────────────────────────────── */
-.lede {
-  font-size: 44px;
-  line-height: 1.18;
-  font-weight: 300;
-  letter-spacing: -0.018em;
-  margin: 0 0 18px;
-  color: var(--ink);
-  text-wrap: pretty;
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--paper)}
+body{
+  font-family:var(--prose); font-weight:400;
+  font-size:var(--t-body); line-height:var(--lh-body);
+  letter-spacing:var(--tr-body); color:var(--sep);
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  /* overflow-wrap 은 반드시 normal. break-word 를 같이 걸면 좁은 칸에서
+     keep-all 을 무시하고 '먹었습니/다' 처럼 어절을 쪼갠다 */
+  word-break:keep-all; line-break:strict; overflow-wrap:normal;
+  font-variant-numeric:tabular-nums;
 }
-.lede em {
-  font-family: var(--font-serif-latin);
-  font-style: italic;
-  font-weight: 500;
-  color: var(--red);
+a{color:inherit;text-decoration:none}
+.lat{font-family:var(--la); font-size:1.05em; letter-spacing:var(--tr-la-xs)}
+
+
+/* ═══ 2. 하강 ═══ 파랑이 글자가 아니라 면이 되는 자리 ═══════════════ */
+
+.dive{
+  position:fixed; inset:0; z-index:var(--z-dive); pointer-events:none;
+  background:var(--user); mix-blend-mode:difference;
+  clip-path:inset(0 0 calc(100% - var(--depth) * 100%) 0);
 }
-.lede-note {
-  font-size: 15px;
-  color: var(--ink-2);
-  line-height: 1.65;
-  max-width: 56ch;
-  margin: 0 0 56px;
+.gauge{
+  position:fixed; top:0; right:0; bottom:0; width:2px; z-index:var(--z-gauge);
+  pointer-events:none; background:var(--user);
+  transform-origin:top; transform:scaleY(var(--depth));
 }
 
-/* ─── input field ────────────────────────────────────────── */
-.field {
-  position: relative;
-  margin-bottom: 28px;
+
+/* ═══ 3. 지면 ═══ 리플렛은 자기 재단면에서 잘린다 ═══════════════════ */
+
+.leaf{
+  max-width:var(--leaf-max); margin:0 auto;
+  padding:var(--s7) var(--pad) 160px;
+  display:grid; grid-template-columns:repeat(var(--cols),1fr);
+  column-gap:var(--gut); row-gap:0;
+  overflow-x:clip; overflow-y:visible;
 }
-.field-label {
-  font-family: var(--font-serif-latin);
-  font-style: italic;
-  font-size: 14px;
-  color: var(--ink-3);
-  letter-spacing: 0.01em;
-  margin-bottom: 10px;
+.band{grid-column:var(--c1)/var(--c2)}
+
+
+/* ═══ 4. 발행 주체 ═══════════════════════════════════════════════════ */
+
+.imprint{
+  --c1:1;--c2:7;
+  display:flex; justify-content:space-between; align-items:baseline; gap:var(--s4);
+  padding-bottom:var(--s3); border-bottom:1px solid var(--sep);
 }
-.field-label .num {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-style: normal;
-  font-size: 11px;
-  color: var(--red);
-  margin-right: 8px;
-  letter-spacing: 0.04em;
+.imprint .name{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); color:var(--sep);
 }
-.field textarea {
-  width: 100%;
-  min-height: 96px;
-  font-family: var(--font-serif-ko);
-  font-size: 28px;
-  line-height: 1.35;
-  font-weight: 400;
-  color: var(--ink);
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid var(--ink);
-  border-radius: 0;
-  padding: 0 0 14px 0;
-  resize: none;
-  outline: none;
-  letter-spacing: -0.005em;
-  box-shadow: none;
-}
-.field textarea::placeholder {
-  color: var(--ink-3);
-  font-style: italic;
-  font-family: var(--font-serif-latin), var(--font-serif-ko);
-  font-weight: 400;
-}
-.field textarea:focus {
-  border-bottom-color: var(--red);
-}
-.field textarea:disabled {
-  opacity: 0.55;
-  cursor: not-allowed;
+/* 에디션 표기 — 판화 관습. 1/1 은 유일본이다 */
+.imprint .ed{
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed); white-space:nowrap;
 }
 
-.row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 12px;
-  margin-top: 10px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--ink-3);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+
+/* ═══ 5. 전시 제목 = 사용자의 질문 ═══════════════════════════════════ */
+
+.title{--c1:1;--c2:7; margin-top:var(--s7)}
+.title .role{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); color:var(--user); display:block;
+  margin-bottom:var(--s4);
 }
-.submit {
-  background: none;
-  border: 0;
-  padding: 0;
-  font-family: var(--font-serif-latin);
-  font-style: italic;
-  text-transform: none;
-  font-size: 16px;
-  color: var(--ink);
-  cursor: pointer;
-  letter-spacing: 0;
-  border-bottom: 1px solid var(--ink);
-  padding-bottom: 1px;
+.q,.q-static{
+  width:100%; display:block; border:0; padding:0; margin:0; resize:none;
+  background:transparent; font-family:var(--prose);
+  font-size:calc(var(--hs)*1px); line-height:var(--lh-display);
+  letter-spacing:var(--tr-display); color:var(--user);
+  overflow:hidden; outline:none;
 }
-.submit:disabled {
-  color: var(--ink-3);
-  border-bottom-color: var(--ink-3);
-  cursor: not-allowed;
+.q::placeholder{color:rgba(0,51,255,.32)}
+.q:disabled{opacity:1; -webkit-text-fill-color:var(--user)}
+.run{
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed-2); margin-top:var(--s5); display:block;
 }
-.submit:not(:disabled):hover {
-  color: var(--red);
-  border-bottom-color: var(--red);
+.deck{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--ed); margin:var(--s5) 0 0; max-width:38ch;
 }
-.submit .arrow {
-  font-family: var(--font-mono);
-  font-style: normal;
-  font-size: 13px;
-  margin-left: 6px;
+.ctl{display:flex; align-items:baseline; gap:var(--s5); flex-wrap:wrap; margin-top:var(--s6)}
+.go{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); cursor:pointer;
+  background:var(--user); border:1px solid var(--user); color:var(--paper);
+  padding:var(--s3) var(--s5);
+}
+.go:disabled{background:transparent; border-color:var(--hair); color:var(--ed-2); cursor:default}
+.reset{
+  font:inherit; font-family:var(--la); font-size:var(--t-meta);
+  text-transform:uppercase; letter-spacing:var(--tr-la-sm);
+  background:transparent; border:0; padding:0; color:var(--ed); cursor:pointer;
+}
+.reset:hover{color:var(--user)}
+.count{font-family:var(--mo); font-size:var(--t-meta); color:var(--ed-2); letter-spacing:var(--tr-mo)}
+.count b{font-weight:400; color:var(--user)}
+.count .near b{color:var(--sep)}
+
+.err{
+  --c1:1;--c2:7; margin-top:var(--s5); padding:var(--s4);
+  border:1px solid var(--sep);
+  font-family:var(--ko); font-size:var(--t-meta); line-height:var(--lh-meta);
+  color:var(--sep);
 }
 
-/* ─── error ──────────────────────────────────────────────── */
-.error {
-  margin: 24px 0 0;
-  padding: 14px 18px;
-  border-left: 2px solid var(--red);
-  background: rgba(138, 41, 41, 0.04);
-  font-size: 14px;
-  color: var(--ink-2);
-  font-family: var(--font-serif-ko);
+.status{
+  --c1:1;--c2:7; margin-top:var(--s5); min-height:20px;
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed); opacity:0; transition:opacity .2s;
+}
+.status.show{opacity:1}
+
+
+/* ═══ 6. 편집자의 자리 ═══ 반전이 통과하지 못하는 구역 ═════════════ */
+
+.note{
+  --c1:2;--c2:7; margin-top:var(--s8); padding:var(--s6);
+  position:relative; z-index:var(--z-editor);
+  background:var(--paper); border:1px solid var(--hair);
+}
+.note p{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--sep); margin:0; max-width:38ch;
+}
+.note .by{
+  font-family:var(--la); font-style:italic; font-size:var(--t-meta);
+  color:var(--ed); display:block; margin-top:var(--s4);
+}
+.note .md :is(p,ul,ol){margin:0 0 var(--s4)}
+.note .md :is(p,li){font-family:var(--ko); color:var(--sep)}
+.note .md :last-child{margin-bottom:0}
+
+
+/* ═══ 7. 출품 ═══════════════════════════════════════════════════════ */
+
+.route{margin-top:var(--s8); position:relative}
+.route .frame{
+  font-family:var(--prose); font-size:var(--t-frame); line-height:var(--lh-r3);
+  letter-spacing:var(--tr-title); color:var(--sep); margin:0;
+}
+/* gloss — 편집자가 이 갈래를 어떻게 보는가. 방백이므로 지면에 섞인다 */
+.route .gloss{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--ed); margin:var(--s3) 0 0; max-width:36ch;
 }
 
-/* ─── unfold (results) ───────────────────────────────────── */
-.unfold {
-  margin-top: 88px;
-  border-top: 1px solid var(--rule);
-  padding-top: 36px;
+/* 출품 목록 — 번호는 전관 통합 연속이다. 섹션마다 리셋하면 신문으로 돌아간다 */
+.works{margin:var(--s6) 0 0; padding:0; list-style:none}
+.work{position:relative; padding:var(--s5) 0; border-top:1px solid var(--hair-2)}
+/* 번호는 블록 바깥에 행잉한다. c1 이 1인 블록에서는 재단면 밖으로 나가
+   잘린 채로 보인다 — 침범이 규칙에서 파생된다 */
+.work .no{
+  position:absolute; top:calc(var(--s5) + .45em);
+  left:calc(-1 * (var(--colw) + var(--gut)));
+  width:var(--colw); text-align:right;
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed-2);
+}
+/* §10.2 — 항목 제목은 영문(SEP 목차 원문). OSTT 700, 대소문자 유지.
+   대문자용 .13em 을 쓰면 낱말 윤곽이 사라진다(E6) */
+.work .t{
+  display:block; font-family:var(--la); font-weight:700; font-size:var(--t-item);
+  line-height:var(--lh-r4); letter-spacing:var(--tr-la-xs); color:var(--sep);
+}
+.work .t:hover{text-decoration:underline; text-underline-offset:4px}
+/* §10.2 — 영문 원제였던 자리가 URL 이 되면서 역할이 메타데이터로 바뀐다 */
+.work .u{
+  display:block; font-family:var(--mo); font-size:var(--t-meta);
+  letter-spacing:var(--tr-mo); color:var(--ed-2); margin-top:var(--s2);
+  word-break:break-all;
+}
+.work .why{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--ed); margin:var(--s2) 0 0; max-width:36ch;
 }
 
-.echo {
-  font-family: var(--font-serif-latin), var(--font-serif-ko);
-  font-style: italic;
-  font-weight: 400;
-  font-size: 19px;
-  color: var(--ink-2);
-  line-height: 1.5;
-  max-width: 52ch;
-  margin: 0 0 32px;
-  text-indent: -0.4em;
+
+/* ═══ 8. 미출품 · 발행 ═══════════════════════════════════════════════ */
+
+.omit{
+  --c1:1;--c2:7; margin-top:var(--s8); padding-top:var(--s4);
+  border-top:1px solid var(--hair);
 }
-.echo::before {
-  content: "“ ";
-  color: var(--ink-3);
+.omit .hd{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); color:var(--ed); display:block; margin-bottom:var(--s4);
 }
-.echo::after {
-  content: " ”";
-  color: var(--ink-3);
+.omit ul{margin:0; padding:0; list-style:none}
+.omit li{
+  font-family:var(--mo); font-size:var(--t-meta); line-height:2;
+  letter-spacing:var(--tr-mo); color:var(--ed-2); word-break:break-all;
+}
+.omit .none{font-family:var(--ko); font-size:var(--t-meta); color:var(--ed-2)}
+
+/* 발행은 예외다 — 지면이 그렇게 말해야 한다. 신문 판형이 못 하던 말 */
+.issued{
+  --c1:1;--c2:7; margin-top:var(--s8); padding:var(--s6) 0;
+  border-top:1px solid var(--sep); border-bottom:1px solid var(--sep);
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--sep); max-width:38ch;
+}
+.issued a{
+  display:inline-block; margin-top:var(--s4);
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); color:var(--user);
+  border-bottom:1px solid var(--user); padding-bottom:2px;
+}
+.unissued{
+  --c1:1;--c2:7; margin-top:var(--s8); padding:var(--s6) 0;
+  border-top:1px solid var(--hair); border-bottom:1px solid var(--hair);
+}
+.unissued p{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--ed); margin:0; max-width:38ch;
+}
+.unissued .m{
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed-2); display:block; margin-top:var(--s4);
 }
 
-/* ─── engine plate ───────────────────────────────────────── */
-.engine {
-  margin: 0 0 56px;
-  padding: 22px 0 22px;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+
+/* ═══ 9. 일러두기 ════════════════════════════════════════════════════ */
+
+.colophon{--c1:1;--c2:7; margin-top:var(--s8); padding-top:var(--s4); border-top:1px solid var(--hair)}
+.colophon .hd{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); color:var(--ed); display:block; margin-bottom:var(--s5);
 }
-.engine-label {
-  font-family: var(--font-mono);
-  font-size: 10.5px;
-  color: var(--ink-3);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 16px;
+.colophon ol{margin:0; padding:0; list-style:none}
+.colophon li{
+  display:grid; grid-template-columns:2.5em 1fr; gap:var(--s4);
+  padding:var(--s4) 0; border-top:1px solid var(--hair-2);
 }
-.engine-label .model {
-  color: var(--red);
-  margin-right: 6px;
+.colophon li:first-child{border-top:0}
+.colophon .no{font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo); color:var(--ed-2)}
+.colophon .k{
+  display:block; font-family:var(--la); font-weight:700; font-size:var(--t-meta);
+  text-transform:uppercase; letter-spacing:var(--tr-la-sm); color:var(--sep);
 }
-.patterns {
-  font-family: var(--font-serif-ko);
-  font-size: 21px;
-  line-height: 1.45;
-  color: var(--ink);
-  margin: 0 0 16px;
-  font-weight: 400;
-  letter-spacing: -0.005em;
-}
-.patterns span + span::before {
-  content: "·";
-  color: var(--ink-3);
-  padding: 0 14px;
-  font-weight: 400;
-}
-.engine-hint {
-  font-family: var(--font-serif-latin);
-  font-style: italic;
-  font-size: 14px;
-  color: var(--ink-3);
+.colophon .v{
+  font-family:var(--ko); font-size:var(--t-meta); line-height:var(--lh-meta);
+  color:var(--ed); margin:var(--s2) 0 0; max-width:44ch;
 }
 
-/* ─── matches ────────────────────────────────────────────── */
-.matches {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  counter-reset: m;
+
+/* ═══ 10. 에디션 크레딧 ═══ 신문 판권에서 성격만 바뀐 자리 ══════════ */
+
+.credit{--c1:1;--c2:7; margin-top:120px; padding-top:var(--s4); border-top:1px solid var(--sep)}
+.credit dl{
+  margin:0; display:grid; grid-template-columns:7em 1fr; gap:var(--s2) var(--s4);
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo); line-height:1.7;
 }
-.match {
-  counter-increment: m;
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  column-gap: 18px;
-  padding: 24px 0;
-  border-bottom: 1px solid var(--rule);
+.credit dt{color:var(--ed-2)}
+.credit dd{margin:0; color:var(--ed); word-break:break-all}
+.credit dd.u{color:var(--user)}
+.credit dd.s{color:var(--sep)}
+.credit .loss{
+  font-family:var(--ko); font-size:var(--t-meta); line-height:var(--lh-meta);
+  color:var(--ed); max-width:44ch; margin:var(--s6) 0 0;
 }
-.match:first-child {
-  border-top: 1px solid var(--ink);
-  padding-top: 26px;
+.credit .nav{display:flex; gap:var(--s5); margin-top:var(--s5)}
+.credit .nav a{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); color:var(--ed);
 }
-.match:last-child {
-  border-bottom: 1px solid var(--ink);
+.credit .nav a:hover{color:var(--user)}
+
+
+/* ═══ 11. 보관소 목록 ════════════════════════════════════════════════ */
+
+.roll{--c1:1;--c2:7; margin-top:var(--s8)}
+.roll ol{margin:0; padding:0; list-style:none}
+.roll li{position:relative; padding:var(--s5) 0; border-top:1px solid var(--hair-2)}
+.roll .no{
+  position:absolute; top:calc(var(--s5) + .45em);
+  left:calc(-1 * (var(--colw) + var(--gut)));
+  width:var(--colw); text-align:right;
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo); color:var(--ed-2);
 }
-.match-num {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--ink-3);
-  letter-spacing: 0.04em;
-  padding-top: 8px;
+/* 보관소에서는 사용자의 질문이 출품작이다 — 그래서 사용자의 색을 쓴다 */
+.roll .qq{
+  display:block; font-family:var(--prose); font-size:var(--t-item);
+  line-height:var(--lh-r4); letter-spacing:var(--tr-title); color:var(--user);
 }
-.match a.title {
-  display: block;
-  font-family: var(--font-serif-ko);
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 1.25;
-  color: var(--ink);
-  letter-spacing: -0.012em;
-  text-decoration: none;
-  margin: 0 0 4px;
+.roll .qq:hover{text-decoration:underline; text-underline-offset:4px}
+.roll .why{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--ed); margin:var(--s2) 0 0; max-width:38ch;
 }
-.match a.title:hover {
-  color: var(--red);
+.roll .at{
+  display:block; font-family:var(--mo); font-size:var(--t-meta);
+  letter-spacing:var(--tr-mo); color:var(--ed-2); margin-top:var(--s2);
 }
-.match a.title .arrow {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 14px;
-  color: var(--ink-3);
-  margin-left: 8px;
-  transition: transform 0.15s;
-}
-.match a.title:hover .arrow {
-  color: var(--red);
-  transform: translateX(3px);
-}
-.match .latin-title {
-  font-family: var(--font-serif-latin);
-  font-style: italic;
-  font-weight: 400;
-  font-size: 18px;
-  color: var(--ink-2);
-  margin: 0 0 10px;
-  line-height: 1.4;
-}
-.match .reason {
-  font-family: var(--font-serif-ko);
-  font-size: 15.5px;
-  line-height: 1.6;
-  color: var(--ink);
-  margin: 0 0 12px;
-  max-width: 48ch;
-  text-wrap: pretty;
-}
-.match .reason::before {
-  content: "—  ";
-  color: var(--red);
-}
-.match .slug {
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-  color: var(--ink-3);
-  letter-spacing: 0;
-  margin: 0;
-}
-.match .slug a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px dotted var(--ink-3);
-  padding-bottom: 1px;
-}
-.match .slug a:hover {
-  color: var(--red);
-  border-bottom-color: var(--red);
+.roll .none{font-family:var(--ko); font-size:var(--t-body); color:var(--ed); max-width:38ch}
+
+
+/* ═══ 12. 접근성 ═══ 하강은 스크롤 연동이므로 모션 감축 시 정지시킨다
+   단 "파랑을 면적으로" 라는 결정까지 버리지는 않는다 — 정지된 면으로 준다.
+   사용자의 색은 사용자의 블록에 칠한다. route 는 SEP 와 편집자의 영역이다 */
+
+@media (prefers-reduced-motion:reduce){
+  .dive{display:none}
+  .gauge{transform:none; opacity:.25}
+  .title{background:var(--user); padding:var(--s6); margin-left:calc(-1 * var(--s6))}
+  .title .role{color:var(--paper); opacity:.8}
+  .q,.q-static{color:var(--paper)}
+  .q:disabled{-webkit-text-fill-color:var(--paper)}
+  .q::placeholder{color:rgba(255,255,255,.55)}
+  .run,.deck{color:rgba(255,255,255,.78)}
+  .go{background:var(--paper); border-color:var(--paper); color:var(--user)}
+  .go:disabled{background:transparent; border-color:rgba(255,255,255,.4); color:rgba(255,255,255,.6)}
+  .count{color:rgba(255,255,255,.7)} .count b{color:var(--paper)}
+  .reset{color:rgba(255,255,255,.8)}
 }
 
-/* ─── marginalia ─────────────────────────────────────────── */
-.marginalia {
-  position: sticky;
-  top: 88px;
-  align-self: start;
-}
-.marg-block {
-  font-family: var(--font-serif-ko);
-  font-size: 13px;
-  line-height: 1.65;
-  color: var(--ink-2);
-  margin-bottom: 36px;
-  max-width: 26ch;
-  padding-left: 18px;
-  border-left: 1px solid var(--rule);
-}
-.marg-block h4 {
-  font-family: var(--font-serif-latin);
-  font-style: italic;
-  font-weight: 500;
-  font-size: 13px;
-  color: var(--ink);
-  margin: 0 0 6px;
-  letter-spacing: 0.01em;
-}
-.marg-block h4 .tag {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-style: normal;
-  font-size: 9.5px;
-  color: var(--red);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-right: 6px;
-  vertical-align: 0.1em;
-}
-.marg-block p {
-  margin: 0;
-}
-.marg-block + .marg-block {
-  margin-top: 28px;
-}
 
-.vocab {
-  font-family: var(--font-serif-latin);
-  font-style: italic;
-  font-size: 13px;
-  color: var(--ink-2);
-}
-.vocab .ko {
-  font-family: var(--font-serif-ko);
-  font-style: normal;
-  color: var(--ink);
-}
-.vocab .from {
-  text-decoration: line-through;
-  text-decoration-color: var(--ink-3);
-  color: var(--ink-3);
-  margin-right: 6px;
-}
-.vocab .to {
-  color: var(--ink);
-}
+/* ═══ 13. 좁은 화면 ═══ 6칸 유지, 행잉 번호만 안으로 접는다 ════════ */
 
-/* ─── colophon ───────────────────────────────────────────── */
-.colophon {
-  margin-top: 120px;
-  padding-top: 24px;
-  border-top: 1px solid var(--rule);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 36px;
-  font-family: var(--font-serif-ko);
-  font-size: 12.5px;
-  line-height: 1.6;
-  color: var(--ink-3);
-}
-.colophon .loss {
-  color: var(--ink-2);
-}
-.colophon .loss b {
-  color: var(--red);
-  font-weight: 500;
-}
-.colophon a {
-  color: inherit;
-  border-bottom: 1px dotted currentColor;
-  text-decoration: none;
-}
-.colophon a:hover {
-  color: var(--ink);
-}
-
-/* ─── responsive ─────────────────────────────────────────── */
-@media (max-width: 1100px) {
-  .sheet {
-    grid-template-columns: 1fr;
-    padding: 56px 32px 96px;
-  }
-  .body {
-    grid-column: 1;
-  }
-  .gutter-r {
-    grid-column: 1;
-    padding-left: 0;
-    margin-top: 72px;
-  }
-  .marginalia {
-    position: static;
-  }
-  .marg-block {
-    max-width: 56ch;
-  }
-  .lede {
-    font-size: 36px;
-  }
-}
-@media (max-width: 600px) {
-  .sheet {
-    padding: 40px 22px 80px;
-  }
-  .masthead .pull {
-    margin-left: 0;
-    width: 100%;
-    padding-top: 6px;
-  }
-  .lede {
-    font-size: 30px;
-  }
-  .field textarea {
-    font-size: 22px;
-  }
-  .match {
-    grid-template-columns: 36px 1fr;
-    column-gap: 12px;
-  }
-  .match a.title {
-    font-size: 21px;
-  }
-  .colophon {
-    grid-template-columns: 1fr;
-  }
+@media (max-width:640px){
+  :root{--pad:20px; --colw:44px}
+  .leaf{padding-top:var(--s6)}
+  .credit dl{grid-template-columns:5.5em 1fr}
+  .note{--c1:1}
+  .imprint{flex-wrap:wrap; gap:var(--s2)}
 }

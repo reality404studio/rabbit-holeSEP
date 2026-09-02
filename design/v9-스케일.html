@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>THE RABBIT HOLE — v9 스케일</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   v9 — v8의 진단 결과 반영
+
+   v8 측정치:  font-size 19개 · line-height 9개 · 간격 23개(4px 배수 아닌 값 12개)
+   v9 목표:    font-size 7역할 · line-height 역할당 1개 · 간격 4px 스케일
+
+   1. 타입 스케일 7역할로 압축, 인접 역할 간 대비 확보
+   2. 간격 4px 스케일 · 섹션 리듬 28px 배수
+   3. 섹션 3계층 — squint test에서 구분되도록. 리드 위계 역전 해소
+   4. 한글 조판 — 라틴 105% 보정 · CJK 행간 · 명조에 맞는 자간
+   5. 서체 교체 — Hahmlet(저대비 슬랩) → Nanum Myeongjo(고대비 명조)
+      Old Standard TT와 같은 세로 스트레스·고대비 계열로 맞춤
+   ═══════════════════════════════════════════════════════════════ */
+
+:root{
+  --paper:#f1f0ec;
+  --ink:#12161f;
+  --ink-2:#39414f;
+  --ink-3:#656b77;   /* 4.69:1 on paper — 이전 #79808c 는 3.49:1 로 AA 미달이었다 */
+  /* placeholder 는 이제 이 화면의 유일한 안내문이라 읽혀야 한다.
+     3.32:1 — 대형 텍스트 기준(3:1)은 넘고, 잉크색(9:1)보다는 확실히 연하다 */
+  --placeholder:rgba(18,22,31,.50);
+  --hair:rgba(18,22,31,.2);
+  --hair-2:rgba(18,22,31,.1);
+  --red:#c2183f;
+
+  /* ─ 활자 ─
+     --ko    한글 전용 (명조)
+     --la    라틴 전용 (Old Standard TT) — 이 안에 한글을 넣지 않는다
+     --prose 혼식 본문: 라틴 글리프는 OSTT, 한글은 명조가 받는다.
+             순서가 중요하다 — 명조를 앞에 두면 라틴까지 명조가 그려서
+             지면에 라틴 활자가 두 종류 생긴다 (v8의 문제) */
+  --ko:"Nanum Myeongjo",serif;
+  --la:"Old Standard TT",Georgia,serif;
+  --prose:"Old Standard TT","Nanum Myeongjo",serif;
+  --mo:"JetBrains Mono",ui-monospace,monospace;
+
+  /* ─ 타입 스케일 · 7역할 ─ 인접 역할은 최소 1.25배 차이 ─ */
+  --t-display:56px;   /* 헤드라인 입력 — JS가 글자수에 따라 단계 조절 */
+  --t-lead:40px;      /* 리드 제목        40/26 = 1.54 */
+  --t-title:26px;     /* 2단 제목         26/20 = 1.30 */
+  --t-sub:20px;       /* 목록 제목        20/16 = 1.25 */
+  --t-body:16px;      /* 본문             16/12 = 1.33 */
+  --t-label:12px;     /* 라벨·영문 소제목·번호·URL  16/12 = 1.33 */
+  /* 10px 단은 삭제. 링크·날짜·카운터 같은 기능 텍스트가 여기 있었는데
+     11px 미만 기능 텍스트는 고밀도 화면에서 판독이 무너진다. 바닥을 12px 로 올렸다. */
+
+  /* ─ 행간 ─ 역할당 하나. CJK 본문은 1.7 내외가 권장치 ─ */
+  --lh-display:1.2;
+  --lh-lead:1.35;
+  --lh-title:1.45;
+  --lh-sub:1.55;
+  --lh-body:1.75;
+  --lh-label:1.6;
+
+  /* ─ 자간 ─ 명조는 정사각 모듈 계열이라 음수 자간이 필요하다.
+     (Hahmlet 같은 최근 폰트와 반대 — v8에서 이걸 거꾸로 적용했다) ─ */
+  --tr-display:-.035em;
+  --tr-title:-.025em;
+  --tr-body:-.015em;
+  --tr-micro:-.005em;
+  --tr-la:.13em;
+  --tr-la-sm:.17em;
+  --tr-mo:.06em;
+
+  /* ─ 라틴 광학 보정 ─ 한글은 전각 상자 중앙에 무게중심이 있고
+     라틴은 베이스라인 기준이라, 같은 크기로 두면 라틴이 아래로 내려앉아 보인다.
+     혼식 구간의 라틴을 105% 키워 시각 중심을 맞춘다 ─ */
+  --lat-adj:1.05;
+  /* 제호 광학 보정 — 간격 스케일이 아니라 측정으로 얻은 값이라 4px 배수가 아니다 */
+  --mh-optical:9px;
+
+  /* ─ 간격 ─ 전부 4px 배수. 섹션 리듬은 28px(본문 1행) 배수 ─ */
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px;
+  --s5:24px; --s6:32px; --s7:48px; --s8:64px;
+  --s-sec:56px;   /* 28 × 2 */
+
+  --cols:12;
+  --gut:24px;
+  --pad:48px;
+  --colw:calc((100% - 11 * var(--gut)) / 12);
+}
+
+*{box-sizing:border-box}
+html,body{background:#0d1017}
+body{
+  margin:0;
+  font-family:var(--prose);
+  font-weight:400;
+  font-size:var(--t-body);
+  line-height:var(--lh-body);
+  letter-spacing:var(--tr-body);
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  /* overflow-wrap 은 반드시 normal. break-word/anywhere 를 같이 걸면
+     칸이 좁을 때 keep-all 을 무시하고 '먹었습니/다' 처럼 어절을 쪼갠다 */
+  word-break:keep-all;
+  line-break:strict;
+  overflow-wrap:normal;
+}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--red)}
+
+/* 라틴 전용 — 한글 금지 */
+.la{font-family:var(--la);letter-spacing:var(--tr-la);text-transform:uppercase}
+.la.sm{letter-spacing:var(--tr-la-sm)}
+.mo{font-family:var(--mo);letter-spacing:var(--tr-mo);text-transform:uppercase;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+/* 한글 전용 — 라틴 자간·대문자 변환을 되돌린다 */
+.ko{font-family:var(--ko);letter-spacing:var(--tr-body);text-transform:none}
+/* 한글 문장 안에 섞인 라틴 — 광학 보정 */
+.lat{font-family:var(--la);font-size:calc(1em * var(--lat-adj));letter-spacing:0}
+
+/* ═══ 지면 ═══════════════════════════════════════════════════ */
+.press{position:relative;min-height:100vh;padding:var(--s6) 20px var(--s8);display:flex;justify-content:center;overflow:hidden}
+.sheet{
+  position:relative;width:100%;max-width:1080px;
+  background:var(--paper);
+  padding:var(--s6) var(--pad) var(--s5);
+  box-shadow:0 24px 60px -22px rgba(0,0,0,.7),0 2px 4px rgba(0,0,0,.4);
+  display:grid;
+  grid-template-columns:repeat(var(--cols),1fr);
+  column-gap:var(--gut);
+  align-content:start;
+}
+.sheet::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:2;opacity:.28;
+  background-image:radial-gradient(rgba(18,22,31,.13) .6px,transparent .7px),radial-gradient(rgba(18,22,31,.08) .5px,transparent .6px);
+  background-size:3px 3px,7px 7px;background-position:0 0,2px 3px;mix-blend-mode:multiply;
+}
+.band{grid-column:1/-1;display:grid;grid-template-columns:subgrid;position:relative;z-index:1}
+
+
+
+/* ═══ 제호 ═══
+   Old Standard TT의 캡높이는 em의 0.73뿐이라 42px로 지정해도 보이는 글자는 30.7px.
+   한글(명조)은 em의 0.945를 채운다. 그래서 42px 제호의 실제 잉크 높이가
+   12px 한글 두 줄 블록(30.6px)과 **똑같았고**, 가운데가 주저앉아 보였다.
+   → 제호를 전폭으로 풀고 64px까지 키운다. 캡높이 47px = 윙 블록의 1.5배.
+   귀(윙)는 양 끝 칸에 그대로 두고 같은 행에 겹쳐 앉힌다 — 신문 제호의 원래 구조 */
+.mh{align-items:center;padding-bottom:var(--s2)}
+.mh .wing{
+  grid-column:1/4;grid-row:1;margin:0;
+  /* 광학 보정 — 라틴 대문자는 디센더가 없어 캡 덩어리가 줄상자 위쪽에 앉는다.
+     그만큼 윙을 끌어올려 두 잉크 중심을 맞춘다 (측정 편차 -0.03px).
+     제호나 윙 크기를 바꾸면 README의 측정 스크립트로 다시 재야 한다 */
+  padding-bottom:var(--mh-optical);
+  font-size:var(--t-label);line-height:var(--lh-label);color:var(--ink-2);
+  letter-spacing:var(--tr-micro);text-wrap:pretty;
+}
+.mh .wing.r{grid-column:10/13;text-align:right}
+/* 세 요소 모두 grid-row:1 — 명시하지 않으면 칸이 겹칠 때 자동배치가 행을 갈라놓는다.
+   제호는 전폭이지만 글자가 가운데 정렬이라 양 끝 귀와 부딪히지 않는다 */
+.mh .n{
+  grid-column:1/-1;grid-row:1;margin:0;text-align:center;white-space:nowrap;
+  font-family:var(--la);font-weight:700;
+  font-size:clamp(26px,4.6vw,64px);line-height:.9;
+  letter-spacing:.02em;text-transform:uppercase;
+}
+.rule2{grid-column:1/-1;border-top:2px solid var(--ink);border-bottom:1px solid var(--ink);height:4px}
+
+/* ═══ 메타 한 줄 ═══
+   전에는 두 줄이었다. 위 줄에 날짜, 아래 줄에 "본문을 읽을 곳 — 스탠퍼드 철학 백과사전".
+   그런데 후자는 제호 왼쪽 귀("스탠퍼드 철학 백과사전으로 내려가는 길")가 이미 하는 말이었고,
+   날짜는 이 지면 어디서도 참조되지 않았다. 둘을 지우니 한 줄로 합쳐졌다.
+   두 줄일 때는 양 끝에만 글자가 있어 가운데가 비어 보이는 문제도 같이 사라진다.
+   → 남은 것: 왼쪽 = 누가 조판했는가 · 오른쪽 = 본문이 어디 있는가 */
+.meta{border-bottom:1px solid var(--ink);font-size:var(--t-label);line-height:var(--lh-label);align-items:baseline}
+.meta .l{grid-column:1/7;padding:var(--s2) 0}
+.meta .r{grid-column:7/13;padding:var(--s2) 0;text-align:right}
+.meta .editor{font-family:var(--la);letter-spacing:var(--tr-la);text-transform:uppercase;color:var(--ink-3)}
+.meta .editor b{position:relative;font-weight:700;color:var(--ink);padding-bottom:3px}
+/* right 를 .14em 당기는 건 자간이 마지막 글자 뒤에도 붙기 때문 — 밑줄이 글자보다 길어진다 */
+.meta .editor b::after{content:"";position:absolute;left:0;right:.14em;bottom:0;height:2px;background:var(--red);opacity:.85}
+.meta .src{font-family:var(--mo);letter-spacing:var(--tr-mo);text-transform:uppercase;color:var(--ink-3);overflow-wrap:anywhere}
+
+/* ═══ 헤드라인 조판대 ═══
+   이 화면의 주인공은 사용자의 질문이다. 나머지는 그것과 시각적 주도권을 다투면 안 된다.
+   흩어진 hero 조각들이 아니라 **하나의 조판된 헤드라인 블록**으로 읽혀야 한다:
+     작은 표지 → 사용자의 헤드라인 → 짧은 덱 → 작은 행동.
+   바깥 여백은 크게, 네 요소 사이는 좁게 묶는다 */
+.slot{padding:var(--s8) 0 0}
+/* eyebrow — 아주 작고 조용하게. 예전엔 여기에 "→ 오늘의 헤드라인"이 붙어
+   표지 하나가 두 번 말하고 있었다 */
+.kick{
+  grid-column:1/-1;justify-self:center;
+  font-family:var(--la);font-size:var(--t-label);letter-spacing:var(--tr-la-sm);text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:var(--s4);transition:opacity .3s;
+}
+.set .kick{opacity:0}
+#q{
+  grid-column:2/12;display:block;width:100%;
+  font-family:var(--ko);font-weight:800;
+  font-size:min(calc(var(--hs,56) * 1px),9.2vw);
+  line-height:var(--lh-display);
+  letter-spacing:var(--tr-display);
+  text-align:center;color:var(--ink);
+  background:transparent;border:0;padding:0;resize:none;outline:none;overflow:hidden;
+  word-break:keep-all;text-wrap:balance;caret-color:var(--ink);
+}
+/* 이 자리는 예시 질문이 아니라 **입력 안내**다.
+   타이핑하는 순간 안내가 사라지고 사용자의 질문이 같은 자리·같은 크기를 그대로 넘겨받는다.
+   별도의 검색창으로 이동하지 않는다 — 이 교체가 이 화면의 핵심 */
+#q::placeholder{color:var(--placeholder)}
+/* 덱은 헤드라인 안내와 같은 말을 반복하지 않는다.
+   헤드라인 = 내가 무엇을 하면 되는가 · 덱 = 이 지면이 내 질문으로 무엇을 하는가 */
+.deck{
+  grid-column:4/10;margin:var(--s5) 0 0;
+  font-size:var(--t-body);line-height:var(--lh-body);color:var(--ink-2);
+  letter-spacing:var(--tr-body);text-align:center;text-wrap:balance;min-height:28px;
+}
+/* 행동 — 별도 CTA 구역이 아니라 덱 다음에 이어지는 한 줄.
+   예전엔 'SET THE TYPE' + '조판하기 →' 두 단으로 나뉘고 긴 괘선 사이에 떠 있었다 */
+.cta{grid-column:1/-1;justify-self:center;margin:var(--s5) 0 0}
+.go{
+  background:none;border:0;padding:0 0 2px;cursor:pointer;
+  font-family:var(--ko);font-weight:700;font-size:var(--t-body);letter-spacing:var(--tr-body);
+  color:var(--ink);border-bottom:1.5px solid var(--ink);
+}
+.go:hover:not(:disabled){color:var(--red);border-bottom-color:var(--red)}
+.go:disabled{cursor:not-allowed;color:var(--ink-3);border-bottom-color:var(--hair-2)}
+
+.count{grid-column:1/-1;margin:var(--s3) 0 0;text-align:center;min-height:16px}
+.count .n{font-family:var(--mo);font-size:var(--t-label);letter-spacing:var(--tr-mo);color:var(--ink-3);font-variant-numeric:tabular-nums;opacity:0;transition:opacity .25s}
+.count .n.near{opacity:1}
+.count .reset{font-family:var(--ko);font-size:var(--t-label);letter-spacing:var(--tr-micro);color:var(--ink-3);border-bottom:1px solid var(--hair);cursor:pointer}
+.count .reset:hover{color:var(--red);border-bottom-color:var(--red)}
+.err{grid-column:1/-1;display:none;margin:var(--s3) 0 0;text-align:center;font-size:var(--t-label);letter-spacing:var(--tr-micro);color:var(--red)}
+.on .err{display:block}
+
+.status{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:var(--s2);height:16px;margin:var(--s5) 0 0;font-family:var(--la);font-size:var(--t-label);letter-spacing:var(--tr-la-sm);text-transform:uppercase;color:var(--ink-3);opacity:0;transition:opacity .35s}
+.status.show{opacity:1}
+.status .dot{width:4px;height:4px;background:var(--red);border-radius:50%;animation:blink 1s steps(2,end) infinite}
+.status.done .dot{animation:none;background:var(--ink-3)}
+@keyframes blink{50%{opacity:0}}
+
+/* ═══ 지면 본문 ═══ 섹션 3계층 — 블러에서도 구분되게 ═════════ */
+#board{margin-top:var(--s4)}
+.sec{margin-top:var(--s-sec);padding-top:var(--s3)}
+.sec:first-child{margin-top:var(--s5)}
+.sechd{grid-column:1/-1;display:grid;grid-template-columns:subgrid;align-items:baseline;transition:opacity .4s}
+.sechd .en{grid-column:1/7;font-family:var(--la);letter-spacing:var(--tr-la);text-transform:uppercase}
+.sechd .ko{grid-column:7/13;text-align:right;font-family:var(--ko);color:var(--ink-3);letter-spacing:var(--tr-micro);font-size:var(--t-label)}
+
+/* 1계층 — 리드. 가장 두꺼운 괘선, 가장 큰 섹션명 */
+.sec--lead{border-top:3px solid var(--ink)}
+.sec--lead .sechd .en{font-size:var(--t-sub);font-weight:700;color:var(--ink)}
+/* 2계층 — 본론 */
+.sec--mid{border-top:1px solid var(--ink)}
+.sec--mid .sechd .en{font-size:var(--t-label);font-weight:700;color:var(--ink)}
+/* 3계층 — 더 읽을거리. 가는 괘선, 흐린 섹션명 */
+.sec--tail{border-top:1px solid var(--hair)}
+.sec--tail .sechd .en{font-size:var(--t-label);font-weight:400;color:var(--ink-3)}
+
+.sec.blank .sechd{opacity:.3}
+.sec.blank{border-top-color:var(--hair)}
+
+.item .kk{display:block;font-family:var(--ko);font-size:var(--t-label);font-weight:700;letter-spacing:var(--tr-micro);color:var(--red);margin-bottom:var(--s2)}
+.item .kk:empty{display:none}   /* 편집자 한 마디가 없는 섹션에서 빈 줄을 남기지 않는다 */
+.item .t{display:block;font-family:var(--ko);letter-spacing:var(--tr-title);word-break:keep-all}
+.item .u{display:block;font-family:var(--la);font-size:var(--t-label);letter-spacing:var(--tr-la-sm);text-transform:uppercase;color:var(--ink-3);margin-top:var(--s2)}
+.item .n{font-size:var(--t-body);line-height:var(--lh-body);letter-spacing:var(--tr-body);color:var(--ink-2);text-wrap:pretty;margin:0}
+
+/* ─ 1. LEAD STORY — 지면을 지배하는 한 덩어리 ─
+   제목 9칸 + 편집자 노트 3칸 측면 단. 대칭이 아니다 */
+.lead{grid-column:1/-1;display:grid;grid-template-columns:subgrid;padding:var(--s5) 0 var(--s7);align-items:start}
+.lead .hd{grid-column:1/10}
+.lead .t{font-size:clamp(32px,4.4vw,56px);line-height:var(--lh-lead);font-weight:800}
+.lead .u{font-size:var(--t-sub);letter-spacing:var(--tr-la);margin-top:var(--s3)}
+.lead .n{grid-column:10/13;border-left:1px solid var(--hair);padding-left:var(--s4);font-size:var(--t-label);line-height:var(--lh-label)}
+
+/* ─ 2. BACKGROUND — 크기가 다른 두 덩어리 ─
+   좁은 4칸 + 넓은 7칸. 넓은 쪽 제목이 더 크다. 행을 공유하지 않는다 */
+.pair{grid-column:1/-1;display:grid;grid-template-columns:subgrid;padding:var(--s5) 0 var(--s5);align-items:start}
+.pair>.item{grid-column:1/6}
+.pair>.item+.item{grid-column:6/13;border-left:1px solid var(--hair);padding-left:var(--s5)}
+.pair .t{font-size:var(--t-title);line-height:var(--lh-title);font-weight:700}
+.pair>.item+.item .t{font-size:var(--t-lead);line-height:var(--lh-lead)}
+.pair .n{margin-top:var(--s3)}
+
+/* ─ 3. THE DISPUTE — 마주보는 두 단 ─
+   여기만 좌우 대칭이다. 가운데 잉크 괘선이 두 주장을 갈라 세운다.
+   행은 subgrid 로 공유해 양쪽이 같은 줄에서 시작한다 */
+.facing{grid-column:1/-1;display:grid;grid-template-columns:subgrid;grid-template-rows:auto auto auto auto;padding:var(--s5) 0 var(--s5)}
+.facing>.item{grid-column:span 6;grid-row:1/5;display:grid;grid-template-rows:subgrid;align-content:start}
+.facing>.item+.item{border-left:1px solid var(--ink);padding-left:calc(var(--gut) / 2);margin-left:calc(var(--gut) / -2)}
+.facing .t{font-size:var(--t-title);line-height:var(--lh-title);font-weight:700}
+.facing .n{margin-top:var(--s3)}
+
+/* ─ 4. DEEPER DOWN THE HOLE — 계단처럼 갈라져 내려간다 ─
+   행마다 시작 칸이 한 칸씩 밀린다. 섹션 이름이 말하는 형태 그대로 */
+.ladder{grid-column:1/-1;display:grid;grid-template-columns:subgrid;padding:var(--s4) 0 0}
+.ladder .row{display:grid;grid-template-columns:subgrid;align-items:baseline;padding:var(--s3) 0;border-bottom:1px dotted var(--hair)}
+.ladder .row:nth-child(1){grid-column:1/10}
+.ladder .row:nth-child(2){grid-column:2/11}
+.ladder .row:nth-child(3){grid-column:3/12}
+.ladder .row:nth-child(4){grid-column:4/13}
+.ladder .row:last-child{border-bottom:0}
+.row .no{grid-column:1/2;font-family:var(--mo);font-size:var(--t-label);letter-spacing:var(--tr-mo);color:var(--ink-3);font-variant-numeric:tabular-nums}
+.row .bd{grid-column:2/7}
+.row .u{grid-column:7/-1;text-align:right;font-family:var(--la);font-size:var(--t-label);letter-spacing:var(--tr-la-sm);text-transform:uppercase;color:var(--ink-3)}
+.row .t{display:block;font-family:var(--ko);font-weight:700;font-size:var(--t-sub);line-height:var(--lh-sub);letter-spacing:var(--tr-title);word-break:keep-all}
+.row .n{display:block;font-size:var(--t-label);line-height:var(--lh-label);letter-spacing:var(--tr-micro);color:var(--ink-2);margin-top:var(--s1);word-break:keep-all;text-wrap:pretty}
+
+/* ─ 조판 전 ─ 칸 안내선은 그리지 않는다. 그리드가 아니라 **그리드의 결과**를 보여준다.
+   각 블록이 앉을 자리만 아주 옅은 면과 머리카락 테두리로 암시한다.
+   모서리는 각지게 — 카드가 아니라 아직 인쇄되지 않은 지면의 칸이다 */
+.sec.blank .lead .hd,
+.sec.blank .lead .n,
+.sec.blank .pair>.item,
+.sec.blank .facing>.item,
+.sec.blank .ladder .row{
+  background-color:rgba(18,22,31,.035);
+  border:1px solid var(--hair-2);
+}
+.sec.blank .lead .hd{min-height:190px}
+.sec.blank .lead .n{min-height:190px}
+.sec.blank .pair>.item{min-height:150px}
+/* facing 은 채워졌을 때만 행을 subgrid 로 공유한다.
+   빈 상태에서 subgrid 를 유지하면 빈 행이 0 으로 접혀 min-height 가 먹지 않는다 */
+.sec.blank .facing>.item{grid-row:auto;display:block;min-height:130px}
+.sec.blank .ladder .row{min-height:52px;border-bottom:1px solid var(--hair-2)}
+/* dummy text rules 는 본문이 앉을 좁은 단에만.
+   큰 면은 제목 자리라 민무늬로 둔다 — 참고 이미지의 큰 사각형처럼 */
+.sec.blank .lead .n{
+  background-image:repeating-linear-gradient(to bottom,transparent 0 19px,var(--hair-2) 19px 20px);
+  background-position:0 var(--s4);
+  background-size:76% 120px;
+  background-repeat:no-repeat;
+}
+.t.typing::after{content:"";display:inline-block;width:.4em;height:.74em;background:var(--red);margin-left:.04em;vertical-align:-.02em}
+
+/* ═══ 지면 하단 ═══════════════════════════════════════════════ */
+.foot{margin-top:var(--s-sec);border-top:2px solid var(--ink);padding-top:var(--s3)}
+.foot p{grid-column:1/9;margin:0;font-size:var(--t-label);line-height:var(--lh-label);letter-spacing:var(--tr-micro);color:var(--ink-3)}
+/* 대문자 35자는 낱말 윤곽이 사라져 읽기 어렵다 — 이 줄만 대소문자 유지 */
+.foot .r{grid-column:9/13;text-align:right;font-family:var(--la);font-size:var(--t-label);letter-spacing:.04em;color:var(--ink-3)}
+
+/* ═══ 인쇄기 ═══════════════════════════════════════════════════ */
+.roller{position:absolute;left:-6%;right:-6%;top:0;height:64px;--h:400px;pointer-events:none;z-index:5;opacity:0;background:linear-gradient(to bottom,rgba(13,16,23,0),rgba(13,16,23,.26) 45%,rgba(13,16,23,.32) 55%,rgba(13,16,23,0))}
+.rolling .roller{animation:sweep var(--sd,3s) linear forwards}
+@keyframes sweep{0%{opacity:0;transform:translateY(-70px)}6%{opacity:1}92%{opacity:1}100%{opacity:0;transform:translateY(var(--h))}}
+.ink{animation:setType .42s both}
+@keyframes setType{
+  0%{opacity:0;transform:translateY(6px);filter:blur(1.8px);text-shadow:2.4px 0 0 rgba(194,24,63,.8),-1.8px 1px 0 rgba(18,22,31,.45)}
+  55%{opacity:1;filter:blur(.35px);text-shadow:1.1px 0 0 rgba(194,24,63,.5)}
+  100%{opacity:1;transform:translateY(0);filter:blur(0);text-shadow:none}
+}
+@media(prefers-reduced-motion:reduce){.ink{animation:none}.rolling .roller{display:none}.status .dot{animation:none}}
+
+/* ═══ 좁은 화면 ═══ 12칸 → 6칸 ════════════════════════════════ */
+@media(max-width:900px){
+  :root{--cols:6;--gut:16px;--pad:20px;--colw:calc((100% - 5 * var(--gut)) / 6)}
+  .press{padding:var(--s4) 10px var(--s7)}
+  .sheet{padding:var(--s5) var(--pad) var(--s4)}
+  .mh{align-items:start}
+  .mh .wing{grid-column:1/7;grid-row:auto;order:2;padding-bottom:0}
+  .mh .wing.r{grid-column:1/7;grid-row:auto;order:3;text-align:left;margin-top:var(--s1)}
+  .mh .n{grid-column:1/7;grid-row:auto;order:1;text-align:left;margin-bottom:var(--s2);white-space:normal}
+  .meta .editor{letter-spacing:.1em}
+  .meta .l,.meta .r{grid-column:1/7}
+  .meta .r{text-align:left;padding-top:0}
+  .slot{padding-top:var(--s6)}
+  #q{grid-column:1/7;font-size:min(calc(var(--hs,56) * .62px),11.2vw)}
+  .deck{grid-column:1/7}
+  .sechd .en{grid-column:1/4}
+  .sechd .ko{grid-column:4/7}
+  /* 좁은 화면에서는 비대칭 조판이 성립하지 않는다 — 모든 블록을 한 단으로 쌓고
+     계단도 편다. 조판 논리는 넓은 지면에서만 의미가 있다 */
+  .lead .hd,.lead .n{grid-column:1/7}
+  .lead .n{margin-top:var(--s4);border-left:0;padding-left:0;border-top:1px solid var(--hair);padding-top:var(--s4)}
+  .pair>.item,.pair>.item+.item,.facing>.item{grid-column:1/7}
+  .pair>.item+.item,.facing>.item+.item{
+    border-left:0;padding-left:0;margin-left:0;
+    border-top:1px solid var(--hair);padding-top:var(--s4);margin-top:var(--s4);
+  }
+  .pair>.item+.item .t{font-size:var(--t-title);line-height:var(--lh-title)}
+  .facing>.item{grid-row:auto;display:block}
+  .ladder .row:nth-child(1),.ladder .row:nth-child(2),
+  .ladder .row:nth-child(3),.ladder .row:nth-child(4){grid-column:1/7}
+  .row .no{grid-column:1/2}
+  .row .bd,.row .u{grid-column:2/7}
+  .row .u{text-align:left;margin-top:var(--s1)}
+  .sec.blank .lead .hd,.sec.blank .lead .n{min-height:120px}
+  .sec.blank .pair>.item,.sec.blank .facing>.item{min-height:110px}
+  .foot p,.foot .r{grid-column:1/7}
+  .foot .r{text-align:left;margin-top:var(--s1)}
+}
+</style>
+</head>
+<body>
+
+<div class="press">
+  <div class="sheet" id="sheet">
+    <div class="roller"></div>
+
+    <header class="band mh">
+      <p class="wing">스탠퍼드 철학 백과사전으로<br>내려가는 길</p>
+      <h1 class="n">The Rabbit Hole</h1>
+      <p class="wing r">본문은 이 지면에<br>인쇄되지 않습니다</p>
+    </header>
+    <div class="rule2"></div>
+
+    <div class="band meta">
+      <span class="l editor">Edited by <b>Claude Sonnet 4.6</b></span>
+      <a class="r src" href="https://plato.stanford.edu/contents.html" target="_blank" rel="noopener noreferrer">plato.stanford.edu</a>
+    </div>
+
+    <form class="band slot" id="form" autocomplete="off">
+      <span class="kick" id="kick">Start here</span>
+      <textarea id="q" rows="1" maxlength="60" placeholder="궁금한 것을 한 줄의 헤드라인으로 써보세요." aria-label="당신의 질문"
+        spellcheck="false" autocorrect="off" autocapitalize="off"></textarea>
+      <p class="deck" id="deck">편집자는 답을 대신 쓰지 않습니다. <span class="lat">SEP</span>&nbsp;원문으로 들어갈 읽기 순서를 소개합니다.</p>
+      <span class="cta"><button class="go" id="go" type="submit" disabled>조판하기 →</button></span>
+      <p class="count"><span class="n" id="cnt">0 / 60</span><span class="reset" id="reset" role="button" tabindex="0" hidden>새 호 발행</span></p>
+      <div class="err" id="err">오늘의 조판 한도를 모두 사용했습니다</div>
+    </form>
+
+    <div class="band status" id="status"><span class="dot"></span><span id="statustext">Setting type</span></div>
+
+    <div id="board" class="band"></div>
+
+    <footer class="band foot">
+      <p>이 지면이 손실시키는 것 — 본문 그 자체, 항목 사이의 상호 참조, 각 항목의 역사적 맥락. 모두 <span class="lat">SEP</span> 안에 있습니다.</p>
+      <span class="r">Stanford Encyclopedia of Philosophy</span>
+    </footer>
+  </div>
+</div>
+
+<script>
+const ROUTE=[
+  {en:"Lead story",ko:"먼저 읽을 것",kind:"lead",tier:"lead",items:[
+    {t:"기능주의",u:"functionalism",en:"Functionalism",n:"마음을 무엇으로 만들어졌는지가 아니라 무엇을 하는지로 정의하는 입장. ‘기계가 마음을 가질 수 있는가’라는 질문이 여기서 처음 논리적인 형태를 얻는다. 이 항목을 먼저 읽으면 나머지 논쟁의 좌표가 보인다."}
+  ]},
+  {en:"Background",ko:"먼저 깔아 둘 것",kind:"pair",tier:"mid",items:[
+    {t:"심신 이원론",u:"dualism",en:"Dualism",n:"마음과 물질을 둘로 나누는 오래된 구분. 기능주의가 무엇에 반대해 등장했는지를 먼저 확인한다."},
+    {t:"계산주의적 마음 이론",u:"computational-mind",en:"The Computational Theory of Mind",n:"사고를 기호 연산으로 보는 관점. 오늘의 인공지능 논의가 서 있는 전제다."}
+  ]},
+  {en:"The dispute",ko:"여기서부터 갈라진다",kind:"facing",tier:"mid",items:[
+    {kk:"이해는 없다",t:"중국어 방 논변",u:"chinese-room",en:"The Chinese Room Argument",n:"규칙에 따라 기호를 옮기는 것만으로는 의미를 이해한 것이 아니라는 반론."},
+    {kk:"행동이 전부다",t:"튜링 테스트",u:"turing-test",en:"The Turing Test",n:"구별할 수 없다면 구별할 근거도 없다는 반대편의 주장."}
+  ]},
+  {en:"Deeper down the hole",ko:"더 내려가고 싶다면",kind:"ladder",tier:"tail",items:[
+    {t:"의식",u:"consciousness",en:"Consciousness",n:"경험이 있다는 것 자체가 왜 문제인가."},
+    {t:"철학적 좀비",u:"zombies",en:"Zombies",n:"기능이 같아도 경험은 빠질 수 있는가."},
+    {t:"타인의 마음",u:"other-minds",en:"Other Minds",n:"타인에게 마음이 있다고 믿는 근거."},
+    {t:"지향성",u:"intentionality",en:"Intentionality",n:"생각이 무언가에 ‘대한’ 것이 되는 방식."}
+  ]}
+];
+const $=id=>document.getElementById(id);
+const sheet=$("sheet"),q=$("q"),go=$("go"),cnt=$("cnt"),board=$("board"),deck=$("deck"),status=$("status"),statustext=$("statustext"),reset=$("reset");
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+const url=s=>"https://plato.stanford.edu/entries/"+s+"/";
+const DECK0='편집자는 답을 대신 쓰지 않습니다. <span class="lat">SEP</span>&nbsp;원문으로 들어갈 읽기 순서를 소개합니다.';
+let busy=false;
+
+
+function itemHTML(kind,i){
+  if(kind==="ladder")return `<div class="row"><span class="no">${String(i+1).padStart(2,"0")}</span><div class="bd"><a class="t" target="_blank" rel="noopener noreferrer"></a><span class="n"></span></div><a class="u" target="_blank" rel="noopener noreferrer"></a></div>`;
+  if(kind==="lead")return `<div class="item lead"><div class="hd"><span class="kk"></span><a class="t" target="_blank" rel="noopener noreferrer"></a><a class="u" target="_blank" rel="noopener noreferrer"></a></div><p class="n"></p></div>`;
+  return `<div class="item"><span class="kk"></span><a class="t" target="_blank" rel="noopener noreferrer"></a><a class="u" target="_blank" rel="noopener noreferrer"></a><p class="n"></p></div>`;
+}
+function frame(){
+  board.innerHTML=ROUTE.map(s=>{
+    const inner=s.items.map((it,i)=>itemHTML(s.kind,i)).join("");
+    /* lead 는 항목이 하나뿐이라 감싸는 단이 필요 없다 */
+    const wrap=s.kind==="lead"?inner:`<div class="${s.kind}">${inner}</div>`;
+    return `<section class="band sec sec--${s.tier} blank"><div class="sechd"><span class="en">${s.en}</span><span class="ko">${s.ko}</span></div>${wrap}</section>`;
+  }).join("");
+}
+frame();
+
+/* 헤드라인 크기 — 임의값이 아니라 6단 스케일에서 고른다 */
+const HS=[72,60,50,42,36,30];
+function fit(){
+  const n=(q.value||q.placeholder).length;
+  const s=n<=9?HS[0]:n<=15?HS[1]:n<=22?HS[2]:n<=32?HS[3]:n<=44?HS[4]:HS[5];
+  q.style.setProperty("--hs",s);
+  q.style.height="auto";q.style.height=q.scrollHeight+"px";
+}
+function tick(){
+  const n=q.value.length;
+  cnt.textContent=n+" / 60";
+  cnt.classList.toggle("near",n>=45);
+  go.disabled=busy||!q.value.trim();
+  fit();
+}
+q.addEventListener("input",tick);
+q.addEventListener("keydown",e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();$("form").requestSubmit()}});
+window.addEventListener("resize",fit);
+tick();
+
+function stamp(el){el.classList.remove("ink");void el.offsetWidth;el.classList.add("ink")}
+async function type(el,text,ms){el.classList.add("typing");el.textContent="";for(const ch of text){el.textContent+=ch;await wait(ms)}el.classList.remove("typing")}
+function say(t,done){statustext.textContent=t;status.classList.add("show");status.classList.toggle("done",!!done)}
+
+async function compose(){
+  if(busy||!q.value.trim())return;
+  busy=true;go.disabled=true;go.textContent="조판 중…";
+  q.blur();frame();sheet.classList.add("set");
+  deck.textContent="";
+
+  const roller=sheet.querySelector(".roller"),y0=board.offsetTop-30;
+  roller.style.top=y0+"px";
+  roller.style.setProperty("--h",(document.querySelector(".foot").offsetTop+70-y0)+"px");
+  sheet.classList.remove("rolling");void sheet.offsetWidth;
+
+  say("Setting type");
+  await wait(620);
+  sheet.classList.add("rolling");
+  deck.innerHTML='편집자가 이 질문을 위해 <span class="lat">SEP</span> 항목을 골라 순서를 잡았습니다.';
+  stamp(deck);
+  await wait(420);
+  say("Composing edition");
+
+  const secs=[...board.querySelectorAll(".sec")];
+  for(let s=0;s<ROUTE.length;s++){
+    const sec=secs[s],S=ROUTE[s];
+    sec.classList.remove("blank");
+    stamp(sec.querySelector(".sechd"));
+    await wait(330);
+    const slots=[...sec.querySelectorAll(".item,.row")];
+    for(let i=0;i<S.items.length;i++){
+      const it=S.items[i],el=slots[i],href=url(it.u);
+      const t=el.querySelector(".t"),n=el.querySelector(".n"),u=el.querySelector(".u"),kk=el.querySelector(".kk");
+      if(kk&&it.kk){kk.textContent=it.kk;stamp(kk)}
+      t.href=href;await type(t,it.t,S.kind==="ladder"?34:52);
+      n.textContent=it.n;stamp(n);
+      await wait(110);
+      u.href=href;u.textContent=it.en;stamp(u);
+      await wait(170);
+    }
+    await wait(200);
+  }
+  sheet.classList.remove("rolling");
+  say("Edition set",true);
+  busy=false;go.textContent="다시 조판하기 →";reset.hidden=false;tick();
+}
+
+$("form").addEventListener("submit",e=>{e.preventDefault();compose()});
+function newEdition(){
+  if(busy)return;
+  sheet.classList.remove("set","rolling");
+  q.value="";frame();
+  deck.innerHTML=DECK0;
+  status.classList.remove("show","done");
+  go.textContent="조판하기 →";reset.hidden=true;
+  window.scrollTo(0,0);tick();q.focus();
+}
+reset.addEventListener("click",newEdition);
+reset.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();newEdition()}});
+</script>
+</body>
+</html>

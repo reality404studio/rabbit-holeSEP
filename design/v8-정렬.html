@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>THE RABBIT HOLE — v8 정렬</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;500;600;700;800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   v8 — v7「에디션」의 정렬 판
+   변경 원칙 3가지만:
+   1. 이유 없는 정보 삭제 — 지시 대상이 없는 표기는 전부 뺀다
+   2. 12칸 그리드 — 모든 요소의 좌우 끝이 같은 세로선 위에 앉는다
+   3. 조판 — 라틴 자간이 한글에 상속되지 않게 분리, 자간·행간 재설계
+   ═══════════════════════════════════════════════════════════════ */
+
+:root{
+  /* ─ 색 ─ 적색은 오직 '편집자(모델)의 손이 닿은 곳'에만 ─ */
+  --paper:#f1f0ec;
+  --ink:#12161f;
+  --ink-2:#39414f;
+  --ink-3:#79808c;
+  --hair:rgba(18,22,31,.2);
+  --hair-2:rgba(18,22,31,.1);
+  --guide:rgba(18,22,31,.16);
+  --red:#c2183f;
+
+  /* ─ 활자 ─ 영문 = Old Standard TT (유지) · 한글 = Hahmlet · 기계 = JetBrains Mono ─ */
+  --f:"Hahmlet",serif;
+  --la:"Old Standard TT",Georgia,serif;
+  --mo:"JetBrains Mono",ui-monospace,monospace;
+
+  /* ─ 자간 ─ 한글은 음수, 라틴 대문자는 양수. 절대 서로 상속되지 않는다 ─ */
+  --tr-display:-.03em;   /* 한글 40px↑ */
+  --tr-title:-.02em;     /* 한글 19–32px */
+  --tr-body:-.01em;      /* 한글 14–18px */
+  --tr-micro:0;          /* 한글 13px↓ — 좁히면 뭉갠다 */
+  --tr-la:.14em;         /* 라틴 대문자 11–13px */
+  --tr-la-sm:.18em;      /* 라틴 대문자 9–10.5px — 작을수록 더 벌린다 */
+  --tr-mo:.06em;
+
+  /* ─ 그리드 ─ 12칸. 모든 span은 이 칸 위에서만 결정된다 ─ */
+  --cols:12;
+  --gut:22px;
+  --pad:46px;
+  --colw:calc((100% - 11 * var(--gut)) / 12);
+
+  /* ─ 세로 리듬 ─ 기본 단위 4px · 본문 베이스라인 28px ─ */
+  --u:4px;
+  --bl:28px;
+}
+
+*{box-sizing:border-box}
+html,body{background:#0d1017}
+body{
+  margin:0;
+  font-family:var(--f);
+  font-weight:400;
+  font-size:16px;
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  /* 한글 조판 기본값 — 어절 단위로만 끊는다.
+     overflow-wrap 은 반드시 normal. break-word/anywhere 를 같이 걸면
+     칸이 좁아졌을 때 keep-all 을 무시하고 '먹었습니/다' 처럼 어절을 쪼갠다. */
+  word-break:keep-all;
+  line-break:strict;
+  overflow-wrap:normal;
+  letter-spacing:var(--tr-body);
+}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--red)}
+
+/* 라틴 전용 클래스 — 이 안에는 한글을 넣지 않는다.
+   (v7의 가장 큰 조판 오류: .la/.mo 안에 한글이 들어가 .2em 자간을 상속받았다) */
+.la{font-family:var(--la);letter-spacing:var(--tr-la);text-transform:uppercase;font-feature-settings:normal}
+.la.sm{letter-spacing:var(--tr-la-sm)}
+/* 끊을 곳이 없는 기계 문자열(URL)만 예외로 아무데서나 끊게 한다 */
+.mo{font-family:var(--mo);letter-spacing:var(--tr-mo);text-transform:uppercase;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.srcline .r{overflow-wrap:anywhere}
+/* 한글 전용 — 라틴 자간·대문자 변환을 명시적으로 되돌린다 */
+.ko{font-family:var(--f);letter-spacing:var(--tr-body);text-transform:none}
+.ko.micro{letter-spacing:var(--tr-micro)}
+
+/* ═══ 지면 ═══════════════════════════════════════════════════ */
+/* overflow:hidden — .roller 가 지면 밖으로 6% 넘치므로 가로 스크롤을 막는다 */
+.press{position:relative;min-height:100vh;padding:34px 20px 64px;display:flex;justify-content:center;overflow:hidden}
+.sheet{
+  position:relative;
+  width:100%;
+  max-width:1080px;
+  background:var(--paper);
+  padding:34px var(--pad) 24px;
+  box-shadow:0 24px 60px -22px rgba(0,0,0,.7),0 2px 4px rgba(0,0,0,.4);
+  /* ★ 12칸 그리드의 원본. 아래 모든 .band 는 subgrid 로 이 칸을 그대로 물려받는다 */
+  display:grid;
+  grid-template-columns:repeat(var(--cols),1fr);
+  column-gap:var(--gut);
+  align-content:start;
+}
+.sheet::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:2;opacity:.3;
+  background-image:radial-gradient(rgba(18,22,31,.13) .6px,transparent .7px),radial-gradient(rgba(18,22,31,.08) .5px,transparent .6px);
+  background-size:3px 3px,7px 7px;background-position:0 0,2px 3px;mix-blend-mode:multiply;
+}
+.band{grid-column:1/-1;display:grid;grid-template-columns:subgrid;position:relative;z-index:1}
+
+/* 조판 전에만, 지면(board)에만 보이는 칸 안내선.
+   .sheet 와 똑같은 칸 계산식을 쓰므로 모든 요소의 끝은 반드시 이 선 위에 앉는다. */
+#board.empty{
+  background-image:repeating-linear-gradient(to right,
+    var(--guide) 0 1px,
+    transparent 1px calc(var(--colw) - 1px),
+    var(--guide) calc(var(--colw) - 1px) var(--colw),
+    transparent var(--colw) calc(var(--colw) + var(--gut)));
+}
+
+/* ═══ 제호 ═══ 좌 3칸 · 제호 6칸 · 우 3칸 ══════════════════════ */
+.mh{align-items:end;padding-bottom:9px;border-bottom:1px solid var(--ink)}
+.mh .wing{
+  grid-column:1/4;grid-row:1;margin:0;padding-bottom:6px;
+  font-size:12px;line-height:1.65;color:var(--ink-2);
+  letter-spacing:var(--tr-micro);text-wrap:pretty;
+}
+.mh .wing.r{grid-column:10/13;text-align:right}
+/* 세 요소 모두 grid-row:1 — 명시하지 않으면 칸이 겹칠 때 자동배치가 행을 갈라놓는다 */
+.mh .n{
+  grid-column:4/10;grid-row:1;margin:0;text-align:center;white-space:nowrap;
+  font-family:var(--la);font-weight:700;
+  font-size:clamp(24px,3.4vw,42px);line-height:.9;
+  letter-spacing:.02em;text-transform:uppercase;
+}
+.rule2{grid-column:1/-1;border-top:2px solid var(--ink);border-bottom:1px solid var(--ink);height:4px}
+
+/* ═══ 발행 표기 ═══ 남긴 것: 누가 조판했는가 + 언제. 그뿐 ═════ */
+.colo{
+  padding:10px 0;border-bottom:1px solid var(--ink);
+  justify-items:center;align-items:baseline;
+}
+.colo .in{grid-column:1/-1;display:flex;align-items:baseline;gap:0 12px;flex-wrap:wrap;justify-content:center}
+.colo .editor{font-family:var(--la);font-size:12px;letter-spacing:var(--tr-la);text-transform:uppercase;color:var(--ink-3)}
+/* 적색 밑줄 = 이 지면에서 모델의 손이 닿은 첫 지점. 이름에만 긋는다 */
+.colo .editor b{position:relative;font-weight:700;color:var(--ink);padding-bottom:3px}
+.colo .editor b::after{content:"";position:absolute;left:0;right:.14em;bottom:0;height:2px;background:var(--red);opacity:.85}
+.colo .sep{color:var(--hair)}
+.colo .date{font-family:var(--la);font-size:12px;letter-spacing:var(--tr-la);text-transform:uppercase;color:var(--ink-3)}
+
+/* ═══ 출처 한 줄 ═══ 6칸 + 6칸 — 아래 2단 본문과 같은 선 ═══════ */
+.srcline{border-bottom:1px solid var(--ink);font-size:11.5px;color:var(--ink-2)}
+.srcline .l{grid-column:1/7;padding:8px 0;letter-spacing:var(--tr-micro)}
+.srcline .r{grid-column:7/13;padding:8px 0;text-align:right;font-family:var(--mo);font-size:10px;letter-spacing:var(--tr-mo);text-transform:uppercase;color:var(--ink-3)}
+
+/* ═══ 헤드라인 조판대 ═══ 입력 10칸 · 부제 6칸 ═════════════════ */
+.slot{padding:56px 0 0}
+.kick{
+  grid-column:1/-1;justify-self:center;
+  display:inline-flex;align-items:center;gap:9px;
+  font-family:var(--la);font-size:10.5px;letter-spacing:var(--tr-la-sm);text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:24px;transition:opacity .3s;
+}
+.kick .ko{font-size:11.5px;color:var(--ink-2)}
+.set .kick{opacity:0}
+#q{
+  grid-column:2/12;
+  display:block;width:100%;
+  font-family:var(--f);font-weight:700;
+  font-size:min(calc(var(--hs,80) * 1px),9.4vw);
+  line-height:1.16;                      /* v7 1.1 → 한글 큰 글자의 받침이 붙지 않는 최소치 */
+  letter-spacing:var(--ht,-.03em);       /* v7 -.045em → -.03em. 한글은 라틴만큼 조이면 뭉갠다 */
+  text-align:center;color:var(--ink);
+  background:transparent;border:0;padding:0;resize:none;outline:none;overflow:hidden;
+  word-break:keep-all;text-wrap:balance;
+  caret-color:var(--ink);                /* 커서는 사람의 것 — 적색 아님 */
+  font-feature-settings:"palt" 1;        /* palt 는 큰 글자에만. 본문에 걸면 자간이 들쭉날쭉해진다 */
+}
+#q::placeholder{color:rgba(18,22,31,.17)}
+.deck{
+  grid-column:4/10;margin:24px 0 0;
+  font-size:16.5px;line-height:1.75;color:var(--ink-2);
+  letter-spacing:var(--tr-body);text-align:center;text-wrap:balance;min-height:calc(var(--bl) * 1);
+}
+
+/* 조판 지시 — 버튼이 아니라 인쇄소 지시선 */
+.cmd{grid-column:2/12;display:flex;align-items:center;margin:28px 0 0}
+.cmd .line{flex:1;height:1px;background:var(--hair-2)}
+.go{
+  background:none;border:0;padding:0 26px;cursor:pointer;
+  display:flex;flex-direction:column;align-items:center;gap:5px;
+  font-family:var(--f);font-weight:600;font-size:16.5px;letter-spacing:var(--tr-body);color:var(--ink);
+}
+.go .en{font-family:var(--la);font-size:9.5px;letter-spacing:var(--tr-la-sm);text-transform:uppercase;color:var(--ink-3)}
+.go .ko{border-bottom:1.5px solid var(--ink);padding-bottom:2px}
+.go:hover:not(:disabled) .ko{color:var(--red);border-bottom-color:var(--red)}
+.go:hover:not(:disabled) .en{color:var(--ink-2)}
+.go:disabled{cursor:not-allowed;color:var(--ink-3)}
+.go:disabled .ko{border-bottom-color:var(--hair-2)}
+.go:disabled .en{color:rgba(18,22,31,.28)}
+
+/* 글자수 — 한도에 가까울 때만 나타난다 (평시에는 알 이유가 없다) */
+.count{grid-column:1/-1;margin:14px 0 0;text-align:center;min-height:14px}
+.count .n{font-family:var(--mo);font-size:9.5px;letter-spacing:var(--tr-mo);color:var(--ink-3);font-variant-numeric:tabular-nums;opacity:0;transition:opacity .25s}
+.count .n.near{opacity:1}
+.count .reset{font-size:11.5px;letter-spacing:var(--tr-micro);color:var(--ink-3);border-bottom:1px solid var(--hair);cursor:pointer}
+.count .reset:hover{color:var(--red);border-bottom-color:var(--red)}
+.err{grid-column:1/-1;display:none;margin:12px 0 0;text-align:center;font-size:12px;letter-spacing:var(--tr-micro);color:var(--red)}
+.on .err{display:block}
+
+/* 조판 상태 */
+.status{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:10px;height:16px;margin:26px 0 0;font-family:var(--la);font-size:10px;letter-spacing:var(--tr-la-sm);text-transform:uppercase;color:var(--ink-3);opacity:0;transition:opacity .35s}
+.status.show{opacity:1}
+.status .dot{width:4px;height:4px;background:var(--red);border-radius:50%;animation:blink 1s steps(2,end) infinite}
+.status.done .dot{animation:none;background:var(--ink-3)}
+@keyframes blink{50%{opacity:0}}
+
+/* ═══ 지면 본문 ═══════════════════════════════════════════════ */
+#board{margin-top:14px}
+.sec{margin-top:26px;border-top:1px solid var(--ink);padding-top:9px}
+.sec:first-child{margin-top:8px}
+.sechd{grid-column:1/-1;display:grid;grid-template-columns:subgrid;align-items:baseline;transition:opacity .4s}
+.sechd .en{grid-column:1/7;font-family:var(--la);font-size:12.5px;font-weight:700;letter-spacing:var(--tr-la);text-transform:uppercase}
+/* 한글은 영문의 번역이 아니라 독자에게 주는 지시다 — 그래서 남는다 */
+.sechd .ko{grid-column:7/13;text-align:right;font-size:11.5px;color:var(--ink-3);letter-spacing:var(--tr-micro)}
+.sec.blank .sechd{opacity:.3}
+.sec.blank{border-top-color:var(--hair)}
+
+/* 항목 공통 활자 구조 — 국문 제목 / 영문 원제 / 편집자 노트. 크기만 위계로 바뀐다 */
+/* 편집자가 붙인 한 마디 — 내용이 한글이므로 라틴 자간(.18em)을 상속시키지 않는다 */
+.item .kk{display:block;font-family:var(--f);font-size:11.5px;font-weight:500;letter-spacing:var(--tr-micro);color:var(--red);min-height:14px;margin-bottom:7px}
+.item .t{display:block;font-weight:700;letter-spacing:var(--tr-title);word-break:keep-all}
+.item .u{display:block;font-family:var(--la);font-size:10.5px;letter-spacing:var(--tr-la-sm);text-transform:uppercase;color:var(--ink-3);margin-top:6px;min-height:13px}
+.item .n{font-size:15.5px;line-height:1.8;letter-spacing:var(--tr-body);color:var(--ink-2);text-wrap:pretty;margin:0}
+
+/* ─ lead ─ 제목 7칸 · 노트 5칸. 두 칸은 같은 첫 줄에서 시작한다 ─ */
+.lead{grid-column:1/-1;display:grid;grid-template-columns:subgrid;padding:20px 0 24px;align-items:start}
+.lead .hd{grid-column:1/8}
+.lead .t{font-size:clamp(30px,3.9vw,44px);line-height:1.28;letter-spacing:var(--tr-display);min-height:calc(var(--bl) * 2)}
+.lead .n{grid-column:8/13;font-size:16px;min-height:calc(var(--bl) * 4)}
+
+/* ─ two ─ 6칸 + 6칸. 세로 괘선은 두 칸 사이 거터의 정중앙에 놓인다 ─
+   행도 subgrid 로 공유한다: 한쪽 제목이 두 줄이 되면 반대쪽 행 높이도 같이 자란다.
+   min-height 로 슬롯을 고정하는 방식과 달리, 짧은 쪽에 빈 공간이 남지 않는다. */
+.two{grid-column:1/-1;display:grid;grid-template-columns:subgrid;grid-template-rows:auto auto auto auto;padding:18px 0 20px}
+.two>.item{grid-column:span 6;grid-row:1/5;display:grid;grid-template-rows:subgrid;align-content:start}
+.two>.item+.item{
+  border-left:1px solid var(--hair);
+  padding-left:calc(var(--gut) / 2);
+  margin-left:calc(var(--gut) / -2);
+}
+.two .t{font-size:26px;line-height:1.35;min-height:35px}
+.two .n{margin-top:10px;min-height:calc(var(--bl) * 2)}
+
+/* ─ list ─ 번호 1칸 · 본문 7칸 · 영문 원제 4칸 ─ */
+.list{grid-column:1/-1;display:grid;grid-template-columns:subgrid;padding:4px 0 2px}
+.row{grid-column:1/-1;display:grid;grid-template-columns:subgrid;align-items:baseline;padding:12px 0;border-bottom:1px dotted var(--hair)}
+.row:last-child{border-bottom:0}
+.row .no{grid-column:1/2;font-family:var(--mo);font-size:10px;letter-spacing:var(--tr-mo);color:var(--ink-3);font-variant-numeric:tabular-nums}
+.row .bd{grid-column:2/9}
+.row .t{display:block;font-weight:600;font-size:19px;line-height:1.45;letter-spacing:var(--tr-title);min-height:28px;word-break:keep-all}
+.row .n{display:block;font-size:13.5px;line-height:1.75;letter-spacing:var(--tr-micro);color:var(--ink-3);margin-top:4px;min-height:24px;word-break:keep-all;text-wrap:pretty}
+.row .u{grid-column:9/13;text-align:right;font-family:var(--la);font-size:10px;letter-spacing:var(--tr-la-sm);text-transform:uppercase;color:var(--ink-3);min-height:13px}
+
+/* 아직 활자가 앉지 않은 자리 */
+.blank .t,.blank .u{background:linear-gradient(to top,var(--hair-2) 1px,transparent 1px)}
+.blank .u{max-width:70%}
+.blank .row .u{margin-left:auto}
+.blank .n{background:repeating-linear-gradient(to bottom,transparent 0 27px,var(--hair-2) 27px 28px)}
+.blank .row .n{background:none}
+.t.typing::after{content:"";display:inline-block;width:.4em;height:.74em;background:var(--red);margin-left:.04em;vertical-align:-.02em}
+
+/* ═══ 지면 하단 ═══ 남긴 것: 이 지면이 무엇을 잃는가. 그뿐 ═════ */
+.foot{margin-top:24px;border-top:2px solid var(--ink);padding-top:10px}
+.foot p{grid-column:1/9;margin:0;font-size:11.5px;line-height:1.7;letter-spacing:var(--tr-micro);color:var(--ink-3)}
+.foot .r{grid-column:9/13;text-align:right;font-family:var(--la);font-size:10px;letter-spacing:var(--tr-la-sm);text-transform:uppercase;color:var(--ink-3)}
+
+/* ═══ 인쇄기 ═══════════════════════════════════════════════════ */
+.roller{position:absolute;left:-6%;right:-6%;top:0;height:64px;--h:400px;pointer-events:none;z-index:5;opacity:0;background:linear-gradient(to bottom,rgba(13,16,23,0),rgba(13,16,23,.26) 45%,rgba(13,16,23,.32) 55%,rgba(13,16,23,0))}
+.rolling .roller{animation:sweep var(--sd,3s) linear forwards}
+@keyframes sweep{0%{opacity:0;transform:translateY(-70px)}6%{opacity:1}92%{opacity:1}100%{opacity:0;transform:translateY(var(--h))}}
+.ink{animation:setType .42s both}
+@keyframes setType{
+  0%{opacity:0;transform:translateY(6px);filter:blur(1.8px);text-shadow:2.4px 0 0 rgba(194,24,63,.8),-1.8px 1px 0 rgba(18,22,31,.45)}
+  55%{opacity:1;filter:blur(.35px);text-shadow:1.1px 0 0 rgba(194,24,63,.5)}
+  100%{opacity:1;transform:translateY(0);filter:blur(0);text-shadow:none}
+}
+@media(prefers-reduced-motion:reduce){.ink{animation:none}.rolling .roller{display:none}.status .dot{animation:none}}
+
+/* ═══ 좁은 화면 ═══ 12칸 → 6칸. 칸 수만 줄고 정렬 규칙은 같다 ══ */
+@media(max-width:900px){
+  :root{--cols:6;--gut:16px;--pad:18px;--colw:calc((100% - 5 * var(--gut)) / 6)}
+  .press{padding:16px 10px 40px}
+  .sheet{padding:22px var(--pad) 16px}
+  /* 데스크톱의 grid-row:1 을 풀어 준다 — 안 풀면 세 요소가 한 행에서 겹친다 */
+  .mh{align-items:start}
+  .mh .wing{grid-column:1/7;grid-row:auto;order:2;padding-bottom:0;font-size:11.5px}
+  .mh .wing.r{grid-column:1/7;grid-row:auto;order:3;text-align:left;margin-top:6px}
+  .mh .n{grid-column:1/7;grid-row:auto;order:1;text-align:left;margin-bottom:10px;white-space:normal}
+  .colo{padding:8px 0}
+  .colo .editor,.colo .date{font-size:10px;letter-spacing:.1em}
+  .srcline .l{grid-column:1/7}
+  .srcline .r{grid-column:1/7;text-align:left;padding-top:0}
+  .slot{padding-top:36px}
+  #q{grid-column:1/7;font-size:min(calc(var(--hs,80) * .54px),11.4vw)}
+  .deck{grid-column:1/7;font-size:15.5px}
+  .cmd{grid-column:1/7}
+  .sechd .en{grid-column:1/4}
+  .sechd .ko{grid-column:4/7}
+  .lead .hd,.lead .n{grid-column:1/7}
+  .lead .n{margin-top:12px;min-height:0}
+  .lead .t{min-height:0}
+  .two>.item{grid-column:1/7}
+  .two>.item+.item{border-left:0;border-top:1px solid var(--hair);padding:16px 0 0;margin:16px 0 0}
+  .two .t{font-size:22px;min-height:0}
+  .two .n{min-height:0}
+  .row .no{grid-column:1/2}
+  .row .bd{grid-column:2/7}
+  .row .u{grid-column:2/7;text-align:left;margin-top:6px}
+  .row .t{min-height:0}
+  .row .n{min-height:0}
+  .foot p{grid-column:1/7}
+  .foot .r{grid-column:1/7;text-align:left;margin-top:6px}
+}
+</style>
+</head>
+<body>
+
+<div class="press">
+  <div class="sheet" id="sheet">
+    <div class="roller"></div>
+
+    <header class="band mh">
+      <p class="wing">스탠퍼드 철학 백과사전으로<br>내려가는 길</p>
+      <h1 class="n">The Rabbit Hole</h1>
+      <p class="wing r">본문은 이 지면에<br>인쇄되지 않습니다</p>
+    </header>
+    <div class="rule2"></div>
+
+    <div class="band colo">
+      <span class="in">
+        <span class="editor">Edited by <b>Claude Sonnet 4.6</b></span>
+        <span class="sep">·</span>
+        <span class="date" id="today">Aug 19 2026</span>
+      </span>
+    </div>
+
+    <div class="band srcline">
+      <span class="l">본문을 읽을 곳 — 스탠퍼드 철학 백과사전</span>
+      <a class="r" href="https://plato.stanford.edu/contents.html" target="_blank" rel="noopener noreferrer">plato.stanford.edu</a>
+    </div>
+
+    <form class="band slot" id="form" autocomplete="off">
+      <span class="kick" id="kick">Start here
+        <svg width="26" height="7" viewBox="0 0 26 7" fill="none" aria-hidden="true"><path d="M0 3.5h23M20 1l3 2.5-3 2.5" stroke="currentColor" stroke-width="1"></path></svg>
+        <span class="ko">오늘의 헤드라인</span>
+      </span>
+      <textarea id="q" rows="1" maxlength="60" placeholder="인공지능의 마음이란 무엇일까?" aria-label="오늘의 헤드라인"></textarea>
+      <p class="deck" id="deck">질문을 헤드라인처럼 쓰면, 편집자가 그 질문을 읽기 위한 SEP 항목의 경로로 조판합니다.</p>
+      <div class="cmd">
+        <span class="line"></span>
+        <button class="go" id="go" type="submit" disabled>
+          <span class="en">Set the type</span>
+          <span class="ko" id="goko">조판하기 →</span>
+        </button>
+        <span class="line"></span>
+      </div>
+      <p class="count"><span class="n" id="cnt">0 / 60</span><span class="reset" id="reset" role="button" tabindex="0" hidden>새 호 발행</span></p>
+      <div class="err" id="err">오늘의 조판 한도를 모두 사용했습니다</div>
+    </form>
+
+    <div class="band status" id="status"><span class="dot"></span><span id="statustext">Setting type</span></div>
+
+    <div id="board" class="band empty"></div>
+
+    <footer class="band foot">
+      <p>이 지면이 손실시키는 것 — 본문 그 자체, 항목 사이의 상호 참조, 각 항목의 역사적 맥락. 모두 SEP 안에 있습니다.</p>
+      <span class="r">Stanford Encyclopedia of Philosophy</span>
+    </footer>
+  </div>
+</div>
+
+<script>
+const ROUTE=[
+  {en:"Lead story",ko:"먼저 읽을 것",kind:"lead",items:[
+    {t:"기능주의",u:"functionalism",en:"Functionalism",n:"마음을 무엇으로 만들어졌는지가 아니라 무엇을 하는지로 정의하는 입장. ‘기계가 마음을 가질 수 있는가’라는 질문이 여기서 처음 논리적인 형태를 얻는다. 이 항목을 먼저 읽으면 나머지 논쟁의 좌표가 보인다."}
+  ]},
+  {en:"Background",ko:"먼저 깔아 둘 것",kind:"two",items:[
+    {t:"심신 이원론",u:"dualism",en:"Dualism",n:"마음과 물질을 둘로 나누는 오래된 구분. 기능주의가 무엇에 반대해 등장했는지를 먼저 확인한다."},
+    {t:"계산주의적 마음 이론",u:"computational-mind",en:"The Computational Theory of Mind",n:"사고를 기호 연산으로 보는 관점. 오늘의 인공지능 논의가 서 있는 전제다."}
+  ]},
+  {en:"The dispute",ko:"여기서부터 갈라진다",kind:"two",items:[
+    {kk:"이해는 없다",t:"중국어 방 논변",u:"chinese-room",en:"The Chinese Room Argument",n:"규칙에 따라 기호를 옮기는 것만으로는 의미를 이해한 것이 아니라는 반론."},
+    {kk:"행동이 전부다",t:"튜링 테스트",u:"turing-test",en:"The Turing Test",n:"구별할 수 없다면 구별할 근거도 없다는 반대편의 주장."}
+  ]},
+  {en:"Deeper down the hole",ko:"더 내려가고 싶다면",kind:"list",items:[
+    {t:"의식",u:"consciousness",en:"Consciousness",n:"경험이 있다는 것 자체가 왜 문제인가."},
+    {t:"철학적 좀비",u:"zombies",en:"Zombies",n:"기능이 같아도 경험은 빠질 수 있는가."},
+    {t:"타인의 마음",u:"other-minds",en:"Other Minds",n:"타인에게 마음이 있다고 믿는 근거."},
+    {t:"지향성",u:"intentionality",en:"Intentionality",n:"생각이 무언가에 ‘대한’ 것이 되는 방식."}
+  ]}
+];
+const N=ROUTE.reduce((a,s)=>a+s.items.length,0);
+const $=id=>document.getElementById(id);
+const sheet=$("sheet"),q=$("q"),go=$("go"),goko=$("goko"),cnt=$("cnt"),board=$("board"),deck=$("deck"),status=$("status"),statustext=$("statustext"),reset=$("reset");
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+const url=s=>"https://plato.stanford.edu/entries/"+s+"/";
+const DECK0="질문을 헤드라인처럼 쓰면, 편집자가 그 질문을 읽기 위한 SEP 항목의 경로로 조판합니다.";
+let busy=false;
+
+$("today").textContent=new Date().toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});
+
+function itemHTML(kind,i){
+  if(kind==="list")return `<div class="row"><span class="no">${String(i+1).padStart(2,"0")}</span><div class="bd"><a class="t" target="_blank" rel="noopener noreferrer"></a><span class="n"></span></div><a class="u" target="_blank" rel="noopener noreferrer"></a></div>`;
+  if(kind==="lead")return `<div class="item lead"><div class="hd"><span class="kk"></span><a class="t" target="_blank" rel="noopener noreferrer"></a><a class="u" target="_blank" rel="noopener noreferrer"></a></div><p class="n"></p></div>`;
+  return `<div class="item"><span class="kk"></span><a class="t" target="_blank" rel="noopener noreferrer"></a><a class="u" target="_blank" rel="noopener noreferrer"></a><p class="n"></p></div>`;
+}
+function frame(){
+  board.innerHTML=ROUTE.map(s=>{
+    const inner=s.items.map((it,i)=>itemHTML(s.kind,i)).join("");
+    const wrap=s.kind==="lead"?inner:`<div class="${s.kind==="two"?"two":"list"}">${inner}</div>`;
+    return `<section class="band sec blank"><div class="sechd"><span class="en">${s.en}</span><span class="ko">${s.ko}</span></div>${wrap}</section>`;
+  }).join("");
+}
+frame();
+
+function fit(){
+  const n=(q.value||q.placeholder).length;
+  const s=n<=9?96:n<=15?84:n<=22?70:n<=32?58:n<=44?48:41;
+  q.style.setProperty("--hs",s);
+  q.style.setProperty("--ht",n<=22?"-.035em":n<=32?"-.03em":"-.025em");
+  q.style.height="auto";q.style.height=q.scrollHeight+"px";
+}
+function tick(){
+  const n=q.value.length;
+  cnt.textContent=n+" / 60";
+  cnt.classList.toggle("near",n>=45);   /* 한도에 가까울 때만 나타난다 */
+  go.disabled=busy||!q.value.trim();
+  fit();
+}
+q.addEventListener("input",tick);
+q.addEventListener("keydown",e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();$("form").requestSubmit()}});
+window.addEventListener("resize",fit);
+tick();
+
+function stamp(el){el.classList.remove("ink");void el.offsetWidth;el.classList.add("ink")}
+async function type(el,text,ms){el.classList.add("typing");el.textContent="";for(const ch of text){el.textContent+=ch;await wait(ms)}el.classList.remove("typing")}
+function say(t,done){statustext.textContent=t;status.classList.add("show");status.classList.toggle("done",!!done)}
+
+async function compose(){
+  if(busy||!q.value.trim())return;
+  busy=true;go.disabled=true;goko.textContent="조판 중…";
+  q.blur();frame();board.classList.remove("empty");sheet.classList.add("set");
+  deck.textContent="";
+
+  const roller=sheet.querySelector(".roller"),y0=board.offsetTop-30;
+  roller.style.top=y0+"px";
+  roller.style.setProperty("--h",(document.querySelector(".foot").offsetTop+70-y0)+"px");
+  sheet.classList.remove("rolling");void sheet.offsetWidth;
+
+  say("Setting type");
+  await wait(620);
+  sheet.classList.add("rolling");
+  deck.textContent="편집자가 이 질문을 위해 SEP 항목을 골라 순서를 잡았습니다.";
+  stamp(deck);
+  await wait(420);
+  say("Composing edition");
+
+  const secs=[...board.querySelectorAll(".sec")];
+  for(let s=0;s<ROUTE.length;s++){
+    const sec=secs[s],S=ROUTE[s];
+    sec.classList.remove("blank");
+    stamp(sec.querySelector(".sechd"));
+    await wait(330);
+    const slots=[...sec.querySelectorAll(".item,.row")];
+    for(let i=0;i<S.items.length;i++){
+      const it=S.items[i],el=slots[i],href=url(it.u);
+      const t=el.querySelector(".t"),n=el.querySelector(".n"),u=el.querySelector(".u"),kk=el.querySelector(".kk");
+      if(kk&&it.kk){kk.textContent=it.kk;stamp(kk)}
+      t.href=href;await type(t,it.t,S.kind==="list"?34:52);
+      n.textContent=it.n;stamp(n);
+      await wait(110);
+      /* 영문 원제만. 도메인은 상단 출처 줄에 이미 한 번 나왔다 — 항목마다 반복하지 않는다 */
+      u.href=href;u.textContent=it.en;stamp(u);
+      await wait(170);
+    }
+    await wait(200);
+  }
+  sheet.classList.remove("rolling");
+  say("Edition set",true);
+  busy=false;goko.textContent="다시 조판하기 →";reset.hidden=false;tick();
+}
+
+$("form").addEventListener("submit",e=>{e.preventDefault();compose()});
+function newEdition(){
+  if(busy)return;
+  sheet.classList.remove("set","rolling");
+  board.classList.add("empty");
+  q.value="";frame();
+  deck.textContent=DECK0;
+  status.classList.remove("show","done");
+  goko.textContent="조판하기 →";reset.hidden=true;
+  window.scrollTo(0,0);tick();q.focus();
+}
+reset.addEventListener("click",newEdition);
+reset.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();newEdition()}});
+</script>
+</body>
+</html>

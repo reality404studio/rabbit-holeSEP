@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>THE RABBIT HOLE — v11 에디션</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════════════
+   v11 — 판형 교체. 신문 → 프라이빗 전시의 리플렛, 에디션 1부
+
+   진단: v9·v10 은 데이터 모델(전시·큐레이션)과 시각 언어(신문 인쇄소)가
+   서로 다른 것을 말하고 있었다. api/match/route.ts:91 이 "발행은 예외"라고
+   못 박는데 신문 판형은 "매일 나온다"를 선언한다. 균열 3개를 다 깨도
+   냄새가 남은 이유 — 판형이 태깅 대상이 아니었다.
+
+   유지 (사용자 선택):
+     제호   — "모델이 발간한다"가 성립하려면 발간 주체의 이름이 있어야 한다
+     판권   — 성격만 바뀐다. 발행 정보 → 에디션 크레딧
+     활자   — 명조 + OSTT. v9부터 한 번도 안 깬 지점. 액자다
+     주체색 — SEP 순흑 / 편집자 회 / 사용자 청 (v10 균열 2)
+
+   폐기 (사용자 선택):
+     RESERVED/SET/Δ 캡션 — 인쇄공장의 언어. 전시장에 공정 로그는 안 붙는다
+     섹션 러닝헤드      — Lead story / Background / …
+       대체물을 발명하지 않는다. route.frame 이 이미 있고
+       press.tsx:203 에서 고정 라벨 밑에 종속돼 있었을 뿐이다. 승격시킨다.
+
+   균열 1(오차의 관측 가능성)은 기능만 남기고 언어를 바꿨다:
+     route.ts:203-213 에서 검증 탈락한 항목이 조용히 사라진다.
+     그게 진짜 예약-실제 차이다. 숫자가 아니라 「미출품」으로 적는다.
+
+   균열 3(자유축 격자)의 약점을 고쳤다:
+     v10 의 칸 오프셋 3/1/5/7 은 내가 발명한 값이라 결국 비대칭의 평균이었다.
+     v11 은 출품 번호가 칸을 정한다 — 체크리스트 관습과 격자가 한 규칙이 된다.
+     질문이 바뀌면 지면 기하가 실제로 바뀐다.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root{
+  --sep:#000; --ed:#5c5c5c; --ed-2:#8a8a8a; --user:#0033ff;
+  --paper:#fff;
+  --hair:rgba(0,0,0,.16); --hair-2:rgba(0,0,0,.07);
+
+  --ko:"Nanum Myeongjo",serif;
+  --la:"Old Standard TT",Georgia,serif;
+  --prose:"Old Standard TT","Nanum Myeongjo",serif;
+  --mo:"JetBrains Mono",ui-monospace,monospace;
+
+  --t-title:40px;   /* 전시 제목 = 사용자의 질문 */
+  --t-frame:26px;   /* route.frame — 러닝헤드가 비운 자리 */
+  --t-item:20px;
+  --t-body:16px; --t-meta:12px;
+  --lh-display:1.25; --lh-r3:1.45; --lh-r4:1.55; --lh-body:1.75; --lh-meta:1.6;
+  --tr-display:-.035em; --tr-title:-.025em; --tr-body:-.015em;
+  --tr-la:.13em; --tr-la-sm:.17em; --tr-la-xs:.04em; --tr-mo:.06em;
+
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px;
+  --s5:24px; --s6:32px; --s7:48px; --s8:64px;
+
+  /* 판형 — 리플렛은 손에 잡힌다. 12칸 지면이 아니라 6칸 낱장 */
+  --cols:6; --gut:20px; --pad:40px; --leaf-max:780px;
+  --hs:40;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--paper)}
+body{
+  font-family:var(--prose); font-size:var(--t-body); line-height:var(--lh-body);
+  letter-spacing:var(--tr-body); color:var(--sep);
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  word-break:keep-all; line-break:strict; overflow-wrap:normal;
+  font-variant-numeric:tabular-nums;
+}
+a{color:inherit;text-decoration:none}
+.lat{font-family:var(--la); font-size:1.05em; letter-spacing:var(--tr-la-xs)}
+
+.leaf{
+  max-width:var(--leaf-max); margin:0 auto; padding:var(--s7) var(--pad) 120px;
+  display:grid; grid-template-columns:repeat(var(--cols),1fr);
+  column-gap:var(--gut); row-gap:0;
+}
+.band{grid-column:var(--c1)/var(--c2)}
+
+
+/* ═══ 발행 주체 ═══ 제호는 남는다. 단, 주인공 자리에서 내려온다 ═════ */
+
+.imprint{
+  --c1:1;--c2:7;
+  display:flex; justify-content:space-between; align-items:baseline;
+  padding-bottom:var(--s3); border-bottom:1px solid var(--sep);
+}
+.imprint .name{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); color:var(--sep);
+}
+/* 에디션 표기 — 판화 관습. 1/1 은 유일본이다 */
+.imprint .ed{
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed);
+}
+
+
+/* ═══ 전시 제목 = 사용자의 질문 ══════════════════════════════════════ */
+
+.title{--c1:1;--c2:7; margin-top:var(--s7)}
+.title .role{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); color:var(--user); display:block;
+  margin-bottom:var(--s4);
+}
+.q{
+  width:100%; display:block; border:0; padding:0; margin:0; resize:none;
+  background:transparent; font-family:var(--prose);
+  font-size:calc(var(--hs)*1px); line-height:var(--lh-display);
+  letter-spacing:var(--tr-display); color:var(--user);
+  overflow:hidden; outline:none;
+}
+.q::placeholder{color:rgba(0,51,255,.32)}
+.run{
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed-2); margin-top:var(--s5); display:block;
+}
+.ctl{display:flex; align-items:baseline; gap:var(--s5); margin-top:var(--s6)}
+.go{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); background:transparent; cursor:pointer;
+  border:1px solid var(--user); color:var(--user); padding:var(--s3) var(--s5);
+}
+.go:disabled{border-color:var(--hair); color:var(--ed-2); cursor:default}
+.count{font-family:var(--mo); font-size:var(--t-meta); color:var(--ed-2); letter-spacing:var(--tr-mo)}
+.count b{font-weight:400; color:var(--user)}
+
+.status{
+  --c1:1;--c2:7; margin-top:var(--s5); min-height:20px;
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed); opacity:0; transition:opacity .2s;
+}
+.status.show{opacity:1}
+
+
+/* ═══ 큐레이터 노트 ═══ pamphlet.note. 발행됐을 때만 있다 ═══════════ */
+
+.note{--c1:2;--c2:7; margin-top:var(--s8)}
+.note p{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--sep); margin:0; max-width:40ch;
+}
+.note .by{
+  font-family:var(--la); font-style:italic; font-size:var(--t-meta);
+  color:var(--ed); display:block; margin-top:var(--s4);
+}
+
+
+/* ═══ 출품 ═══ 러닝헤드가 비운 자리를 route.frame 이 받는다 ═════════ */
+
+.route{margin-top:var(--s8)}
+.route .frame{
+  font-family:var(--prose); font-size:var(--t-frame); line-height:var(--lh-r3);
+  letter-spacing:var(--tr-title); color:var(--sep); margin:0;
+}
+/* gloss — 큐레이터가 이 갈래를 어떻게 보는가. 기계의 말이므로 회색 */
+.route .gloss{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--ed); margin:var(--s3) 0 0; max-width:38ch;
+}
+
+/* 출품 목록 — 번호는 전관 통합 연속이다. 섹션마다 리셋하면 신문으로 돌아간다 */
+.works{margin:var(--s6) 0 0; padding:0; list-style:none}
+.work{
+  display:grid; grid-template-columns:2.5em 1fr; gap:var(--s4);
+  padding:var(--s5) 0; border-top:1px solid var(--hair-2);
+}
+.work .no{
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed-2); padding-top:.45em;
+}
+/* §10.2 — 프로덕션 항목 제목은 전부 영문(SEP 목차 원문)이다.
+   명조 R4 로 조판할 수 없다. OSTT 700, 대소문자 유지, 대문자용 .13em 이 아니라
+   --tr-la-xs. SEP 색인 형식이라 소문자·도치형("mind: computational theory of")이
+   그대로 온다 — 체크리스트 항목으로 읽히는 게 오히려 판형에 맞는다 */
+.work .t{
+  display:block; font-family:var(--la); font-weight:700; font-size:var(--t-item);
+  line-height:var(--lh-r4); letter-spacing:var(--tr-la-xs); color:var(--sep);
+}
+.work .t:hover{text-decoration:underline; text-underline-offset:4px}
+/* reason — 벽 라벨. 편집자가 쓴 것 */
+.work .why{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--ed); margin:var(--s2) 0 0; max-width:38ch;
+}
+/* §10.2 — 영문 원제였던 자리가 URL 이 되면서 역할이 메타데이터로 바뀐다 */
+.work .u{
+  display:block; font-family:var(--mo); font-size:var(--t-meta);
+  letter-spacing:var(--tr-mo); color:var(--ed-2); margin-top:var(--s2);
+}
+
+
+/* ═══ 미출품 ═══ 균열 1 의 기능만 남기고 언어를 바꾼 자리 ═══════════ */
+
+.omit{
+  --c1:1;--c2:7; margin-top:var(--s8); padding-top:var(--s4);
+  border-top:1px solid var(--hair);
+}
+.omit .hd{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); color:var(--ed); display:block;
+  margin-bottom:var(--s4);
+}
+.omit ul{margin:0; padding:0; list-style:none}
+.omit li{
+  font-family:var(--mo); font-size:var(--t-meta); line-height:2;
+  letter-spacing:var(--tr-mo); color:var(--ed-2);
+}
+.omit .none{font-family:var(--ko); font-size:var(--t-meta); color:var(--ed-2)}
+
+
+/* ═══ 미발행 ═══ "발행은 예외" 를 지면이 실제로 말하는 자리 ═════════ */
+
+.unissued{
+  --c1:1;--c2:7; margin-top:var(--s8); padding:var(--s6) 0;
+  border-top:1px solid var(--sep); border-bottom:1px solid var(--sep);
+}
+.unissued p{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--sep); margin:0; max-width:38ch;
+}
+.unissued .m{
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed-2); display:block; margin-top:var(--s4);
+}
+
+
+/* ═══ 판권 → 에디션 크레딧 ═══ 성격만 바뀐다 ═══════════════════════ */
+
+.credit{
+  --c1:1;--c2:7; margin-top:120px; padding-top:var(--s4);
+  border-top:1px solid var(--sep);
+}
+.credit dl{
+  margin:0; display:grid; grid-template-columns:7em 1fr; gap:var(--s2) var(--s4);
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  line-height:1.7;
+}
+.credit dt{color:var(--ed-2)}
+.credit dd{margin:0; color:var(--ed)}
+.credit dd.u{color:var(--user)}
+.credit dd.s{color:var(--sep)}
+.credit .loss{
+  font-family:var(--ko); font-size:var(--t-meta); line-height:var(--lh-meta);
+  color:var(--ed); max-width:46ch; margin:var(--s6) 0 0;
+}
+
+.demo{
+  --c1:1;--c2:7; margin-top:var(--s7); padding-top:var(--s3);
+  border-top:1px dashed var(--hair);
+  font-family:var(--mo); font-size:10px; letter-spacing:var(--tr-mo); color:var(--ed-2);
+}
+.demo button{
+  font:inherit; background:transparent; border:1px solid var(--hair);
+  color:var(--ed); padding:4px 10px; margin-right:6px; cursor:pointer;
+}
+
+@media (max-width:640px){
+  :root{--pad:20px}
+  .work{grid-template-columns:2em 1fr}
+  .credit dl{grid-template-columns:5.5em 1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="leaf" id="leaf">
+
+  <header class="band imprint">
+    <span class="name">The Rabbit Hole</span>
+    <span class="ed" id="edmark">Edition 1 / 1</span>
+  </header>
+
+  <form class="band title" id="form">
+    <span class="role">이 전시의 제목</span>
+    <textarea class="q" id="q" rows="1" maxlength="60"
+      placeholder="궁금한 것을 한 줄로 써보세요."></textarea>
+    <span class="run" id="run">회기 미정 · 아직 걸리지 않았습니다</span>
+    <div class="ctl">
+      <button class="go" id="go" type="submit" disabled>전시를 건다</button>
+      <span class="count"><b id="cnt">0</b> / 60</span>
+    </div>
+  </form>
+
+  <div class="band status" id="status"></div>
+
+  <div id="board" style="display:contents"></div>
+
+  <section class="band credit" id="credit" hidden>
+    <dl>
+      <dt>발행</dt>         <dd class="s" id="c-model">—</dd>
+      <dt>발행 부수</dt>    <dd id="c-run">1부</dd>
+      <dt>수신</dt>         <dd class="u" id="c-to">이 질문을 한 사람</dd>
+      <dt>발행 시각</dt>    <dd id="c-at">—</dd>
+      <dt>회차</dt>         <dd id="c-id">—</dd>
+      <dt>출처</dt>         <dd>Stanford Encyclopedia of Philosophy</dd>
+    </dl>
+    <p class="loss">이 리플렛이 손실시키는 것 — 본문 그 자체, 항목 사이의 상호 참조, 각 항목의 역사적 맥락. 모두 <span class="lat">SEP</span> 안에 있습니다.</p>
+  </section>
+
+  <section class="band demo">
+    컴프 전용 — 실제 지면엔 없는 조작부<br>
+    <span style="line-height:2.4">
+      <button id="d1" type="button">발행됨</button>
+      <button id="d2" type="button">발행 안 됨</button>
+      <button id="d3" type="button">미출품 있음</button>
+    </span>
+  </section>
+
+</div>
+
+<script>
+/* frame / gloss / reason 은 실제 API 스키마(RouteResult)를 쓴다 —
+   v9·v10 컴프는 고정 러닝헤드를 쓰느라 이 필드를 안 보여줬다.
+   title 은 data/entries.json 의 실제 값이다. 손으로 쓴 한글 제목을 넣으면
+   컴프가 프로덕션에 대해 거짓말을 한다 (§10.2, 원안과의 가장 큰 이탈) */
+const ROUTES=[
+  {frame:"기능으로 마음을 정의하기", gloss:"질문을 ‘무엇으로 되어 있는가’가 아니라 ‘무엇을 하는가’의 문제로 잡습니다.", entries:[
+    {slug:"functionalism",title:"functionalism",reason:"‘기계가 마음을 가질 수 있는가’가 여기서 처음 논리적인 형태를 얻습니다."}
+  ]},
+  {frame:"반대편에 무엇이 있었나", gloss:"기능주의가 무엇에 반대해 등장했는지를 먼저 확인하는 갈래입니다.", entries:[
+    {slug:"dualism",title:"dualism",reason:"마음과 물질을 둘로 나누는 오래된 구분. 반박의 대상이 되는 쪽입니다."},
+    {slug:"computational-mind",title:"mind: computational theory of",reason:"사고를 기호 연산으로 보는 관점. 오늘의 인공지능 논의가 서 있는 전제입니다."}
+  ]},
+  {frame:"이해와 행동이 갈라지는 지점", gloss:"같은 증거를 두고 정반대 결론에 이르는 두 논변을 나란히 겁니다.", entries:[
+    {slug:"chinese-room",title:"Chinese room argument",reason:"규칙에 따라 기호를 옮기는 것만으로는 의미를 이해한 것이 아니라는 반론."},
+    {slug:"turing-test",title:"Turing test",reason:"구별할 수 없다면 구별할 근거도 없다는 반대편의 주장."}
+  ]},
+  {frame:"더 내려가는 길", gloss:"위의 논쟁을 견디고 나면 열리는 항목들입니다.", entries:[
+    {slug:"consciousness",title:"consciousness",reason:"경험이 있다는 것 자체가 왜 문제인가."},
+    {slug:"zombies",title:"zombies",reason:"기능이 같아도 경험은 빠질 수 있는가."},
+    {slug:"other-minds",title:"other minds",reason:"타인에게 마음이 있다고 믿는 근거."},
+    {slug:"intentionality",title:"intentionality",reason:"생각이 무언가에 ‘대한’ 것이 되는 방식."}
+  ]}
+];
+/* route.ts:203-213 에서 조용히 탈락하는 것들. 지금 API 는 이걸 응답에
+   싣지 않는다 — 이 칸을 살리려면 필드 하나를 추가해야 한다 */
+const OMITTED=[
+  {slug:"chinese-room-argument",  why:"근접 오답 — 실제 슬러그는 chinese-room"},
+  {slug:"hard-problem-of-consciousness", why:"SEP 목록에 없는 항목"}
+];
+const NOTE="기능주의를 먼저 걸고 그 반대편을 뒤에 세웠습니다. 이 순서가 아니면 중국어 방과 튜링 테스트가 단순한 찬반으로 읽히기 때문입니다.";
+
+const $=id=>document.getElementById(id);
+const q=$("q"),go=$("go"),cnt=$("cnt"),board=$("board"),status=$("status"),run=$("run"),credit=$("credit");
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+const url=s=>"https://plato.stanford.edu/entries/"+s+"/";
+const pad=n=>String(n).padStart(2,"0");
+let busy=false, issued=true, withOmit=false;
+
+/* makePamphletId() 와 같은 규칙 — KST, 정렬 가능 */
+function issueStamp(){
+  const d=new Date(Date.now()+9*36e5);
+  const p=n=>String(n).padStart(2,"0");
+  return {
+    id:`${d.getUTCFullYear()}${p(d.getUTCMonth()+1)}${p(d.getUTCDate())}-${p(d.getUTCHours())}${p(d.getUTCMinutes())}${p(d.getUTCSeconds())}-${Math.random().toString(36).slice(2,6)}`,
+    human:`${d.getUTCFullYear()}. ${p(d.getUTCMonth()+1)}. ${p(d.getUTCDate())}. ${p(d.getUTCHours())}:${p(d.getUTCMinutes())} KST`
+  };
+}
+
+/* 균열 3 수정본 — 칸 오프셋을 발명하지 않는다. 출품 번호가 칸을 정한다.
+   체크리스트 관습과 격자가 한 규칙이 되고, 질문이 바뀌면 기하가 바뀐다 */
+function columnFor(firstNo){
+  const cols=6, span=4;
+  const c1=((firstNo-1)%(cols-span+1))+1;
+  return {c1, c2:c1+span};
+}
+
+function render(){
+  let no=0;
+  const routeHTML=ROUTES.map(r=>{
+    const first=no+1;
+    const {c1,c2}=columnFor(first);
+    const works=r.entries.map(e=>{
+      no++;
+      return `<li class="work">
+        <span class="no">${pad(no)}</span>
+        <div>
+          <a class="t" href="${url(e.slug)}" target="_blank" rel="noopener noreferrer">${e.title}</a>
+          <a class="u" href="${url(e.slug)}" target="_blank" rel="noopener noreferrer">plato.stanford.edu/${e.slug}</a>
+          <p class="why">${e.reason}</p>
+        </div></li>`;
+    }).join("");
+    return `<section class="band route" style="--c1:${c1};--c2:${c2}">
+      <h2 class="frame">${r.frame}</h2>
+      <p class="gloss">${r.gloss}</p>
+      <ul class="works">${works}</ul>
+    </section>`;
+  }).join("");
+
+  const noteHTML = issued
+    ? `<section class="band note"><p>${NOTE}</p><span class="by">Curator’s note</span></section>`
+    : "";
+
+  const omitHTML = withOmit
+    ? `<section class="band omit"><span class="hd">Not on view</span><ul>${
+        OMITTED.map(o=>`<li>— ${o.slug} · ${o.why}</li>`).join("")
+      }</ul></section>`
+    : `<section class="band omit"><span class="hd">Not on view</span><span class="none">이번 회차에서 빠진 항목은 없습니다.</span></section>`;
+
+  /* 발행은 예외다 — 지면이 그렇게 말해야 한다.
+     신문 판형이 구조적으로 못 하던 말이 이 칸이다 */
+  const unissuedHTML = issued ? "" :
+    `<section class="band unissued">
+      <p>이번 회차는 걸렸지만 <strong>리플렛은 발행되지 않았습니다.</strong> 보관소에 남지 않고, 이 화면을 닫으면 사라집니다.</p>
+      <span class="m">NOT ISSUED · 보관소에 박제되지 않음</span>
+    </section>`;
+
+  board.innerHTML = noteHTML + routeHTML + omitHTML + unissuedHTML;
+}
+
+const HS=[64,54,46,40,34,28];
+function fit(){
+  const n=(q.value||q.placeholder).length;
+  q.style.setProperty("--hs", n<=9?HS[0]:n<=15?HS[1]:n<=22?HS[2]:n<=32?HS[3]:n<=44?HS[4]:HS[5]);
+  q.style.height="auto"; q.style.height=q.scrollHeight+"px";
+}
+function tick(){ cnt.textContent=q.value.length; go.disabled=busy||!q.value.trim(); fit(); }
+q.addEventListener("input",tick);
+q.addEventListener("keydown",e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();$("form").requestSubmit()}});
+window.addEventListener("resize",fit);
+function say(t){status.textContent=t; status.classList.add("show")}
+
+async function hang(){
+  if(busy||!q.value.trim())return;
+  busy=true; go.disabled=true; go.textContent="거는 중"; q.blur();
+  board.innerHTML=""; credit.hidden=true;
+
+  say("SELECTING  항목 고르는 중"); await wait(600);
+  say("HANGING  전시 거는 중");     await wait(600);
+  render();
+
+  const st=issueStamp();
+  run.textContent = `회기 ${st.human} — 관객 1명`;
+  $("c-model").textContent="Claude Sonnet 4.6";
+  $("c-at").textContent=st.human;
+  $("c-id").textContent=st.id;
+  $("c-run").textContent = issued ? "1부" : "0부 (미발행)";
+  $("edmark").textContent = issued ? "Edition 1 / 1" : "Not issued";
+  credit.hidden=false;
+
+  say(issued ? "ISSUED  보관소에 박제됨" : "NOT ISSUED  발행은 예외입니다");
+  go.textContent="다시 건다"; busy=false; go.disabled=false;
+}
+$("form").addEventListener("submit",e=>{e.preventDefault();hang()});
+
+$("d1").onclick=()=>{issued=true;  if(board.innerHTML)hang()};
+$("d2").onclick=()=>{issued=false; if(board.innerHTML)hang()};
+$("d3").onclick=()=>{withOmit=!withOmit; if(board.innerHTML)hang()};
+
+tick();
+</script>
+</body>
+</html>

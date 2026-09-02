@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>THE RABBIT HOLE — v12 하강</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════════════
+   v12 — v11 은 정확했지만 소심했다
+
+   v11 실측:  블록 폭 전부 4칸(불변) · 타입 대비 3.3배 · 사용자색 5곳 전부 글자
+              회전 0 · 겹침 0 · 재단면 침범 0
+   원인:      3단계 발산에 "기능 보존"을 너무 엄하게 걸어 모든 결정이 방어
+              가능해졌고, 방어 가능성 자체가 안전망이 됐다. 위험이 0이었다.
+
+   사용자가 감수하기로 한 위험:  안정 — 「지면은 고정되어 있다」
+   사용자가 고른 손볼 곳:        파랑을 면적으로 · 겹침/재단면 침범
+   (가독과 항해는 위험 목록에 없다. 이 둘은 계속 지킨다.)
+
+   ── 하나의 메커니즘으로 합쳐진다 ────────────────────────────────────
+   내려간 만큼 지면이 반전된다.
+   파랑 면이 스크롤을 따라 위에서 차 내려오고, mix-blend-mode:difference 라
+   지나간 구역은 바탕이 #ffcc00, 활자가 #0033ff 로 뒤집힌다.
+   실크스크린 오버프린트의 논리 그대로다.
+
+   [측정] 반전 구역 대비 — SEP 활자 4.76:1 · 편집자 6.04:1 (둘 다 AA 통과)
+          보조색 3.75:1 (정상 구역의 3.45:1 보다 오히려 낫다)
+          가독을 위험에 빠뜨리지 않는다는 조건은 계산으로 확인했다.
+
+   ── 편집자의 자리 ──────────────────────────────────────────────────
+   [발견] difference 는 대칭이라 반전 구역에서 SEP 원문(#000)과 사용자
+          질문(#0033ff)이 서로의 색을 갖는다. 설계한 것이 아니라 연산의 필연이다.
+          그런데 편집자(#5c5c5c)만 어느 쪽도 아닌 보라(#5c29a3)가 된다.
+   [결정] 이 누수를 막지 않고 자리로 승격시킨다.
+          편집자의 서명된 진술(큐레이터 노트)은 하강 레이어 **위에** 떠서
+          반전을 통과시키지 않는다 — 세 주체 중 교환에 참여하지 않는 하나.
+          정상 구역에서는 괘선으로만 표시되는 조용한 블록이지만,
+          반전이 내려오면 혼자 흰 종이로 남아 도드라진다.
+          기계는 당신이 얼마나 내려갔는지에 영향받지 않는다.
+   [구분] 편집자의 방백(gloss·reason)은 지면에 섞여 같이 반전된다.
+          따로 서는 것은 서명된 진술뿐이다.
+
+   행동 정합 — 사용자가 v11 에서 유일하게 좋다고 한 것의 확장:
+     "더 내려가는 길"이 스크롤 아래에 있는 것이 좋았다 → 하강을 지면 전체의
+     원리로 올린다. 몸이 내려가고, 굴이 좁아지고, 색이 잠긴다.
+
+   ── 격자 규칙 (발명 금지, 전부 데이터에서 유도) ────────────────────
+     span  = max(2, 6 - route 순번)   깊을수록 좁다. 굴이 좁아진다
+     c1    = 출품 번호 % 남는 자리     체크리스트 번호가 곧 좌표 (v11 규칙 유지)
+     침범  = c1+span 이 지면을 넘으면 넘은 만큼 재단면 밖으로 나가고 잘린다
+             — 손으로 민 것이 아니라 규칙에서 파생된다
+     겹침  = 앞 블록과 칸이 안 겹치면 세로로 겹친다 (-56px = 본문 2행)
+             지면이 자기 자리를 협상한다
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root{
+  --sep:#000; --ed:#5c5c5c; --ed-2:#8a8a8a; --user:#0033ff;
+  --paper:#fff;
+  --hair:rgba(0,0,0,.16); --hair-2:rgba(0,0,0,.07);
+
+  --ko:"Nanum Myeongjo",serif;
+  --la:"Old Standard TT",Georgia,serif;
+  --prose:"Old Standard TT","Nanum Myeongjo",serif;
+  --mo:"JetBrains Mono",ui-monospace,monospace;
+
+  --t-frame:26px; --t-item:20px; --t-body:16px; --t-meta:12px;
+  --lh-display:1.25; --lh-r3:1.45; --lh-r4:1.55; --lh-body:1.75; --lh-meta:1.6;
+  --tr-display:-.035em; --tr-title:-.025em; --tr-body:-.015em;
+  --tr-la:.13em; --tr-la-sm:.17em; --tr-la-xs:.04em; --tr-mo:.06em;
+
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px;
+  --s5:24px; --s6:32px; --s7:48px; --s8:64px;
+
+  --cols:6; --gut:20px; --pad:40px; --leaf-max:780px;
+  /* 한 칸의 실폭 — (780 - 80 - 5×20) / 6. 침범 거리 계산의 기준이라
+     --leaf-max / --pad / --gut 를 바꾸면 이 값도 같이 바꿔야 한다 */
+  --colw:100px;
+  --overlap:-56px;   /* 본문 2행. 세로 겹침의 양 */
+  --depth:0;         /* 스크롤 진행 0…1. JS 가 쓴다 */
+  /* 하강 레이어보다 위에 있는 것은 반전되지 않는다. 이 순서가 체계다 */
+  --z-dive:9; --z-gauge:10; --z-editor:11;
+  --hs:40;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+html,body{margin:0;padding:0;background:var(--paper)}
+body{
+  font-family:var(--prose); font-size:var(--t-body); line-height:var(--lh-body);
+  letter-spacing:var(--tr-body); color:var(--sep);
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  word-break:keep-all; line-break:strict; overflow-wrap:normal;
+  font-variant-numeric:tabular-nums;
+}
+a{color:inherit;text-decoration:none}
+.lat{font-family:var(--la); font-size:1.05em; letter-spacing:var(--tr-la-xs)}
+
+
+/* ═══ 하강 ═══ 파랑이 글자가 아니라 면이 되는 자리 ═══════════════════ */
+
+/* 이 한 겹이 v12 의 전부다. 위에서부터 차 내려오고, 지나간 구역을 반전시킨다.
+   pointer-events:none 이라 링크와 입력은 그대로 산다 */
+.dive{
+  position:fixed; inset:0; z-index:var(--z-dive); pointer-events:none;
+  background:var(--user); mix-blend-mode:difference;
+  clip-path:inset(0 0 calc(100% - var(--depth) * 100%) 0);
+}
+/* 잠긴 깊이 눈금 — 오른쪽 재단면에 붙는다 */
+.gauge{
+  position:fixed; top:0; right:0; bottom:0; width:2px; z-index:var(--z-gauge);
+  pointer-events:none; background:var(--user); transform-origin:top;
+  transform:scaleY(var(--depth));
+}
+
+
+/* ═══ 지면 ═══ 재단면에서 잘린다. 리플렛은 자기 가장자리에서 잘린다 ══ */
+
+.leaf{
+  max-width:var(--leaf-max); margin:0 auto;
+  padding:var(--s7) var(--pad) 160px;
+  display:grid; grid-template-columns:repeat(var(--cols),1fr);
+  column-gap:var(--gut); row-gap:0;
+  overflow-x:clip; overflow-y:visible;   /* 침범한 블록이 여기서 잘린다 */
+}
+.band{grid-column:var(--c1)/var(--c2)}
+
+
+/* ═══ 발행 주체 · 제호 ═══════════════════════════════════════════════ */
+
+.imprint{
+  --c1:1;--c2:7;
+  display:flex; justify-content:space-between; align-items:baseline;
+  padding-bottom:var(--s3); border-bottom:1px solid var(--sep);
+}
+.imprint .name{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); color:var(--sep);
+}
+.imprint .ed{
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed);
+}
+
+
+/* ═══ 전시 제목 = 사용자의 질문 ══════════════════════════════════════ */
+
+.title{--c1:1;--c2:7; margin-top:var(--s7)}
+.title .role{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); color:var(--user); display:block;
+  margin-bottom:var(--s4);
+}
+.q{
+  width:100%; display:block; border:0; padding:0; margin:0; resize:none;
+  background:transparent; font-family:var(--prose);
+  font-size:calc(var(--hs)*1px); line-height:var(--lh-display);
+  letter-spacing:var(--tr-display); color:var(--user);
+  overflow:hidden; outline:none;
+}
+.q::placeholder{color:rgba(0,51,255,.32)}
+.run{
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed-2); margin-top:var(--s5); display:block;
+}
+.ctl{display:flex; align-items:baseline; gap:var(--s5); margin-top:var(--s6)}
+.go{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); cursor:pointer;
+  background:var(--user); border:1px solid var(--user); color:var(--paper);
+  padding:var(--s3) var(--s5);
+}
+.go:disabled{background:transparent; border-color:var(--hair); color:var(--ed-2); cursor:default}
+.count{font-family:var(--mo); font-size:var(--t-meta); color:var(--ed-2); letter-spacing:var(--tr-mo)}
+.count b{font-weight:400; color:var(--user)}
+
+.status{
+  --c1:1;--c2:7; margin-top:var(--s5); min-height:20px;
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed); opacity:0; transition:opacity .2s;
+}
+.status.show{opacity:1}
+
+
+/* ═══ 큐레이터 노트 ═══ 편집자의 자리 ═══════════════════════════════
+
+   z-index 가 --dive-z(9)보다 높아 하강 레이어가 이 블록 밑으로 지나간다.
+   그래서 지면 전체가 노랗게 뒤집혀도 이 블록만 흰 종이로 남는다.
+   이 값은 장식이 아니라 체계다 — 낮추면 편집자가 교환에 끌려들어간다.
+
+   이전 판(v12 초안)에서 이 블록은 background:var(--user) 였다. 편집자가
+   말하는데 사용자의 색 위에 앉아 있었다 — 주체축 체계의 오류였다. */
+
+.note{
+  --c1:2;--c2:7; margin-top:var(--s8); padding:var(--s6);
+  position:relative; z-index:var(--z-editor);
+  background:var(--paper); border:1px solid var(--hair);
+}
+.note p{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--sep); margin:0; max-width:38ch;
+}
+.note .by{
+  font-family:var(--la); font-style:italic; font-size:var(--t-meta);
+  color:var(--ed); display:block; margin-top:var(--s4);
+}
+
+
+/* ═══ 출품 ═══════════════════════════════════════════════════════════ */
+
+.route{margin-top:var(--s8); position:relative}
+.route .frame{
+  font-family:var(--prose); font-size:var(--t-frame); line-height:var(--lh-r3);
+  letter-spacing:var(--tr-title); color:var(--sep); margin:0;
+}
+.route .gloss{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--ed); margin:var(--s3) 0 0; max-width:36ch;
+}
+
+.works{margin:var(--s6) 0 0; padding:0; list-style:none}
+.work{
+  position:relative; padding:var(--s5) 0; border-top:1px solid var(--hair-2);
+}
+/* 번호는 블록 바깥에 행잉한다. c1 이 1인 블록에서는 재단면 밖으로 나가
+   잘린 채로 보인다 — 침범이 규칙에서 파생된다 */
+.work .no{
+  position:absolute; top:calc(var(--s5) + .45em);
+  left:calc(-1 * (var(--colw) + var(--gut)));
+  width:var(--colw); text-align:right;
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo);
+  color:var(--ed-2);
+}
+/* §10.2 — 항목 제목은 영문(SEP 목차 원문). OSTT 700, 대소문자 유지 */
+.work .t{
+  display:block; font-family:var(--la); font-weight:700; font-size:var(--t-item);
+  line-height:var(--lh-r4); letter-spacing:var(--tr-la-xs); color:var(--sep);
+}
+.work .t:hover{text-decoration:underline; text-underline-offset:4px}
+.work .u{
+  display:block; font-family:var(--mo); font-size:var(--t-meta);
+  letter-spacing:var(--tr-mo); color:var(--ed-2); margin-top:var(--s2);
+}
+.work .why{
+  font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body);
+  color:var(--ed); margin:var(--s2) 0 0; max-width:36ch;
+}
+
+
+/* ═══ 미출품 · 미발행 ════════════════════════════════════════════════ */
+
+.omit{
+  --c1:1;--c2:7; margin-top:var(--s8); padding-top:var(--s4);
+  border-top:1px solid var(--hair);
+}
+.omit .hd{
+  font-family:var(--la); font-size:var(--t-meta); text-transform:uppercase;
+  letter-spacing:var(--tr-la-sm); color:var(--ed); display:block; margin-bottom:var(--s4);
+}
+.omit ul{margin:0; padding:0; list-style:none}
+.omit li{
+  font-family:var(--mo); font-size:var(--t-meta); line-height:2;
+  letter-spacing:var(--tr-mo); color:var(--ed-2);
+}
+.omit .none{font-family:var(--ko); font-size:var(--t-meta); color:var(--ed-2)}
+
+.unissued{
+  --c1:1;--c2:7; margin-top:var(--s8); padding:var(--s6) 0;
+  border-top:1px solid var(--sep); border-bottom:1px solid var(--sep);
+}
+.unissued p{font-family:var(--ko); font-size:var(--t-body); line-height:var(--lh-body); color:var(--sep); margin:0; max-width:36ch}
+.unissued .m{font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo); color:var(--ed-2); display:block; margin-top:var(--s4)}
+
+
+/* ═══ 에디션 크레딧 ══════════════════════════════════════════════════ */
+
+.credit{--c1:1;--c2:7; margin-top:120px; padding-top:var(--s4); border-top:1px solid var(--sep)}
+.credit dl{
+  margin:0; display:grid; grid-template-columns:7em 1fr; gap:var(--s2) var(--s4);
+  font-family:var(--mo); font-size:var(--t-meta); letter-spacing:var(--tr-mo); line-height:1.7;
+}
+.credit dt{color:var(--ed-2)}
+.credit dd{margin:0; color:var(--ed)}
+.credit dd.u{color:var(--user)}
+.credit dd.s{color:var(--sep)}
+.credit .loss{
+  font-family:var(--ko); font-size:var(--t-meta); line-height:var(--lh-meta);
+  color:var(--ed); max-width:44ch; margin:var(--s6) 0 0;
+}
+
+.demo{
+  --c1:1;--c2:7; margin-top:var(--s7); padding-top:var(--s3);
+  border-top:1px dashed var(--hair);
+  font-family:var(--mo); font-size:10px; letter-spacing:var(--tr-mo); color:var(--ed-2);
+}
+.demo button{font:inherit; background:transparent; border:1px solid var(--hair); color:var(--ed); padding:4px 10px; margin-right:6px; cursor:pointer}
+
+
+/* ═══ 접근성 ═══ 하강은 스크롤 연동이므로 모션 감축 시 정지시킨다 ═══
+   단 "파랑을 면적으로" 라는 결정까지 버리지는 않는다 — 정지된 면으로 준다 */
+
+@media (prefers-reduced-motion:reduce){
+  .dive{display:none}
+  .gauge{transform:none; opacity:.25}
+  /* "파랑을 면적으로" 는 버리지 않되, 사용자의 색은 사용자의 블록에 칠한다.
+     route 는 SEP 원문과 편집자의 영역이라 파랑을 칠하면 체계가 깨진다 */
+  .title{background:var(--user); padding:var(--s6); margin-left:calc(-1 * var(--s6))}
+  .title .role{color:var(--paper); opacity:.8}
+  .q{color:var(--paper)}
+  .q::placeholder{color:rgba(255,255,255,.55)}
+  .run{color:rgba(255,255,255,.7)}
+  .go{background:var(--paper); border-color:var(--paper); color:var(--user)}
+  .count{color:rgba(255,255,255,.7)} .count b{color:var(--paper)}
+}
+
+@media (max-width:640px){
+  :root{--pad:20px; --colw:44px}
+  .credit dl{grid-template-columns:5.5em 1fr}
+  .note{--c1:1}
+}
+</style>
+</head>
+<body>
+
+<div class="dive" id="dive"></div>
+<div class="gauge" id="gauge"></div>
+
+<div class="leaf" id="leaf">
+
+  <header class="band imprint">
+    <span class="name">The Rabbit Hole</span>
+    <span class="ed" id="edmark">Edition 1 / 1</span>
+  </header>
+
+  <form class="band title" id="form">
+    <span class="role">이 전시의 제목</span>
+    <textarea class="q" id="q" rows="1" maxlength="60"
+      placeholder="궁금한 것을 한 줄로 써보세요."></textarea>
+    <span class="run" id="run">회기 미정 · 아직 걸리지 않았습니다</span>
+    <div class="ctl">
+      <button class="go" id="go" type="submit" disabled>전시를 건다</button>
+      <span class="count"><b id="cnt">0</b> / 60</span>
+    </div>
+  </form>
+
+  <div class="band status" id="status"></div>
+  <div id="board" style="display:contents"></div>
+
+  <section class="band credit" id="credit" hidden>
+    <dl>
+      <dt>발행</dt>      <dd class="s" id="c-model">—</dd>
+      <dt>발행 부수</dt> <dd id="c-run">1부</dd>
+      <dt>수신</dt>      <dd class="u">이 질문을 한 사람</dd>
+      <dt>발행 시각</dt> <dd id="c-at">—</dd>
+      <dt>회차</dt>      <dd id="c-id">—</dd>
+      <dt>판짜기</dt>    <dd id="c-grid">—</dd>
+      <dt>출처</dt>      <dd>Stanford Encyclopedia of Philosophy</dd>
+    </dl>
+    <p class="loss">이 리플렛이 손실시키는 것 — 본문 그 자체, 항목 사이의 상호 참조, 각 항목의 역사적 맥락. 모두 <span class="lat">SEP</span> 안에 있습니다.</p>
+  </section>
+
+  <section class="band demo">
+    컴프 전용 — 실제 지면엔 없는 조작부<br>
+    <span style="line-height:2.4">
+      <button id="d1" type="button">발행됨</button>
+      <button id="d2" type="button">발행 안 됨</button>
+      <button id="d3" type="button">미출품 있음</button>
+    </span>
+  </section>
+
+</div>
+
+<script>
+/* frame / gloss / reason 은 실제 API 스키마(RouteResult).
+   title 은 data/entries.json 의 실제 값이다 — 손으로 쓴 한글 제목을 넣으면
+   컴프가 프로덕션에 대해 거짓말을 한다 (DESIGN-SYSTEM.md §10.2) */
+const ROUTES=[
+  {frame:"기능으로 마음을 정의하기", gloss:"질문을 ‘무엇으로 되어 있는가’가 아니라 ‘무엇을 하는가’의 문제로 잡습니다.", entries:[
+    {slug:"functionalism",title:"functionalism",reason:"‘기계가 마음을 가질 수 있는가’가 여기서 처음 논리적인 형태를 얻습니다."}
+  ]},
+  {frame:"반대편에 무엇이 있었나", gloss:"기능주의가 무엇에 반대해 등장했는지를 먼저 확인하는 갈래입니다.", entries:[
+    {slug:"dualism",title:"dualism",reason:"마음과 물질을 둘로 나누는 오래된 구분. 반박의 대상이 되는 쪽입니다."},
+    {slug:"computational-mind",title:"mind: computational theory of",reason:"사고를 기호 연산으로 보는 관점. 오늘의 인공지능 논의가 서 있는 전제입니다."}
+  ]},
+  {frame:"이해와 행동이 갈라지는 지점", gloss:"같은 증거를 두고 정반대 결론에 이르는 두 논변을 나란히 겁니다.", entries:[
+    {slug:"chinese-room",title:"Chinese room argument",reason:"규칙에 따라 기호를 옮기는 것만으로는 의미를 이해한 것이 아니라는 반론."},
+    {slug:"turing-test",title:"Turing test",reason:"구별할 수 없다면 구별할 근거도 없다는 반대편의 주장."}
+  ]},
+  {frame:"더 내려가는 길", gloss:"위의 논쟁을 견디고 나면 열리는 항목들입니다.", entries:[
+    {slug:"consciousness",title:"consciousness",reason:"경험이 있다는 것 자체가 왜 문제인가."},
+    {slug:"zombies",title:"zombies",reason:"기능이 같아도 경험은 빠질 수 있는가."},
+    {slug:"other-minds",title:"other minds",reason:"타인에게 마음이 있다고 믿는 근거."},
+    {slug:"intentionality",title:"intentionality",reason:"생각이 무언가에 ‘대한’ 것이 되는 방식."}
+  ]}
+];
+const OMITTED=[
+  {slug:"chinese-room-argument", why:"근접 오답 — 실제 슬러그는 chinese-room"},
+  {slug:"hard-problem-of-consciousness", why:"SEP 목록에 없는 항목"}
+];
+const NOTE="기능주의를 먼저 걸고 그 반대편을 뒤에 세웠습니다. 이 순서가 아니면 중국어 방과 튜링 테스트가 단순한 찬반으로 읽히기 때문입니다.";
+
+const $=id=>document.getElementById(id);
+const q=$("q"),go=$("go"),cnt=$("cnt"),board=$("board"),status=$("status"),run=$("run"),credit=$("credit");
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+const url=s=>"https://plato.stanford.edu/entries/"+s+"/";
+const pad=n=>String(n).padStart(2,"0");
+const COLS=6;
+let busy=false, issued=true, withOmit=false;
+
+function issueStamp(){
+  const d=new Date(Date.now()+9*36e5), p=n=>String(n).padStart(2,"0");
+  return {
+    id:`${d.getUTCFullYear()}${p(d.getUTCMonth()+1)}${p(d.getUTCDate())}-${p(d.getUTCHours())}${p(d.getUTCMinutes())}${p(d.getUTCSeconds())}-${Math.random().toString(36).slice(2,6)}`,
+    human:`${d.getUTCFullYear()}. ${p(d.getUTCMonth()+1)}. ${p(d.getUTCDate())}. ${p(d.getUTCHours())}:${p(d.getUTCMinutes())} KST`
+  };
+}
+
+/* 격자 — 발명하지 않는다. 깊이가 폭을, 출품 번호가 칸을 정한다.
+   지면을 넘긴 만큼이 재단면 침범이 되고, 칸이 안 겹치면 세로로 겹친다 */
+function layout(){
+  let no=0, prev=null; const plan=[];
+  ROUTES.forEach((r,i)=>{
+    const first=no+1;
+    const span=Math.max(2, COLS-i);
+    const room=COLS-span+2;
+    const c1=((first-1)%room)+1;
+    const raw=c1+span;
+    const c2=Math.min(raw, COLS+1);
+    const bleed=raw-c2;
+    const clash = prev ? !(c1>=prev.c2 || raw<=prev.c1) : true;
+    plan.push({route:r, first, span, c1, c2, bleed, overlap:!clash});
+    prev={c1, c2:raw};
+    no+=r.entries.length;
+  });
+  return plan;
+}
+
+function render(){
+  const plan=layout(); let no=0;
+  const routeHTML=plan.map(p=>{
+    const works=p.route.entries.map(e=>{
+      no++;
+      return `<li class="work">
+        <span class="no">${pad(no)}</span>
+        <a class="t" href="${url(e.slug)}" target="_blank" rel="noopener noreferrer">${e.title}</a>
+        <a class="u" href="${url(e.slug)}" target="_blank" rel="noopener noreferrer">plato.stanford.edu/${e.slug}</a>
+        <p class="why">${e.reason}</p>
+      </li>`;
+    }).join("");
+    const mr = p.bleed ? `margin-right:calc(${-p.bleed} * (var(--colw) + var(--gut)));` : "";
+    const mt = p.overlap ? `margin-top:var(--overlap);` : "";
+    return `<section class="band route" style="--c1:${p.c1};--c2:${p.c2};${mr}${mt}">
+      <h2 class="frame">${p.route.frame}</h2>
+      <p class="gloss">${p.route.gloss}</p>
+      <ul class="works">${works}</ul>
+    </section>`;
+  }).join("");
+
+  const noteHTML = issued
+    ? `<section class="band note"><p>${NOTE}</p><span class="by">Curator’s note</span></section>` : "";
+  const omitHTML = withOmit
+    ? `<section class="band omit"><span class="hd">Not on view</span><ul>${OMITTED.map(o=>`<li>— ${o.slug} · ${o.why}</li>`).join("")}</ul></section>`
+    : `<section class="band omit"><span class="hd">Not on view</span><span class="none">이번 회차에서 빠진 항목은 없습니다.</span></section>`;
+  const unissuedHTML = issued ? "" :
+    `<section class="band unissued">
+      <p>이번 회차는 걸렸지만 <strong>리플렛은 발행되지 않았습니다.</strong> 보관소에 남지 않고, 이 화면을 닫으면 사라집니다.</p>
+      <span class="m">NOT ISSUED · 보관소에 박제되지 않음</span>
+    </section>`;
+
+  board.innerHTML = noteHTML + routeHTML + omitHTML + unissuedHTML;
+  return plan;
+}
+
+/* 하강 — 스크롤 진행이 곧 잠긴 깊이다 */
+let ticking=false;
+function depth(){
+  const h=document.documentElement.scrollHeight-window.innerHeight;
+  const d=h>0 ? Math.min(1, Math.max(0, window.scrollY/h)) : 0;
+  document.documentElement.style.setProperty("--depth", d.toFixed(4));
+  ticking=false;
+}
+addEventListener("scroll",()=>{if(!ticking){ticking=true;requestAnimationFrame(depth)}},{passive:true});
+addEventListener("resize",()=>{fit();depth()});
+
+const HS=[64,54,46,40,34,28];
+function fit(){
+  const n=(q.value||q.placeholder).length;
+  q.style.setProperty("--hs", n<=9?HS[0]:n<=15?HS[1]:n<=22?HS[2]:n<=32?HS[3]:n<=44?HS[4]:HS[5]);
+  q.style.height="auto"; q.style.height=q.scrollHeight+"px";
+}
+function tick(){ cnt.textContent=q.value.length; go.disabled=busy||!q.value.trim(); fit(); }
+q.addEventListener("input",tick);
+q.addEventListener("keydown",e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();$("form").requestSubmit()}});
+function say(t){status.textContent=t; status.classList.add("show")}
+
+async function hang(){
+  if(busy||!q.value.trim())return;
+  busy=true; go.disabled=true; go.textContent="거는 중"; q.blur();
+  board.innerHTML=""; credit.hidden=true;
+  say("SELECTING  항목 고르는 중"); await wait(600);
+  say("HANGING  전시 거는 중");     await wait(600);
+  const plan=render();
+
+  const st=issueStamp();
+  run.textContent=`회기 ${st.human} — 관객 1명`;
+  $("c-model").textContent="Claude Sonnet 4.6";
+  $("c-at").textContent=st.human;
+  $("c-id").textContent=st.id;
+  $("c-run").textContent = issued ? "1부" : "0부 (미발행)";
+  $("edmark").textContent = issued ? "Edition 1 / 1" : "Not issued";
+  /* 판짜기를 크레딧에 적는다 — 이 지면이 이 회차에만 유효한 배치임을 밝힌다 */
+  $("c-grid").textContent = plan.map(p=>`${p.c1}–${p.c1+p.span-1}`).join("  ");
+  credit.hidden=false;
+
+  say(issued ? "ISSUED  보관소에 박제됨" : "NOT ISSUED  발행은 예외입니다");
+  go.textContent="다시 건다"; busy=false; go.disabled=false;
+  requestAnimationFrame(depth);
+}
+$("form").addEventListener("submit",e=>{e.preventDefault();hang()});
+$("d1").onclick=()=>{issued=true;  if(board.innerHTML)hang()};
+$("d2").onclick=()=>{issued=false; if(board.innerHTML)hang()};
+$("d3").onclick=()=>{withOmit=!withOmit; if(board.innerHTML)hang()};
+
+tick(); depth();
+</script>
+</body>
+</html>

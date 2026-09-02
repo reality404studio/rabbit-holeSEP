@@ -1,70 +1,29 @@
 /**
- * File-based daily request counter.
+ * 일일 요청 카운터 — Workers KV.
  *
- * Local-only — does NOT work on Vercel (read-only filesystem).
- * When deploying, replace with Vercel KV / Upstash Redis.
- *
- * Note: not atomic. Two concurrent requests can both read count=N
- * and both write N+1 (off-by-one under heavy concurrent load).
- * For a single-user MVP this is acceptable.
+ * 원자적이지 않다. 동시 요청 둘이 같은 N 을 읽고 둘 다 N+1 을 쓸 수 있다
+ * (최대 한 번 더 통과). 파일 기반이던 이전 구현도 같은 성질이었고,
+ * 1인용 공개 사이트에서는 허용 가능한 오차다.
+ * 정확한 카운터가 필요해지면 Durable Object 로 옮길 것.
  */
 
-import { promises as fs } from "node:fs";
-import path from "node:path";
+import { kv } from "./kv";
 
 export const DAILY_LIMIT = 20;
-const STATE_PATH = path.join(process.cwd(), "data", "rate-limit.json");
 
-type State = { date: string; count: number };
-
-/** Today in KST (Asia/Seoul, UTC+9). Resets at Korean midnight. */
+/** 오늘(KST). 한국 자정에 리셋된다 */
 function todayKST(): string {
   return new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Seoul" });
 }
 
-async function readState(): Promise<State> {
-  try {
-    const raw = await fs.readFile(STATE_PATH, "utf8");
-    const parsed = JSON.parse(raw);
-    if (
-      parsed &&
-      typeof parsed.date === "string" &&
-      typeof parsed.count === "number"
-    ) {
-      return parsed;
-    }
-  } catch {
-    /* file missing or unreadable — start fresh */
-  }
-  return { date: todayKST(), count: 0 };
-}
+const keyFor = (day: string) => `rl:${day}`;
 
-async function writeState(state: State): Promise<void> {
-  await fs.writeFile(STATE_PATH, JSON.stringify(state, null, 2) + "\n", "utf8");
-}
-
-export type RateLimitResult = {
-  allowed: boolean;
-  remaining: number;
-  limit: number;
-};
-
-export async function checkAndIncrement(): Promise<RateLimitResult> {
-  const t = todayKST();
-  let state = await readState();
-  if (state.date !== t) {
-    state = { date: t, count: 0 };
-  }
-  if (state.count >= DAILY_LIMIT) {
-    return { allowed: false, remaining: 0, limit: DAILY_LIMIT };
-  }
-  state.count += 1;
-  await writeState(state);
-  return {
-    allowed: true,
-    remaining: DAILY_LIMIT - state.count,
-    limit: DAILY_LIMIT,
-  };
+async function read(): Promise<{ date: string; count: number }> {
+  const day = todayKST();
+  const store = await kv();
+  const raw = await store.get(keyFor(day));
+  const count = raw ? Number.parseInt(raw, 10) : 0;
+  return { date: day, count: Number.isFinite(count) && count > 0 ? count : 0 };
 }
 
 export async function getStatus(): Promise<{
@@ -72,8 +31,29 @@ export async function getStatus(): Promise<{
   remaining: number;
   limit: number;
 }> {
-  const t = todayKST();
-  const state = await readState();
-  const count = state.date === t ? state.count : 0;
-  return { count, remaining: DAILY_LIMIT - count, limit: DAILY_LIMIT };
+  const { count } = await read();
+  return {
+    count,
+    remaining: Math.max(0, DAILY_LIMIT - count),
+    limit: DAILY_LIMIT,
+  };
+}
+
+export async function checkAndIncrement(): Promise<{
+  allowed: boolean;
+  remaining: number;
+  limit: number;
+}> {
+  const { date, count } = await read();
+  if (count >= DAILY_LIMIT) {
+    return { allowed: false, remaining: 0, limit: DAILY_LIMIT };
+  }
+  const next = count + 1;
+  const store = await kv();
+  await store.put(keyFor(date), String(next));
+  return {
+    allowed: true,
+    remaining: Math.max(0, DAILY_LIMIT - next),
+    limit: DAILY_LIMIT,
+  };
 }

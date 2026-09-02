@@ -1,0 +1,23 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><style>
+:root{
+  --tr-label: .18em;
+  --ko-stack: "Nanum Myeongjo", "Old Standard TT", serif;  /* 한글이 라틴보다 앞 */
+  --wrap: break-word;
+}
+body{
+  font-family: var(--ko-stack);
+  word-break: keep-all;
+  overflow-wrap: var(--wrap);            /* ← keep-all 과 충돌 (var 로 숨김) */
+  font-feature-settings: "palt" 1;       /* ← 전역 palt */
+}
+.label{ letter-spacing: var(--tr-label); text-transform: uppercase; }  /* ← 한글이 물려받음 */
+.body-copy{ font-size: 15px; line-height: 1.35; }                      /* ← 행간 좁음 */
+/* 스케일 노이즈 */
+.a{font-size:9.5px}.b{font-size:10px}.c{font-size:10.5px}.d{font-size:11px}
+.e{font-size:11.5px}.f{font-size:12px}.g{font-size:12.5px}.h{font-size:13px}
+.i{font-size:13.5px}.j{font-size:15px}.k{font-size:16px}.l{font-size:22px}
+</style></head><body>
+  <span class="label">오늘의 헤드라인</span>
+  <p class="body-copy">마음을 무엇으로 만들어졌는지가 아니라 무엇을 하는지로 정의하는 입장.</p>
+  <a class="url">plato.stanford.edu</a>
+</body></html>
