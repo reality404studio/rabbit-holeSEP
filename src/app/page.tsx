@@ -26,6 +26,8 @@ import {
 type ApiSuccess = {
   routes: Route[];
   omitted?: Omitted[];
+  /** 크레딧 「가로지름」 한 줄. 서버가 동결 지도와 대조해 만든다 (src/lib/baseline.ts) */
+  spreadLine?: string;
   pamphletId?: string;
   curatorNote?: string;
   model: string;
@@ -74,6 +76,7 @@ export default function Home() {
   const [question, setQuestion] = useState("");
   const [routes, setRoutes] = useState<Route[] | null>(null);
   const [omitted, setOmitted] = useState<Omitted[]>([]);
+  const [spread, setSpread] = useState<string | null>(null);
   const [pamphletId, setPamphletId] = useState<string | null>(null);
   const [note, setNote] = useState<string | null>(null);
   const [model, setModel] = useState(DEFAULT_MODEL);
@@ -162,6 +165,7 @@ export default function Home() {
     setError(null);
     setRoutes(null);
     setOmitted([]);
+    setSpread(null);
     setPamphletId(null);
     setNote(null);
     setShown(0);
@@ -203,6 +207,7 @@ export default function Home() {
       setPamphletId(data.pamphletId ?? null);
       setNote(data.curatorNote ?? null);
       setOmitted(data.omitted ?? []);
+      setSpread(data.spreadLine ?? null);
       setIssuedAt(kst(new Date()));
 
       if (data.routes.length === 0) {
@@ -225,6 +230,7 @@ export default function Home() {
     setQuestion("");
     setRoutes(null);
     setOmitted([]);
+    setSpread(null);
     setPamphletId(null);
     setNote(null);
     setError(null);
@@ -347,6 +353,7 @@ export default function Home() {
           issuedAt={done && issuedAt ? issuedAt : undefined}
           editionId={pamphletId ?? undefined}
           grid={routes && done ? gridSignature(plan) : undefined}
+          spread={routes && done && spread ? spread : undefined}
           copies={routes && done ? (issued ? "1부" : "0부 (미발행)") : "1부"}
         />
       </div>

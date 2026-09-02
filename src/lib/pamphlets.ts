@@ -26,6 +26,8 @@ export type SerializedEntry = {
 export type SerializedRoute = {
   frame: string;
   gloss: string;
+  /** 2026-09-03 이후 발행분에만 있다. 이전 도록은 수정하지 않는다 */
+  pattern?: string;
   entries: SerializedEntry[];
 };
 
