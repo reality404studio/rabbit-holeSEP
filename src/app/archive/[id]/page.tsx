@@ -1,51 +1,28 @@
 import { notFound } from "next/navigation";
-import ReactMarkdown from "react-markdown";
-import { pamphletStore, isSafeId } from "@/lib/pamphlets";
-import {
-  Credit,
-  CuratorNote,
-  Dive,
-  Imprint,
-  RouteSection,
-  gridSignature,
-  planLayout,
-} from "@/components/press";
+import { EmptyLeaf, IssueLeaf } from "@/components/leaf";
+import { getIssue, isSafeId, listIssues, MODEL_NAME } from "@/lib/issues";
 
-export const dynamic = "force-dynamic";
+/* 목록에 없는 id 는 404 다 */
+export const dynamicParams = false;
 
-/* Next 15 — 동적 라우트의 params 는 Promise 다 */
+/* 봉인된 회차가 하나도 없을 때 세우는 자리.
+   output:export 는 generateStaticParams 가 빈 배열이면 "선언이 없다" 고 보고
+   빌드를 멈춘다. 그런데 발행 0건은 이 프로젝트의 정상 상태이고 첫 배포의
+   상태다. 그래서 그 상태를 대신 말하는 실제 페이지를 하나 세운다.
+   보관소 목록은 여기로 링크하지 않고, 회차가 하나라도 생기면 사라진다. */
+const NONE = "none";
+
+export function generateStaticParams() {
+  const ids = listIssues().map((i) => ({ id: i.id }));
+  return ids.length > 0 ? ids : [{ id: NONE }];
+}
+
 type PageProps = { params: Promise<{ id: string }> };
-
-function issued(iso: string): string {
-  try {
-    return new Intl.DateTimeFormat("ko-KR", {
-      timeZone: "Asia/Seoul",
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: false,
-    }).format(new Date(iso));
-  } catch {
-    return iso;
-  }
-}
-
-/* fit ladder — 봉인된 질문도 같은 사다리에서 크기를 고른다 */
-function fitSize(len: number): number {
-  if (len <= 9) return 64;
-  if (len <= 15) return 54;
-  if (len <= 22) return 46;
-  if (len <= 32) return 40;
-  if (len <= 44) return 34;
-  return 28;
-}
 
 export async function generateMetadata({ params }: PageProps) {
   const { id } = await params;
-  if (!isSafeId(id)) return { title: "회차를 찾을 수 없습니다" };
-  const p = await pamphletStore.get(id);
+  if (id === NONE) return { title: "봉인된 회차가 없습니다 · The Rabbit Hole" };
+  const p = isSafeId(id) ? getIssue(id) : null;
   if (!p) return { title: "회차를 찾을 수 없습니다" };
   const q =
     p.userQuestion.length > 40
@@ -57,58 +34,12 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
-export default async function PamphletDetailPage({ params }: PageProps) {
+export default async function IssueDetailPage({ params }: PageProps) {
   const { id } = await params;
+  if (id === NONE) return <EmptyLeaf model={MODEL_NAME} />;
   if (!isSafeId(id)) notFound();
-  const p = await pamphletStore.get(id);
-  if (!p) notFound();
+  const issue = getIssue(id);
+  if (!issue) notFound();
 
-  const plan = planLayout(p.routes);
-
-  return (
-    <>
-      <Dive />
-      <div
-        className="leaf"
-        style={
-          { "--hs": fitSize(p.userQuestion.length) } as React.CSSProperties
-        }
-      >
-        <Imprint edition="Edition 1 / 1 · sealed" />
-
-        <section className="band title">
-          <span className="role">이 전시의 제목</span>
-          <p className="q-static">{p.userQuestion}</p>
-          <span className="run">
-            회기 {issued(p.issuedAt)} — 관객 1명 · 봉인됨
-          </span>
-        </section>
-
-        {/* 편집자의 자리 — 큐레이터 노트와 본문. 하강이 이 블록 밑으로 지나간다 */}
-        <CuratorNote>
-          <p>{p.curatorNote}</p>
-          {p.body ? <ReactMarkdown>{p.body}</ReactMarkdown> : null}
-        </CuratorNote>
-
-        {p.routes.map((r, i) => (
-          <RouteSection key={`${i}-${r.frame}`} route={r} place={plan[i]} />
-        ))}
-
-        <Credit
-          model={p.modelId}
-          issuedAt={issued(p.issuedAt)}
-          editionId={p.id}
-          grid={gridSignature(plan)}
-          archive={false}
-          loss={
-            <>
-              한 번 봉인된 회차는 수정되지 않습니다. 본문 그 자체는 여전히 이
-              지면에 없습니다 — 모두 <span className="lat">SEP</span> 안에
-              있습니다.
-            </>
-          }
-        />
-      </div>
-    </>
-  );
+  return <IssueLeaf issue={issue} home={false} />;
 }

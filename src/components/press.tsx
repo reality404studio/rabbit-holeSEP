@@ -297,14 +297,3 @@ export function Credit({
   );
 }
 
-
-/* ═══ 하강 레이어 ═══ 스크롤 진행이 곧 잠긴 깊이다 ════════════════ */
-
-export function Dive() {
-  return (
-    <>
-      <div className="dive" aria-hidden="true" />
-      <div className="gauge" aria-hidden="true" />
-    </>
-  );
-}

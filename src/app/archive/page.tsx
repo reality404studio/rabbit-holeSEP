@@ -1,29 +1,16 @@
 import Link from "next/link";
-import { pamphletStore, type PamphletSummary } from "@/lib/pamphlets";
-import { Credit, Dive, Imprint } from "@/components/press";
-
-export const dynamic = "force-dynamic";
+import { Dive } from "@/components/dive";
+import { issued } from "@/components/leaf";
+import { Credit, Imprint } from "@/components/press";
+import { listSummaries, MODEL_NAME } from "@/lib/issues";
 
 export const metadata = {
   title: "보관소 — 봉인된 회차 · The Rabbit Hole",
   description: "편집자가 스스로 도록감이라 판단해 봉인한 회차들의 공개 보관소.",
 };
 
-function issued(iso: string): string {
-  try {
-    return new Intl.DateTimeFormat("ko-KR", {
-      timeZone: "Asia/Seoul",
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-    }).format(new Date(iso));
-  } catch {
-    return iso;
-  }
-}
-
-export default async function ArchivePage() {
-  const items: PamphletSummary[] = await pamphletStore.list();
+export default function ArchivePage() {
+  const items = listSummaries();
 
   return (
     <>
@@ -67,7 +54,7 @@ export default async function ArchivePage() {
         </section>
 
         <Credit
-          model={items[0]?.modelId ?? "Claude Fable 5.1"}
+          model={items[0]?.modelName ?? MODEL_NAME}
           copies={`${items.length}부 봉인됨`}
           archive={false}
           loss={

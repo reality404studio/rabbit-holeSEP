@@ -1,17 +1,15 @@
-import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  /* Next 15 에서 experimental.serverComponentsExternalPackages 가
-     최상위 serverExternalPackages 로 승격됐다.
-     @anthropic-ai/sdk 를 번들에서 빼는 이유는 그대로다 — 웹팩이 SDK 의
-     안 쓰는 zod 헬퍼를 분석하는데 그게 zod v4 를 요구하고 우리는 v3 다. */
-  serverExternalPackages: ["@anthropic-ai/sdk"],
-};
 
-/* `next dev` 에서도 Cloudflare 바인딩(KV)을 붙여준다.
-   이게 없으면 로컬은 src/lib/kv.ts 의 메모리 폴백으로 떨어진다. */
-initOpenNextCloudflareForDev();
+  /* 정적 내보내기. 발행이 커밋이 된 뒤로 서버에서 할 일이 없다 —
+     API 라우트도, KV 도, 시크릿도 없다. `next build` 가 out/ 을 뱉고
+     Cloudflare Pages 는 그걸 그대로 올린다. */
+  output: "export",
+
+  /* 정적 호스팅에서 /archive/<id> 가 디렉터리 + index.html 로 떨어지게 한다.
+     이게 없으면 확장자 없는 경로를 Pages 가 404 로 흘릴 수 있다. */
+  trailingSlash: true,
+};
 
 export default nextConfig;

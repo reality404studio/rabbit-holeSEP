@@ -1,85 +1,102 @@
-# 배포 — Cloudflare Workers
+# 배포 — Cloudflare Pages
 
-이 앱은 **정적 사이트가 아니다.** `/api/match` 가 서버에서 Anthropic API 를
-호출하므로 서버 런타임이 필요하다. 정적 내보내기를 하면 API 라우트가 사라지고,
-키를 클라이언트에 넣으면 공개 사이트에 그대로 노출된다.
+이 앱은 **정적 사이트다.** 서버 런타임도, API 라우트도, 시크릿도 없다.
 
-배포 경로는 **Cloudflare Workers + `@opennextjs/cloudflare`** 다.
-API 키는 Cloudflare 의 암호화된 Secret 으로만 존재하고 브라우저로 가지 않는다.
+발행은 런타임 사건이 아니라 **커밋**이다. 매달 편집자(Fable)에게 질문을 던지고,
+스스로 도록감이라 판단해 `pamphlet` 을 채워 온 회차만 `content/issues/` 에
+파일로 떨어진다. 그 파일을 커밋·푸시하면 Pages 가 다시 빌드한다.
+
+한 번 봉인된 회차는 수정하지 않는다는 규약은 그대로다. 이제 그걸 코드가 아니라
+git 이 지킨다.
 
 ## 사전 조건
 
-Cloudflare 에는 쓰기 가능한 파일시스템이 없다. 하루 한도 카운터와 도록
-보관소가 둘 다 Workers KV 를 쓴다 (`src/lib/kv.ts`).
-바인딩이 없으면 프로세스 메모리로 떨어지고 재시작하면 사라진다 — 배포본
-로그에 `[kv] ... 바인딩이 없습니다` 가 보이면 아래 1번이 안 된 것이다.
+없다. KV 도, `ANTHROPIC_API_KEY` 도 클라우드에 존재하지 않는다.
+`data/entries.json`(SEP 목차 1,865항목)은 리포에 커밋되어 있다.
 
-## 순서
+## Cloudflare 설정
 
-### 1. KV 네임스페이스 만들기
-
-```
-npx wrangler kv namespace create RABBITHOLE_KV
-```
-
-출력된 `id` 를 `wrangler.jsonc` 의 `kv_namespaces[0].id` 에 붙여넣고 커밋한다.
-(대시보드에서 만들었다면 Workers & Pages → KV 에서 id 를 복사)
-
-### 2. GitHub 연결
-
-Cloudflare 대시보드 → Workers & Pages → **Create** → **Import a repository**
-→ `reality404studio/rabbit-holeSEP` 선택.
-
-빌드 설정:
+대시보드 → Workers & Pages → **Create** → **Pages** → **Connect to Git**
+→ `reality404studio/rabbit-holeSEP`.
 
 | 항목 | 값 |
 |---|---|
-| Build command | `npm run cf:build` |
-| Deploy command | `npx wrangler deploy` |
-| Build output directory | `.open-next` |
+| Production branch | `main` |
+| Framework preset | `Next.js (Static HTML Export)` — 없으면 `None` |
+| Build command | `npm run build` |
+| Build output directory | `out` |
 
-`wrangler.jsonc` 가 리포에 있으므로 KV 바인딩과 `nodejs_compat` 은 자동으로 잡힌다.
+환경 변수는 없다. `next.config.mjs` 의 `output: "export"` 가 `out/` 을 뱉는다.
 
-### 3. API 키 넣기 — 마지막
+## 매달 발행 절차
 
-**리포에도, `wrangler.jsonc` 에도 적지 않는다.**
+### 1. 편집자에게 묻는다
 
-대시보드 → 해당 Worker → Settings → **Variables and Secrets** →
-Type을 **Secret** 으로 두고:
-
-```
-ANTHROPIC_API_KEY = <키>
-```
-
-CLI 를 쓴다면:
+`prompt/router.md` 를 시스템 프롬프트로 쓴다. 그 본문 뒤에 SEP 항목 목록이
+`<slug> :: <영어 제목>` 형식으로 이어붙어야 한다:
 
 ```
-npx wrangler secret put ANTHROPIC_API_KEY
+npx tsx -e "import{buildEntriesText}from'./src/lib/entries';console.log(buildEntriesText())" > /tmp/entries.txt
 ```
 
-넣은 뒤 재배포해야 반영된다.
+응답을 JSON 파일로 받아 둔다 (코드펜스로 감싸여 와도 된다 — 벗겨낸다).
+
+### 2. 기록한다
+
+```
+npm run ingest -- --question "<이번 달 질문>" --response <응답.json>
+```
+
+두 가지가 쓰인다:
+
+- `content/issues/<id>.json` — 모델이 `pamphlet` 을 채웠고 길이 규약을 통과했을 때만.
+  **사이트가 읽는 것은 이것뿐이다.**
+- `content/log/<YYYY-MM>.jsonl` — 언제나. 발행되지 않은 회차도 이유와 함께 남는다.
+
+스크립트는 모델을 부르지 않는다. 부르는 방법과 기록하는 방법을 일부러 갈라놨다.
+
+### 3. 커밋한다
+
+```
+git add content/ && git commit && git push
+```
+
+발행 = 커밋 하나. 되돌리기는 `git revert`.
+
+## 낙방 기록에 대하여
+
+`content/log/` 가 이 프로젝트의 자산이다. 발행분보다 **발행되지 않은 것들**이
+"편집자가 무엇을 도록감으로 보는가" 를 훨씬 많이 말한다.
+
+그래서 살아남을 질문을 미리 골라선 안 된다. 발행 조건 세 개는 전부 질문이
+아니라 *응답*의 속성이고 (`prompt/router.md` 의 「팜플렛 발행」 절), 통과할
+법한 질문을 고르기 시작하면 통과율이 아무것도 측정하지 않게 된다.
+
+## 발행 0건인 달
+
+정상이다. 회차가 하나도 없으면 홈과 `/archive/none/` 이 빈 지면을 세운다.
+지면이 "봉인된 회차가 아직 없습니다" 라고 직접 말한다 — 발행이 예외라는
+명제를 지면이 증명하는 자리다.
 
 ## 로컬
 
 ```
-npm run dev          # next dev. KV 바인딩 없으면 메모리 폴백
-npm run cf:build     # 배포 산출물 생성 (.open-next/worker.js)
-npm run cf:preview   # workerd 로 로컬 미리보기 — 배포와 같은 런타임
-npm run cf:deploy    # 수동 배포
+npm run dev      # next dev
+npm run build    # out/ 생성. 배포와 같은 산출물
+npx serve out    # 정적 결과 확인
 ```
-
-로컬에서는 `.env.local` 의 `ANTHROPIC_API_KEY` 를 읽는다. 이 파일은
-`.gitignore` 되어 있고 커밋되면 안 된다.
 
 ## 알려진 것
 
+- **`generateStaticParams()` 가 빈 배열이면 `output:export` 빌드가 멈춘다.**
+  발행 0건이 정상 상태이므로 `src/app/archive/[id]/page.tsx` 가 그때
+  `none` 하나를 세운다. 회차가 생기면 이 경로는 사라진다.
 - **모델은 `claude-fable-5-1`.** thinking 이 항상 켜져 있어 thinking 토큰이
-  `max_tokens` 를 함께 먹는다. 그래서 3500 → 16000 으로 올렸다.
-  `temperature` / `budget_tokens` / assistant prefill 은 이 모델에서 400 이다.
-- **거절(refusal) 은 예외가 아니라 HTTP 200 이다.** `stop_reason` 을 먼저 본다.
-  `fallbacks: "default"` 로 서버측 대체 모델을 켜 두었다.
-- 시스템 프롬프트에 SEP 목차 1,859 항목이 통째로 들어간다(≈138KB).
-  `cache_control: ephemeral` 로 캐시되지만 **첫 호출은 비싸다.**
-  하루 한도(`DAILY_LIMIT = 20`, `src/lib/rate-limit.ts`)가 유일한 비용 방어선이다.
-- 카운터는 원자적이지 않다. 동시 요청 둘이 한 번 더 통과할 수 있다.
-  정확해야 하면 Durable Object 로 옮긴다.
+  `max_tokens` 를 함께 먹는다. `temperature` / `budget_tokens` / assistant
+  prefill 은 이 모델에서 400 이다. 거절(refusal)은 예외가 아니라 HTTP 200 이라
+  `stop_reason` 을 먼저 본다.
+- **SEP 목차 스크레이퍼는 조상 체인을 복원한다.** 목차가 하위 항목을 부모
+  `<li>` 안에 중첩시키고 앵커에는 접미사만 넣기 때문이다
+  (`identity-time` 의 앵커 텍스트는 "over time" 이다). 부모를 붙여
+  "identity: over time" 으로 만든다. 이걸 안 하면 항목 544개의 제목이
+  잘린 채로 지면에 인쇄된다.

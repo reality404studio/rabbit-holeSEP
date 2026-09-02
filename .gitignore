@@ -23,15 +23,8 @@ next-env.d.ts
 .DS_Store
 *.log
 
-# runtime state (NOT entries.json — that's committed data)
-data/rate-limit.json
-
-# cloudflare 빌드 산출물
-.open-next
-.wrangler
-
-# 배포 시 대시보드/‌wrangler 가 생성. 리포에 두지 않는다
-cloudflare-env.d.ts
+# 정적 내보내기 산출물 (out 은 위 next.js 절에 이미 있다)
+# content/ 는 커밋한다 — 발행분과 낙방 기록이 이 프로젝트의 자산이다
 
 # 에이전트 하네스 개인 설정
 .claude
