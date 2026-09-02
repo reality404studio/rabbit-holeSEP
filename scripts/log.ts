@@ -27,6 +27,11 @@ type Row = {
 
 const LOG = path.join(process.cwd(), "content", "log");
 
+/* 매달 던지는 질문 수. 고정값이어야 한다 — 시행 횟수를 늘리면 통과 확률이
+   올라가는 것은 피할 수 없으므로, 이 수가 달마다 흔들리면 발행률이 읽을 수
+   없는 숫자가 된다. 바꾸려면 바꾼 달부터 그렇게 적고 이전 달과 섞어 읽지 말 것. */
+const ASK_PER_MONTH = 10;
+
 function monthKST(): string {
   const k = new Date(Date.now() + 9 * 60 * 60 * 1000);
   return `${k.getUTCFullYear()}-${String(k.getUTCMonth() + 1).padStart(2, "0")}`;
@@ -72,8 +77,25 @@ function main() {
   const rate = rows.length ? ((issued.length / rows.length) * 100).toFixed(0) : "0";
 
   console.log(
-    `${which}  —  ${rows.length}회 물었고 ${issued.length}회 봉인됐습니다 (발행률 ${rate}%)\n`,
+    `${which}  —  ${rows.length}회 물었고 ${issued.length}회 봉인됐습니다 (발행률 ${rate}%)`,
   );
+
+  /* 한 달치를 볼 때만 정원을 따진다. all 은 여러 달이 섞여 있어 의미가 없다 */
+  if (which !== "all") {
+    const left = ASK_PER_MONTH - rows.length;
+    if (left > 0) {
+      console.log(
+        `   정원 ${ASK_PER_MONTH}회 중 ${left}회 남음 — 발행률은 아직 읽지 말 것`,
+      );
+    } else if (left < 0) {
+      console.log(
+        `   ⚠ 정원 ${ASK_PER_MONTH}회를 ${-left}회 넘겼습니다. 넘긴 시행은 발행 확률을 사는 것이라 이 달의 발행률은 이전 달과 비교할 수 없습니다`,
+      );
+    } else {
+      console.log(`   정원 ${ASK_PER_MONTH}회를 채웠습니다`);
+    }
+  }
+  console.log();
 
   for (const r of rows) {
     const v = r.verdict;
