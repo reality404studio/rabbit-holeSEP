@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import { pamphletStore, isSafeId } from "@/lib/pamphlets";
+import { spreadLine, spreadOf } from "@/lib/baseline";
 import {
   Credit,
   CuratorNote,
@@ -99,6 +100,7 @@ export default async function PamphletDetailPage({ params }: PageProps) {
           issuedAt={issued(p.issuedAt)}
           editionId={p.id}
           grid={gridSignature(plan)}
+          spread={spreadLine(spreadOf(p.routes))}
           archive={false}
           loss={
             <>

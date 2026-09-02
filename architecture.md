@@ -15,8 +15,8 @@ Rabbithol.SEP/
 ├─ package.json               Next 14.2, React 18, @anthropic-ai/sdk 0.72, zod 3, react-markdown 9
 ├─ data/
 │  ├─ entries.json            SEP 슬러그+영어 제목 (committed data, 인덱스)
-│  ├─ rate-limit.json         일일 카운터 (runtime state, gitignored)
-│  └─ pamphlets/              ← 발행된 도록들 ({id}.json, immutable, committed by default)
+│  └─ baseline.json           동결된 지도 (slug → 분야). map/freeze.mjs 가 만든다. 측정 전용
+├─ map/                       동결된 지도 — 모델의 평균이 자리하는 기준선 (map/README.md)
 ├─ scripts/
 │  └─ fetch-entries.ts        SEP 목차에서 entries.json 갱신
 └─ src/
@@ -32,8 +32,9 @@ Rabbithol.SEP/
    │     └─ [id]/page.tsx     도록 상세 — markdown 본문 + routes (server, force-dynamic)
    └─ lib/
       ├─ entries.ts           entries.json 로더 + slug 검증 + SEP URL 빌더
-      ├─ rate-limit.ts        파일 기반 KST 일일 카운터 (20회/일)
-      └─ pamphlets.ts         PamphletStore 인터페이스 + FilePamphletStore + ID 생성
+      ├─ baseline.ts          baseline.json 로더 + 가로지름(spread) 계산. 모델에게는 안 보여준다
+      ├─ rate-limit.ts        KST 일일 카운터 (20회/일, KV)
+      └─ pamphlets.ts         PamphletStore 인터페이스 + KVPamphletStore + ID 생성
 ```
 
 ---
@@ -47,26 +48,30 @@ Rabbithol.SEP/
 POST /api/match  ── rate-limit 검사 (KST 일일 20회)
   │
   ▼
-Anthropic.messages.create
-  · model: claude-sonnet-4-6
-  · system: SYSTEM_PREAMBLE + 전체 SEP 슬러그 목록 (cache_control: ephemeral)
-  · max_tokens: 3500
-  · 응답: JSON { routes, pamphlet? }
+Anthropic.beta.messages.stream(...).finalMessage()
+  · model: claude-fable-5-1  (thinking 항상 켜짐, output_config.effort: xhigh — CURATOR_EFFORT 로 조절)
+  · system: SYSTEM_PREAMBLE + 전체 SEP 슬러그 목록 (cache_control: ephemeral) — 후보를 미리 줄이지 않는다
+  · max_tokens: 64000 (thinking 이 함께 먹는다; 스트리밍으로 받아 타임아웃 회피)
+  · fallbacks: "default" — 안전 거절 시 같은 호출 안에서 대체 모델
+  · 응답: JSON { routes[{frame, gloss, pattern, entries}], pamphlet? }
   │
   ▼
 parseModelJson  ──  JSON 파싱 + 코드펜스 제거
   │
   ▼
 검증
-  · routes: slug 화이트리스트(`isValidSlug`)로 필터, ≤3 routes, ≤6 entries/route
+  · routes: slug 화이트리스트(`isValidSlug`)로 필터, ≤3 routes, ≤6 entries/route, pattern ≤200자
   · pamphlet: note 8~400자 / body 300~6000자 + routes ≥1 일 때만
+  │
+  ▼
+가로지름(spread) — `spreadOf(routes)`: 고른 항목이 동결 지도의 45개 분야 중 몇 개에 흩어졌는가
   │
   ▼
 pamphlet 있고 검증 통과 → pamphletStore.save() → id 발급
                        ↳ 저장 실패해도 routes 응답은 정상 (try/catch)
   │
   ▼
-응답 { routes, pamphletId?, model, remaining, limit, usage }
+응답 { routes, omitted, spread, spreadLine, pamphletId?, model, effort, remaining, limit, usage }
   │
   ▼
 page.tsx → routes 렌더 + (pamphletId 있으면) `.pamphlet-issued` 표식 + /archive/{id} 링크
@@ -84,6 +89,14 @@ archive 페이지 (`/archive`, `/archive/[id]`) 는 server component로 `pamphle
 
 - 메인 페이지가 답을 주지 않는 것은 "기능 부족"이 아니라 **의도된 손실** (`page.tsx`의 `.colophon .loss` 참조).
 - 항목 본문은 SEP에 있고, 이 사이트는 *입구만* 짚는다.
+
+### 3.1b 목적함수 — 사조 대입이 아니라 패턴 연결 (2026-09-03)
+
+이 사이트가 원하는 것은 "기계에 마음이 있나"를 심리철학으로 보내는 일이 아니다. 그건 어느 분류기나 한다. 원하는 것은 **모델만이 할 수 있는 패턴 연결** — 질문과 항목 사이의 구조적 유사성으로 SEP를 새 각도에서 보는 뷰다. 코드의 세 결정이 여기서 나온다:
+
+- **후보를 미리 줄이지 않는다.** `map/` 의 분류로 2단계 라우팅(분야 고르기 → 후보 축소 → 큐레이션)을 하려던 계획은 폐기했다. 연결은 질문이 들어온 뒤에야 생기고, 후보를 줄이면 그 연결부터 잘린다. 목차 전체가 매번 (캐시된 채로) 들어간다. 아낀 비용은 `effort` 로 간다.
+- **프롬프트가 평균을 먼저 확인시킨다.** `route.ts` 의 시스템 프롬프트는 "분류기라면 어디로 갈지"를 먼저 확인하고 거기 머물지 말라고 지시한다. frame 예시는 분과 라벨("존재론적 독해")이 아니라 조작 이름("'있다'를 술어가 아니라 관계로 읽기")이고, route 마다 항목들이 공유하는 구조 한 문장(`pattern`)을 요구한다. pattern 을 쓸 수 없는 route 는 토픽 묶음이다.
+- **지도는 자(尺)로만 쓴다.** `map/` 은 페이블이 프롬프트 없이 수렴하는 자리를 동결한 기준선이다 (`map/README.md`). `src/lib/baseline.ts` 가 큐레이션이 45개 분야 중 몇 개를 가로질렀는지 세어 크레딧 「가로지름」에 적는다. **모델에게는 이 수를 보여주지 않는다** — 보여주면 자가 목표가 된다.
 
 ### 3.2 Pamphlet — 모델 self-curation 박물관
 
@@ -153,3 +166,5 @@ archive 페이지 (`/archive`, `/archive/[id]`) 는 server component로 `pamphle
 - 도록 검색·태그·카테고리 (모델 간 참조 없음 결정과 연결됨)
 - 모델이 이전 도록을 참고하는 RAG
 - 사용자별 보관소·책장
+- `map/` 분류로 후보를 미리 줄이는 2단계 라우팅 (§3.1b — 시도했고 접었다)
+- 모델에게 「가로지름」 수치를 보여주는 것 (자가 목표가 된다)
