@@ -1,0 +1,186 @@
+{"slug":"causation-physics","f":"time-space-causation","f2":["physics-phil"],"ax":["causation-explanation"],"g":"인과: 물리학에서","c":"h"}
+{"slug":"constructivism-political","f":"justice-distribution","f2":["metaethics-value","state-liberty-conflict"],"ax":["normativity-source"],"g":"정치적 구성주의","c":"m"}
+{"slug":"measurement-science","f":"science-general","f2":[],"ax":[],"g":"과학에서의 측정","c":"h"}
+{"slug":"18thGerman-preKant","f":"kant-german-idealism","f2":[],"ax":[],"g":"칸트 이전 18세기 독일철학","c":"h"}
+{"slug":"geometry-19th","f":"math-foundations","f2":["physics-phil","time-space-causation"],"ax":[],"g":"19세기 기하학","c":"h"}
+{"slug":"emotion-Christian-tradition","f":"emotions-attitudes","f2":["religion-theism"],"ax":["reason-emotion"],"g":"기독교 전통의 감정론","c":"h"}
+{"slug":"histfem-condorcet","f":"feminism-gender-sex","f2":["empiricism-enlightenment-utilitarianism"],"ax":["equality-difference"],"g":"콩도르세와 페미니즘","c":"h"}
+{"slug":"causation-law","f":"law-phil","f2":["time-space-causation"],"ax":["causation-explanation"],"g":"법에서의 인과","c":"h"}
+{"slug":"aristotelianism-renaissance","f":"renaissance","f2":["plato-aristotle"],"ax":["transmission-translation"],"g":"르네상스 아리스토텔레스주의","c":"h"}
+{"slug":"natphil-ren","f":"renaissance","f2":["science-general"],"ax":[],"g":"르네상스 자연철학","c":"h"}
+{"slug":"incompatibilism-theories","f":"agency-freewill-responsibility","f2":[],"ax":["freedom-determination"],"g":"","c":"h"}
+{"slug":"goedel-incompleteness","f":"math-foundations","f2":["logic-systems"],"ax":["computation-mechanism"],"g":"","c":"h"}
+{"slug":"mathematics-inconsistent","f":"math-foundations","f2":["logic-systems"],"ax":[],"g":"비일관 수학","c":"h"}
+{"slug":"independence-large-cardinals","f":"math-foundations","f2":[],"ax":["infinity"],"g":"거대기수와 독립성","c":"h"}
+{"slug":"logic-if","f":"logic-systems","f2":[],"ax":[],"g":"독립친화 논리","c":"h"}
+{"slug":"indexicals","f":"language-meaning","f2":[],"ax":[],"g":"지표사","c":"h"}
+{"slug":"epistemology-india","f":"indian-buddhist-tibetan","f2":["knowledge-justification"],"ax":["skepticism-limits"],"g":"","c":"h"}
+{"slug":"mathphil-indis","f":"math-foundations","f2":["science-general"],"ax":["universals-particulars"],"g":"수학 불가결성 논증","c":"h"}
+{"slug":"methodological-individualism","f":"social-ontology-economics","f2":[],"ax":["individual-collective"],"g":"","c":"h"}
+{"slug":"logic-infinitary","f":"logic-systems","f2":["math-foundations"],"ax":["infinity"],"g":"무한 논리","c":"h"}
+{"slug":"infinite-regress","f":"truth-paradox-argumentation","f2":["knowledge-justification","metaphysics-objects-modality"],"ax":["infinity"],"g":"","c":"h"}
+{"slug":"infinity","f":"math-foundations","f2":["time-space-causation"],"ax":["infinity"],"g":"","c":"h"}
+{"slug":"arabic-islamic-judaic","f":"jewish","f2":["arabic-islamic"],"ax":["transmission-translation"],"g":"","c":"h"}
+{"slug":"arabic-islamic-influence","f":"arabic-islamic","f2":["latin-medieval-thinkers"],"ax":["transmission-translation"],"g":"","c":"h"}
+{"slug":"leibniz-logic-influence","f":"seventeenth-century-systems","f2":["logic-systems","analytic-founders"],"ax":[],"g":"라이프니츠와 19세기 논리","c":"h"}
+{"slug":"luther-influence","f":"renaissance","f2":["religion-theism"],"ax":[],"g":"루터의 철학적 영향","c":"m"}
+{"slug":"information","f":"computing-information-tech","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"information-entropy","f":"computing-information-tech","f2":["physics-phil"],"ax":["computation-mechanism"],"g":"정보처리와 열역학 엔트로피","c":"h"}
+{"slug":"ethics-it-phenomenology","f":"computing-information-tech","f2":["phenomenology-existentialism-hermeneutics"],"ax":[],"g":"정보기술윤리 현상학적 접근","c":"h"}
+{"slug":"information-biological","f":"biology-phil","f2":["computing-information-tech"],"ax":[],"g":"생물학적 정보","c":"h"}
+{"slug":"informed-consent","f":"medicine-bioethics-disability","f2":[],"ax":["harm-permissibility"],"g":"","c":"h"}
+{"slug":"ingarden","f":"phenomenology-existentialism-hermeneutics","f2":["aesthetics-art"],"ax":[],"g":"폴란드 현상학자·미학자","c":"h"}
+{"slug":"inheritance-systems","f":"biology-phil","f2":[],"ax":[],"g":"유전 체계","c":"h"}
+{"slug":"innate-acquired","f":"cognition-perception","f2":["biology-phil"],"ax":[],"g":"","c":"h"}
+{"slug":"inner-speech","f":"cognition-perception","f2":["language-meaning"],"ax":[],"g":"","c":"h"}
+{"slug":"insolubles","f":"medieval-logic-semantics","f2":["truth-paradox-argumentation"],"ax":["truth-nature"],"g":"중세 불가해 명제","c":"h"}
+{"slug":"integrity","f":"metaethics-value","f2":["person-life-course"],"ax":[],"g":"","c":"m"}
+{"slug":"intellectual-property","f":"law-phil","f2":["justice-distribution","computing-information-tech"],"ax":[],"g":"지식재산","c":"h"}
+{"slug":"logic-intensional","f":"logic-systems","f2":["language-meaning"],"ax":[],"g":"내포 논리","c":"h"}
+{"slug":"intensional-trans-verbs","f":"language-meaning","f2":[],"ax":[],"g":"내포적 타동사","c":"h"}
+{"slug":"intention","f":"agency-freewill-responsibility","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"intentionality","f":"mind-body-consciousness","f2":["cognition-perception","phenomenology-existentialism-hermeneutics"],"ax":["mind-matter"],"g":"","c":"h"}
+{"slug":"justice-intergenerational","f":"justice-distribution","f2":[],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"justep-intext","f":"knowledge-justification","f2":[],"ax":[],"g":"정당화 내재주의/외재주의","c":"h"}
+{"slug":"international-law","f":"law-phil","f2":["state-liberty-conflict"],"ax":[],"g":"","c":"h"}
+{"slug":"ethics-internet-research","f":"computing-information-tech","f2":["medicine-bioethics-disability"],"ax":[],"g":"인터넷 연구윤리","c":"m"}
+{"slug":"legal-reas-interpret","f":"law-phil","f2":[],"ax":[],"g":"법적 추론의 해석·정합성","c":"h"}
+{"slug":"law-interpretivist","f":"law-phil","f2":[],"ax":["normativity-source"],"g":"","c":"h"}
+{"slug":"femapproach-analy-cont","f":"feminism-gender-sex","f2":["phenomenology-existentialism-hermeneutics"],"ax":[],"g":"페미니즘: 분석·대륙 교차","c":"h"}
+{"slug":"femapproach-prag-cont","f":"feminism-gender-sex","f2":["american-pragmatism"],"ax":[],"g":"페미니즘: 실용·대륙 교차","c":"h"}
+{"slug":"physics-interrelate","f":"physics-phil","f2":["science-general"],"ax":["causation-explanation"],"g":"물리학 이론 간 관계","c":"h"}
+{"slug":"value-intrinsic-extrinsic","f":"metaethics-value","f2":[],"ax":["normativity-source"],"g":"내재적/외재적 가치","c":"h"}
+{"slug":"intrinsic-extrinsic","f":"metaphysics-objects-modality","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"introspection","f":"knowledge-justification","f2":["mind-body-consciousness","cognition-perception"],"ax":["self-substance"],"g":"","c":"h"}
+{"slug":"intuition","f":"knowledge-justification","f2":["metaethics-value"],"ax":[],"g":"","c":"h"}
+{"slug":"israeli","f":"jewish","f2":["arabic-islamic"],"ax":[],"g":"중세 유대 신플라톤주의자","c":"m"}
+{"slug":"john-italos","f":"greek-schools","f2":["latin-medieval-thinkers"],"ax":[],"g":"11세기 비잔틴 철학자","c":"l"}
+{"slug":"friedrich-jacobi","f":"kant-german-idealism","f2":["religion-theism"],"ax":[],"g":"18세기 독일 신앙철학자","c":"h"}
+{"slug":"jaina-philosophy","f":"indian-buddhist-tibetan","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"james-viterbo","f":"latin-medieval-thinkers","f2":[],"ax":[],"g":"13세기 아우구스티누스회 신학자","c":"m"}
+{"slug":"james","f":"american-pragmatism","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"japanese-philosophy","f":"east-asian","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"japanese-aesthetics","f":"east-asian","f2":["aesthetics-art"],"ax":[],"g":"","c":"h"}
+{"slug":"japanese-confucian","f":"east-asian","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"japanese-zen","f":"east-asian","f2":["indian-buddhist-tibetan"],"ax":[],"g":"","c":"h"}
+{"slug":"jaspers","f":"phenomenology-existentialism-hermeneutics","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"jayaraasi","f":"indian-buddhist-tibetan","f2":[],"ax":["skepticism-limits"],"g":"인도 회의주의 철학자","c":"m"}
+{"slug":"jefferson","f":"empiricism-enlightenment-utilitarianism","f2":["american-pragmatism","state-liberty-conflict"],"ax":[],"g":"","c":"m"}
+{"slug":"william-jevons","f":"empiricism-enlightenment-utilitarianism","f2":["logic-systems","social-ontology-economics"],"ax":[],"g":"19세기 영국 논리·경제학자","c":"h"}
+{"slug":"john-salisbury","f":"latin-medieval-thinkers","f2":[],"ax":[],"g":"12세기 영국 인문주의자","c":"h"}
+{"slug":"emily-elizabeth-constance-jones","f":"analytic-founders","f2":["empiricism-enlightenment-utilitarianism"],"ax":[],"g":"영국 여성 논리학자","c":"m"}
+{"slug":"experimental-jurisprudence","f":"law-phil","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"jury-theorems","f":"probability-decision-games","f2":["state-liberty-conflict"],"ax":["individual-collective","uncertainty-judgment"],"g":"콩도르세 배심원 정리","c":"h"}
+{"slug":"justice","f":"justice-distribution","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"justice-healthcareaccess","f":"medicine-bioethics-disability","f2":["justice-distribution"],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"justice-inequality-health","f":"medicine-bioethics-disability","f2":["justice-distribution"],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"justice-climate","f":"justice-distribution","f2":[],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"justice-distributive","f":"justice-distribution","f2":[],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"justice-global","f":"justice-distribution","f2":["state-liberty-conflict"],"ax":[],"g":"","c":"h"}
+{"slug":"international-justice","f":"justice-distribution","f2":["state-liberty-conflict"],"ax":[],"g":"","c":"h"}
+{"slug":"logic-justification","f":"logic-systems","f2":["knowledge-justification"],"ax":[],"g":"정당화 논리","c":"h"}
+{"slug":"justep-foundational","f":"knowledge-justification","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"kant","f":"kant-german-idealism","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"kant-hume-causality","f":"kant-german-idealism","f2":["empiricism-enlightenment-utilitarianism","time-space-causation"],"ax":["causation-explanation"],"g":"","c":"h"}
+{"slug":"kant-hume-morality","f":"kant-german-idealism","f2":["empiricism-enlightenment-utilitarianism","metaethics-value"],"ax":["reason-emotion","normativity-source"],"g":"","c":"h"}
+{"slug":"kaspi-joseph","f":"jewish","f2":[],"ax":[],"g":"중세 유대 주석가·철학자","c":"m"}
+{"slug":"kepler","f":"seventeenth-century-systems","f2":["physics-phil"],"ax":[],"g":"","c":"h"}
+{"slug":"kierkegaard","f":"phenomenology-existentialism-hermeneutics","f2":["religion-theism"],"ax":[],"g":"","c":"h"}
+{"slug":"kilvington","f":"latin-medieval-thinkers","f2":["medieval-logic-semantics"],"ax":[],"g":"14세기 옥스퍼드 논리학자","c":"h"}
+{"slug":"robert-kilwardby","f":"latin-medieval-thinkers","f2":["medieval-logic-semantics"],"ax":[],"g":"13세기 영국 신학자·논리학자","c":"h"}
+{"slug":"evil-kinds-origins","f":"religion-theism","f2":["metaethics-value"],"ax":[],"g":"","c":"l"}
+{"slug":"qualia-knowledge","f":"mind-body-consciousness","f2":[],"ax":["mind-matter"],"g":"지식 논증(메리의 방)","c":"h"}
+{"slug":"knowledge-how","f":"knowledge-justification","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"knowledge-value","f":"knowledge-justification","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"kokugaku-school","f":"east-asian","f2":[],"ax":[],"g":"일본 국학","c":"h"}
+{"slug":"korean-philosophy","f":"east-asian","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"korean-buddhism","f":"east-asian","f2":["indian-buddhist-tibetan"],"ax":[],"g":"","c":"h"}
+{"slug":"korean-confucianism","f":"east-asian","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"thomas-kuhn","f":"science-general","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"kukai","f":"east-asian","f2":["indian-buddhist-tibetan"],"ax":[],"g":"일본 진언종 창시자","c":"h"}
+{"slug":"kumaarila","f":"indian-buddhist-tibetan","f2":[],"ax":[],"g":"미맘사 학파 철학자","c":"h"}
+{"slug":"kyoto-school","f":"east-asian","f2":["phenomenology-existentialism-hermeneutics"],"ax":[],"g":"","c":"h"}
+{"slug":"la-forge","f":"seventeenth-century-systems","f2":[],"ax":["mind-matter"],"g":"데카르트주의자, 기회원인론","c":"h"}
+{"slug":"lacan","f":"critical-theory-poststructuralism","f2":[],"ax":[],"g":"프랑스 정신분석가","c":"h"}
+{"slug":"lakatos","f":"science-general","f2":["math-foundations"],"ax":[],"g":"","c":"h"}
+{"slug":"lambda-calculus","f":"math-foundations","f2":["computing-information-tech","logic-systems"],"ax":["computation-mechanism"],"g":"","c":"h"}
+{"slug":"lambert-auxerre","f":"latin-medieval-thinkers","f2":["medieval-logic-semantics"],"ax":[],"g":"13세기 논리학자","c":"m"}
+{"slug":"landmann-kalischer","f":"aesthetics-art","f2":["metaethics-value"],"ax":[],"g":"","c":"l"}
+{"slug":"friedrich-lange","f":"kant-german-idealism","f2":[],"ax":[],"g":"신칸트주의, 유물론사","c":"h"}
+{"slug":"language-india","f":"indian-buddhist-tibetan","f2":["language-meaning","knowledge-justification"],"ax":["language-reality"],"g":"인도철학: 언어와 증언","c":"h"}
+{"slug":"language-thought","f":"cognition-perception","f2":["mind-body-consciousness","computing-information-tech"],"ax":["computation-mechanism"],"g":"","c":"h"}
+{"slug":"laozi","f":"east-asian","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"feminism-latin-america","f":"feminism-gender-sex","f2":["latin-american"],"ax":[],"g":"","c":"h"}
+{"slug":"latin-american-philosophy","f":"latin-american","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"latinx","f":"latin-american","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"law-ideology","f":"law-phil","f2":["critical-theory-poststructuralism"],"ax":[],"g":"","c":"h"}
+{"slug":"plato-laws","f":"plato-aristotle","f2":["state-liberty-conflict"],"ax":[],"g":"플라톤 『법률』","c":"h"}
+{"slug":"laws-of-nature","f":"time-space-causation","f2":["science-general"],"ax":[],"g":"","c":"h"}
+{"slug":"ceteris-paribus","f":"time-space-causation","f2":["science-general"],"ax":[],"g":"","c":"h"}
+{"slug":"legrand","f":"seventeenth-century-systems","f2":[],"ax":[],"g":"17세기 데카르트주의자","c":"h"}
+{"slug":"learning-formal","f":"knowledge-justification","f2":["probability-decision-games","computing-information-tech"],"ax":["uncertainty-judgment"],"g":"형식 학습이론","c":"h"}
+{"slug":"perceptual-learning","f":"cognition-perception","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"lefevre-etaples","f":"renaissance","f2":[],"ax":[],"g":"프랑스 인문주의자","c":"h"}
+{"slug":"legal-interpretation","f":"law-phil","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"legal-obligation","f":"law-phil","f2":["state-liberty-conflict"],"ax":["normativity-source"],"g":"","c":"h"}
+{"slug":"legal-probabilism","f":"law-phil","f2":["probability-decision-games"],"ax":["uncertainty-judgment"],"g":"","c":"h"}
+{"slug":"legal-rights","f":"law-phil","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"chinese-legalism","f":"east-asian","f2":["state-liberty-conflict"],"ax":[],"g":"중국 법가","c":"h"}
+{"slug":"legitimacy","f":"state-liberty-conflict","f2":[],"ax":["normativity-source"],"g":"","c":"h"}
+{"slug":"leibniz","f":"seventeenth-century-systems","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"leibowitz-yeshayahu","f":"jewish","f2":["religion-theism"],"ax":[],"g":"20세기 이스라엘 유대 사상가","c":"m"}
+{"slug":"lesniewski","f":"analytic-founders","f2":["logic-systems","metaphysics-objects-modality"],"ax":[],"g":"폴란드 논리학자, 메레올로지","c":"h"}
+{"slug":"leucippus","f":"greek-schools","f2":[],"ax":[],"g":"고대 원자론 창시자","c":"h"}
+{"slug":"levels-org-biology","f":"biology-phil","f2":[],"ax":["causation-explanation"],"g":"","c":"h"}
+{"slug":"levinas","f":"phenomenology-existentialism-hermeneutics","f2":["jewish"],"ax":[],"g":"","c":"h"}
+{"slug":"lewis-ci","f":"american-pragmatism","f2":["analytic-founders","logic-systems"],"ax":[],"g":"개념적 실용주의, 양상논리","c":"h"}
+{"slug":"david-lewis","f":"analytic-founders","f2":["metaphysics-objects-modality"],"ax":[],"g":"","c":"h"}
+{"slug":"liar-paradox","f":"truth-paradox-argumentation","f2":[],"ax":["truth-nature"],"g":"","c":"h"}
+{"slug":"feminism-liberal","f":"feminism-gender-sex","f2":["state-liberty-conflict"],"ax":["equality-difference"],"g":"","c":"h"}
+{"slug":"liberalism","f":"state-liberty-conflict","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"liberalism-latin-america","f":"latin-american","f2":["state-liberty-conflict"],"ax":[],"g":"","c":"h"}
+{"slug":"liberation","f":"latin-american","f2":["critical-theory-poststructuralism"],"ax":[],"g":"해방철학","c":"h"}
+{"slug":"libertarianism","f":"state-liberty-conflict","f2":["justice-distribution"],"ax":[],"g":"","c":"h"}
+{"slug":"liberty-positive-negative","f":"state-liberty-conflict","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"life","f":"biology-phil","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"descartes-works","f":"seventeenth-century-systems","f2":[],"ax":[],"g":"데카르트 생애와 저작","c":"h"}
+{"slug":"nietzsche-life-works","f":"phenomenology-existentialism-hermeneutics","f2":[],"ax":[],"g":"니체 생애와 저작","c":"h"}
+{"slug":"law-limits","f":"law-phil","f2":["state-liberty-conflict"],"ax":["harm-permissibility"],"g":"","c":"h"}
+{"slug":"computational-linguistics","f":"language-meaning","f2":["computing-information-tech"],"ax":["computation-mechanism"],"g":"","c":"h"}
+{"slug":"justus-lipsius","f":"renaissance","f2":["greek-schools"],"ax":[],"g":"신스토아주의 인문주의자","c":"h"}
+{"slug":"literal-nonliteral-india","f":"indian-buddhist-tibetan","f2":["language-meaning"],"ax":["language-reality"],"g":"인도철학: 문자적·비문자적","c":"h"}
+{"slug":"medieval-literary","f":"latin-medieval-thinkers","f2":[],"ax":[],"g":"중세 철학의 문학 형식","c":"h"}
+{"slug":"llull","f":"latin-medieval-thinkers","f2":["computing-information-tech"],"ax":["computation-mechanism"],"g":"13세기 카탈루냐, 결합술","c":"h"}
+{"slug":"location-mereology","f":"metaphysics-objects-modality","f2":["time-space-causation"],"ax":[],"g":"","c":"h"}
+{"slug":"alain-locke","f":"africana-race-colonialism","f2":["american-pragmatism"],"ax":[],"g":"할렘 르네상스 철학자","c":"h"}
+{"slug":"locke","f":"empiricism-enlightenment-utilitarianism","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"real-essence","f":"empiricism-enlightenment-utilitarianism","f2":["metaphysics-objects-modality"],"ax":[],"g":"로크의 실재적 본질","c":"h"}
+{"slug":"aristotle-logic","f":"plato-aristotle","f2":["logic-systems"],"ax":[],"g":"아리스토텔레스 논리학","c":"h"}
+{"slug":"bolzano-logic","f":"analytic-founders","f2":["logic-systems","kant-german-idealism"],"ax":[],"g":"볼차노 논리학","c":"m"}
+{"slug":"frege-logic","f":"analytic-founders","f2":["logic-systems"],"ax":[],"g":"프레게 논리학","c":"h"}
+{"slug":"logic-india","f":"indian-buddhist-tibetan","f2":["logic-systems"],"ax":[],"g":"인도 논리학","c":"h"}
+{"slug":"peirce-logic","f":"american-pragmatism","f2":["logic-systems"],"ax":[],"g":"퍼스 논리학","c":"h"}
+{"slug":"chinese-logic-language","f":"east-asian","f2":["language-meaning"],"ax":["language-reality"],"g":"","c":"h"}
+{"slug":"logic-ai","f":"computing-information-tech","f2":["logic-systems"],"ax":["computation-mechanism"],"g":"논리 기반 인공지능","c":"h"}
+{"slug":"intuitionistic-logic-development","f":"logic-systems","f2":["math-foundations"],"ax":[],"g":"","c":"h"}
+{"slug":"logic-action","f":"logic-systems","f2":["agency-freewill-responsibility"],"ax":[],"g":"","c":"h"}
+{"slug":"logic-games","f":"logic-systems","f2":["probability-decision-games"],"ax":[],"g":"","c":"h"}
+{"slug":"logic-information","f":"logic-systems","f2":["computing-information-tech"],"ax":[],"g":"","c":"h"}
+{"slug":"logic-conditionals","f":"logic-systems","f2":["language-meaning"],"ax":[],"g":"","c":"h"}
+{"slug":"dynamic-epistemic","f":"logic-systems","f2":["knowledge-justification"],"ax":[],"g":"","c":"h"}
+{"slug":"logics-for-games","f":"logic-systems","f2":["probability-decision-games"],"ax":[],"g":"","c":"h"}
+{"slug":"logic-hybrid","f":"logic-systems","f2":[],"ax":[],"g":"혼성 논리","c":"h"}
+{"slug":"logic-inductive","f":"logic-systems","f2":["probability-decision-games","science-general"],"ax":["uncertainty-judgment"],"g":"","c":"h"}
+{"slug":"logic-informal","f":"truth-paradox-argumentation","f2":["logic-systems"],"ax":[],"g":"","c":"h"}
+{"slug":"logic-intuitionistic","f":"logic-systems","f2":["math-foundations"],"ax":[],"g":"","c":"h"}
+{"slug":"logic-linear","f":"logic-systems","f2":[],"ax":[],"g":"","c":"h"}
+{"slug":"logical-empiricism","f":"analytic-founders","f2":["science-general"],"ax":[],"g":"논리경험주의(빈학단)","c":"h"}
+{"slug":"logical-consequence","f":"logic-systems","f2":["truth-paradox-argumentation"],"ax":[],"g":"","c":"h"}
+{"slug":"logical-constants","f":"logic-systems","f2":["language-meaning"],"ax":[],"g":"","c":"h"}
+{"slug":"logical-construction","f":"analytic-founders","f2":["metaphysics-objects-modality"],"ax":[],"g":"논리적 구성(러셀)","c":"h"}
+{"slug":"logical-form","f":"language-meaning","f2":["logic-systems"],"ax":[],"g":"","c":"h"}
+{"slug":"logical-pluralism","f":"logic-systems","f2":["truth-paradox-argumentation"],"ax":["normativity-source"],"g":"","c":"h"}
+{"slug":"logical-truth","f":"logic-systems","f2":["truth-paradox-argumentation"],"ax":["truth-nature"],"g":"","c":"h"}
+{"slug":"logicism","f":"math-foundations","f2":["analytic-founders"],"ax":[],"g":"","c":"h"}
+{"slug":"hermann-lotze","f":"kant-german-idealism","f2":[],"ax":[],"g":"19세기 독일 철학자","c":"h"}
+{"slug":"love","f":"emotions-attitudes","f2":[],"ax":["reason-emotion"],"g":"","c":"h"}
